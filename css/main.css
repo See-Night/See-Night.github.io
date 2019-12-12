@@ -1808,13 +1808,15 @@ pre .javascript .function {
 }
 .links-of-author {
   margin-top: 20px;
+  margin-left: 20%;
+  text-align: left;
 }
 .links-of-author a {
-  display: inline-block;
+  display: block;
   vertical-align: middle;
   margin-right: 10px;
   margin-bottom: 10px;
-  border-bottom-color: #555;
+  border-bottom-color: transparent;
   font-size: 13px;
 }
 .links-of-author a:before {
@@ -1825,7 +1827,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ffb53b;
+  background: #5cbe95;
 }
 .links-of-blogroll {
   font-size: 13px;
