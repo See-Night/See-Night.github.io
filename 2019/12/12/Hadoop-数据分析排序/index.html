@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Hadoop," />
 
 
 
@@ -79,13 +79,16 @@
 
 
 
-<meta name="description" content="这里会放一些烂七八糟的东西">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Null&#39;s Blogs">
-<meta property="og:url" content="http:&#x2F;&#x2F;1145141919810.wang&#x2F;">
+<meta name="description" content="数据分析排序Mapper.py123456789#!&#x2F;usr&#x2F;bin&#x2F;python3# -*- coding: utf-8 -*-import sysfor line in sys.stdin :        line &#x3D; line.split()        for num in line :                print(num)   M">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hadoop MapReduce">
+<meta property="og:url" content="http:&#x2F;&#x2F;1145141919810.wang&#x2F;2019&#x2F;12&#x2F;12&#x2F;Hadoop-%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%8E%92%E5%BA%8F&#x2F;">
 <meta property="og:site_name" content="Null&#39;s Blogs">
-<meta property="og:description" content="这里会放一些烂七八糟的东西">
+<meta property="og:description" content="数据分析排序Mapper.py123456789#!&#x2F;usr&#x2F;bin&#x2F;python3# -*- coding: utf-8 -*-import sysfor line in sys.stdin :        line &#x3D; line.split()        for num in line :                print(num)   M">
+<meta property="article:published_time" content="2019-12-12T08:14:27.000Z">
+<meta property="article:modified_time" content="2019-12-12T08:36:45.664Z">
 <meta property="article:author" content="Null">
+<meta property="article:tag" content="Hadoop">
 <meta name="twitter:card" content="summary">
 
 
@@ -116,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://1145141919810.wang/"/>
+  <link rel="canonical" href="http://1145141919810.wang/2019/12/12/Hadoop-数据分析排序/"/>
 
 
 
 
 
-  <title>Null's Blogs</title>
+  <title>Hadoop MapReduce | Null's Blogs</title>
   
 
 
@@ -141,8 +144,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -215,143 +217,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://1145141919810.wang/2019/12/12/Hadoop-%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Null">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/uploads/avatar_black.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Null's Blogs">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/12/12/Hadoop-%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98/" itemprop="url">数据挖掘</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-12-12T16:37:10+08:00">
-                2019-12-12
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="数据挖掘"><a href="#数据挖掘" class="headerlink" title="数据挖掘"></a>数据挖掘</h1><h3 id="mapper-py"><a href="#mapper-py" class="headerlink" title="mapper.py"></a>mapper.py</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">#!&#x2F;usr&#x2F;bin&#x2F;python3 </span><br><span class="line"># -*- coding: utf-8 -*-</span><br><span class="line"></span><br><span class="line">import sys</span><br><span class="line"></span><br><span class="line">for line in sys.stdin :</span><br><span class="line">    title &#x3D; 1</span><br><span class="line">    l &#x3D; line.strip()</span><br><span class="line">    t &#x3D; l.split()</span><br><span class="line">    for i in t :</span><br><span class="line">        if i &#x3D;&#x3D; &quot;child&quot; :</span><br><span class="line">            title &#x3D; 0</span><br><span class="line">    if title is 1 :</span><br><span class="line">            print(l)</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li><code>str.split()</code> 和 <code>str.strip()</code> 对数据进行格式化</li>
-</ul>
-<h3 id="reduce-py"><a href="#reduce-py" class="headerlink" title="reduce.py"></a>reduce.py</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line">#!&#x2F;usr&#x2F;bin&#x2F;python3 </span><br><span class="line"># -*- coding: utf-8 -*-</span><br><span class="line"></span><br><span class="line">import sys</span><br><span class="line"></span><br><span class="line">f &#x3D; []</span><br><span class="line">l1 &#x3D; []</span><br><span class="line">l2 &#x3D; []</span><br><span class="line"></span><br><span class="line">for line in sys.stdin :</span><br><span class="line">    line &#x3D; line.strip().split()</span><br><span class="line">    for word in line :</span><br><span class="line">        f.append(word)</span><br><span class="line"></span><br><span class="line">for i in range(0, len(f), 2) :</span><br><span class="line">    s1 &#x3D; [&#39;&#39;, &#39;&#39;]</span><br><span class="line">    s2 &#x3D; [&#39;&#39;, &#39;&#39;]</span><br><span class="line">    s1[0], s1[1] &#x3D; f[i], &#39;1+&#39; + f[i + 1]</span><br><span class="line">    s2[0], s2[1] &#x3D; f[i + 1], &#39;2+&#39; + f[i]</span><br><span class="line">    l1.append(s1)</span><br><span class="line">    l2.append(s2)</span><br><span class="line">print(&#39;grandchild\tgrandparent&#39;)</span><br><span class="line">m &#x3D; 0</span><br><span class="line">try :</span><br><span class="line">    while l1[m][0] :</span><br><span class="line">        x1 &#x3D; &#39;1+&#39; + l1[m][0]</span><br><span class="line">        x2 &#x3D; &#39;2+&#39; + l1[m][0]</span><br><span class="line">        for j in range(len(l1)) :</span><br><span class="line">            if x1 in l1[j][1] :</span><br><span class="line">                for k in range(len(l2)) :</span><br><span class="line">                    if x2 in l2[k][1] :</span><br><span class="line">                        print(l1[j][0] + &#39;\t\t&#39; + l2[k][0])</span><br><span class="line">        m &#x3D; m + 2</span><br><span class="line">except :</span><br><span class="line">    pass</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li><code>List.append()</code> 向列表末尾添加元素  </li>
-</ul>
-<h3 id="C-txt"><a href="#C-txt" class="headerlink" title="C.txt"></a>C.txt</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">child   parent</span><br><span class="line">Steven  Lucy</span><br><span class="line">Steven  Jack</span><br><span class="line">Jone    Lucy</span><br><span class="line">Jone    Jack</span><br><span class="line">Lucy    Mary</span><br><span class="line">Lucy    Frank</span><br><span class="line">Jack    Alice</span><br><span class="line">Jack    Jesse</span><br><span class="line">David   Alice</span><br><span class="line">David   Jesse</span><br><span class="line">Philip  David</span><br><span class="line">Philip  Alma</span><br><span class="line">Mark    David</span><br><span class="line">Mark    Alma</span><br></pre></td></tr></table></figure>
-
-<h3 id="result"><a href="#result" class="headerlink" title="result"></a>result</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">grandchild      grandparent</span><br><span class="line">Mark            Alice</span><br><span class="line">Mark            Jesse</span><br><span class="line">Philip          Alice</span><br><span class="line">Philip          Jesse</span><br><span class="line">Jone            Alice</span><br><span class="line">Jone            Jesse</span><br><span class="line">Steven          Alice</span><br><span class="line">Steven          Jesse</span><br><span class="line">Jone            Frank</span><br><span class="line">Jone            Mary</span><br><span class="line">Steven          Frank</span><br><span class="line">Steven          Mary</span><br></pre></td></tr></table></figure>
-
-<p>```</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
 
   
 
@@ -381,9 +249,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/12/12/Hadoop-%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%8E%92%E5%BA%8F/" itemprop="url">Hadoop MapReduce</a></h1>
+          <h1 class="post-title" itemprop="name headline">Hadoop MapReduce</h1>
         
 
         <div class="post-meta">
@@ -433,9 +299,7 @@
       
 
       
-        
-          
-            <h1 id="数据分析排序"><a href="#数据分析排序" class="headerlink" title="数据分析排序"></a>数据分析排序</h1><h3 id="Mapper-py"><a href="#Mapper-py" class="headerlink" title="Mapper.py"></a>Mapper.py</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">#!&#x2F;usr&#x2F;bin&#x2F;python3</span><br><span class="line"># -*- coding: utf-8 -*-</span><br><span class="line"></span><br><span class="line">import sys</span><br><span class="line"></span><br><span class="line">for line in sys.stdin :</span><br><span class="line">        line &#x3D; line.split()</span><br><span class="line">        for num in line :</span><br><span class="line">                print(num)</span><br></pre></td></tr></table></figure>
+        <h1 id="数据分析排序"><a href="#数据分析排序" class="headerlink" title="数据分析排序"></a>数据分析排序</h1><h3 id="Mapper-py"><a href="#Mapper-py" class="headerlink" title="Mapper.py"></a>Mapper.py</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">#!&#x2F;usr&#x2F;bin&#x2F;python3</span><br><span class="line"># -*- coding: utf-8 -*-</span><br><span class="line"></span><br><span class="line">import sys</span><br><span class="line"></span><br><span class="line">for line in sys.stdin :</span><br><span class="line">        line &#x3D; line.split()</span><br><span class="line">        for num in line :</span><br><span class="line">                print(num)</span><br></pre></td></tr></table></figure>
 
 <ul>
 <li><code>Mapper.py</code> 用于读取数据并传递数据到Reduce</li>
@@ -457,8 +321,6 @@
 <h3 id="result"><a href="#result" class="headerlink" title="result"></a>result</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">4</span><br><span class="line">5</span><br><span class="line">12</span><br><span class="line">16</span><br><span class="line">33</span><br><span class="line">37</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td></tr></table></figure>
 
 <h5 id="Mapper与Reduce之间的数据传输格式的错误是导致大多数Reduce错误的根本原因"><a href="#Mapper与Reduce之间的数据传输格式的错误是导致大多数Reduce错误的根本原因" class="headerlink" title="Mapper与Reduce之间的数据传输格式的错误是导致大多数Reduce错误的根本原因"></a>Mapper与Reduce之间的数据传输格式的错误是导致大多数Reduce错误的根本原因</h5>
-          
-        
       
     </div>
     
@@ -473,146 +335,40 @@
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://1145141919810.wang/2019/12/12/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Null">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/uploads/avatar_black.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Null's Blogs">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/12/12/hello-world/" itemprop="url">Hello</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-12-12T13:37:38+08:00">
-                2019-12-12
-              </time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-
+            <a href="/tags/Hadoop/" rel="tag"># Hadoop</a>
           
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>新建了一个博客，以后会往这里面塞一些奇奇怪怪的东西</p>
-<h5 id="先自我介绍一下吧："><a href="#先自我介绍一下吧：" class="headerlink" title="先自我介绍一下吧："></a>先自我介绍一下吧：</h5><ul>
-<li><p>本科在读程序狗（还™啥都不会）</p>
-</li>
-<li><p>英语渣渣，日语N2</p>
-</li>
-<li><p>喜欢打游戏，但是3D眩晕</p>
-</li>
-<li><p>LOL国服白金守门员</p>
-</li>
-<li><p>5年老皇杂</p>
-</li>
-</ul>
-<h5 id="Blog不定时更新（看灵感）"><a href="#Blog不定时更新（看灵感）" class="headerlink" title="Blog不定时更新（看灵感）"></a>Blog不定时更新（看灵感）</h5>
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
       
 
       
       
-        <div class="post-eof"></div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/12/12/hello-world/" rel="next" title="Hello">
+                <i class="fa fa-chevron-left"></i> Hello
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/12/12/Hadoop-%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98/" rel="prev" title="数据挖掘">
+                数据挖掘 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
       
     </footer>
   </div>
@@ -622,10 +378,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -633,6 +390,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -653,8 +414,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -725,6 +495,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#数据分析排序"><span class="nav-number">1.</span> <span class="nav-text">数据分析排序</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Mapper-py"><span class="nav-number">1.0.1.</span> <span class="nav-text">Mapper.py</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Reduce-py"><span class="nav-number">1.0.2.</span> <span class="nav-text">Reduce.py</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#A-txt"><span class="nav-number">1.0.3.</span> <span class="nav-text">A.txt</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#B-txt"><span class="nav-number">1.0.4.</span> <span class="nav-text">B.txt</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#result"><span class="nav-number">1.0.5.</span> <span class="nav-text">result</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#Mapper与Reduce之间的数据传输格式的错误是导致大多数Reduce错误的根本原因"><span class="nav-number">1.0.5.0.1.</span> <span class="nav-text">Mapper与Reduce之间的数据传输格式的错误是导致大多数Reduce错误的根本原因</span></a></li></ol></li></ol></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -858,6 +644,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
