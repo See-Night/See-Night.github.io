@@ -1660,7 +1660,7 @@ pre .javascript .function {
 }
 .sidebar {
   position: fixed;
-  right: 0;
+  left: 0;
   top: 0;
   bottom: 0;
   width: 0;
@@ -1701,7 +1701,7 @@ pre .javascript .function {
 }
 .sidebar-toggle {
   position: fixed;
-  right: 30px;
+  left: 10%;
   bottom: 45px;
   width: 14px;
   height: 14px;
@@ -1808,14 +1808,17 @@ pre .javascript .function {
 }
 .links-of-author {
   margin-top: 20px;
-  margin-left: 20%;
+  margin-left: 15%;
   text-align: left;
+  padding: 0px 0px 0px 0px;
+}
+.links-of-author-item {
+  border-bottom: 0px;
+  border-top: 0px;
 }
 .links-of-author a {
   display: block;
   vertical-align: middle;
-  margin-right: 10px;
-  margin-bottom: 10px;
   border-bottom-color: transparent;
   font-size: 13px;
 }
@@ -1827,7 +1830,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #5cbe95;
+  background: #00887c;
 }
 .links-of-blogroll {
   font-size: 13px;
