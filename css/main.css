@@ -1857,7 +1857,7 @@ pre .javascript .function {
   vertical-align: top;
   height: 2px;
   width: 100%;
-  background: #fff;
+  background: #fff !important;
   margin-top: 3px;
 }
 .sidebar-toggle-line:first-child {
@@ -1959,7 +1959,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #20aa7a;
+  background: #13ffff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2006,11 +2006,11 @@ pre .javascript .function {
   margin-left: 10px;
 }
 .sidebar-nav .sidebar-nav-active {
-  color: #87daff;
-  border-bottom-color: #87daff;
+  color: #d3d3d3;
+  border-bottom-color: #fff;
 }
 .sidebar-nav .sidebar-nav-active:hover {
-  color: #87daff;
+  color: #fff;
 }
 .sidebar-panel {
   display: none;
@@ -2044,11 +2044,11 @@ pre .javascript .function {
   transition-delay: 0s;
   transition-property: all;
   color: #999;
-  border-bottom-color: #555;
+  border-bottom-color: transparent;
 }
 .post-toc ol a:hover {
   color: #ccc;
-  border-bottom-color: #ccc;
+  border-bottom-color: transparent;
 }
 .post-toc .nav-item {
   overflow: hidden;
@@ -2070,14 +2070,13 @@ pre .javascript .function {
   display: block;
 }
 .post-toc .nav .active > a {
-  color: #87daff;
-  border-bottom-color: #87daff;
+  color: #fff;
 }
 .post-toc .nav .active-current > a {
-  color: #87daff;
+  color: #d3d3d3;
 }
 .post-toc .nav .active-current > a:hover {
-  color: #87daff;
+  color: #fff;
 }
 .footer {
   font-size: 14px;
