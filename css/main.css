@@ -1959,7 +1959,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #be04e3;
+  background: #94b4ff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2753,6 +2753,15 @@ embed {
   max-width: 150px;
   background: #fff;
 }
+.site-nav {
+  position: fixed;
+  right: 10%;
+  top: 15%;
+  margin: 0;
+  padding: 0;
+  border-left: 1px solid #ddd;
+  z-index: 1050;
+}
 @media (max-width: 767px) {
   .site-nav {
     position: absolute;
@@ -2765,6 +2774,10 @@ embed {
     border-bottom: 1px solid #ddd;
     z-index: 1050;
   }
+}
+.menu {
+  display: flex;
+  flex-direction: column;
 }
 @media (max-width: 767px) {
   .menu {
