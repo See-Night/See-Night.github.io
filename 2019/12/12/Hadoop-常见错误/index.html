@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+  
+  
+  <link rel="stylesheet" media="all" href="/lib/Han/dist/han.min.css?v=3.3">
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hadoop," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="Hadoop 常见错误subprocess failed with code 类型的错误">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hadoop 常见错误">
+<meta property="og:url" content="http:&#x2F;&#x2F;1145141919810.wang&#x2F;2019&#x2F;12&#x2F;12&#x2F;Hadoop-%E5%B8%B8%E8%A7%81%E9%94%99%E8%AF%AF&#x2F;">
+<meta property="og:site_name" content="守夜の破烂摊">
+<meta property="og:description" content="Hadoop 常见错误subprocess failed with code 类型的错误">
+<meta property="article:published_time" content="2019-12-12T11:12:48.000Z">
+<meta property="article:modified_time" content="2019-12-12T13:08:20.212Z">
+<meta property="article:author" content="守夜">
+<meta property="article:tag" content="Hadoop">
+<meta name="twitter:card" content="summary">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"always","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://1145141919810.wang/2019/12/12/Hadoop-常见错误/"/>
+
+
+
+
+
+  <title>Hadoop 常见错误 | 守夜の破烂摊</title>
+  
+
+
+
+
+
+
+
+
+<meta name="generator" content="Hexo 4.1.0"></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">守夜の破烂摊</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://1145141919810.wang/2019/12/12/Hadoop-%E5%B8%B8%E8%A7%81%E9%94%99%E8%AF%AF/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="守夜">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/avatar_white.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="守夜の破烂摊">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Hadoop 常见错误</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-12-12T19:12:48+08:00">
+                2019-12-12
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/code/" itemprop="url" rel="index">
+                    <span itemprop="name">code</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body han-init-context" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="Hadoop-常见错误"><a href="#Hadoop-常见错误" class="headerlink" title="Hadoop 常见错误"></a>Hadoop 常见错误</h1><h2 id="subprocess-failed-with-code-类型的错误"><a href="#subprocess-failed-with-code-类型的错误" class="headerlink" title="subprocess failed with code 类型的错误"></a><code>subprocess failed with code</code> 类型的错误</h2><a id="more"></a>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br></pre></td><td class="code"><pre><span class="line">PipeMapRed.waitOutputThreads(): subprocess failed with code X </span><br><span class="line">error code 1: Operation not permitted</span><br><span class="line">error code 2: No such file or directory</span><br><span class="line">error code 3: No such process</span><br><span class="line">error code 4: Interrupted system call</span><br><span class="line">error code 5: Input&#x2F;output error</span><br><span class="line">error code 6: No such device or address</span><br><span class="line">error code 7: Argument list too long</span><br><span class="line">error code 8: Exec format error</span><br><span class="line">error code 9: Bad file descriptor</span><br><span class="line">error code 10: No child processes</span><br><span class="line">error code 11: Resource temporarily unavailable</span><br><span class="line">error code 12: Cannot allocate memory</span><br><span class="line">error code 13: Permission denied</span><br><span class="line">error code 14: Bad address</span><br><span class="line">error code 15: Block device required</span><br><span class="line">error code 16: Device or resource busy</span><br><span class="line">error code 17: File exists</span><br><span class="line">error code 18: Invalid cross-device link</span><br><span class="line">error code 19: No such device</span><br><span class="line">error code 20: Not a directory</span><br><span class="line">error code 21: Is a directory</span><br><span class="line">error code 22: Invalid argument</span><br><span class="line">error code 23: Too many open files in system</span><br><span class="line">error code 24: Too many open files</span><br><span class="line">error code 25: Inappropriate ioctl for device</span><br><span class="line">error code 26: Text file busy</span><br><span class="line">error code 27: File too large</span><br><span class="line">error code 28: No space left on device</span><br><span class="line">error code 29: Illegal seek</span><br><span class="line">error code 30: Read-only file system</span><br><span class="line">error code 31: Too many links</span><br><span class="line">error code 32: Broken pipe</span><br><span class="line">error code 33: Numerical argument out of domain</span><br><span class="line">error code 34: Numerical result out of range</span><br><span class="line">error code 35: Resource deadlock avoided</span><br><span class="line">error code 36: File name too long</span><br><span class="line">error code 37: No locks available</span><br><span class="line">error code 38: Function not implemented</span><br><span class="line">error code 39: Directory not empty</span><br><span class="line">error code 40: Too many levels of symbolic links</span><br><span class="line">error code 42: No message of desired type</span><br><span class="line">error code 43: Identifier removed</span><br><span class="line">error code 44: Channel number out of range</span><br><span class="line">error code 45: Level 2 not synchronized</span><br><span class="line">error code 46: Level 3 halted</span><br><span class="line">error code 47: Level 3 reset</span><br><span class="line">error code 48: Link number out of range</span><br><span class="line">error code 49: Protocol driver not attached</span><br><span class="line">error code 50: No CSI structure available</span><br><span class="line">error code 51: Level 2 halted</span><br><span class="line">error code 52: Invalid exchange</span><br><span class="line">error code 53: Invalid request descriptor</span><br><span class="line">error code 54: Exchange full</span><br><span class="line">error code 55: No anode</span><br><span class="line">error code 56: Invalid request code</span><br><span class="line">error code 57: Invalid slot</span><br><span class="line">error code 59: Bad font file format</span><br><span class="line">error code 60: Device not a stream</span><br><span class="line">error code 61: No data available</span><br><span class="line">error code 62: Timer expired</span><br><span class="line">error code 63: Out of streams resources</span><br><span class="line">error code 64: Machine is not on the network</span><br><span class="line">error code 65: Package not installed</span><br><span class="line">error code 66: Object is remote</span><br><span class="line">error code 67: Link has been severed</span><br><span class="line">error code 68: Advertise error</span><br><span class="line">error code 69: Srmount error</span><br><span class="line">error code 70: Communication error on send</span><br><span class="line">error code 71: Protocol error</span><br><span class="line">error code 72: Multihop attempted</span><br><span class="line">error code 73: RFS specific error</span><br><span class="line">error code 74: Bad message</span><br><span class="line">error code 75: Value too large for defined data type</span><br><span class="line">error code 76: Name not unique on network</span><br><span class="line">error code 77: File descriptor in bad state</span><br><span class="line">error code 78: Remote address changed</span><br><span class="line">error code 79: Can not access a needed shared library</span><br><span class="line">error code 80: Accessing a corrupted shared library</span><br><span class="line">error code 81: .lib section in a.out corrupted</span><br><span class="line">error code 82: Attempting to link in too many shared libraries</span><br><span class="line">error code 83: Cannot exec a shared library directly</span><br><span class="line">error code 84: Invalid or incomplete multibyte or wide character</span><br><span class="line">error code 85: Interrupted system call should be restarted</span><br><span class="line">error code 86: Streams pipe error</span><br><span class="line">error code 87: Too many users</span><br><span class="line">error code 88: Socket operation on non-socket</span><br><span class="line">error code 89: Destination address required</span><br><span class="line">error code 90: Message too long</span><br><span class="line">error code 91: Protocol wrong type for socket</span><br><span class="line">error code 92: Protocol not available</span><br><span class="line">error code 93: Protocol not supported</span><br><span class="line">error code 94: Socket type not supported</span><br><span class="line">error code 95: Operation not supported</span><br><span class="line">error code 96: Protocol family not supported</span><br><span class="line">error code 97: Address family not supported by protocol</span><br><span class="line">error code 98: Address already in use</span><br><span class="line">error code 99: Cannot assign requested address</span><br><span class="line">error code 100: Network is down</span><br><span class="line">error code 101: Network is unreachable</span><br><span class="line">error code 102: Network dropped connection on reset</span><br><span class="line">error code 103: Software caused connection abort</span><br><span class="line">error code 104: Connection reset by peer</span><br><span class="line">error code 105: No buffer space available</span><br><span class="line">error code 106: Transport endpoint is already connected</span><br><span class="line">error code 107: Transport endpoint is not connected</span><br><span class="line">error code 108: Cannot send after transport endpoint shutdown</span><br><span class="line">error code 109: Too many references: cannot splice</span><br><span class="line">error code 110: Connection timed out</span><br><span class="line">error code 111: Connection refused</span><br><span class="line">error code 112: Host is down</span><br><span class="line">error code 113: No route to host</span><br><span class="line">error code 114: Operation already in progress</span><br><span class="line">error code 115: Operation now in progress</span><br><span class="line">error code 116: Stale NFS file handle</span><br><span class="line">error code 117: Structure needs cleaning</span><br><span class="line">error code 118: Not a XENIX named type file</span><br><span class="line">error code 119: No XENIX semaphores available</span><br><span class="line">error code 120: Is a named type file</span><br><span class="line">error code 121: Remote I&#x2F;O error</span><br><span class="line">error code 122: Disk quota exceeded</span><br><span class="line">error code 123: No medium found</span><br><span class="line">error code 124: Wrong medium type</span><br><span class="line">error code 125: Operation canceled</span><br><span class="line">error code 126: Required key not available</span><br><span class="line">error code 127: Key has expired</span><br><span class="line">error code 128: Key has been revoked</span><br><span class="line">error code 129: Key was rejected by service</span><br><span class="line">error code 130: Owner died</span><br><span class="line">error code 131: State not recoverable</span><br><span class="line">error code 132: Old database file</span><br><span class="line">error code 133: No record read before update</span><br><span class="line">error code 134: Record was already deleted (or record file crashed)</span><br><span class="line">error code 135: No more room in record file</span><br><span class="line">error code 136: No more room in index file</span><br><span class="line">error code 137: No more records (read after end of file)</span><br><span class="line">error code 138: Unsupported extension used for table</span><br><span class="line">error code 139: Too big row</span><br><span class="line">error code 140: Wrong create options</span><br><span class="line">error code 141: Duplicate unique key or constraint on write or update</span><br><span class="line">error code 142: Unknown character set used</span><br><span class="line">error code 143: Conflicting table definitions in sub-tables of MERGE table</span><br><span class="line">error code 144: Table is crashed and last repair failed</span><br><span class="line">error code 145: Table was marked as crashed and should be repaired</span><br><span class="line">error code 146: Lock timed out; Retry transaction</span><br><span class="line">error code 147: Lock table is full; Restart program with a larger locktable</span><br><span class="line">error code 148: Updates are not allowed under a read only transactions</span><br><span class="line">error code 149: Lock deadlock; Retry transaction</span><br><span class="line">error code 150: Foreign key constraint is incorrectly formed</span><br><span class="line">error code 151: Cannot add a child row</span><br><span class="line">error code 152: Cannot delete a parent row</span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Hadoop/" rel="tag"># Hadoop</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/12/12/Hadoop-%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98/" rel="next" title="数据挖掘">
+                <i class="fa fa-chevron-left"></i> 数据挖掘
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/12/13/NexT%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96%E2%80%94%E2%80%94Muse%E4%B8%BB%E9%A2%98%E4%BE%A7%E8%BE%B9%E6%A0%8F%E4%B8%8E%E7%9B%AE%E5%BD%95%E4%BD%8D%E7%BD%AE%E4%BC%98%E5%8C%96/" rel="prev" title="NexT主题美化——Muse主题侧边栏与目录位置优化">
+                NexT主题美化——Muse主题侧边栏与目录位置优化 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div id="gitalk-container"></div>
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/uploads/avatar_white.png"
+                alt="守夜" />
+            
+              <p class="site-author-name" itemprop="name">守夜</p>
+              <p class="site-description motion-element" itemprop="description">这里会放一些烂七八糟的东西 <br /> 包括但不仅限于 <br /> 代码，动漫，DD日常</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/">
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/">
+                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/Dreammer12138" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://twitter.com/SaberWang123" target="_blank" title="Twitter">
+                      
+                        <i class="fa fa-fw fa-twitter"></i>Twitter</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://space.bilibili.com/13390752" target="_blank" title="Bilibili">
+                      
+                        <i class="fa fa-fw fa-play"></i>Bilibili</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="http://music.163.com/m/user/home?id=607287352" target="_blank" title="网易云">
+                      
+                        <i class="fa fa-fw fa-music"></i>网易云</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Hadoop-常见错误"><span class="nav-number">1.</span> <span class="nav-text">Hadoop 常见错误</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#subprocess-failed-with-code-类型的错误"><span class="nav-number">1.1.</span> <span class="nav-text">subprocess failed with code 类型的错误</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">守夜</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- LOCAL: You can save these files to your site and update links -->
+  
+  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+  <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<!-- END LOCAL -->
+
+    
+      <script type="text/javascript">
+      function renderGitalk(){
+        var gitalk = new Gitalk({
+            owner: '',
+            repo: 'Blog-Comments',
+            clientID: '1ebb15722599a4c40cd6',
+            clientSecret: '2d2b7954ce054097bb041f3cae39b6e17d064711',
+            admin: 'Dreammer12138',
+            
+              distractionFreeMode: 'true'
+            
+            });
+        gitalk.render('gitalk-container');
+      }
+      renderGitalk();
+      </script>
+    
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
