@@ -770,31 +770,21 @@
 
 
 
-<!-- LOCAL: You can save these files to your site and update links -->
-  
-  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-  <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-<!-- END LOCAL -->
-
-    
-      <script type="text/javascript">
-      function renderGitalk(){
+   <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+   <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+   <script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.min.js"></script>
+   <script type="text/javascript">
         var gitalk = new Gitalk({
-            owner: '',
-            repo: 'Blog-Comments',
-            clientID: '1ebb15722599a4c40cd6',
-            clientSecret: '2d2b7954ce054097bb041f3cae39b6e17d064711',
-            admin: 'Dreammer12138',
-            
-              distractionFreeMode: 'true'
-            
-            });
-        gitalk.render('gitalk-container');
-      }
-      renderGitalk();
-      </script>
-    
-
+          clientID: '1ebb15722599a4c40cd6',
+          clientSecret: '2d2b7954ce054097bb041f3cae39b6e17d064711',
+          repo: 'Blog-Comments',
+          owner: 'Dreammer12138',
+          admin: ['Dreammer12138'],
+          id: md5(window.location.pathname),
+          distractionFreeMode: 'true'
+        })
+        gitalk.render('gitalk-container')
+       </script>
 
   
 
