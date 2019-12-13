@@ -1,65 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>NexT主题美化——Muse主题侧边栏与目录位置优化</title>
-    <url>/NexT%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96%E2%80%94%E2%80%94Muse%E4%B8%BB%E9%A2%98%E4%BE%A7%E8%BE%B9%E6%A0%8F%E4%B8%8E%E7%9B%AE%E5%BD%95%E4%BD%8D%E7%BD%AE%E4%BC%98%E5%8C%96/</url>
-    <content><![CDATA[<h3 id="NexT-主题优化——Muse"><a href="#NexT-主题优化——Muse" class="headerlink" title="NexT 主题优化——Muse"></a>NexT 主题优化——Muse</h3><p><strong>Hexo version: v4.1.0</strong></p>
-<p><strong>NexT version: v5.1.4</strong></p>
-<blockquote>
-<p>Hexo博客支持很多主题风格，其中<a href="https://github.com/theme-next/hexo-theme-next" target="_blank" rel="noopener">NexT</a>主题是Github上Star最多的主题，其一直在更新维护，支持非常多的外部插件和功能选项。我目前使用的是Next6.0版本，下面我会介绍基于NexT主题中Muse主题的界面美化手法。</p>
-</blockquote>
-<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p><strong>未优化</strong></p>
-<p><img src="/img/Muse.png" alt="Muse"></p>
-<p>可以看到未优化的Muse主题的侧边栏默认在右边，而且_config.yml中<code>sidebar position</code>字段是无法修改Muse主题的侧边栏位置的</p>
-<p><code># Sidebar Display, available value (only for Muse | Mist):</code></p>
-<p>同时博客标题和目录的布局都是相对布局，只要鼠标一滚动就会随着博文消失（讲道理这绝对是NexT开发者的锅），使用体验比较差，因此对其进行优化乃是大势所趋。话不多说，咱先开始。</p>
-<a id="more"></a>
-
-<h3 id="优化"><a href="#优化" class="headerlink" title="优化"></a>优化</h3><h4 id="侧边栏"><a href="#侧边栏" class="headerlink" title="侧边栏"></a>侧边栏</h4><p>侧边栏的位置其实各取所需就好，喜欢放在右边的话可以直接跳过这一段。</p>
-<h5 id="修改motion-js"><a href="#修改motion-js" class="headerlink" title="修改motion.js"></a>修改motion.js</h5><p>首先调整侧边栏的动画效果，让他从左边伸出来</p>
-<p>打开 <code>&lt;your blog&gt;/theme/next/source/js/src</code> ，找到 <code>motion.js</code> 并打开</p>
-<p><code>Ctrl + F</code> 查找 <code>paddingRight</code> 将其改为 <code>paddingLeft</code></p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">$(<span class="built_in">document</span>)</span><br><span class="line">        .on(<span class="string">'sidebar.isShowing'</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">          NexT.utils.isDesktop() &amp;&amp; $(<span class="string">'body'</span>).velocity(<span class="string">'stop'</span>).velocity(</span><br><span class="line">            &#123;<span class="attr">paddingLeft</span>: SIDEBAR_WIDTH&#125;,			</span><br><span class="line">            SIDEBAR_DISPLAY_DURATION</span><br><span class="line">          );</span><br><span class="line">        &#125;)</span><br><span class="line">        .on(<span class="string">'sidebar.isHiding'</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">   		&#125;);</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">hideSidebar: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">      NexT.utils.isDesktop() &amp;&amp; $(<span class="string">'body'</span>).velocity(<span class="string">'stop'</span>).velocity(&#123;<span class="attr">paddingLeft</span>: <span class="number">0</span>&#125;);</span><br><span class="line">      <span class="keyword">this</span>.sidebarEl.find(<span class="string">'.motion-element'</span>).velocity(<span class="string">'stop'</span>).css(<span class="string">'display'</span>, <span class="string">'none'</span>);</span><br><span class="line">      <span class="keyword">this</span>.sidebarEl.velocity(<span class="string">'stop'</span>).velocity(&#123;<span class="attr">width</span>: <span class="number">0</span>&#125;, &#123;<span class="attr">display</span>: <span class="string">'none'</span>&#125;);</span><br><span class="line"></span><br><span class="line">      sidebarToggleLines.init();</span><br><span class="line"></span><br><span class="line">      <span class="keyword">this</span>.sidebarEl.removeClass(<span class="string">'sidebar-active'</span>);</span><br><span class="line">      <span class="keyword">this</span>.sidebarEl.trigger(<span class="string">'sidebar.isHiding'</span>);</span><br><span class="line"></span><br><span class="line">      <span class="comment">// Prevent adding TOC to Overview if Overview was selected when close &amp; open sidebar.</span></span><br><span class="line">      <span class="keyword">if</span> (!!$(<span class="string">'.post-toc-wrap'</span>)) &#123;</span><br><span class="line">        <span class="keyword">if</span> ($(<span class="string">'.site-overview-wrap'</span>).css(<span class="string">'display'</span>) === <span class="string">'block'</span>) &#123;</span><br><span class="line">          $(<span class="string">'.post-toc-wrap'</span>).removeClass(<span class="string">'motion-element'</span>);</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">          $(<span class="string">'.post-toc-wrap'</span>).addClass(<span class="string">'motion-element'</span>);</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-
-<h5 id="调整CSS样式表"><a href="#调整CSS样式表" class="headerlink" title="调整CSS样式表"></a>调整CSS样式表</h5><p>找到 <code>&lt;your blog&gt;/theme/next/source/css/_common/components/sidebar/sidebar-toggle.styl</code></p>
-<p>修改类 <code>.sidebar-toggle</code></p>
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.sidebar-toggle</span> &#123;</span><br><span class="line">  <span class="attribute">position</span>: fixed;</span><br><span class="line">  <span class="attribute">left</span>: <span class="number">10%</span>;</span><br><span class="line">  <span class="attribute">bottom</span>: <span class="number">45px</span>;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">14px</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">14px</span>;</span><br><span class="line">  <span class="attribute">padding</span>: <span class="number">5px</span>;</span><br><span class="line">  <span class="attribute">background</span>: $black-deep;</span><br><span class="line">  <span class="attribute">line-height</span>: <span class="number">0</span>;</span><br><span class="line">  <span class="attribute">z-index</span>: $zindex-<span class="number">5</span>;</span><br><span class="line">  <span class="attribute">cursor</span>: pointer;</span><br><span class="line">  <span class="attribute">-webkit-transform</span>: <span class="built_in">translateZ</span>(<span class="number">0</span>);</span><br><span class="line"></span><br><span class="line">  +tablet() &#123;</span><br><span class="line">    fixbutton() if hexo-config('sidebar.onmobile');</span><br><span class="line">    hide() if not hexo-config('sidebar.onmobile');</span><br><span class="line">  &#125;</span><br><span class="line">  +<span class="selector-tag">mobile</span>() &#123;</span><br><span class="line">    fixbutton() if hexo-config('sidebar.onmobile');</span><br><span class="line">    hide() if not hexo-config('sidebar.onmobile');</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>CSS样式建议根据自己实际情况修改</p>
-<p>不懂CSS的话只需要将 <code>right</code> 字段删除，然后添加 <code>letf: xxpx;</code> 或者<code>left: xx%;</code>，分号一定要加</p>
-<p><code>xx</code>是数字，<code>px</code>是像素的意思，可以直观体现出距离位置</p>
-<h5 id="修改箭头动画"><a href="#修改箭头动画" class="headerlink" title="修改箭头动画"></a>修改箭头动画</h5><p>还是刚才的<code>motion.js</code>文件</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> sidebarToggleLine1st = <span class="keyword">new</span> SidebarToggleLine(&#123;</span><br><span class="line">  el: <span class="string">'.sidebar-toggle-line-first'</span>,</span><br><span class="line">  status: &#123;</span><br><span class="line">    arrow: &#123;<span class="attr">width</span>: <span class="string">'60%'</span>, <span class="attr">rotateZ</span>: <span class="string">'45deg'</span>, <span class="attr">top</span>: <span class="string">'2px'</span>, <span class="attr">left</span>: <span class="string">'50%'</span>&#125;,</span><br><span class="line">    close: &#123;<span class="attr">width</span>: <span class="string">'100%'</span>, <span class="attr">rotateZ</span>: <span class="string">'-45deg'</span>, <span class="attr">top</span>: <span class="string">'5px'</span>&#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;);</span><br><span class="line"><span class="keyword">var</span> sidebarToggleLine2nd = <span class="keyword">new</span> SidebarToggleLine(&#123;</span><br><span class="line">  el: <span class="string">'.sidebar-toggle-line-middle'</span>,</span><br><span class="line">  status: &#123;</span><br><span class="line">    arrow: &#123;<span class="attr">width</span>: <span class="string">'90%'</span>&#125;,</span><br><span class="line">    close: &#123;<span class="attr">opacity</span>: <span class="number">0</span>&#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;);</span><br><span class="line"><span class="keyword">var</span> sidebarToggleLine3rd = <span class="keyword">new</span> SidebarToggleLine(&#123;</span><br><span class="line">  el: <span class="string">'.sidebar-toggle-line-last'</span>,</span><br><span class="line">  status: &#123;</span><br><span class="line">    arrow: &#123;<span class="attr">width</span>: <span class="string">'60%'</span>, <span class="attr">rotateZ</span>: <span class="string">'-45deg'</span>, <span class="attr">top</span>: <span class="string">'-2px'</span>, <span class="attr">left</span>: <span class="string">'50%'</span>&#125;,</span><br><span class="line">    close: &#123;<span class="attr">width</span>: <span class="string">'100%'</span>, <span class="attr">rotateZ</span>: <span class="string">'45deg'</span>, <span class="attr">top</span>: <span class="string">'-5px'</span>&#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-
-<p><strong>侧边栏的工作就大功告成了</strong></p>
-<h4 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h4><p>刚开始我是打算把目录放在界面上端设置一个绝对位置让他停留在界面上的，但是由于要搭配背景的关系最终决定放在右面</p>
-<p>更改目录位置只需要修改一个文件</p>
-<p><code>&lt;your blog&gt;/theme/next/source/css/_schemes/Muse/sidebar/_menu.styl</code></p>
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.site-nav</span> &#123;</span><br><span class="line">  +mobile() &#123;</span><br><span class="line">    <span class="selector-tag">position</span>: <span class="selector-tag">absolute</span>;</span><br><span class="line">    <span class="selector-tag">left</span>: 0;</span><br><span class="line">    <span class="selector-tag">top</span>: 52<span class="selector-tag">px</span>;</span><br><span class="line">    <span class="selector-tag">margin</span>: 0;</span><br><span class="line">    <span class="selector-tag">width</span>: 100%;</span><br><span class="line">    <span class="selector-tag">padding</span>: 0;</span><br><span class="line">    <span class="selector-tag">background</span>: <span class="selector-tag">white</span>;</span><br><span class="line">    border-bottom: 1px solid $gray-lighter;</span><br><span class="line">    z-index: $zindex-5;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">/*以下为新增内容*/</span></span><br><span class="line">  <span class="selector-tag">position</span>: <span class="selector-tag">fixed</span>;</span><br><span class="line">  <span class="selector-tag">right</span>: 10%;</span><br><span class="line">  <span class="selector-tag">top</span>: 15%;</span><br><span class="line">  <span class="selector-tag">margin</span>: 0;</span><br><span class="line">  <span class="selector-tag">padding</span>: 0;</span><br><span class="line">  border-left: 1px solid $gray-lighter;</span><br><span class="line">  z-index: $zindex-5;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.menu</span> &#123;</span><br><span class="line">  +mobile() &#123; text-align: left; &#125;</span><br><span class="line">  <span class="comment">/*以下为新增内容*/</span></span><br><span class="line">  <span class="selector-tag">display</span>: <span class="selector-tag">flex</span>;</span><br><span class="line">  <span class="selector-tag">flex-direction</span>: <span class="selector-tag">column</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-<h4 id="社交链接"><a href="#社交链接" class="headerlink" title="社交链接"></a>社交链接</h4><p>默认的社交链接是 <code>inhert-block</code>行内块元素，因此它默认先填满一行再换行显示，观感不是太好，我们也可以靠修改css使他达到换行的效果</p>
-<p>打开 <code>&lt;your blog&gt;/theme/next/source/css/_common/components/sidebar-author-links.styl</code></p>
-<p>修改 <code>.links-of-author</code>类</p>
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.links-of-author</span> &#123;</span><br><span class="line">  <span class="attribute">margin-top</span>: <span class="number">20px</span>;</span><br><span class="line">  <span class="attribute">margin-left</span>: <span class="number">25%</span>;</span><br><span class="line">  <span class="attribute">text-align</span>: left;</span><br><span class="line">  <span class="attribute">padding</span>: <span class="number">0px</span> <span class="number">0px</span> <span class="number">0px</span> <span class="number">0px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>这样就大功告成了</p>
-<h4 id="成品"><a href="#成品" class="headerlink" title="成品"></a>成品</h4><p><img src="/img/Muse_u.png" alt="Muse"></p>
-]]></content>
-      <categories>
-        <category>code</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-        <tag>NexT</tag>
-        <tag>主题优化</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>关于</title>
+    <title>Chinese</title>
     <url>/Chinese/</url>
     <content><![CDATA[<h5 id="中国人，坚定的无产阶级者，不接受一切政治相关话题"><a href="#中国人，坚定的无产阶级者，不接受一切政治相关话题" class="headerlink" title="中国人，坚定的无产阶级者，不接受一切政治相关话题"></a>中国人，坚定的无产阶级者，不接受一切政治相关话题</h5><h6 id="已完成的项目"><a href="#已完成的项目" class="headerlink" title="已完成的项目"></a>已完成的项目</h6><table>
 <thead>
@@ -126,15 +68,85 @@
 <li><a href="https://space.bilibili.com/13390752" target="_blank" rel="noopener">Bilibili</a></li>
 </ul>
 ]]></content>
+      <categories>
+        <category>doc</category>
+      </categories>
+      <tags>
+        <tag>About</tag>
+      </tags>
   </entry>
   <entry>
-    <title>About</title>
+    <title>Japanese</title>
     <url>/Japanese/</url>
     <content><![CDATA[<h3 id="中国人ですが、日本語もOKです"><a href="#中国人ですが、日本語もOKです" class="headerlink" title="中国人ですが、日本語もOKです"></a>中国人ですが、日本語もOKです</h3><p>プログラマー</p>
 <p>大学生</p>
 <p>Vtuber推し</p>
 <p>###　このブログは日常のプログラムや攻略などいろいろなものをアップしています。</p>
 <h4 id="ご覧にきてくれて、本当にありがとうございます。"><a href="#ご覧にきてくれて、本当にありがとうございます。" class="headerlink" title="ご覧にきてくれて、本当にありがとうございます。"></a>ご覧にきてくれて、本当にありがとうございます。</h4><h4 id="仲良くしましょう。"><a href="#仲良くしましょう。" class="headerlink" title="仲良くしましょう。"></a>仲良くしましょう。</h4>]]></content>
+      <categories>
+        <category>doc</category>
+      </categories>
+      <tags>
+        <tag>About</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>NexT主题美化——Muse主题侧边栏与目录位置优化</title>
+    <url>/NexT%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96%E2%80%94%E2%80%94Muse%E4%B8%BB%E9%A2%98%E4%BE%A7%E8%BE%B9%E6%A0%8F%E4%B8%8E%E7%9B%AE%E5%BD%95%E4%BD%8D%E7%BD%AE%E4%BC%98%E5%8C%96/</url>
+    <content><![CDATA[<h3 id="NexT-主题优化——Muse"><a href="#NexT-主题优化——Muse" class="headerlink" title="NexT 主题优化——Muse"></a>NexT 主题优化——Muse</h3><p><strong>Hexo version: v4.1.0</strong></p>
+<p><strong>NexT version: v5.1.4</strong></p>
+<blockquote>
+<p>Hexo博客支持很多主题风格，其中<a href="https://github.com/theme-next/hexo-theme-next" target="_blank" rel="noopener">NexT</a>主题是Github上Star最多的主题，其一直在更新维护，支持非常多的外部插件和功能选项。我目前使用的是Next6.0版本，下面我会介绍基于NexT主题中Muse主题的界面美化手法。</p>
+</blockquote>
+<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p><strong>未优化</strong></p>
+<p><img src="/img/Muse.png" alt="Muse"></p>
+<p>可以看到未优化的Muse主题的侧边栏默认在右边，而且_config.yml中<code>sidebar position</code>字段是无法修改Muse主题的侧边栏位置的</p>
+<p><code># Sidebar Display, available value (only for Muse | Mist):</code></p>
+<p>同时博客标题和目录的布局都是相对布局，只要鼠标一滚动就会随着博文消失（讲道理这绝对是NexT开发者的锅），使用体验比较差，因此对其进行优化乃是大势所趋。话不多说，咱先开始。</p>
+<a id="more"></a>
+
+<h3 id="优化"><a href="#优化" class="headerlink" title="优化"></a>优化</h3><h4 id="侧边栏"><a href="#侧边栏" class="headerlink" title="侧边栏"></a>侧边栏</h4><p>侧边栏的位置其实各取所需就好，喜欢放在右边的话可以直接跳过这一段。</p>
+<h5 id="修改motion-js"><a href="#修改motion-js" class="headerlink" title="修改motion.js"></a>修改motion.js</h5><p>首先调整侧边栏的动画效果，让他从左边伸出来</p>
+<p>打开 <code>&lt;your blog&gt;/theme/next/source/js/src</code> ，找到 <code>motion.js</code> 并打开</p>
+<p><code>Ctrl + F</code> 查找 <code>paddingRight</code> 将其改为 <code>paddingLeft</code></p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">$(<span class="built_in">document</span>)</span><br><span class="line">        .on(<span class="string">'sidebar.isShowing'</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">          NexT.utils.isDesktop() &amp;&amp; $(<span class="string">'body'</span>).velocity(<span class="string">'stop'</span>).velocity(</span><br><span class="line">            &#123;<span class="attr">paddingLeft</span>: SIDEBAR_WIDTH&#125;,			</span><br><span class="line">            SIDEBAR_DISPLAY_DURATION</span><br><span class="line">          );</span><br><span class="line">        &#125;)</span><br><span class="line">        .on(<span class="string">'sidebar.isHiding'</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">   		&#125;);</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">hideSidebar: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">      NexT.utils.isDesktop() &amp;&amp; $(<span class="string">'body'</span>).velocity(<span class="string">'stop'</span>).velocity(&#123;<span class="attr">paddingLeft</span>: <span class="number">0</span>&#125;);</span><br><span class="line">      <span class="keyword">this</span>.sidebarEl.find(<span class="string">'.motion-element'</span>).velocity(<span class="string">'stop'</span>).css(<span class="string">'display'</span>, <span class="string">'none'</span>);</span><br><span class="line">      <span class="keyword">this</span>.sidebarEl.velocity(<span class="string">'stop'</span>).velocity(&#123;<span class="attr">width</span>: <span class="number">0</span>&#125;, &#123;<span class="attr">display</span>: <span class="string">'none'</span>&#125;);</span><br><span class="line"></span><br><span class="line">      sidebarToggleLines.init();</span><br><span class="line"></span><br><span class="line">      <span class="keyword">this</span>.sidebarEl.removeClass(<span class="string">'sidebar-active'</span>);</span><br><span class="line">      <span class="keyword">this</span>.sidebarEl.trigger(<span class="string">'sidebar.isHiding'</span>);</span><br><span class="line"></span><br><span class="line">      <span class="comment">// Prevent adding TOC to Overview if Overview was selected when close &amp; open sidebar.</span></span><br><span class="line">      <span class="keyword">if</span> (!!$(<span class="string">'.post-toc-wrap'</span>)) &#123;</span><br><span class="line">        <span class="keyword">if</span> ($(<span class="string">'.site-overview-wrap'</span>).css(<span class="string">'display'</span>) === <span class="string">'block'</span>) &#123;</span><br><span class="line">          $(<span class="string">'.post-toc-wrap'</span>).removeClass(<span class="string">'motion-element'</span>);</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">          $(<span class="string">'.post-toc-wrap'</span>).addClass(<span class="string">'motion-element'</span>);</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+<h5 id="调整CSS样式表"><a href="#调整CSS样式表" class="headerlink" title="调整CSS样式表"></a>调整CSS样式表</h5><p>找到 <code>&lt;your blog&gt;/theme/next/source/css/_common/components/sidebar/sidebar-toggle.styl</code></p>
+<p>修改类 <code>.sidebar-toggle</code></p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.sidebar-toggle</span> &#123;</span><br><span class="line">  <span class="attribute">position</span>: fixed;</span><br><span class="line">  <span class="attribute">left</span>: <span class="number">10%</span>;</span><br><span class="line">  <span class="attribute">bottom</span>: <span class="number">45px</span>;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">14px</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">14px</span>;</span><br><span class="line">  <span class="attribute">padding</span>: <span class="number">5px</span>;</span><br><span class="line">  <span class="attribute">background</span>: $black-deep;</span><br><span class="line">  <span class="attribute">line-height</span>: <span class="number">0</span>;</span><br><span class="line">  <span class="attribute">z-index</span>: $zindex-<span class="number">5</span>;</span><br><span class="line">  <span class="attribute">cursor</span>: pointer;</span><br><span class="line">  <span class="attribute">-webkit-transform</span>: <span class="built_in">translateZ</span>(<span class="number">0</span>);</span><br><span class="line"></span><br><span class="line">  +tablet() &#123;</span><br><span class="line">    fixbutton() if hexo-config('sidebar.onmobile');</span><br><span class="line">    hide() if not hexo-config('sidebar.onmobile');</span><br><span class="line">  &#125;</span><br><span class="line">  +<span class="selector-tag">mobile</span>() &#123;</span><br><span class="line">    fixbutton() if hexo-config('sidebar.onmobile');</span><br><span class="line">    hide() if not hexo-config('sidebar.onmobile');</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>CSS样式建议根据自己实际情况修改</p>
+<p>不懂CSS的话只需要将 <code>right</code> 字段删除，然后添加 <code>letf: xxpx;</code> 或者<code>left: xx%;</code>，分号一定要加</p>
+<p><code>xx</code>是数字，<code>px</code>是像素的意思，可以直观体现出距离位置</p>
+<h5 id="修改箭头动画"><a href="#修改箭头动画" class="headerlink" title="修改箭头动画"></a>修改箭头动画</h5><p>还是刚才的<code>motion.js</code>文件</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> sidebarToggleLine1st = <span class="keyword">new</span> SidebarToggleLine(&#123;</span><br><span class="line">  el: <span class="string">'.sidebar-toggle-line-first'</span>,</span><br><span class="line">  status: &#123;</span><br><span class="line">    arrow: &#123;<span class="attr">width</span>: <span class="string">'60%'</span>, <span class="attr">rotateZ</span>: <span class="string">'45deg'</span>, <span class="attr">top</span>: <span class="string">'2px'</span>, <span class="attr">left</span>: <span class="string">'50%'</span>&#125;,</span><br><span class="line">    close: &#123;<span class="attr">width</span>: <span class="string">'100%'</span>, <span class="attr">rotateZ</span>: <span class="string">'-45deg'</span>, <span class="attr">top</span>: <span class="string">'5px'</span>&#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;);</span><br><span class="line"><span class="keyword">var</span> sidebarToggleLine2nd = <span class="keyword">new</span> SidebarToggleLine(&#123;</span><br><span class="line">  el: <span class="string">'.sidebar-toggle-line-middle'</span>,</span><br><span class="line">  status: &#123;</span><br><span class="line">    arrow: &#123;<span class="attr">width</span>: <span class="string">'90%'</span>&#125;,</span><br><span class="line">    close: &#123;<span class="attr">opacity</span>: <span class="number">0</span>&#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;);</span><br><span class="line"><span class="keyword">var</span> sidebarToggleLine3rd = <span class="keyword">new</span> SidebarToggleLine(&#123;</span><br><span class="line">  el: <span class="string">'.sidebar-toggle-line-last'</span>,</span><br><span class="line">  status: &#123;</span><br><span class="line">    arrow: &#123;<span class="attr">width</span>: <span class="string">'60%'</span>, <span class="attr">rotateZ</span>: <span class="string">'-45deg'</span>, <span class="attr">top</span>: <span class="string">'-2px'</span>, <span class="attr">left</span>: <span class="string">'50%'</span>&#125;,</span><br><span class="line">    close: &#123;<span class="attr">width</span>: <span class="string">'100%'</span>, <span class="attr">rotateZ</span>: <span class="string">'45deg'</span>, <span class="attr">top</span>: <span class="string">'-5px'</span>&#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<p><strong>侧边栏的工作就大功告成了</strong></p>
+<h4 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h4><p>刚开始我是打算把目录放在界面上端设置一个绝对位置让他停留在界面上的，但是由于要搭配背景的关系最终决定放在右面</p>
+<p>更改目录位置只需要修改一个文件</p>
+<p><code>&lt;your blog&gt;/theme/next/source/css/_schemes/Muse/sidebar/_menu.styl</code></p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.site-nav</span> &#123;</span><br><span class="line">  +mobile() &#123;</span><br><span class="line">    <span class="selector-tag">position</span>: <span class="selector-tag">absolute</span>;</span><br><span class="line">    <span class="selector-tag">left</span>: 0;</span><br><span class="line">    <span class="selector-tag">top</span>: 52<span class="selector-tag">px</span>;</span><br><span class="line">    <span class="selector-tag">margin</span>: 0;</span><br><span class="line">    <span class="selector-tag">width</span>: 100%;</span><br><span class="line">    <span class="selector-tag">padding</span>: 0;</span><br><span class="line">    <span class="selector-tag">background</span>: <span class="selector-tag">white</span>;</span><br><span class="line">    border-bottom: 1px solid $gray-lighter;</span><br><span class="line">    z-index: $zindex-5;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">/*以下为新增内容*/</span></span><br><span class="line">  <span class="selector-tag">position</span>: <span class="selector-tag">fixed</span>;</span><br><span class="line">  <span class="selector-tag">right</span>: 10%;</span><br><span class="line">  <span class="selector-tag">top</span>: 15%;</span><br><span class="line">  <span class="selector-tag">margin</span>: 0;</span><br><span class="line">  <span class="selector-tag">padding</span>: 0;</span><br><span class="line">  border-left: 1px solid $gray-lighter;</span><br><span class="line">  z-index: $zindex-5;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.menu</span> &#123;</span><br><span class="line">  +mobile() &#123; text-align: left; &#125;</span><br><span class="line">  <span class="comment">/*以下为新增内容*/</span></span><br><span class="line">  <span class="selector-tag">display</span>: <span class="selector-tag">flex</span>;</span><br><span class="line">  <span class="selector-tag">flex-direction</span>: <span class="selector-tag">column</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="社交链接"><a href="#社交链接" class="headerlink" title="社交链接"></a>社交链接</h4><p>默认的社交链接是 <code>inhert-block</code>行内块元素，因此它默认先填满一行再换行显示，观感不是太好，我们也可以靠修改css使他达到换行的效果</p>
+<p>打开 <code>&lt;your blog&gt;/theme/next/source/css/_common/components/sidebar-author-links.styl</code></p>
+<p>修改 <code>.links-of-author</code>类</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.links-of-author</span> &#123;</span><br><span class="line">  <span class="attribute">margin-top</span>: <span class="number">20px</span>;</span><br><span class="line">  <span class="attribute">margin-left</span>: <span class="number">25%</span>;</span><br><span class="line">  <span class="attribute">text-align</span>: left;</span><br><span class="line">  <span class="attribute">padding</span>: <span class="number">0px</span> <span class="number">0px</span> <span class="number">0px</span> <span class="number">0px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>这样就大功告成了</p>
+<h4 id="成品"><a href="#成品" class="headerlink" title="成品"></a>成品</h4><p><img src="/img/Muse_u.png" alt="Muse"></p>
+]]></content>
+      <categories>
+        <category>code</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>NexT</tag>
+        <tag>主题优化</tag>
+      </tags>
   </entry>
   <entry>
     <title>Hadoop 常见错误</title>
