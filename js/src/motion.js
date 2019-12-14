@@ -360,10 +360,10 @@ $(window).resize(() => {
 })
 
 function navside() {
-  var mr = parseFloat($('div.main-inner').css('margin-right').replace('px', ''))
-  var te = mr - 46
+  var width = $(window).width()
+  var w = width*0.15
   $('#navbarside').animate({
-    'width': te*0.5 + "px"
-  }, 'fast')
+    'width': w + "px"
+  })
 
 }
