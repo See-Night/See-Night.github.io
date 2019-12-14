@@ -350,3 +350,20 @@ $(document).ready(function () {
   };
 
 });
+
+$(window).ready(() => {
+  navside()
+})
+
+$(window).resize(() => {
+  navside()
+})
+
+function navside() {
+  var mr = parseFloat($('div.main-inner').css('margin-right').replace('px', ''))
+  var te = mr - 46
+  $('#navbarside').animate({
+    'width': te*0.5 + "px"
+  }, 'fast')
+
+}
