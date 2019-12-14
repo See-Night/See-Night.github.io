@@ -361,7 +361,7 @@ $(window).resize(() => {
 
 function navside() {
   var width = $(window).width()
-  var w = width*0.15
+  var w = width*0.10
   $('#navbarside').animate({
     'width': w + "px"
   })
