@@ -9,6 +9,8 @@
 <p>索性Gnome桌面支持用户自行设计主题，于是有不少大佬把Ubuntu玩出了花。</p>
 <p>当然优化美化这种事智者见智，适合自己最重要。</p>
 </blockquote>
+<a id="more"></a>
+
 <h2 id="更换软件源"><a href="#更换软件源" class="headerlink" title="更换软件源"></a>更换软件源</h2><p>由于众所周知的原因Ubuntu的软件源有一定几率无法使用（得看网络运营商和所在区域），因此换源就成为了Ubuntu用户每次安装完系统的首要任务</p>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 打开sources.list文件</span></span><br><span class="line">sudo nano /etc/apt/sources.list</span><br><span class="line"><span class="meta">#</span><span class="bash"> 将文件中所有的域名更换成可用软件源的域名并保存</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 我这里使用的是中科大源 http://mirrors.ustc.edu.cn/</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 更新</span></span><br><span class="line">sudo apt update</span><br></pre></td></tr></table></figure>
 
