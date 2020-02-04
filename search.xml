@@ -3,7 +3,8 @@
   <entry>
     <title>搭建远程书架</title>
     <url>/2020-02-04/%E6%90%AD%E5%BB%BA%E8%BF%9C%E7%A8%8B%E4%B9%A6%E6%9E%B6/</url>
-    <content><![CDATA[<h1 id="Linux服务器搭建远程书架"><a href="#Linux服务器搭建远程书架" class="headerlink" title="Linux服务器搭建远程书架"></a>Linux服务器搭建远程书架</h1><hr>
+    <content><![CDATA[<p><strong style="font-size: 50px">Linux服务器搭建远程书架</strong></p>
+<hr>
 <blockquote>
 <p>由于众所周知的原因最近在家里歇着实在无聊，游戏换了一个又一个，感觉生活枯燥乏味。于是又捡起以前弃掉的轻小说看了起来。</p>
 <p>重新在网上搜索资源无疑是一件烦心事，今天早上突发奇想干脆搭建一个云端的书架用来储存小说资源之类的岂不美哉？于是研究了一天总算是大功告成，记录以下相关的内容。</p>
