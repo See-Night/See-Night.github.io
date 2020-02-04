@@ -47,6 +47,20 @@
 </ul>
 <p>登陆，就可以使用了</p>
 <p>剩下的配置都在网页端进行，傻瓜式配置就不讲了，自行探索吧</p>
+<h2 id="使用systemd在Linux下启动Calibre-Web服务"><a href="#使用systemd在Linux下启动Calibre-Web服务" class="headerlink" title="使用systemd在Linux下启动Calibre-Web服务"></a>使用systemd在Linux下启动Calibre-Web服务</h2><p>每次运行都必须执行<code>cps.py</code>太麻烦了，我们可以将其设置一个服务来启动</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 创建服务文件</span><br><span class="line">sudo vim &#x2F;etc&#x2F;systemd&#x2F;system&#x2F;cps.service</span><br></pre></td></tr></table></figure>
+
+<p>将以下代码复制进去</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[Unit]</span><br><span class="line">Description&#x3D;Calibre-Web</span><br><span class="line"></span><br><span class="line">[Service]</span><br><span class="line">Type&#x3D;simple</span><br><span class="line">User&#x3D;root</span><br><span class="line">ExecStart&#x3D;&#x2F;usr&#x2F;bin&#x2F;python3 &lt;cps path&gt;</span><br><span class="line">WorkingDirectory&#x3D;&lt;calibre-web path&gt;</span><br><span class="line"></span><br><span class="line">[Install]</span><br><span class="line">WantedBy&#x3D;multi-user.target</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><code>&lt;cps path&gt;</code>是<code>cps.py</code>文件的地址，以我的配置为例就是<code>/root/calibre-web/cps.py</code></li>
+<li><code>&lt;calibre-web path&gt;</code>是<code>calibre-web</code>的文件地址，以我的配置为例就是<code>/root/calibre-web</code></li>
+</ul>
+<p>启动服务</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo systemctl enable cps.service</span><br></pre></td></tr></table></figure>
+
+<p>大功告成</p>
 ]]></content>
       <categories>
         <category>doc</category>
