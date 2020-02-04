@@ -1,6 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>搭建远程书架</title>
+    <url>/2020-02-04/%E6%90%AD%E5%BB%BA%E8%BF%9C%E7%A8%8B%E4%B9%A6%E6%9E%B6/</url>
+    <content><![CDATA[<h1 id="Linux服务器搭建远程书架"><a href="#Linux服务器搭建远程书架" class="headerlink" title="Linux服务器搭建远程书架"></a>Linux服务器搭建远程书架</h1><hr>
+<blockquote>
+<p>由于众所周知的原因最近在家里歇着实在无聊，游戏换了一个又一个，感觉生活枯燥乏味。于是又捡起以前弃掉的轻小说看了起来。</p>
+<p>重新在网上搜索资源无疑是一件烦心事，今天早上突发奇想干脆搭建一个云端的书架用来储存小说资源之类的岂不美哉？于是研究了一天总算是大功告成，记录以下相关的内容。</p>
+</blockquote>
+<p><strong>感谢<a href="https://github.com/janeczku" target="_blank" rel="noopener">@janeczku</a>的<code>calibre-web</code>项目对此教程的技术支持</strong></p>
+<a id="more"></a>
+
+<h2 id="相关软件以及服务"><a href="#相关软件以及服务" class="headerlink" title="相关软件以及服务"></a>相关软件以及服务</h2><ul>
+<li>Calibre for Linux</li>
+<li>Calibre-web</li>
+<li>python3</li>
+</ul>
+<h2 id="安装Calibre-for-Linux"><a href="#安装Calibre-for-Linux" class="headerlink" title="安装Calibre for Linux"></a>安装Calibre for Linux</h2><p>Calibre本身是一款Linux平台上的阅读管理器，支持PDF、EPUB等大多数文档的阅读</p>
+<h3 id="安装-Python3"><a href="#安装-Python3" class="headerlink" title="安装 Python3"></a>安装 Python3</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo apt install -y python3 python3-pip</span><br></pre></td></tr></table></figure>
+
+<h3 id="安装-Calibre"><a href="#安装-Calibre" class="headerlink" title="安装 Calibre"></a>安装 Calibre</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo -v &amp;&amp; wget -nv -O- https://download.calibre-ebook.com/linux-installer.sh | sudo sh /dev/stdin</span><br></pre></td></tr></table></figure>
+
+<h2 id="安装Calibre-web"><a href="#安装Calibre-web" class="headerlink" title="安装Calibre-web"></a>安装Calibre-web</h2><p><a href="https://github.com/janeczku/calibre-web" target="_blank" rel="noopener">Calibre-web</a>是GitHub上一位大佬写的Calibre管理Web程序。支持用户直接通过浏览器访问Calibre的书库并进行操作</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 克隆远程仓库</span></span><br><span class="line">git clone https://github.com/janeczku/calibre-web.git</span><br><span class="line">cd calibre-web</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 安装python依赖</span></span><br><span class="line">sudo pip3 install --target vendor -r requirements.txt</span><br></pre></td></tr></table></figure>
+
+<h2 id="配置Calibre"><a href="#配置Calibre" class="headerlink" title="配置Calibre"></a>配置Calibre</h2><p>一般来说，Calibre是运行在具有可视化界面的Linux系统上的（例如Ubuntu Desktop等），命令行下Calibre无法使用。但是，我们需要使用的只有Calibre的书库，即Calibre储存电子书的数据库。</p>
+<p>Calibre为我们提供了<code>Calibredb</code>的数据库程序，用来对书库进行增删改查，这就为服务器也提供了使用Calibre的可能性</p>
+<h3 id="初始化Calibre"><a href="#初始化Calibre" class="headerlink" title="初始化Calibre"></a>初始化Calibre</h3><p>Calibre使用前需要用户设置书库的存储位置</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 新建文件夹用来储存书库</span></span><br><span class="line">mkdir ebook</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 初始化Calibre</span></span><br><span class="line">calibre --with-library=/root/ebook</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 别管之后的报错，只要执行完这一步就建好书库了</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="添加图书"><a href="#添加图书" class="headerlink" title="添加图书"></a>添加图书</h3><p>通过scp或者ftp等服务将电子书文件上传到服务器上，比如我将小说都上传到了/root/book文件夹下</p>
+<p>使用<code>calibredb</code>将电子书添加到calibre中</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cd /root/book</span><br><span class="line">calibredb add *</span><br></pre></td></tr></table></figure>
+
+<h2 id="启动Calibre-web"><a href="#启动Calibre-web" class="headerlink" title="启动Calibre-web"></a>启动Calibre-web</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cd /root/calibre-web</span><br><span class="line">python3 cps.py</span><br></pre></td></tr></table></figure>
+
+<h2 id="配置Calibre-web"><a href="#配置Calibre-web" class="headerlink" title="配置Calibre-web"></a>配置Calibre-web</h2><p>浏览器打开<code>http://&lt;server address&gt;:8083</code> (<server address>是你的服务器地址)</p>
+<p><img src="img/%E4%BA%91%E7%AB%AF%E4%B9%A6%E6%9E%B6/%E9%85%8D%E7%BD%AEcalibre-web.png" alt="配置Calibre-web"></p>
+<p>在<code>Calibre数据库位置</code>中填入<code>/root/ebook</code>（即你的书库地址）</p>
+<p>点击提交</p>
+<h2 id="登陆Calibre-web"><a href="#登陆Calibre-web" class="headerlink" title="登陆Calibre-web"></a>登陆Calibre-web</h2><p>提交数据库以后点击登陆按钮跳转到登陆界面</p>
+<p><img src="img/%E4%BA%91%E7%AB%AF%E4%B9%A6%E6%9E%B6/login.png" alt="login"></p>
+<ul>
+<li>用户名：admin</li>
+<li>密码：admin123</li>
+</ul>
+<p>登陆，就可以使用了</p>
+<p>剩下的配置都在网页端进行，傻瓜式配置就不讲了，自行探索吧</p>
+]]></content>
+      <categories>
+        <category>doc</category>
+      </categories>
+      <tags>
+        <tag>ubuntu</tag>
+        <tag>远程书架</tag>
+        <tag>cloud</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Ubuntu19.10主题美化</title>
     <url>/2020-01-23/Ubuntu19-10%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96/</url>
     <content><![CDATA[<h1 id="Ubuntu-19-10-主题美化"><a href="#Ubuntu-19-10-主题美化" class="headerlink" title="Ubuntu 19.10 主题美化"></a>Ubuntu 19.10 主题美化</h1><blockquote>
