@@ -36,11 +36,11 @@
 <h2 id="启动Calibre-web"><a href="#启动Calibre-web" class="headerlink" title="启动Calibre-web"></a>启动Calibre-web</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cd /root/calibre-web</span><br><span class="line">python3 cps.py</span><br></pre></td></tr></table></figure>
 
 <h2 id="配置Calibre-web"><a href="#配置Calibre-web" class="headerlink" title="配置Calibre-web"></a>配置Calibre-web</h2><p>浏览器打开<code>http://&lt;server address&gt;:8083</code> (<server address>是你的服务器地址)</p>
-<p><img src="img/%E4%BA%91%E7%AB%AF%E4%B9%A6%E6%9E%B6/%E9%85%8D%E7%BD%AEcalibre-web.png" alt="配置Calibre-web"></p>
+<p><img src="/img/%E4%BA%91%E7%AB%AF%E4%B9%A6%E6%9E%B6/%E9%85%8D%E7%BD%AEcalibre-web.png" alt="配置Calibre-web"></p>
 <p>在<code>Calibre数据库位置</code>中填入<code>/root/ebook</code>（即你的书库地址）</p>
 <p>点击提交</p>
 <h2 id="登陆Calibre-web"><a href="#登陆Calibre-web" class="headerlink" title="登陆Calibre-web"></a>登陆Calibre-web</h2><p>提交数据库以后点击登陆按钮跳转到登陆界面</p>
-<p><img src="img/%E4%BA%91%E7%AB%AF%E4%B9%A6%E6%9E%B6/login.png" alt="login"></p>
+<p><img src="/img/%E4%BA%91%E7%AB%AF%E4%B9%A6%E6%9E%B6/login.png" alt="login"></p>
 <ul>
 <li>用户名：admin</li>
 <li>密码：admin123</li>
