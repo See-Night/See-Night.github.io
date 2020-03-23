@@ -1,6 +1,138 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Django+Nginx+Uwsgi+Https环境开发文档——环境搭建</title>
+    <url>/2020-03-23/Django-Nginx-Uwsgi-Https%E7%8E%AF%E5%A2%83%E5%BC%80%E5%8F%91%E6%96%87%E6%A1%A3%E2%80%94%E2%80%94%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</url>
+    <content><![CDATA[<blockquote>
+<p>以Python为Web主要开发环境的开发者大多数会采用Django+Uwsgi的框架来进行开发，因此必不可少的要接触服务器环境的搭建以及维护工作。</p>
+<p>本文档以介绍和总结服务器环境搭建为主。</p>
+</blockquote>
+<h1 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h1><h2 id="硬件环境"><a href="#硬件环境" class="headerlink" title="硬件环境"></a>硬件环境</h2><ul>
+<li>RASPBERRY PI 3B+</li>
+<li>100Mbps 2.4GHz Wi-Fi Network</li>
+<li>320GB Western Digital HHD</li>
+</ul>
+<h2 id="系统环境"><a href="#系统环境" class="headerlink" title="系统环境"></a>系统环境</h2><ul>
+<li>Raspbian GNU/Linux 10 (buster) armv7l</li>
+</ul>
+<h2 id="软件环境"><a href="#软件环境" class="headerlink" title="软件环境"></a>软件环境</h2><ul>
+<li>Bash 5.0.3</li>
+<li>vim 8.1</li>
+</ul>
+<a id="more"></a>
+
+<h1 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h1><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>Python现在最稳定的版本是Python3.7，当然现在官网已经推出了3.8，其实哪个版本都不重要，服务器能运行就行。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">更新软件包</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> sudo apt update</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> sudo apt upgrade</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash">安装python3和pip3</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> sudo apt install python3 python3-pip</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="更换pip源"><a href="#更换pip源" class="headerlink" title="更换pip源"></a>更换pip源</h2><p>由于网络原因国内一部分地区访问官方的源会有网络问题，因此我们可以将源换成国内的镜像源</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> sudo vim /root/.pip/pip.conf</span></span><br></pre></td></tr></table></figure>
+
+<p>如果没有这个文件的话就新建一个</p>
+<p>将<code>pip.conf</code>中的内容改为</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">[global]</span><br><span class="line"><span class="meta">#</span><span class="bash"> 阿里源</span></span><br><span class="line">index-url = https://mirrors.aliyun.com/pypi/simple/</span><br><span class="line"><span class="meta">#</span><span class="bash"> 中科大源</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> index-url = https://pypi.mirrors.ustc.edu.cn/simple/</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 豆瓣源</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> index-url = http://pypi.douban.com/simple/</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 清华源</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> index-url = https://pypi.tuna.tsinghua.edu.cn/simple/</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="Django"><a href="#Django" class="headerlink" title="Django"></a>Django</h1><h2 id="安装-1"><a href="#安装-1" class="headerlink" title="安装"></a>安装</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> sudo pip3 install django</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="新建Django项目"><a href="#新建Django项目" class="headerlink" title="新建Django项目"></a>新建Django项目</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> django-admin startproject &lt;project&gt;</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><code>&lt;project&gt;</code>是你的项目名称</li>
+</ul>
+<h2 id="配置项目AllowHost"><a href="#配置项目AllowHost" class="headerlink" title="配置项目AllowHost"></a>配置项目AllowHost</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">cd</span> &lt;project&gt;</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> sudo vim &lt;project&gt;/settings.py</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 找到ALLOWED_HOSTS，将它的值从[]改成[<span class="string">'*'</span>]</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 保存退出</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><code>&lt;project&gt;</code>是你的项目名称</li>
+</ul>
+<h2 id="测试启动"><a href="#测试启动" class="headerlink" title="测试启动"></a>测试启动</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> python3 manager.py runserver 0.0.0.0:9000</span></span><br></pre></td></tr></table></figure>
+
+<p>打开浏览器，在地址栏输入<code>&lt;host&gt;:9000</code></p>
+<p><img src="/img/Django/django.png" alt="django"></p>
+<p>启动成功</p>
+<h1 id="Uwsgi"><a href="#Uwsgi" class="headerlink" title="Uwsgi"></a>Uwsgi</h1><h2 id="安装-2"><a href="#安装-2" class="headerlink" title="安装"></a>安装</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> sudo pip3 install uwsgi</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="测试uwsgi-Django"><a href="#测试uwsgi-Django" class="headerlink" title="测试uwsgi+Django"></a>测试uwsgi+Django</h2><h3 id="进入刚刚创建的项目"><a href="#进入刚刚创建的项目" class="headerlink" title="进入刚刚创建的项目"></a>进入刚刚创建的项目</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">cd</span> &lt;project&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="uwsgi测试"><a href="#uwsgi测试" class="headerlink" title="uwsgi测试"></a>uwsgi测试</h3><h4 id="启动uwsgi"><a href="#启动uwsgi" class="headerlink" title="启动uwsgi"></a>启动uwsgi</h4><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> uwsgi --http :8080 --module &lt;project&gt;.wsgi</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><code>&lt;project&gt;</code>是你的项目名称</li>
+</ul>
+<h4 id="浏览器测试"><a href="#浏览器测试" class="headerlink" title="浏览器测试"></a>浏览器测试</h4><p>浏览器输入<code>&lt;host&gt;:8080</code></p>
+<p><img src="/img/Django/django.png" alt="django"></p>
+<p>启动成功</p>
+<h1 id="Nginx"><a href="#Nginx" class="headerlink" title="Nginx"></a>Nginx</h1><h2 id="安装-3"><a href="#安装-3" class="headerlink" title="安装"></a>安装</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> sudo apt install nginx</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="测试Nginx"><a href="#测试Nginx" class="headerlink" title="测试Nginx"></a>测试Nginx</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo cat /etc/nginx/uwsgi_params</span><br><span class="line"></span><br><span class="line">uwsgi_param  QUERY_STRING       $query_string;</span><br><span class="line">uwsgi_param  REQUEST_METHOD     $request_method;</span><br><span class="line">uwsgi_param  CONTENT_TYPE       $content_type;</span><br><span class="line">uwsgi_param  CONTENT_LENGTH     $content_length;</span><br><span class="line"></span><br><span class="line">uwsgi_param  REQUEST_URI        $request_uri;</span><br><span class="line">uwsgi_param  PATH_INFO          $document_uri;</span><br><span class="line">uwsgi_param  DOCUMENT_ROOT      $document_root;</span><br><span class="line">uwsgi_param  SERVER_PROTOCOL    $server_protocol;</span><br><span class="line">uwsgi_param  REQUEST_SCHEME     $scheme;</span><br><span class="line">uwsgi_param  HTTPS              $https if_not_empty;</span><br><span class="line"></span><br><span class="line">uwsgi_param  REMOTE_ADDR        $remote_addr;</span><br><span class="line">uwsgi_param  REMOTE_PORT        $remote_port;</span><br><span class="line">uwsgi_param  SERVER_PORT        $server_port;</span><br><span class="line">uwsgi_param  SERVER_NAME        $server_name;</span><br></pre></td></tr></table></figure>
+
+<h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><h3 id="新建配置文件"><a href="#新建配置文件" class="headerlink" title="新建配置文件"></a>新建配置文件</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 删除默认的配置</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> sudo rm /etc/nginx/site-enabled/*</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> sudo rm /etc/nginx/site-available/*</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 新建用户配置</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> sudo touch /etc/nginx/site-enabled/nginx.conf</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 软链</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> sudo ln -s /etc/nginx/site-enabled/nginx.conf /etc/nginx/site-available/nginx.conf</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 编写配置文件</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> sudo vim /etc/nginx/site-enbaled/nginx.conf</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="nginx-conf"><a href="#nginx-conf" class="headerlink" title="nginx.conf"></a>nginx.conf</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> django组件连接</span></span><br><span class="line">upstream django&#123;</span><br><span class="line"><span class="meta">	#</span><span class="bash"> tmp/uwsgi_1.sock只是sock文件的路径，可以自行定义</span></span><br><span class="line">	server unix:///tmp/uwsgi_1.sock;</span><br><span class="line">&#125;</span><br><span class="line">server &#123;</span><br><span class="line">    # 监视的网站端口</span><br><span class="line">    listen    80;</span><br><span class="line">    # UTF-8编码</span><br><span class="line">    charset    utf-8;</span><br><span class="line">    # 最大上传大小128M，可自由定义</span><br><span class="line">    client_max_body_size 128M;  </span><br><span class="line">    # 媒体文件   </span><br><span class="line">    location /media  &#123;</span><br><span class="line">        alias /&lt;自定义路径&gt;/media; </span><br><span class="line">    &#125;</span><br><span class="line">    # 静态文件</span><br><span class="line">    location /static &#123;</span><br><span class="line">        alias /&lt;自定义路径&gt;/static; # 静态网页存放，位置可自定义，地址写详细</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    # 其他交由django处理</span><br><span class="line">    location / &#123;</span><br><span class="line">        uwsgi_pass  django;</span><br><span class="line">        include    uwsgi_params; # uwsgi</span><br><span class="line">    &#125; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>保存退出</p>
+<h3 id="测试配置文件"><a href="#测试配置文件" class="headerlink" title="测试配置文件"></a>测试配置文件</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> sudo nginx -t</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="/img/Django/nginx.png" alt="django"></p>
+<h3 id="重启Nginx服务"><a href="#重启Nginx服务" class="headerlink" title="重启Nginx服务"></a>重启Nginx服务</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> sudo /etc/init.d/nginx restart</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="测试Django-Uwsgi-Nginx"><a href="#测试Django-Uwsgi-Nginx" class="headerlink" title="测试Django+Uwsgi+Nginx"></a>测试Django+Uwsgi+Nginx</h2><h3 id="使用ini文件配置服务器启动"><a href="#使用ini文件配置服务器启动" class="headerlink" title="使用ini文件配置服务器启动"></a>使用ini文件配置服务器启动</h3><h4 id="自行新建一个文件夹，用来储存ini文件"><a href="#自行新建一个文件夹，用来储存ini文件" class="headerlink" title="自行新建一个文件夹，用来储存ini文件"></a>自行新建一个文件夹，用来储存ini文件</h4><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> sudo vim uwsgi.ini</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="uwsgi-ini"><a href="#uwsgi-ini" class="headerlink" title="uwsgi.ini"></a>uwsgi.ini</h4><figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="section">[uwsgi]</span></span><br><span class="line"><span class="attr">chdir</span> = &lt;你的项目地址&gt;</span><br><span class="line"><span class="attr">socket</span> = /tmp/uwsgi_1.sock</span><br><span class="line"><span class="attr">module</span> = &lt;你的项目名称&gt;.wsgi</span><br><span class="line"><span class="attr">chmod-socket</span> = <span class="number">666</span></span><br><span class="line"><span class="attr">processes</span> = <span class="number">4</span></span><br><span class="line"><span class="attr">master</span> = <span class="literal">true</span></span><br><span class="line"><span class="attr">vacuum</span> = <span class="literal">true</span></span><br><span class="line"><span class="attr">uid</span> = pi</span><br><span class="line"><span class="attr">gid</span> = pi</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><code>chdir</code>  你的项目绝对路径</li>
+<li><code>socket</code>  之前配置nginx.conf时设置的路径</li>
+<li><code>module</code>  项目名称.wsgi</li>
+</ul>
+<h4 id="新建系统服务用来后台启动"><a href="#新建系统服务用来后台启动" class="headerlink" title="新建系统服务用来后台启动"></a>新建系统服务用来后台启动</h4><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> sudo vim /etc/systemd/system/emperor.uwsgi.service</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">[Unit]</span><br><span class="line">Description=uWSGI Emperor</span><br><span class="line">After=syslog.target</span><br><span class="line">[Service]</span><br><span class="line">ExecStart=/usr/local/bin/uwsgi --emperor &lt;ini文件路径&gt; --daemonize /var/log/uwsgi_emperor.log</span><br><span class="line">RuntimeDirectory=uwsgi</span><br><span class="line">KillSignal=SIGQUIT</span><br><span class="line">Restart=on-failure</span><br><span class="line">Type=forking</span><br><span class="line">[Install]</span><br><span class="line">WantedBy=multi-user.target</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> sudo systemctl <span class="built_in">enable</span> emperor.uwsgi.service</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> sudo systemctl start emperor.uwsgi.service</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h3><p>浏览器输入<code>http://&lt;host&gt;</code></p>
+<p><img src="/img/Django/django.png" alt="django"></p>
+<h1 id="Https"><a href="#Https" class="headerlink" title="Https"></a>Https</h1><p>https作为当今主流的协议自然是应该兼容一下的</p>
+<h2 id="生成ssl证书"><a href="#生成ssl证书" class="headerlink" title="生成ssl证书"></a>生成ssl证书</h2><h3 id="安装openssl"><a href="#安装openssl" class="headerlink" title="安装openssl"></a>安装openssl</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ sudo apt install openssl</span><br></pre></td></tr></table></figure>
+
+<h3 id="新建文件夹用来存放证书"><a href="#新建文件夹用来存放证书" class="headerlink" title="新建文件夹用来存放证书"></a>新建文件夹用来存放证书</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> sudo mkdir /usr/<span class="built_in">local</span>/nginx</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="生成证书"><a href="#生成证书" class="headerlink" title="生成证书"></a>生成证书</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">cd</span> /usr/<span class="built_in">local</span>/nginx</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> sudo openssl genrsa -des3 -out server.key 4096</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> sudo openssl req -new -key server.key -out server.csr</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> sudo cp server.key server.key.org</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> sudo openssl rsa -<span class="keyword">in</span> server.key.org -out server.key</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> sudo openssl x509 -req -days 365 -<span class="keyword">in</span> server.csr -signkey server.key -out server.crt</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="修改Nginx配置文件"><a href="#修改Nginx配置文件" class="headerlink" title="修改Nginx配置文件"></a>修改Nginx配置文件</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> sudo vim /etc/nginx/site-enabled/nginx.conf</span></span><br></pre></td></tr></table></figure>
+
+<p>在原有的文件末尾添加以下内容</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">server &#123;</span><br><span class="line">	listen 					443;</span><br><span class="line">	charset					utf-8;</span><br><span class="line">	client_max_body_size 	512M;</span><br><span class="line">	ssl                     on;</span><br><span class="line">    ssl_certificate         /usr/local/nginx/server.crt;</span><br><span class="line">    ssl_certificate_key     /usr/local/nginx/server.key;</span><br><span class="line">    ssl_session_timeout     5m;</span><br><span class="line">    </span><br><span class="line">    location / &#123;</span><br><span class="line">    	uwsgi_pass      django;</span><br><span class="line">        include         uwsgi_params;</span><br><span class="line">    &#125;</span><br><span class="line">   	location /media &#123;</span><br><span class="line">        alias /website/media;</span><br><span class="line">    &#125;</span><br><span class="line">    location /static &#123;</span><br><span class="line">        alias /website/static;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>测试配置文件</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> sudo nginx -t</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="/img/Django/nginx.png" alt="django"></p>
+<h2 id="重启Nginx"><a href="#重启Nginx" class="headerlink" title="重启Nginx"></a>重启Nginx</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ sudo &#x2F;etc&#x2F;init.d&#x2F;nginx restart</span><br></pre></td></tr></table></figure>
+
+<p><img src="/img/Django/django.png" alt="django"></p>
+<p>成功</p>
+<h2 id="强制Https"><a href="#强制Https" class="headerlink" title="强制Https"></a>强制Https</h2><p>毕竟都有Https了要啥Http啊</p>
+<h3 id="修改Nginx配置文件-1"><a href="#修改Nginx配置文件-1" class="headerlink" title="修改Nginx配置文件"></a>修改Nginx配置文件</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> sudo vim /etc/nginx/site-enabled/nginx.conf</span></span><br></pre></td></tr></table></figure>
+
+<p>把之前http的文件配置全部注释，换成</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">server &#123;</span><br><span class="line">	listen 					80;</span><br><span class="line">	charset					utf-8;</span><br><span class="line">	client_max_body_size 	512M;</span><br><span class="line">	rewrite ^(.*)$  		https:&#x2F;&#x2F;$host$1 permanent;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>保存，重启</p>
+<p><strong>大功告成</strong></p>
+]]></content>
+      <categories>
+        <category>doc</category>
+        <category>code</category>
+      </categories>
+      <tags>
+        <tag>Django</tag>
+        <tag>Nginx</tag>
+        <tag>Uwsgi</tag>
+        <tag>Https</tag>
+        <tag>环境搭建</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>搭建远程书架</title>
     <url>/2020-02-04/%E6%90%AD%E5%BB%BA%E8%BF%9C%E7%A8%8B%E4%B9%A6%E6%9E%B6/</url>
     <content><![CDATA[<p><strong style="font-size: 50px">Linux服务器搭建远程书架</strong></p>

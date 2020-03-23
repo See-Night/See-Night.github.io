@@ -8,8 +8,15 @@
     </url>
 
     <url>
+        <loc>http://1145141919810.wang/categories/doc/code/</loc>
+        <lastmod>2020-03-23T05:44:18.904Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>http://1145141919810.wang/categories/doc/</loc>
-        <lastmod>2020-02-04T15:40:55.649Z</lastmod>
+        <lastmod>2020-03-23T05:44:18.904Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

@@ -3,6 +3,41 @@
 
 
     <url>
+        <loc>http://1145141919810.wang/tags/%25E7%258E%25AF%25E5%25A2%2583%25E6%2590%25AD%25E5%25BB%25BA/</loc>
+        <lastmod>2020-03-23T05:44:18.904Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://1145141919810.wang/tags/Https/</loc>
+        <lastmod>2020-03-23T05:44:18.904Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://1145141919810.wang/tags/Uwsgi/</loc>
+        <lastmod>2020-03-23T05:44:18.904Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://1145141919810.wang/tags/Nginx/</loc>
+        <lastmod>2020-03-23T05:44:18.904Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://1145141919810.wang/tags/Django/</loc>
+        <lastmod>2020-03-23T05:44:18.904Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>http://1145141919810.wang/tags/cloud/</loc>
         <lastmod>2020-02-04T15:40:55.649Z</lastmod>
         <changefreq>weekly</changefreq>
