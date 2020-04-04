@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://1145141919810.wang/"/>
-  <updated>2020-03-23T05:44:18.904Z</updated>
+  <updated>2020-04-04T16:03:16.547Z</updated>
   <id>http://1145141919810.wang/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>清明追思 家国永念</title>
+    <link href="http://1145141919810.wang/2020-04-04/%E6%B8%85%E6%98%8E%E8%BF%BD%E6%80%9D-%E5%AE%B6%E5%9B%BD%E6%B0%B8%E5%BF%B5/"/>
+    <id>http://1145141919810.wang/2020-04-04/%E6%B8%85%E6%98%8E%E8%BF%BD%E6%80%9D-%E5%AE%B6%E5%9B%BD%E6%B0%B8%E5%BF%B5/</id>
+    <published>2020-04-04T14:26:10.000Z</published>
+    <updated>2020-04-04T16:03:16.547Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="清明追思-家国永念"><a href="#清明追思-家国永念" class="headerlink" title="清明追思 家国永念"></a>清明追思 家国永念</h1><p>己亥末，庚子初，荆楚大疫。染疾数万，死有三千。</p><p>疫初，众惶恐，举国防，皆闭户。丑月末，封江城，路无车舟，万巷空寂。然国士南山，临危受命，唤三十万白衣，被甲赴鄂，挽狂澜于既倒，扶大厦之将倾。</p><p>江城疲弊，九州戮力。十余日，拔火雷二神，镇守江城。九州一心，昼夜不怠，红衣竭虑，医者殚精。军授印，赴江城，安民心，抗疫情。</p><p>卯月尽，疫病除。生者幸，逝者眠。为缅怀先烈，告慰同胞，留丹心以后记，照汗青以世铭，遂祀于清明。巳时，国旗半，车船鸣，行人立，颔首默，祭逝者在天之灵。</p><p>冬将尽，春可期，江城开，市井集，华灯初上，国泰民安。待明年再看，樱花盛开。</p><ul><li>江城：指武汉</li><li>红衣：志愿者。因为志愿者的衣服是红色的，故称红衣</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;清明追思-家国永念&quot;&gt;&lt;a href=&quot;#清明追思-家国永念&quot; class=&quot;headerlink&quot; title=&quot;清明追思 家国永念&quot;&gt;&lt;/a&gt;清明追思 家国永念&lt;/h1&gt;&lt;p&gt;己亥末，庚子初，荆楚大疫。染疾数万，死有三千。&lt;/p&gt;
+&lt;p&gt;疫初，众惶恐，举国防，
+      
+    
+    </summary>
+    
+    
+      <category term="清明祭祀" scheme="http://1145141919810.wang/categories/%E6%B8%85%E6%98%8E%E7%A5%AD%E7%A5%80/"/>
+    
+    
+      <category term="清明" scheme="http://1145141919810.wang/tags/%E6%B8%85%E6%98%8E/"/>
+    
+      <category term="战疫" scheme="http://1145141919810.wang/tags/%E6%88%98%E7%96%AB/"/>
+    
+      <category term="祭祀先烈" scheme="http://1145141919810.wang/tags/%E7%A5%AD%E7%A5%80%E5%85%88%E7%83%88/"/>
+    
+  </entry>
   
   <entry>
     <title>Django+Nginx+Uwsgi+Https环境开发文档——环境搭建</title>
