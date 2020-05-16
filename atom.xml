@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://1145141919810.wang/"/>
-  <updated>2020-04-29T05:31:08.350Z</updated>
+  <updated>2020-05-16T09:13:31.332Z</updated>
   <id>http://1145141919810.wang/</id>
   
   <author>
@@ -15,6 +15,21 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>写给小白——操作系统</title>
+    <link href="http://1145141919810.wang/2020-05-16/%E5%86%99%E7%BB%99%E5%B0%8F%E7%99%BD%E2%80%94%E2%80%94%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
+    <id>http://1145141919810.wang/2020-05-16/%E5%86%99%E7%BB%99%E5%B0%8F%E7%99%BD%E2%80%94%E2%80%94%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/</id>
+    <published>2020-05-16T09:13:31.000Z</published>
+    <updated>2020-05-16T09:13:31.332Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>操作系统:存储管理动态分区分配及回收算法</title>
