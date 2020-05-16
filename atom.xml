@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://1145141919810.wang/"/>
-  <updated>2020-05-16T09:13:31.332Z</updated>
+  <updated>2020-05-16T13:20:34.673Z</updated>
   <id>http://1145141919810.wang/</id>
   
   <author>
@@ -17,17 +17,31 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>写给小白——操作系统</title>
-    <link href="http://1145141919810.wang/2020-05-16/%E5%86%99%E7%BB%99%E5%B0%8F%E7%99%BD%E2%80%94%E2%80%94%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
-    <id>http://1145141919810.wang/2020-05-16/%E5%86%99%E7%BB%99%E5%B0%8F%E7%99%BD%E2%80%94%E2%80%94%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/</id>
+    <title>入门级操作系统分析科普</title>
+    <link href="http://1145141919810.wang/2020-05-16/%E5%85%A5%E9%97%A8%E7%BA%A7%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%88%86%E6%9E%90%E7%A7%91%E6%99%AE/"/>
+    <id>http://1145141919810.wang/2020-05-16/%E5%85%A5%E9%97%A8%E7%BA%A7%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%88%86%E6%9E%90%E7%A7%91%E6%99%AE/</id>
     <published>2020-05-16T09:13:31.000Z</published>
-    <updated>2020-05-16T09:13:31.332Z</updated>
+    <updated>2020-05-16T13:20:34.673Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="入门级操作系统分析介绍"><a href="#入门级操作系统分析介绍" class="headerlink" title="入门级操作系统分析介绍"></a>入门级操作系统分析介绍</h1><h1 id="Windows-·-Linux-·-Mac-OS"><a href="#Windows-·-Linux-·-Mac-OS" class="headerlink" title="Windows · Linux · Mac OS"></a>Windows · Linux · Mac OS</h1><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>对于大部分电脑用户来说，操作系统是每天都要和其打交道的东西，但是很多人对操作系统本身并不了解，甚至可以用无知来形容。其实，对于电脑用户，尤其是计算机办公的用户来说操作系统和工作效率有很大的关系，一款合适的操作系统会大大提高用户的工作效率。</p><p>就目前全球桌面级操作系统消费市场来说主要是以Windows、Linux和Mac OS这三家操作系统为主，形成三组鼎立的局面。对于大部分人来说，Windows绝对是首选的操作系统，也有不少人会选择高端大气上档次的Mac OS，Linux虽然不及上面两家但是由于其发行版众多但也受到小部分用户的青睐。</p><p>如何选择操作系统，就要从实际出发，仔细分析自己的使用需求，在进行选择。</p><a id="more"></a><h2 id="Windows"><a href="#Windows" class="headerlink" title="Windows"></a>Windows</h2><h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p>Windows操作系统相信大家并不陌生，它诞生于1985年，从最早的Windows 1.0到现在的Windows 10，微软公司已经为我们提供了40多年的操作系统服务。作为目前全球桌面级系统市场份额第一的操作系统，Windows 10有着其它系统无法比拟的庞大生态圈和用户基数，同时有着最好的硬件兼容性和驱动支持。</p><p>Windows从最开始的1.0发展到现在的10，期间整个系统的底层其实是由翻天覆地的变化的。</p><p>历史上最受好评的操作系统莫过于Windows XP，作为一款超现象级操作系统，XP创造了世界操作系统使用量的历史记录，直至今日，仍有很多用户仍然在使用Windows XP。但是XP系统自2014年微软停止其技术支持后，它的软硬件兼容性越来越差，很多软件开发商也停止了对Windows XP的支持。</p><p>再后来虽然有过Windows Vista，但其因为异常辣鸡的稳定性饱受诟病，昙花一现过后便悄然淡出了操作系统的市场。</p><p>微软历史上最成功的操作系统Windows 7可谓是让微软赚的盆满钵满，Windows 7以优异的用户体验迅速收获了7大批市场份额。Windows 7刚刚发售时也因为系统稳定性的问题被挂墙批判了好一段时间，但后续微软的优化做得相当到位，直至今日Windows 7依然是Windows系列最稳定的操作系统。</p><p>但是从7以后，微软莫名其妙的走了歪路。Windows 8和Windows 8.1的使用体验虽不及Vista那么辣鸡，但也好不到哪里去，以至于这两款操作系统很快就被用户抛弃了，那段时间微软虽然也进行了很多尝试，甚至想要进军手机市场，但结果并不尽人意，直至Windows 10的出现。</p><p>2014年10月1日，微软在旧金山召开新品发布会，对外展示了新一代Windows操作系统，将它命名为“Windows 10”，并宣布这是Windows系列最后一款操作系统，今后并不会再开发新的系统而是在Windows 10的基础上迭代更新。</p><h3 id="优点"><a href="#优点" class="headerlink" title="优点"></a>优点</h3><h4 id="办公"><a href="#办公" class="headerlink" title="办公"></a>办公</h4><p>办公行业的从业人员都很清楚Windows的办公效率，Office全家桶（Word, PPT, Excel 等）个个都是顶尖的办公软件，同时支持Android移动平台，有着不错的兼容性。其次还有Onedrive云盘，To Do等高效的办公软件，也为Windows的高效办公加了不少分。</p><p><img src="/img/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%BE%A1%E4%B8%89%E5%AE%B6/office.png" alt="office"></p><h4 id="大众娱乐"><a href="#大众娱乐" class="headerlink" title="大众娱乐"></a>大众娱乐</h4><p>Windows操作系统上支持安装各种媒体播放器和网络浏览器，一般用户追剧、看番、刷微博的功能都可以满足。确切的说，正式Windows的普及满足了用户的娱乐需求。</p><p>同时，Windows良好的硬件支持使得某些发烧友可以尽可能的享受诸如HIFI、4K等功能，以及硬件爱好者可以全凭自己的主观喜好对电脑进行升级而不用管操作系统的兼容文体。</p><h4 id="游戏"><a href="#游戏" class="headerlink" title="游戏"></a>游戏</h4><p>经常玩大型游戏的用户都清楚Windows系统对于游戏的重要性。从开发上来说，很多游戏都是基于虚幻4、Unity等引擎进行开发的，这些游戏大部分都不会去做其他平台的移植，因此单从数量上说，Windows要远远优于其他桌面操作系统（不包括PS、Wii等）。而Windows的硬件支持也保证了驱动的稳定性，为游戏画面效果和流畅度提供了稳定的保障。</p><h4 id="创作"><a href="#创作" class="headerlink" title="创作"></a>创作</h4><p>Windows为艺术、影视创作者提供了良好的创作环境（Adobe等）</p><h3 id="缺点"><a href="#缺点" class="headerlink" title="缺点"></a>缺点</h3><h4 id="系统稳定性"><a href="#系统稳定性" class="headerlink" title="系统稳定性"></a>系统稳定性</h4><p>Windows众多版本中，Windows 7的稳定性最好，但是微软已经停止了对它的技术支持，不过硬是要用的话也还是可以使用的。</p><p>对于现行拥有技术支持的操作系统，Windows 10的兼容性可是不尽人意的，你可能在任何使用场合中看到蓝屏上的：）</p><p><img src="/img/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%BE%A1%E4%B8%89%E5%AE%B6/Win10Error.jpg" alt="Win10 死机蓝"></p>]]></content>
     
     <summary type="html">
+    
+      &lt;h1 id=&quot;入门级操作系统分析介绍&quot;&gt;&lt;a href=&quot;#入门级操作系统分析介绍&quot; class=&quot;headerlink&quot; title=&quot;入门级操作系统分析介绍&quot;&gt;&lt;/a&gt;入门级操作系统分析介绍&lt;/h1&gt;&lt;h1 id=&quot;Windows-·-Linux-·-Mac-OS&quot;&gt;&lt;a href=&quot;#Windows-·-Linux-·-Mac-OS&quot; class=&quot;headerlink&quot; title=&quot;Windows · Linux · Mac OS&quot;&gt;&lt;/a&gt;Windows · Linux · Mac OS&lt;/h1&gt;&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;对于大部分电脑用户来说，操作系统是每天都要和其打交道的东西，但是很多人对操作系统本身并不了解，甚至可以用无知来形容。其实，对于电脑用户，尤其是计算机办公的用户来说操作系统和工作效率有很大的关系，一款合适的操作系统会大大提高用户的工作效率。&lt;/p&gt;
+&lt;p&gt;就目前全球桌面级操作系统消费市场来说主要是以Windows、Linux和Mac OS这三家操作系统为主，形成三组鼎立的局面。对于大部分人来说，Windows绝对是首选的操作系统，也有不少人会选择高端大气上档次的Mac OS，Linux虽然不及上面两家但是由于其发行版众多但也受到小部分用户的青睐。&lt;/p&gt;
+&lt;p&gt;如何选择操作系统，就要从实际出发，仔细分析自己的使用需求，在进行选择。&lt;/p&gt;
     
     </summary>
     
     
+      <category term="攻略" scheme="http://1145141919810.wang/categories/%E6%94%BB%E7%95%A5/"/>
+    
+    
+      <category term="操作系统" scheme="http://1145141919810.wang/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
+    
+      <category term="新手向" scheme="http://1145141919810.wang/tags/%E6%96%B0%E6%89%8B%E5%90%91/"/>
+    
+      <category term="攻略" scheme="http://1145141919810.wang/tags/%E6%94%BB%E7%95%A5/"/>
     
   </entry>
   
