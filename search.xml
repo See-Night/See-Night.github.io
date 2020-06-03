@@ -1,0 +1,1453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>Chinese</title>
+    <url>/2019-12-13/Chinese/</url>
+    <content><![CDATA[<h5 id="中国人，坚定的无产阶级者，不接受一切政治相关话题"><a href="#中国人，坚定的无产阶级者，不接受一切政治相关话题" class="headerlink" title="中国人，坚定的无产阶级者，不接受一切政治相关话题"></a>中国人，坚定的无产阶级者，不接受一切政治相关话题</h5><h6 id="已完成的项目"><a href="#已完成的项目" class="headerlink" title="已完成的项目"></a>已完成的项目</h6><table>
+<thead>
+<tr>
+<th>项目名称</th>
+<th>项目简介</th>
+<th>所用语言</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Web</td>
+<td>课程作业</td>
+<td>HTML5 / CSS3 / Javas</td>
+<td>已废弃</td>
+</tr>
+<tr>
+<td>v2ray-guide</td>
+<td>v2ray教程</td>
+<td>Markdown</td>
+<td>从官方fork过来用于学习的</td>
+</tr>
+<tr>
+<td>Bilichat</td>
+<td>bilibili直播弹幕姬</td>
+<td>Typescript / Anguler框架</td>
+<td>从3Shain佬那里fork过来改了一下让其支持日文筛选</td>
+</tr>
+<tr>
+<td>CommentsLogByMySQL</td>
+<td>bilibili直播弹幕姬</td>
+<td>Python3</td>
+<td>Python爬虫的研究课题，已废弃</td>
+</tr>
+<tr>
+<td>typeorm</td>
+<td>数据库连接模块</td>
+<td>Typescript</td>
+<td>本来想用于课题作业但最后也没有用</td>
+</tr>
+<tr>
+<td>HMI-Teachingdesign-ResearchStudy</td>
+<td>人机交互+教学设计课题作业</td>
+<td>Javascript / HTML5 / CSS3</td>
+<td>人机交互课题作业，未完成</td>
+</tr>
+<tr>
+<td>Documents</td>
+<td>脚本聚集地</td>
+<td>Shell</td>
+<td>存放烂七八糟的脚本</td>
+</tr>
+<tr>
+<td>DDMonitor</td>
+<td>Bilibili直播间自动录播脚本</td>
+<td>Python3</td>
+<td>自动录播姬</td>
+</tr>
+</tbody></table>
+<p>联系方式：</p>
+<ul>
+<li><a href="https://twitter.com/SaberWang123" target="_blank" rel="noopener">Twitter</a></li>
+<li><a href="https://github.com/dreammer12138" target="_blank" rel="noopener">GitHub</a></li>
+<li><a href="https://space.bilibili.com/13390752" target="_blank" rel="noopener">Bilibili</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>doc</category>
+      </categories>
+      <tags>
+        <tag>About</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hadoop 常见错误</title>
+    <url>/2019-12-12/Hadoop-%E5%B8%B8%E8%A7%81%E9%94%99%E8%AF%AF/</url>
+    <content><![CDATA[<h1 id="Hadoop-常见错误"><a href="#Hadoop-常见错误" class="headerlink" title="Hadoop 常见错误"></a>Hadoop 常见错误</h1><h2 id="subprocess-failed-with-code-类型的错误"><a href="#subprocess-failed-with-code-类型的错误" class="headerlink" title="subprocess failed with code 类型的错误"></a><code>subprocess failed with code</code> 类型的错误</h2><a id="more"></a>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">PipeMapRed.waitOutputThreads(): subprocess failed with code X </span><br><span class="line">error code 1: Operation not permitted</span><br><span class="line">error code 2: No such file or directory</span><br><span class="line">error code 3: No such process</span><br><span class="line">error code 4: Interrupted system call</span><br><span class="line">error code 5: Input&#x2F;output error</span><br><span class="line">error code 6: No such device or address</span><br><span class="line">error code 7: Argument list too long</span><br><span class="line">error code 8: Exec format error</span><br><span class="line">error code 9: Bad file descriptor</span><br><span class="line">error code 10: No child processes</span><br><span class="line">error code 11: Resource temporarily unavailable</span><br><span class="line">error code 12: Cannot allocate memory</span><br><span class="line">error code 13: Permission denied</span><br><span class="line">error code 14: Bad address</span><br><span class="line">error code 15: Block device required</span><br><span class="line">error code 16: Device or resource busy</span><br><span class="line">error code 17: File exists</span><br><span class="line">error code 18: Invalid cross-device link</span><br><span class="line">error code 19: No such device</span><br><span class="line">error code 20: Not a directory</span><br><span class="line">error code 21: Is a directory</span><br><span class="line">error code 22: Invalid argument</span><br><span class="line">error code 23: Too many open files in system</span><br><span class="line">error code 24: Too many open files</span><br><span class="line">error code 25: Inappropriate ioctl for device</span><br><span class="line">error code 26: Text file busy</span><br><span class="line">error code 27: File too large</span><br><span class="line">error code 28: No space left on device</span><br><span class="line">error code 29: Illegal seek</span><br><span class="line">error code 30: Read-only file system</span><br><span class="line">error code 31: Too many links</span><br><span class="line">error code 32: Broken pipe</span><br><span class="line">error code 33: Numerical argument out of domain</span><br><span class="line">error code 34: Numerical result out of range</span><br><span class="line">error code 35: Resource deadlock avoided</span><br><span class="line">error code 36: File name too long</span><br><span class="line">error code 37: No locks available</span><br><span class="line">error code 38: Function not implemented</span><br><span class="line">error code 39: Directory not empty</span><br><span class="line">error code 40: Too many levels of symbolic links</span><br><span class="line">error code 42: No message of desired type</span><br><span class="line">error code 43: Identifier removed</span><br><span class="line">error code 44: Channel number out of range</span><br><span class="line">error code 45: Level 2 not synchronized</span><br><span class="line">error code 46: Level 3 halted</span><br><span class="line">error code 47: Level 3 reset</span><br><span class="line">error code 48: Link number out of range</span><br><span class="line">error code 49: Protocol driver not attached</span><br><span class="line">error code 50: No CSI structure available</span><br><span class="line">error code 51: Level 2 halted</span><br><span class="line">error code 52: Invalid exchange</span><br><span class="line">error code 53: Invalid request descriptor</span><br><span class="line">error code 54: Exchange full</span><br><span class="line">error code 55: No anode</span><br><span class="line">error code 56: Invalid request code</span><br><span class="line">error code 57: Invalid slot</span><br><span class="line">error code 59: Bad font file format</span><br><span class="line">error code 60: Device not a stream</span><br><span class="line">error code 61: No data available</span><br><span class="line">error code 62: Timer expired</span><br><span class="line">error code 63: Out of streams resources</span><br><span class="line">error code 64: Machine is not on the network</span><br><span class="line">error code 65: Package not installed</span><br><span class="line">error code 66: Object is remote</span><br><span class="line">error code 67: Link has been severed</span><br><span class="line">error code 68: Advertise error</span><br><span class="line">error code 69: Srmount error</span><br><span class="line">error code 70: Communication error on send</span><br><span class="line">error code 71: Protocol error</span><br><span class="line">error code 72: Multihop attempted</span><br><span class="line">error code 73: RFS specific error</span><br><span class="line">error code 74: Bad message</span><br><span class="line">error code 75: Value too large for defined data type</span><br><span class="line">error code 76: Name not unique on network</span><br><span class="line">error code 77: File descriptor in bad state</span><br><span class="line">error code 78: Remote address changed</span><br><span class="line">error code 79: Can not access a needed shared library</span><br><span class="line">error code 80: Accessing a corrupted shared library</span><br><span class="line">error code 81: .lib section in a.out corrupted</span><br><span class="line">error code 82: Attempting to link in too many shared libraries</span><br><span class="line">error code 83: Cannot exec a shared library directly</span><br><span class="line">error code 84: Invalid or incomplete multibyte or wide character</span><br><span class="line">error code 85: Interrupted system call should be restarted</span><br><span class="line">error code 86: Streams pipe error</span><br><span class="line">error code 87: Too many users</span><br><span class="line">error code 88: Socket operation on non-socket</span><br><span class="line">error code 89: Destination address required</span><br><span class="line">error code 90: Message too long</span><br><span class="line">error code 91: Protocol wrong type for socket</span><br><span class="line">error code 92: Protocol not available</span><br><span class="line">error code 93: Protocol not supported</span><br><span class="line">error code 94: Socket type not supported</span><br><span class="line">error code 95: Operation not supported</span><br><span class="line">error code 96: Protocol family not supported</span><br><span class="line">error code 97: Address family not supported by protocol</span><br><span class="line">error code 98: Address already in use</span><br><span class="line">error code 99: Cannot assign requested address</span><br><span class="line">error code 100: Network is down</span><br><span class="line">error code 101: Network is unreachable</span><br><span class="line">error code 102: Network dropped connection on reset</span><br><span class="line">error code 103: Software caused connection abort</span><br><span class="line">error code 104: Connection reset by peer</span><br><span class="line">error code 105: No buffer space available</span><br><span class="line">error code 106: Transport endpoint is already connected</span><br><span class="line">error code 107: Transport endpoint is not connected</span><br><span class="line">error code 108: Cannot send after transport endpoint shutdown</span><br><span class="line">error code 109: Too many references: cannot splice</span><br><span class="line">error code 110: Connection timed out</span><br><span class="line">error code 111: Connection refused</span><br><span class="line">error code 112: Host is down</span><br><span class="line">error code 113: No route to host</span><br><span class="line">error code 114: Operation already in progress</span><br><span class="line">error code 115: Operation now in progress</span><br><span class="line">error code 116: Stale NFS file handle</span><br><span class="line">error code 117: Structure needs cleaning</span><br><span class="line">error code 118: Not a XENIX named type file</span><br><span class="line">error code 119: No XENIX semaphores available</span><br><span class="line">error code 120: Is a named type file</span><br><span class="line">error code 121: Remote I&#x2F;O error</span><br><span class="line">error code 122: Disk quota exceeded</span><br><span class="line">error code 123: No medium found</span><br><span class="line">error code 124: Wrong medium type</span><br><span class="line">error code 125: Operation canceled</span><br><span class="line">error code 126: Required key not available</span><br><span class="line">error code 127: Key has expired</span><br><span class="line">error code 128: Key has been revoked</span><br><span class="line">error code 129: Key was rejected by service</span><br><span class="line">error code 130: Owner died</span><br><span class="line">error code 131: State not recoverable</span><br><span class="line">error code 132: Old database file</span><br><span class="line">error code 133: No record read before update</span><br><span class="line">error code 134: Record was already deleted (or record file crashed)</span><br><span class="line">error code 135: No more room in record file</span><br><span class="line">error code 136: No more room in index file</span><br><span class="line">error code 137: No more records (read after end of file)</span><br><span class="line">error code 138: Unsupported extension used for table</span><br><span class="line">error code 139: Too big row</span><br><span class="line">error code 140: Wrong create options</span><br><span class="line">error code 141: Duplicate unique key or constraint on write or update</span><br><span class="line">error code 142: Unknown character set used</span><br><span class="line">error code 143: Conflicting table definitions in sub-tables of MERGE table</span><br><span class="line">error code 144: Table is crashed and last repair failed</span><br><span class="line">error code 145: Table was marked as crashed and should be repaired</span><br><span class="line">error code 146: Lock timed out; Retry transaction</span><br><span class="line">error code 147: Lock table is full; Restart program with a larger locktable</span><br><span class="line">error code 148: Updates are not allowed under a read only transactions</span><br><span class="line">error code 149: Lock deadlock; Retry transaction</span><br><span class="line">error code 150: Foreign key constraint is incorrectly formed</span><br><span class="line">error code 151: Cannot add a child row</span><br><span class="line">error code 152: Cannot delete a parent row</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>code</category>
+      </categories>
+      <tags>
+        <tag>Hadoop</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>数据分析排序</title>
+    <url>/2019-12-12/Hadoop-%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%8E%92%E5%BA%8F/</url>
+    <content><![CDATA[<h1 id="数据分析排序"><a href="#数据分析排序" class="headerlink" title="数据分析排序"></a>数据分析排序</h1><h3 id="Mapper-py"><a href="#Mapper-py" class="headerlink" title="Mapper.py"></a>Mapper.py</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#!&#x2F;usr&#x2F;bin&#x2F;python3</span><br><span class="line"># -*- coding: utf-8 -*-</span><br><span class="line"></span><br><span class="line">import sys</span><br><span class="line"></span><br><span class="line">for line in sys.stdin :</span><br><span class="line">        line &#x3D; line.split()</span><br><span class="line">        for num in line :</span><br><span class="line">                print(num)</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><code>Mapper.py</code> 用于读取数据并传递数据到Reduce</li>
+<li><code>sys.stdin</code> 用于读取数据流  </li>
+<li><code>split()</code> 用于格式化字符串为List列表  </li>
+</ul>
+<a id="more"></a>
+
+<h3 id="Reduce-py"><a href="#Reduce-py" class="headerlink" title="Reduce.py"></a>Reduce.py</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#!&#x2F;usr&#x2F;bin&#x2F;python3</span><br><span class="line"># -*- coding: utf-8 -*-</span><br><span class="line"></span><br><span class="line">import sys</span><br><span class="line"></span><br><span class="line">cache   &#x3D; []</span><br><span class="line"></span><br><span class="line">for num in sys.stdin :</span><br><span class="line">        num &#x3D; int(num.split()[0])</span><br><span class="line">        cache.insert(len(cache), num)</span><br><span class="line"></span><br><span class="line">t &#x3D; sorted(cache)</span><br><span class="line"></span><br><span class="line">i &#x3D; 1</span><br><span class="line"></span><br><span class="line">for temp in t :</span><br><span class="line">        out &#x3D; &quot;&#123;&#125;\t&#123;&#125;&quot;.format(temp, i)</span><br><span class="line">        i &#x3D; i + 1</span><br><span class="line">        print(out)</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><code>Reduce.py</code> 用于对数据进行处理</li>
+<li><code>sys.stdin</code> 用于读取数据流</li>
+<li><code>split()</code> 用于格式化字符串为List列表  </li>
+<li><code>sorted()</code> 用于对List列表进行排序操作</li>
+</ul>
+<h3 id="A-txt"><a href="#A-txt" class="headerlink" title="A.txt"></a>A.txt</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">33</span><br><span class="line">37</span><br><span class="line">12</span><br><span class="line">40</span><br></pre></td></tr></table></figure>
+
+<h3 id="B-txt"><a href="#B-txt" class="headerlink" title="B.txt"></a>B.txt</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">4</span><br><span class="line">16</span><br><span class="line">39</span><br><span class="line">5</span><br></pre></td></tr></table></figure>
+
+<h3 id="result"><a href="#result" class="headerlink" title="result"></a>result</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">4</span><br><span class="line">5</span><br><span class="line">12</span><br><span class="line">16</span><br><span class="line">33</span><br><span class="line">37</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td></tr></table></figure>
+
+<h5 id="Mapper与Reduce之间的数据传输格式的错误是导致大多数Reduce错误的根本原因"><a href="#Mapper与Reduce之间的数据传输格式的错误是导致大多数Reduce错误的根本原因" class="headerlink" title="Mapper与Reduce之间的数据传输格式的错误是导致大多数Reduce错误的根本原因"></a>Mapper与Reduce之间的数据传输格式的错误是导致大多数Reduce错误的根本原因</h5>]]></content>
+      <categories>
+        <category>code</category>
+      </categories>
+      <tags>
+        <tag>Hadoop</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>数据挖掘</title>
+    <url>/2019-12-12/Hadoop-%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98/</url>
+    <content><![CDATA[<h1 id="数据挖掘"><a href="#数据挖掘" class="headerlink" title="数据挖掘"></a>数据挖掘</h1><h3 id="mapper-py"><a href="#mapper-py" class="headerlink" title="mapper.py"></a>mapper.py</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#!&#x2F;usr&#x2F;bin&#x2F;python3 </span><br><span class="line"># -*- coding: utf-8 -*-</span><br><span class="line"></span><br><span class="line">import sys</span><br><span class="line"></span><br><span class="line">for line in sys.stdin :</span><br><span class="line">    title &#x3D; 1</span><br><span class="line">    l &#x3D; line.strip()</span><br><span class="line">    t &#x3D; l.split()</span><br><span class="line">    for i in t :</span><br><span class="line">        if i &#x3D;&#x3D; &quot;child&quot; :</span><br><span class="line">            title &#x3D; 0</span><br><span class="line">    if title is 1 :</span><br><span class="line">            print(l)</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><code>str.split()</code> 和 <code>str.strip()</code> 对数据进行格式化</li>
+</ul>
+<a id="more"></a>
+
+<h3 id="reduce-py"><a href="#reduce-py" class="headerlink" title="reduce.py"></a>reduce.py</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#!&#x2F;usr&#x2F;bin&#x2F;python3 </span><br><span class="line"># -*- coding: utf-8 -*-</span><br><span class="line"></span><br><span class="line">import sys</span><br><span class="line"></span><br><span class="line">f &#x3D; []</span><br><span class="line">l1 &#x3D; []</span><br><span class="line">l2 &#x3D; []</span><br><span class="line"></span><br><span class="line">for line in sys.stdin :</span><br><span class="line">    line &#x3D; line.strip().split()</span><br><span class="line">    for word in line :</span><br><span class="line">        f.append(word)</span><br><span class="line"></span><br><span class="line">for i in range(0, len(f), 2) :</span><br><span class="line">    s1 &#x3D; [&#39;&#39;, &#39;&#39;]</span><br><span class="line">    s2 &#x3D; [&#39;&#39;, &#39;&#39;]</span><br><span class="line">    s1[0], s1[1] &#x3D; f[i], &#39;1+&#39; + f[i + 1]</span><br><span class="line">    s2[0], s2[1] &#x3D; f[i + 1], &#39;2+&#39; + f[i]</span><br><span class="line">    l1.append(s1)</span><br><span class="line">    l2.append(s2)</span><br><span class="line">print(&#39;grandchild\tgrandparent&#39;)</span><br><span class="line">m &#x3D; 0</span><br><span class="line">try :</span><br><span class="line">    while l1[m][0] :</span><br><span class="line">        x1 &#x3D; &#39;1+&#39; + l1[m][0]</span><br><span class="line">        x2 &#x3D; &#39;2+&#39; + l1[m][0]</span><br><span class="line">        for j in range(len(l1)) :</span><br><span class="line">            if x1 in l1[j][1] :</span><br><span class="line">                for k in range(len(l2)) :</span><br><span class="line">                    if x2 in l2[k][1] :</span><br><span class="line">                        print(l1[j][0] + &#39;\t\t&#39; + l2[k][0])</span><br><span class="line">        m &#x3D; m + 2</span><br><span class="line">except :</span><br><span class="line">    pass</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><code>List.append()</code> 向列表末尾添加元素  </li>
+</ul>
+<h3 id="C-txt"><a href="#C-txt" class="headerlink" title="C.txt"></a>C.txt</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">child   parent</span><br><span class="line">Steven  Lucy</span><br><span class="line">Steven  Jack</span><br><span class="line">Jone    Lucy</span><br><span class="line">Jone    Jack</span><br><span class="line">Lucy    Mary</span><br><span class="line">Lucy    Frank</span><br><span class="line">Jack    Alice</span><br><span class="line">Jack    Jesse</span><br><span class="line">David   Alice</span><br><span class="line">David   Jesse</span><br><span class="line">Philip  David</span><br><span class="line">Philip  Alma</span><br><span class="line">Mark    David</span><br><span class="line">Mark    Alma</span><br></pre></td></tr></table></figure>
+
+<h3 id="result"><a href="#result" class="headerlink" title="result"></a>result</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">grandchild      grandparent</span><br><span class="line">Mark            Alice</span><br><span class="line">Mark            Jesse</span><br><span class="line">Philip          Alice</span><br><span class="line">Philip          Jesse</span><br><span class="line">Jone            Alice</span><br><span class="line">Jone            Jesse</span><br><span class="line">Steven          Alice</span><br><span class="line">Steven          Jesse</span><br><span class="line">Jone            Frank</span><br><span class="line">Jone            Mary</span><br><span class="line">Steven          Frank</span><br><span class="line">Steven          Mary</span><br></pre></td></tr></table></figure>
+
+<p>```</p>
+]]></content>
+      <categories>
+        <category>code</category>
+      </categories>
+      <tags>
+        <tag>Hadoop</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Japanese</title>
+    <url>/2019-12-13/Japanese/</url>
+    <content><![CDATA[<h3 id="中国人ですが、日本語もOKです"><a href="#中国人ですが、日本語もOKです" class="headerlink" title="中国人ですが、日本語もOKです"></a>中国人ですが、日本語もOKです</h3><p>プログラマー</p>
+<p>大学生</p>
+<p>Vtuber推し</p>
+<h3 id="このブログは日常のプログラムや攻略などいろいろなものをアップしています。"><a href="#このブログは日常のプログラムや攻略などいろいろなものをアップしています。" class="headerlink" title="このブログは日常のプログラムや攻略などいろいろなものをアップしています。"></a>このブログは日常のプログラムや攻略などいろいろなものをアップしています。</h3><h4 id="ご覧にきてくれて、本当にありがとうございます。"><a href="#ご覧にきてくれて、本当にありがとうございます。" class="headerlink" title="ご覧にきてくれて、本当にありがとうございます。"></a>ご覧にきてくれて、本当にありがとうございます。</h4><h4 id="仲良くしましょう。"><a href="#仲良くしましょう。" class="headerlink" title="仲良くしましょう。"></a>仲良くしましょう。</h4>]]></content>
+      <categories>
+        <category>doc</category>
+      </categories>
+      <tags>
+        <tag>About</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>NexT主题美化——Muse主题侧边栏与目录位置优化</title>
+    <url>/2019-12-13/NexT%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96%E2%80%94%E2%80%94Muse%E4%B8%BB%E9%A2%98%E4%BE%A7%E8%BE%B9%E6%A0%8F%E4%B8%8E%E7%9B%AE%E5%BD%95%E4%BD%8D%E7%BD%AE%E4%BC%98%E5%8C%96/</url>
+    <content><![CDATA[<h3 id="NexT-主题优化——Muse"><a href="#NexT-主题优化——Muse" class="headerlink" title="NexT 主题优化——Muse"></a>NexT 主题优化——Muse</h3><p><strong>Hexo version: v4.1.0</strong></p>
+<p><strong>NexT version: v5.1.4</strong></p>
+<blockquote>
+<p>Hexo博客支持很多主题风格，其中<a href="https://github.com/theme-next/hexo-theme-next" target="_blank" rel="noopener">NexT</a>主题是Github上Star最多的主题，其一直在更新维护，支持非常多的外部插件和功能选项。我目前使用的是Next6.0版本，下面我会介绍基于NexT主题中Muse主题的界面美化手法。</p>
+</blockquote>
+<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p><strong>未优化</strong></p>
+<p><img src="/img/Muse.png" alt="Muse"></p>
+<p>可以看到未优化的Muse主题的侧边栏默认在右边，而且_config.yml中<code>sidebar position</code>字段是无法修改Muse主题的侧边栏位置的</p>
+<p><code># Sidebar Display, available value (only for Muse | Mist):</code></p>
+<p>同时博客标题和目录的布局都是相对布局，只要鼠标一滚动就会随着博文消失（讲道理这绝对是NexT开发者的锅），使用体验比较差，因此对其进行优化乃是大势所趋。话不多说，咱先开始。</p>
+<a id="more"></a>
+
+<h3 id="优化"><a href="#优化" class="headerlink" title="优化"></a>优化</h3><h4 id="侧边栏"><a href="#侧边栏" class="headerlink" title="侧边栏"></a>侧边栏</h4><p>侧边栏的位置其实各取所需就好，喜欢放在右边的话可以直接跳过这一段。</p>
+<h5 id="修改motion-js"><a href="#修改motion-js" class="headerlink" title="修改motion.js"></a>修改motion.js</h5><p>首先调整侧边栏的动画效果，让他从左边伸出来</p>
+<p>打开 <code>&lt;your blog&gt;/theme/next/source/js/src</code> ，找到 <code>motion.js</code> 并打开</p>
+<p><code>Ctrl + F</code> 查找 <code>paddingRight</code> 将其改为 <code>paddingLeft</code></p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">$(<span class="built_in">document</span>)</span><br><span class="line">        .on(<span class="string">'sidebar.isShowing'</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">          NexT.utils.isDesktop() &amp;&amp; $(<span class="string">'body'</span>).velocity(<span class="string">'stop'</span>).velocity(</span><br><span class="line">            &#123;<span class="attr">paddingLeft</span>: SIDEBAR_WIDTH&#125;,			</span><br><span class="line">            SIDEBAR_DISPLAY_DURATION</span><br><span class="line">          );</span><br><span class="line">        &#125;)</span><br><span class="line">        .on(<span class="string">'sidebar.isHiding'</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">   		&#125;);</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">hideSidebar: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">      NexT.utils.isDesktop() &amp;&amp; $(<span class="string">'body'</span>).velocity(<span class="string">'stop'</span>).velocity(&#123;<span class="attr">paddingLeft</span>: <span class="number">0</span>&#125;);</span><br><span class="line">      <span class="keyword">this</span>.sidebarEl.find(<span class="string">'.motion-element'</span>).velocity(<span class="string">'stop'</span>).css(<span class="string">'display'</span>, <span class="string">'none'</span>);</span><br><span class="line">      <span class="keyword">this</span>.sidebarEl.velocity(<span class="string">'stop'</span>).velocity(&#123;<span class="attr">width</span>: <span class="number">0</span>&#125;, &#123;<span class="attr">display</span>: <span class="string">'none'</span>&#125;);</span><br><span class="line"></span><br><span class="line">      sidebarToggleLines.init();</span><br><span class="line"></span><br><span class="line">      <span class="keyword">this</span>.sidebarEl.removeClass(<span class="string">'sidebar-active'</span>);</span><br><span class="line">      <span class="keyword">this</span>.sidebarEl.trigger(<span class="string">'sidebar.isHiding'</span>);</span><br><span class="line"></span><br><span class="line">      <span class="comment">// Prevent adding TOC to Overview if Overview was selected when close &amp; open sidebar.</span></span><br><span class="line">      <span class="keyword">if</span> (!!$(<span class="string">'.post-toc-wrap'</span>)) &#123;</span><br><span class="line">        <span class="keyword">if</span> ($(<span class="string">'.site-overview-wrap'</span>).css(<span class="string">'display'</span>) === <span class="string">'block'</span>) &#123;</span><br><span class="line">          $(<span class="string">'.post-toc-wrap'</span>).removeClass(<span class="string">'motion-element'</span>);</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">          $(<span class="string">'.post-toc-wrap'</span>).addClass(<span class="string">'motion-element'</span>);</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+<h5 id="调整CSS样式表"><a href="#调整CSS样式表" class="headerlink" title="调整CSS样式表"></a>调整CSS样式表</h5><p>找到 <code>&lt;your blog&gt;/theme/next/source/css/_common/components/sidebar/sidebar-toggle.styl</code></p>
+<p>修改类 <code>.sidebar-toggle</code></p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.sidebar-toggle</span> &#123;</span><br><span class="line">  <span class="attribute">position</span>: fixed;</span><br><span class="line">  <span class="attribute">left</span>: <span class="number">10%</span>;</span><br><span class="line">  <span class="attribute">bottom</span>: <span class="number">45px</span>;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">14px</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">14px</span>;</span><br><span class="line">  <span class="attribute">padding</span>: <span class="number">5px</span>;</span><br><span class="line">  <span class="attribute">background</span>: $black-deep;</span><br><span class="line">  <span class="attribute">line-height</span>: <span class="number">0</span>;</span><br><span class="line">  <span class="attribute">z-index</span>: $zindex-<span class="number">5</span>;</span><br><span class="line">  <span class="attribute">cursor</span>: pointer;</span><br><span class="line">  <span class="attribute">-webkit-transform</span>: <span class="built_in">translateZ</span>(<span class="number">0</span>);</span><br><span class="line"></span><br><span class="line">  +tablet() &#123;</span><br><span class="line">    fixbutton() if hexo-config('sidebar.onmobile');</span><br><span class="line">    hide() if not hexo-config('sidebar.onmobile');</span><br><span class="line">  &#125;</span><br><span class="line">  +<span class="selector-tag">mobile</span>() &#123;</span><br><span class="line">    fixbutton() if hexo-config('sidebar.onmobile');</span><br><span class="line">    hide() if not hexo-config('sidebar.onmobile');</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>CSS样式建议根据自己实际情况修改</p>
+<p>不懂CSS的话只需要将 <code>right</code> 字段删除，然后添加 <code>letf: xxpx;</code> 或者<code>left: xx%;</code>，分号一定要加</p>
+<p><code>xx</code>是数字，<code>px</code>是像素的意思，可以直观体现出距离位置</p>
+<h5 id="修改箭头动画"><a href="#修改箭头动画" class="headerlink" title="修改箭头动画"></a>修改箭头动画</h5><p>还是刚才的<code>motion.js</code>文件</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> sidebarToggleLine1st = <span class="keyword">new</span> SidebarToggleLine(&#123;</span><br><span class="line">  el: <span class="string">'.sidebar-toggle-line-first'</span>,</span><br><span class="line">  status: &#123;</span><br><span class="line">    arrow: &#123;<span class="attr">width</span>: <span class="string">'60%'</span>, <span class="attr">rotateZ</span>: <span class="string">'45deg'</span>, <span class="attr">top</span>: <span class="string">'2px'</span>, <span class="attr">left</span>: <span class="string">'50%'</span>&#125;,</span><br><span class="line">    close: &#123;<span class="attr">width</span>: <span class="string">'100%'</span>, <span class="attr">rotateZ</span>: <span class="string">'-45deg'</span>, <span class="attr">top</span>: <span class="string">'5px'</span>&#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;);</span><br><span class="line"><span class="keyword">var</span> sidebarToggleLine2nd = <span class="keyword">new</span> SidebarToggleLine(&#123;</span><br><span class="line">  el: <span class="string">'.sidebar-toggle-line-middle'</span>,</span><br><span class="line">  status: &#123;</span><br><span class="line">    arrow: &#123;<span class="attr">width</span>: <span class="string">'90%'</span>&#125;,</span><br><span class="line">    close: &#123;<span class="attr">opacity</span>: <span class="number">0</span>&#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;);</span><br><span class="line"><span class="keyword">var</span> sidebarToggleLine3rd = <span class="keyword">new</span> SidebarToggleLine(&#123;</span><br><span class="line">  el: <span class="string">'.sidebar-toggle-line-last'</span>,</span><br><span class="line">  status: &#123;</span><br><span class="line">    arrow: &#123;<span class="attr">width</span>: <span class="string">'60%'</span>, <span class="attr">rotateZ</span>: <span class="string">'-45deg'</span>, <span class="attr">top</span>: <span class="string">'-2px'</span>, <span class="attr">left</span>: <span class="string">'50%'</span>&#125;,</span><br><span class="line">    close: &#123;<span class="attr">width</span>: <span class="string">'100%'</span>, <span class="attr">rotateZ</span>: <span class="string">'45deg'</span>, <span class="attr">top</span>: <span class="string">'-5px'</span>&#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<p><strong>侧边栏的工作就大功告成了</strong></p>
+<h4 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h4><p>刚开始我是打算把目录放在界面上端设置一个绝对位置让他停留在界面上的，但是由于要搭配背景的关系最终决定放在右面</p>
+<p>更改目录位置只需要修改一个文件</p>
+<p><code>&lt;your blog&gt;/theme/next/source/css/_schemes/Muse/sidebar/_menu.styl</code></p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.site-nav</span> &#123;</span><br><span class="line">  +mobile() &#123;</span><br><span class="line">    <span class="selector-tag">position</span>: <span class="selector-tag">absolute</span>;</span><br><span class="line">    <span class="selector-tag">left</span>: 0;</span><br><span class="line">    <span class="selector-tag">top</span>: 52<span class="selector-tag">px</span>;</span><br><span class="line">    <span class="selector-tag">margin</span>: 0;</span><br><span class="line">    <span class="selector-tag">width</span>: 100%;</span><br><span class="line">    <span class="selector-tag">padding</span>: 0;</span><br><span class="line">    <span class="selector-tag">background</span>: <span class="selector-tag">white</span>;</span><br><span class="line">    border-bottom: 1px solid $gray-lighter;</span><br><span class="line">    z-index: $zindex-5;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">/*以下为新增内容*/</span></span><br><span class="line">  <span class="selector-tag">position</span>: <span class="selector-tag">fixed</span>;</span><br><span class="line">  <span class="selector-tag">right</span>: 10%;</span><br><span class="line">  <span class="selector-tag">top</span>: 15%;</span><br><span class="line">  <span class="selector-tag">margin</span>: 0;</span><br><span class="line">  <span class="selector-tag">padding</span>: 0;</span><br><span class="line">  border-left: 1px solid $gray-lighter;</span><br><span class="line">  z-index: $zindex-5;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.menu</span> &#123;</span><br><span class="line">  +mobile() &#123; text-align: left; &#125;</span><br><span class="line">  <span class="comment">/*以下为新增内容*/</span></span><br><span class="line">  <span class="selector-tag">display</span>: <span class="selector-tag">flex</span>;</span><br><span class="line">  <span class="selector-tag">flex-direction</span>: <span class="selector-tag">column</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="社交链接"><a href="#社交链接" class="headerlink" title="社交链接"></a>社交链接</h4><p>默认的社交链接是 <code>inhert-block</code>行内块元素，因此它默认先填满一行再换行显示，观感不是太好，我们也可以靠修改css使他达到换行的效果</p>
+<p>打开 <code>&lt;your blog&gt;/theme/next/source/css/_common/components/sidebar-author-links.styl</code></p>
+<p>修改 <code>.links-of-author</code>类</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.links-of-author</span> &#123;</span><br><span class="line">  <span class="attribute">margin-top</span>: <span class="number">20px</span>;</span><br><span class="line">  <span class="attribute">margin-left</span>: <span class="number">25%</span>;</span><br><span class="line">  <span class="attribute">text-align</span>: left;</span><br><span class="line">  <span class="attribute">padding</span>: <span class="number">0px</span> <span class="number">0px</span> <span class="number">0px</span> <span class="number">0px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>这样就大功告成了</p>
+<h4 id="成品"><a href="#成品" class="headerlink" title="成品"></a>成品</h4><p><img src="/img/Muse_u.png" alt="Muse"></p>
+]]></content>
+      <categories>
+        <category>code</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>NexT</tag>
+        <tag>主题优化</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Ubuntu19.10主题美化</title>
+    <url>/2020-01-23/Ubuntu19-10%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96/</url>
+    <content><![CDATA[<h1 id="Ubuntu-19-10-主题美化"><a href="#Ubuntu-19-10-主题美化" class="headerlink" title="Ubuntu 19.10 主题美化"></a>Ubuntu 19.10 主题美化</h1><blockquote>
+<p>Ubuntu 19.10 和上个版本相比其实并没有太大的变化，主要把Gnome升级到了3.34，同时进行了系统优化，Ubuntu 19.10的启动速度要比之前的版本更快更稳定。</p>
+<p>其实Ubuntu的桌面系统一直受不少人诟病，主要是个性化支持太少，对比其他针对桌面系统优化的系统（比如Mint Linux、Deepin等）有明显的差距。</p>
+<p>索性Gnome桌面支持用户自行设计主题，于是有不少大佬把Ubuntu玩出了花。</p>
+<p>当然优化美化这种事智者见智，适合自己最重要。</p>
+</blockquote>
+<a id="more"></a>
+
+<h2 id="更换软件源"><a href="#更换软件源" class="headerlink" title="更换软件源"></a>更换软件源</h2><p>由于众所周知的原因Ubuntu的软件源有一定几率无法使用（得看网络运营商和所在区域），因此换源就成为了Ubuntu用户每次安装完系统的首要任务</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 打开sources.list文件</span></span><br><span class="line">sudo nano /etc/apt/sources.list</span><br><span class="line"><span class="meta">#</span><span class="bash"> 将文件中所有的域名更换成可用软件源的域名并保存</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 我这里使用的是中科大源 http://mirrors.ustc.edu.cn/</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 更新</span></span><br><span class="line">sudo apt update</span><br></pre></td></tr></table></figure>
+
+<h2 id="环境搭建"><a href="#环境搭建" class="headerlink" title="环境搭建"></a>环境搭建</h2><h3 id="Git安装及配置"><a href="#Git安装及配置" class="headerlink" title="Git安装及配置"></a>Git安装及配置</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 安装</span></span><br><span class="line">sudo apt install git</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 配置</span></span><br><span class="line">git config --global user.name "your name"</span><br><span class="line">git config --global user.email "your email"</span><br></pre></td></tr></table></figure>
+
+<h3 id="NodeJS"><a href="#NodeJS" class="headerlink" title="NodeJS"></a>NodeJS</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 下载</span></span><br><span class="line">wget https://nodejs.org/dist/v12.14.1/node-v12.14.1-linux-x64.tar.xz</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 解压</span></span><br><span class="line">xz -d node-v12.14.1-linux-x64.tar.xz</span><br><span class="line">tar -xvf node-v12.14.1-linux-x64.tar</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 移动</span></span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment"># 我习惯将nodejs放在/opt/文件夹下</span></span></span><br><span class="line">sudo mv node-v12.14.1-linux-x64 /opt/</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 链接</span></span><br><span class="line">sudo ln -s /opt/node-v12.14.1-linux-x64/bin/node /usr/local/bin/node</span><br><span class="line">sudo ln -s /opt/node-v12.14.1-linux-x64/bin/npm /usr/local/bin/npm</span><br></pre></td></tr></table></figure>
+
+<h2 id="更换主题"><a href="#更换主题" class="headerlink" title="更换主题"></a>更换主题</h2><h3 id="安装tweak"><a href="#安装tweak" class="headerlink" title="安装tweak"></a>安装tweak</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo apt install gnome-tweak-tool</span><br></pre></td></tr></table></figure>
+
+<h3 id="安装主题"><a href="#安装主题" class="headerlink" title="安装主题"></a>安装主题</h3><p>在<a href="https://www.gnome-look.org/" target="_blank" rel="noopener">gnome look</a>上可以下载桌面、图标、鼠标等主题</p>
+<p>我使用的主题：</p>
+<ul>
+<li>应用程序：<a href="https://www.gnome-look.org/p/1326889/" target="_blank" rel="noopener">Kimi</a></li>
+<li>图标：<a href="https://www.gnome-look.org/p/1279924/" target="_blank" rel="noopener">Tela-black-dark</a></li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 安装主题和shell主题</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 解压</span></span><br><span class="line">sudo tar -xvf &lt;themefile&gt; </span><br><span class="line">sudo mv &lt;theme&gt; /usr/share/themes</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 安装鼠标和图标</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 解压</span></span><br><span class="line">sudo tar -xvf &lt;themefile&gt;</span><br><span class="line">sudo mv &lt;theme&gt; /usr/share/icons</span><br></pre></td></tr></table></figure>
+
+<p><img src="/img/ubuntu19.10%E7%BE%8E%E5%8C%96/2.png" alt="Tweak"></p>
+<h2 id="优化Dock"><a href="#优化Dock" class="headerlink" title="优化Dock"></a>优化Dock</h2><h3 id="安装插件"><a href="#安装插件" class="headerlink" title="安装插件"></a>安装插件</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo apt install gnome-shell-extensions </span><br><span class="line">sudo apt install chrome-gnome-shell</span><br></pre></td></tr></table></figure>
+
+<h3 id="浏览器安装shell-extensions"><a href="#浏览器安装shell-extensions" class="headerlink" title="浏览器安装shell extensions"></a>浏览器安装shell extensions</h3><p>chrome和firefox直接去<a href="https://extensions.gnome.org/" target="_blank" rel="noopener">shell extensions</a>下载安装插件</p>
+<p>傻瓜式安装不多赘述</p>
+<h3 id="Dash-to-dock"><a href="#Dash-to-dock" class="headerlink" title="Dash-to-dock"></a>Dash-to-dock</h3><p>Ubuntu自带的Ubuntu-dock说实话太丑了，还不支持个性化修改</p>
+<p>所以我们使用dash-to-dock这个插件就可以定制自己的dock了</p>
+<p><img src="/img/ubuntu19.10%E7%BE%8E%E5%8C%96/dash-to-dock.png" alt="dash-to-dock"></p>
+<h3 id="Blyr"><a href="#Blyr" class="headerlink" title="Blyr"></a>Blyr</h3><p>对 GNOME 外壳 UI 元素应用模糊效果。</p>
+<p><img src="/img/ubuntu19.10%E7%BE%8E%E5%8C%96/blyr.png" alt="dash-to-dock"></p>
+<h3 id="Coverflow-alt-tab"><a href="#Coverflow-alt-tab" class="headerlink" title="Coverflow alt-tab"></a>Coverflow alt-tab</h3><p>添加桌面窗口之间的切换特效（似乎是仿照Mac的但我没用过Mac我也不清楚）</p>
+<p><img src="/img/ubuntu19.10%E7%BE%8E%E5%8C%96/coverflow.png" alt="dash-to-dock"></p>
+<h3 id="User-theme"><a href="#User-theme" class="headerlink" title="User theme"></a>User theme</h3><p>将桌面主题应用到顶栏以及dock</p>
+<p>添加User theme插件以后之前tweak（优化）的界面shell选项那里的感叹号就没有了，就可以自己添加shell主题了。</p>
+<p>我使用的shell主题是<a href="https://www.gnome-look.org/p/1203425/" target="_blank" rel="noopener">Transparent shell</a></p>
+<p><img src="/img/ubuntu19.10%E7%BE%8E%E5%8C%96/transparent.png" alt="dash-to-dock"></p>
+<h2 id="安装Conky"><a href="#安装Conky" class="headerlink" title="安装Conky"></a>安装Conky</h2><blockquote>
+<p>Conky 是一个用于X窗口系统的系统监视软件。它可以运行在 GNU/Linux 和 FreeBSD 上，是一个基于GPL协议的免费软件。Conky 可以监控许多系统变量，包括 CPU，内存，交换分区，磁盘空间，温度，top，上传，下载，系统消息，以及更多。它具有很高的可配置性，但配置有一些难于理解。Conky是torsmo的一个分支。</p>
+<p>​                                                                                                                                                            —— ArchWiki</p>
+</blockquote>
+<h3 id="效果预览"><a href="#效果预览" class="headerlink" title="效果预览"></a>效果预览</h3><p><img src="/img/ubuntu19.10%E7%BE%8E%E5%8C%96/conky.jpeg" alt="conky"></p>
+<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo apt install conky-all</span><br></pre></td></tr></table></figure>
+
+<h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 在自己的目录下新建一个conky文件夹</span></span><br><span class="line">cd</span><br><span class="line">mkdir conky</span><br><span class="line">cd conky</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 用git下载conky-grapes</span></span><br><span class="line">git clone https://github.com/popindavibe/conky-grapes.git</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 授予权限，否则无法编译</span></span><br><span class="line">sudo chmod -R 777 ~/conky/</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 编译(请确保已安装python)</span></span><br><span class="line">cd ~/conky/conky-grapes</span><br><span class="line">python ./create_config.py</span><br><span class="line">mv ./*.conkyrc ~/.conkyrc</span><br></pre></td></tr></table></figure>
+
+<p>不喜欢这个颜色的话可以修改<code>~/.conkyrc</code>和<code>~/conky/conky-grapes/rings-v2_gen.lua</code>文件中的颜色值（RGB值）</p>
+<p>配置完成后进入<code>~/conky/conky-grapes/</code>文件夹下手动安装那三个<code>.ttf</code>结尾的字体文件</p>
+<h3 id="设置开机启动"><a href="#设置开机启动" class="headerlink" title="设置开机启动"></a>设置开机启动</h3><p>新建开机启动文件</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo vim ~/.config/autostart/conky.desktop</span><br></pre></td></tr></table></figure>
+
+<p>将以下代码写入文件内</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">[Desktop Entry]</span><br><span class="line">Type=Application</span><br><span class="line">Name=Conky</span><br><span class="line">Comment=Start conky script</span><br><span class="line">Exec=\s/usr/bin/conky -p 10</span><br><span class="line">OnlyShowIn=GNOME</span><br><span class="line">X-GNOME-Autostart-Phase=Application</span><br><span class="line">Name[zh_CN]=conky.desktop</span><br></pre></td></tr></table></figure>
+
+<p>保存退出就好了</p>
+<h2 id="更换GRUB主题"><a href="#更换GRUB主题" class="headerlink" title="更换GRUB主题"></a>更换GRUB主题</h2><p>Grub主题更换更加方便一点</p>
+<p>同样是在<a href="https://www.gnome-look.org/" target="_blank" rel="noopener">gnome look</a>网站上找Grub Theme，下载的压缩包里一般都有<code>install.sh</code>文件，按照说明安装即可</p>
+<p>我使用的是主题是Tela grub，这个作者还有其他作品都在一个git仓库里，可以直接<a href="https://github.com/vinceliuice/grub2-themes" target="_blank" rel="noopener">下载</a>使用</p>
+<p><img src="/img/ubuntu19.10%E7%BE%8E%E5%8C%96/grub-theme-slaze.jpg" alt="slaze"></p>
+<p><img src="/img/ubuntu19.10%E7%BE%8E%E5%8C%96/grub-theme-stylish.jpg" alt="stylish"></p>
+<p><img src="/img/ubuntu19.10%E7%BE%8E%E5%8C%96/grub-theme-tela.jpg" alt="tela"></p>
+<p><img src="/img/ubuntu19.10%E7%BE%8E%E5%8C%96/grub-theme-vimix.jpg" alt="vimix"></p>
+<h2 id="安装搜狗输入法"><a href="#安装搜狗输入法" class="headerlink" title="安装搜狗输入法"></a>安装搜狗输入法</h2><h3 id="卸载-ibus"><a href="#卸载-ibus" class="headerlink" title="卸载 ibus"></a>卸载 ibus</h3><p>搜狗输入法Linux版基于fcitx，如果不把ibus卸载可能会出现bug</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo apt remove ibus</span><br><span class="line">sudo apt autoremove</span><br></pre></td></tr></table></figure>
+
+<h3 id="安装fcitx"><a href="#安装fcitx" class="headerlink" title="安装fcitx"></a>安装fcitx</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo apt install fcitx</span><br></pre></td></tr></table></figure>
+
+<h3 id="下载安装包进行安装"><a href="#下载安装包进行安装" class="headerlink" title="下载安装包进行安装"></a>下载安装包进行安装</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 下载</span></span><br><span class="line">wget http://cdn2.ime.sogou.com/dl/index/1571302197/sogoupinyin_2.3.1.0112_amd64.deb</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 安装</span></span><br><span class="line">sudo dpkg -i sogoupinyin_2.3.1.0112_amd64.deb</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 第一次安装可能会出现依赖问题，执行以下代码安装依赖</span></span><br><span class="line">sudo apt install -f</span><br><span class="line"><span class="meta">#</span><span class="bash"> 安装依赖以后再执行上面的安装命令</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="安装百度网盘"><a href="#安装百度网盘" class="headerlink" title="安装百度网盘"></a>安装百度网盘</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 下载</span></span><br><span class="line">wget http://issuecdn.baidupcs.com/issue/netdisk/LinuxGuanjia/3.0.1/baidunetdisk_linux_3.0.1.2.deb</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 安装</span></span><br><span class="line">sudo dpkg -i baidunetdisk_linux_3.0.1.2.deb</span><br></pre></td></tr></table></figure>
+
+<p><img src="/img/ubuntu19.10%E7%BE%8E%E5%8C%96/baidu.png" alt="desktop"></p>
+<h2 id="安装网易云音乐"><a href="#安装网易云音乐" class="headerlink" title="安装网易云音乐"></a>安装网易云音乐</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 下载</span></span><br><span class="line">wget http://d1.music.126.net/dmusic/netease-cloud-music_1.2.1_amd64_ubuntu_20190428.deb</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 安装</span></span><br><span class="line">sudo dpkg -i netease-cloud-music_1.2.1_amd64_ubuntu_20190428.deb</span><br></pre></td></tr></table></figure>
+
+<p><img src="/img/ubuntu19.10%E7%BE%8E%E5%8C%96/neteasy.png" alt="desktop"></p>
+<h2 id="安装Sublime-Text"><a href="#安装Sublime-Text" class="headerlink" title="安装Sublime Text"></a>安装Sublime Text</h2><h3 id="安装GPG密钥"><a href="#安装GPG密钥" class="headerlink" title="安装GPG密钥"></a>安装GPG密钥</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -</span><br></pre></td></tr></table></figure>
+
+<h3 id="确保-apt-设置为使用-https-源"><a href="#确保-apt-设置为使用-https-源" class="headerlink" title="确保 apt 设置为使用 https 源"></a>确保 apt 设置为使用 https 源</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo apt-get install apt-transport-https</span><br></pre></td></tr></table></figure>
+
+<h3 id="添加源"><a href="#添加源" class="headerlink" title="添加源"></a>添加源</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list</span><br></pre></td></tr></table></figure>
+
+<h3 id="安装-1"><a href="#安装-1" class="headerlink" title="安装"></a>安装</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo apt update</span><br><span class="line">sudo apt install sublime-text</span><br></pre></td></tr></table></figure>
+
+<h2 id="安装Typora"><a href="#安装Typora" class="headerlink" title="安装Typora"></a>安装Typora</h2><h3 id="安装GPG密钥-1"><a href="#安装GPG密钥-1" class="headerlink" title="安装GPG密钥"></a>安装GPG密钥</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">wget -qO - https://typora.io/linux/public-key.asc | sudo apt-key add -</span><br></pre></td></tr></table></figure>
+
+<h3 id="添加源-1"><a href="#添加源-1" class="headerlink" title="添加源"></a>添加源</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo add-apt-repository 'deb https://typora.io/linux ./'</span><br></pre></td></tr></table></figure>
+
+<h3 id="安装-2"><a href="#安装-2" class="headerlink" title="安装"></a>安装</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo apt update</span><br><span class="line">sudo apt install typora</span><br></pre></td></tr></table></figure>
+
+<h2 id="优化效果图"><a href="#优化效果图" class="headerlink" title="优化效果图"></a>优化效果图</h2><p><img src="/img/ubuntu19.10%E7%BE%8E%E5%8C%96/desktop.png" alt="desktop"></p>
+<p><img src="/img/ubuntu19.10%E7%BE%8E%E5%8C%96/documents.png" alt="desktop"></p>
+]]></content>
+      <categories>
+        <category>doc</category>
+      </categories>
+      <tags>
+        <tag>ubuntu</tag>
+        <tag>theme</tag>
+        <tag>主题美化</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>搭建远程书架</title>
+    <url>/2020-02-04/%E6%90%AD%E5%BB%BA%E8%BF%9C%E7%A8%8B%E4%B9%A6%E6%9E%B6/</url>
+    <content><![CDATA[<p><strong style="font-size: 50px">Linux服务器搭建远程书架</strong></p>
+<hr>
+<blockquote>
+<p>由于众所周知的原因最近在家里歇着实在无聊，游戏换了一个又一个，感觉生活枯燥乏味。于是又捡起以前弃掉的轻小说看了起来。</p>
+<p>重新在网上搜索资源无疑是一件烦心事，今天早上突发奇想干脆搭建一个云端的书架用来储存小说资源之类的岂不美哉？于是研究了一天总算是大功告成，记录以下相关的内容。</p>
+</blockquote>
+<p><strong>感谢<a href="https://github.com/janeczku" target="_blank" rel="noopener">@janeczku</a>的<code>calibre-web</code>项目对此教程的技术支持</strong></p>
+<a id="more"></a>
+
+<h2 id="相关软件以及服务"><a href="#相关软件以及服务" class="headerlink" title="相关软件以及服务"></a>相关软件以及服务</h2><ul>
+<li>Calibre for Linux</li>
+<li>Calibre-web</li>
+<li>python3</li>
+</ul>
+<h2 id="安装Calibre-for-Linux"><a href="#安装Calibre-for-Linux" class="headerlink" title="安装Calibre for Linux"></a>安装Calibre for Linux</h2><p>Calibre本身是一款Linux平台上的阅读管理器，支持PDF、EPUB等大多数文档的阅读</p>
+<h3 id="安装-Python3"><a href="#安装-Python3" class="headerlink" title="安装 Python3"></a>安装 Python3</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo apt install -y python3 python3-pip</span><br></pre></td></tr></table></figure>
+
+<h3 id="安装-Calibre"><a href="#安装-Calibre" class="headerlink" title="安装 Calibre"></a>安装 Calibre</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo -v &amp;&amp; wget -nv -O- https://download.calibre-ebook.com/linux-installer.sh | sudo sh /dev/stdin</span><br></pre></td></tr></table></figure>
+
+<h2 id="安装Calibre-web"><a href="#安装Calibre-web" class="headerlink" title="安装Calibre-web"></a>安装Calibre-web</h2><p><a href="https://github.com/janeczku/calibre-web" target="_blank" rel="noopener">Calibre-web</a>是GitHub上一位大佬写的Calibre管理Web程序。支持用户直接通过浏览器访问Calibre的书库并进行操作</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 克隆远程仓库</span></span><br><span class="line">git clone https://github.com/janeczku/calibre-web.git</span><br><span class="line">cd calibre-web</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 安装python依赖</span></span><br><span class="line">sudo pip3 install --target vendor -r requirements.txt</span><br></pre></td></tr></table></figure>
+
+<h2 id="配置Calibre"><a href="#配置Calibre" class="headerlink" title="配置Calibre"></a>配置Calibre</h2><p>一般来说，Calibre是运行在具有可视化界面的Linux系统上的（例如Ubuntu Desktop等），命令行下Calibre无法使用。但是，我们需要使用的只有Calibre的书库，即Calibre储存电子书的数据库。</p>
+<p>Calibre为我们提供了<code>Calibredb</code>的数据库程序，用来对书库进行增删改查，这就为服务器也提供了使用Calibre的可能性</p>
+<h3 id="初始化Calibre"><a href="#初始化Calibre" class="headerlink" title="初始化Calibre"></a>初始化Calibre</h3><p>Calibre使用前需要用户设置书库的存储位置</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 新建文件夹用来储存书库</span></span><br><span class="line">mkdir ebook</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 初始化Calibre</span></span><br><span class="line">calibre --with-library=/root/ebook</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 别管之后的报错，只要执行完这一步就建好书库了</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="添加图书"><a href="#添加图书" class="headerlink" title="添加图书"></a>添加图书</h3><p>通过scp或者ftp等服务将电子书文件上传到服务器上，比如我将小说都上传到了/root/book文件夹下</p>
+<p>使用<code>calibredb</code>将电子书添加到calibre中</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cd /root/book</span><br><span class="line">calibredb add *</span><br></pre></td></tr></table></figure>
+
+<h2 id="启动Calibre-web"><a href="#启动Calibre-web" class="headerlink" title="启动Calibre-web"></a>启动Calibre-web</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cd /root/calibre-web</span><br><span class="line">python3 cps.py</span><br></pre></td></tr></table></figure>
+
+<h2 id="配置Calibre-web"><a href="#配置Calibre-web" class="headerlink" title="配置Calibre-web"></a>配置Calibre-web</h2><p>浏览器打开<code>http://&lt;server address&gt;:8083</code> (<server address>是你的服务器地址)</p>
+<p><img src="/img/%E4%BA%91%E7%AB%AF%E4%B9%A6%E6%9E%B6/%E9%85%8D%E7%BD%AEcalibre-web.png" alt="配置Calibre-web"></p>
+<p>在<code>Calibre数据库位置</code>中填入<code>/root/ebook</code>（即你的书库地址）</p>
+<p>点击提交</p>
+<h2 id="登陆Calibre-web"><a href="#登陆Calibre-web" class="headerlink" title="登陆Calibre-web"></a>登陆Calibre-web</h2><p>提交数据库以后点击登陆按钮跳转到登陆界面</p>
+<p><img src="/img/%E4%BA%91%E7%AB%AF%E4%B9%A6%E6%9E%B6/login.png" alt="login"></p>
+<ul>
+<li>用户名：admin</li>
+<li>密码：admin123</li>
+</ul>
+<p>登陆，就可以使用了</p>
+<p>剩下的配置都在网页端进行，傻瓜式配置就不讲了，自行探索吧</p>
+<h2 id="使用systemd在Linux下启动Calibre-Web服务"><a href="#使用systemd在Linux下启动Calibre-Web服务" class="headerlink" title="使用systemd在Linux下启动Calibre-Web服务"></a>使用systemd在Linux下启动Calibre-Web服务</h2><p>每次运行都必须执行<code>cps.py</code>太麻烦了，我们可以将其设置一个服务来启动</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 创建服务文件</span><br><span class="line">sudo vim &#x2F;etc&#x2F;systemd&#x2F;system&#x2F;cps.service</span><br></pre></td></tr></table></figure>
+
+<p>将以下代码复制进去</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[Unit]</span><br><span class="line">Description&#x3D;Calibre-Web</span><br><span class="line"></span><br><span class="line">[Service]</span><br><span class="line">Type&#x3D;simple</span><br><span class="line">User&#x3D;root</span><br><span class="line">ExecStart&#x3D;&#x2F;usr&#x2F;bin&#x2F;python3 &lt;cps path&gt;</span><br><span class="line">WorkingDirectory&#x3D;&lt;calibre-web path&gt;</span><br><span class="line"></span><br><span class="line">[Install]</span><br><span class="line">WantedBy&#x3D;multi-user.target</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><code>&lt;cps path&gt;</code>是<code>cps.py</code>文件的地址，以我的配置为例就是<code>/root/calibre-web/cps.py</code></li>
+<li><code>&lt;calibre-web path&gt;</code>是<code>calibre-web</code>的文件地址，以我的配置为例就是<code>/root/calibre-web</code></li>
+</ul>
+<p>启动服务</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo systemctl enable cps.service</span><br></pre></td></tr></table></figure>
+
+<p>大功告成</p>
+]]></content>
+      <categories>
+        <category>doc</category>
+      </categories>
+      <tags>
+        <tag>ubuntu</tag>
+        <tag>远程书架</tag>
+        <tag>cloud</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>毛概期末复习总结</title>
+    <url>/2019-12-28/%E6%AF%9B%E6%A6%82%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E6%80%BB%E7%BB%93/</url>
+    <content><![CDATA[<h1 id="毛概期末复习总结"><a href="#毛概期末复习总结" class="headerlink" title="毛概期末复习总结"></a>毛概期末复习总结</h1><button style="width: auto; background-color: Black; border-color: transparent; margin-top: 10px; color: white;" onclick="window.open('https://1145141919810.wang/Blog-Content/毛概期末复习总结.pdf');">
+    <span class="fa fa-fw fa-download"></span>
+    Download
+</button>
+
+<style> table th:first-of-type {     width: 100px; } </style>
+<h2 id="第八章-习近平新时代中国特色社会主义思想"><a href="#第八章-习近平新时代中国特色社会主义思想" class="headerlink" title="第八章 习近平新时代中国特色社会主义思想"></a>第八章 习近平新时代中国特色社会主义思想</h2><h4 id="历史性成就"><a href="#历史性成就" class="headerlink" title="历史性成就"></a>历史性成就</h4><ol>
+<li>经济建设取得重大成就</li>
+<li>全面深化改革取得重大突破</li>
+<li>民主法治建设迈出重大步伐</li>
+<li>思想文化建设取得重大发展</li>
+<li>人民生活不断改善</li>
+<li>生态文明建设成效显著</li>
+<li>强军兴军开创新局面</li>
+<li>港澳台工作取得新进展</li>
+<li>全方位外交布局深入展开</li>
+<li>全面从严治党成效显著</li>
+</ol>
+<a id="more"></a>
+
+<h4 id="历史性变革"><a href="#历史性变革" class="headerlink" title="历史性变革"></a>历史性变革</h4><ol>
+<li>党的领导得到全面加强，党的领导被忽视、淡化、削弱的状况得到明显改变</li>
+<li>坚定不移贯彻新发展理念，发展观念不正确、发展方式粗放的状况得到明显改变</li>
+<li>坚定不移全面深化改革、各方面体制机制弊端阻碍发展活力和社会活力的状况得到明显改变</li>
+<li>坚定不移全面推进依法治国，有法不依、执法不严、司法不公问题严重的状况得到明显改变</li>
+<li>加强党对意识形态工作的领导，社会思想舆论环境的混乱状况得到明显改变</li>
+<li>坚定不移推进生态文明建设，忽视生态环境保护、生态环境恶化的状况得到明显改变</li>
+<li>坚定不移推进国防和军队现代化，人民军队中一度存在的不良政治状况得到明显改变</li>
+<li>坚定不移推进中国特色大国外交，我国在国际力量对比中面临的不利状况得到明显改变</li>
+<li>坚定不移推进全面从严治党，管党治党宽松软状况得到明显改变</li>
+</ol>
+<h4 id="社会主要矛盾的变化"><a href="#社会主要矛盾的变化" class="headerlink" title="社会主要矛盾的变化"></a>社会主要矛盾的变化</h4><table>
+<thead>
+<tr>
+<th>时间</th>
+<th>会议</th>
+<th>主要矛盾</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1956年</td>
+<td>八大</td>
+<td>人民对于建立先进的工业国的要求同落后的农业国的现实之间的矛盾</td>
+</tr>
+<tr>
+<td>1981年</td>
+<td>十一届六中全会</td>
+<td>人民日益增长的物质文化需要同落后的社会生产之间的矛盾</td>
+</tr>
+<tr>
+<td>2017年</td>
+<td>十九大</td>
+<td>人民日益增长的美好生活需要和不平衡不充分的发展之间的矛盾</td>
+</tr>
+</tbody></table>
+<h5 id="社会主要矛盾发生变化的主要依据（如何理解我国社会主要矛盾发生的变化）"><a href="#社会主要矛盾发生变化的主要依据（如何理解我国社会主要矛盾发生的变化）" class="headerlink" title="社会主要矛盾发生变化的主要依据（如何理解我国社会主要矛盾发生的变化）"></a>社会主要矛盾发生变化的主要依据（如何理解我国社会主要矛盾发生的变化）</h5><ol>
+<li><p>经过改革开放40年的发展，我国社会生产力水平总体上显著提高，很多方面进入世界前列</p>
+</li>
+<li><p>人民生活水平显著提高，对美好生活的向往更加强烈，不仅对物质文化生活提出了更高要求，而且民主、法治、公平、正义、安全、环境等方面的要求日益增长</p>
+</li>
+<li><p>影响满足人们美好生活需求的因素很多，但主要是发展不平衡胡充分的问题。</p>
+<p>发展不平衡，主要指各区域各领域各方面发展不平衡，制约了全国发展水平提升</p>
+<p>发展不充分，主要指一些地区、一些领域、一些方面还存在发展不足的问题，发展的任务仍然很重</p>
+<p>表现：</p>
+<ul>
+<li><em>从社会生产力来看</em>，我国既有世界先进甚至世界领先的生产力，也有大量传统的、相对落后甚至原始的生产力，不同地区、不同领域的生产力水平和布局还不均衡，发展水平任然差距较大，收入分配差距仍然较大，还有几千万人口尚未脱贫</li>
+<li><em>从“五位一体”总体布局来看</em>，我国经济发展水平总体较好，但社会法治化水平不高，文化建设相对滞后，社会建设还有不少短板，生态文明建设问题较多</li>
+</ul>
+</li>
+</ol>
+<p><strong>我国社会主要矛盾的变化，没有改变我们对我国社会主义所处历史阶段的判断，我国仍处于并将长期处于社会主义初级阶段的基本国情没有变，我国是世界最大发展中国家的国际地位没有变</strong></p>
+<h4 id="新时代的内涵（如何认识中国特色社会主义进入新时代）"><a href="#新时代的内涵（如何认识中国特色社会主义进入新时代）" class="headerlink" title="新时代的内涵（如何认识中国特色社会主义进入新时代）"></a>新时代的内涵（如何认识中国特色社会主义进入新时代）</h4><ol>
+<li><p><strong>这个新时代是承前启后、继往开来，在新的历史条件下继续夺取中国特色·社会主义伟大胜利的时代</strong></p>
+<p>从历史脉络来看，中国特色社会主义是党和人民长期奋斗所创造积累的根本成就和前赴后继的事业，特别是改革开放以来，党领导人民走中国特色社会主义道路，极大地激发了中国人民的创造力，使社会主义在中国展现出强大生命力</p>
+</li>
+<li><p><strong>这个新时代是决胜全面建成小康社会、进而全面建设社会主义现代化强国的时代</strong></p>
+<p>从实践主题来看，到2020年全面建成小康社会，是党向人民、向历史作出的庄严承诺。到新中国诞生100年建成社会主义现代化强国，则标志着中国在100年内走完发达国家几百年走过的现代化路程，这是中国特色社会主义新时代的必然要求和历史任务</p>
+</li>
+<li><p><strong>这个新时代是全国各族人民团结奋斗、不断创造美好生活、逐步实现全体人民共同富裕的时代</strong></p>
+<p>从人民性来看，以人民为中心的发展思想，是党的全心全意为人民服务的根本宗旨在新时代的具体体现。</p>
+</li>
+<li><p><strong>这个新时代是全体中华儿女勠力同心、奋力实现中华民族伟大复兴中国梦的时代</strong></p>
+<p>从民族性来看，经过党的十八大以来的历史性变革，今天我们比历史上任何时期都更加接近、更有信心和能力实现中华民族伟大复兴的目标。</p>
+</li>
+<li><p><strong>这个时代是我国日益走进世界舞台中央、不断为人类做出更大贡献的时代</strong></p>
+<p>从世界性来看，中国梦与世界各国人民祈和平、求发展的梦是相通的，实现中国梦离不开世界和平发展的国际环境，世界的发展也需要中国</p>
+</li>
+</ol>
+<h4 id="新时代的意义"><a href="#新时代的意义" class="headerlink" title="新时代的意义"></a>新时代的意义</h4><ol>
+<li>从中华民族复兴的历史进程看，中国特色社会主义进入新时代，意味着近代以来久经磨难的中华民族迎来了从站起来、富起来到强起来的伟大飞跃，迎来了实现中华民族伟大复兴的光明前景</li>
+<li>从科学社会主义发展进程看，中国特色社会主义进入新时代，意味着科学社会主义在21世纪的中国焕发出强大生机活力，在世界上高高举起了中国特色社会主义伟大旗帜</li>
+<li>从人类文明进程看，中国特色社会主义进入新时代，意味着中国特色社会主义道路、理论、制度、文化不断发展，拓展了发展中国家走向现代化的途径，给世界上那些既希望加快发展又希望保持自身独立性的国家和民族提供了全新选择，为解决人类问题贡献了中国智慧和中国方案</li>
+</ol>
+<h4 id="习近平新时代中国特色社会主义思想的核心要义"><a href="#习近平新时代中国特色社会主义思想的核心要义" class="headerlink" title="习近平新时代中国特色社会主义思想的核心要义"></a>习近平新时代中国特色社会主义思想的核心要义</h4><p>​    坚持和发展中国特色社会主义</p>
+<h4 id="习近平新时代中国特色社会主义思想的内涵（八个明确）"><a href="#习近平新时代中国特色社会主义思想的内涵（八个明确）" class="headerlink" title="习近平新时代中国特色社会主义思想的内涵（八个明确）"></a>习近平新时代中国特色社会主义思想的内涵（八个明确）</h4><ol>
+<li>明确坚持和发展中国特色社会主义，总任务是实现社会主义现代化和中华民族伟大复兴，在全面建成小康社会的基础上，分两步走在本世纪中叶建成富强民主文明和谐美丽的社会主义现代化强国</li>
+<li>明确新时代我国社会主要矛盾是人民日益增长的美好生活需要和不平衡不充分的发展之间的矛盾，必须坚持以人民为中心的发展思想，不断促进人的全面发展、全体人民共同富裕</li>
+<li>明确中国特色社会主义事业总体布局是“五位一体”、战略布局是“四个全面”，强调坚定道路自信、理论自信、制度自信、文化自信</li>
+<li>明确全面深化改革总目标是完善和发展中国特色社会主义制度，推进国家治理体系和治理能力现代化</li>
+<li>明确全面推进依法治国总目标是建设中国特色社会主义法治体系、建设社会主义法治国家</li>
+<li>明确党在新时代的强军目标是建设一支听党指挥、能打胜仗、作风优良的人民军队，把人民军队建设成为世界一流军队</li>
+<li>明确中国特色大国外交要推动构建新型国际关系，推动构建人类命运共同体</li>
+<li>明确中国特色社会主义最本质的特征是中国共产党领导，中国特色社会主义制度的最大优势是中国共产党领导，党是最高政治领导力量，提出新时代党的建设总要求，突出政治建设在党的建设中的重要地位</li>
+</ol>
+<h4 id="新时代中国特色社会主义基本方略"><a href="#新时代中国特色社会主义基本方略" class="headerlink" title="新时代中国特色社会主义基本方略"></a>新时代中国特色社会主义基本方略</h4><ol>
+<li><strong>坚持党对一切工作的领导。</strong>党政军民学，东南西北中，党是领导一切的</li>
+<li><strong>坚持以人民为中心。</strong>人民是历史的创造者，是决定党和国家前途命运的根本力量</li>
+<li><strong>坚持全面深化改革。</strong>只有社会主义才能救中国，只有改革开放才能发展中国、发展社会主义、发展马克思主义</li>
+<li><strong>坚持新发展理念。</strong>发展史解决我国一切问题的基础和关键，发展必须是科学发展，必须坚定不移贯彻创新、协调、绿色、开放、共享的发展理念</li>
+<li><strong>坚持人民当家做主。</strong>坚持党的领导、人民当家做主、依法治国有机统一是社会主义政治发展的必然要求</li>
+<li><strong>坚持全面依法治国。</strong>全面依法治国是中国特色社会主义的本质要求和重要保障</li>
+<li><strong>坚持社会主义核心价值体系。</strong>文化自信是一个国家、一个民族发展中更基本、更深沉、更持久的力量</li>
+<li><strong>坚持在发展中保障和改善民生。</strong>增进民生福祉是发展的根本目的</li>
+<li><strong>坚持人与自然和谐共生。</strong>建设生态文明是中华民族永续发展的千年大计</li>
+<li><strong>坚持总体国家安全观。</strong>统筹发展和安全，增强忧患意识，做到居安思危，是我们党治国理政的一个重大原则</li>
+<li><strong>坚持党对人民军队的绝对领导。</strong>建设一直听党指挥、能打胜仗、作风优良的人民军队，是实现“两个一百年”奋斗目标、实现中华民族伟大复兴的战略支撑</li>
+<li><strong>坚持“一国两制”和推进祖国统一。</strong>保持香港、澳门长期繁荣稳定，实现祖国完全统一，是实现中华民族伟大复兴的必然要求</li>
+<li><strong>坚持推动构建人类命运共同体。</strong>中国人民的梦想同各国人民的梦想息息相通，实现中国梦离不开和平的国际环境和稳定的国际秩序</li>
+<li><strong>坚持全面从严治党。</strong>勇于自我革命，从严管党治党，是我们党最鲜明的品格</li>
+</ol>
+<h4 id="习近平新时代中国特色社会主义思想的历史地位"><a href="#习近平新时代中国特色社会主义思想的历史地位" class="headerlink" title="习近平新时代中国特色社会主义思想的历史地位"></a>习近平新时代中国特色社会主义思想的历史地位</h4><ol>
+<li><strong>是马克思主义中国化的最新成果。</strong>习近平新时代中国特色社会主义思想与马克思列宁主义、毛泽东思想、邓小平理论、“三个代表”重要思想，科学发展观既一脉相承，又与时俱进，是马克思主义中国化的新飞跃，是当代中国马克思主义、21世纪马克思主义。<ol>
+<li><strong>习近平新时代中国特色社会主义思想开辟了马克思主义新境界。</strong>习近平新时代中国特色社会主义思想一系列具有原创性的新思想新观点新论断，在理论上实现了重大突破、重大创新、重大发展，写出了马克思主义新版本，对马克思主义在21世纪的发展作出了重大原创性贡献，以全新视野深化了对共产党执政规律、社会主义建设规律和人类社会发展规律的认识，充分彰显了科学理论的强大生命力和中国共产党人的理论创造力，是当代最现实最鲜活的马克思主义。</li>
+<li><strong>习近平新时代中国特色社会主义思想开辟了中国特色社会主义新境界。</strong>中国特色社会主义是改革开放以来党的全部理论和实践的主题。以习近平同志为核心的党中央坚持和发展中国特色社会主义一以贯之。形成了系统完备、逻辑严密、内在统一的科学体系，把中国特色社会主义和实现社会主义现代化、实现中华民族伟大复兴有机贯通起来，系统阐述了民族复兴的深刻内涵、历史方位、实现路径和战略步骤，为实现中华民族伟大复兴的中国梦提供了强大精神力量，标注了正确前进方向，充分体现了中国特色社会主义理论自信，也向世界展示了社会主义的光明图景。</li>
+<li><strong>习近平新时代中国特色社会主义思想对人类文明进步具有重要意义。</strong>习近平新时代中国特色社会主义思想洞察时代风云，把握世界发展大势，回答了关系人类前途命运的重大问题。中国的做法和经验为发展中国家提供了路径启示，拓展了发展中国家走向现代化的途径，给世界上那些既希望加快发展又希望保持自身独立性的国家和民族提供了全新选择。为应对全球性问题贡献了中国智慧和中国方案，为人类文明思想宝库增加了绚丽夺目的瑰宝。</li>
+</ol>
+</li>
+<li><strong>是新时代的精神旗帜。</strong>习近平新时代中国特色社会主义思想扎根于960多万平方公里的广袤土地，立足于新中国成立以来特别是改革开放40年的伟大实践，聚合了13多亿中国人民的智慧和创造，具有无比深厚的现实基础、十分鲜明的实践特色，是新时代党和人民共同奋斗的精神旗帜。</li>
+<li><strong>是实现中华民族伟大复兴的行动指南。</strong>习近平新时代中国特色社会主义思想是党和国家必须长期坚持的指导思想，是全党全国各族人民团结奋斗的共同思想基础，是决胜全面建成小康社会、建设社会主义现代化强国、实现中华民族伟大复兴中国梦的行动纲领。<ol>
+<li>习近平新时代中国特色社会主义思想，是党的意志、国家意志和人民意志的集中体现，为新时代坚持和发展中国特色社会主义提供了根本指引。</li>
+<li>习近平新时代中国特色社会主义思想为新时代治国理政提供了基本遵循。</li>
+<li>习近平新时代中国特色社会主义思想为全面从严治党、把党建设成为中国特色社会主义事业的坚强领导核心提供了强大思想武器。</li>
+</ol>
+</li>
+</ol>
+<h2 id="第九章-坚持和发展中国特色社会主义的总任务"><a href="#第九章-坚持和发展中国特色社会主义的总任务" class="headerlink" title="第九章 坚持和发展中国特色社会主义的总任务"></a>第九章 坚持和发展中国特色社会主义的总任务</h2><h4 id="坚持和发展中国特色社会主义的总任务"><a href="#坚持和发展中国特色社会主义的总任务" class="headerlink" title="坚持和发展中国特色社会主义的总任务"></a>坚持和发展中国特色社会主义的总任务</h4><p>​    实现社会主义现代化和中华民族伟大复兴，在全面建成小康社会的基础上，分两步走在本世纪中叶建成富强民主文明和谐美丽的社会主义现代化强国。中国梦是中华民族伟大复兴的形象表达。</p>
+<h4 id="中国梦的本质"><a href="#中国梦的本质" class="headerlink" title="中国梦的本质"></a>中国梦的本质</h4><p>​    中国梦的本质是国家富强、民族振兴、人民幸福</p>
+<p>国家富强，是指我国综合国力进一步增强，中国特色社会主义事业进一步发展和完善。<br />民族振兴，就是通过自身的不断发展与强大，继承并创造中华民族的优秀文化以及先进的文明成果，进而使中华民族再次处于世界领先的地位，再次以高昂的姿态屹立于世界民族之林。<br /><br>​人民幸福，就是人民权力保障更加充分，人人得享共同发展。<br /></p>
+<h4 id="中国梦的科学内涵"><a href="#中国梦的科学内涵" class="headerlink" title="中国梦的科学内涵"></a>中国梦的科学内涵</h4><ol>
+<li><strong>中国梦是国家情怀、民族情怀、人民情怀相统一的梦。</strong>国泰而民安，民富则国强。中国梦最大的特点，就是把国家、民族和个人最为一个命运共同体，把国家利益、民族利益和每个人的具体利益紧紧联系在一起，体现了中华民族的“家国天下”情怀。</li>
+<li><strong>中国梦归根到底是人民的梦。</strong>人民是中国梦的主体，是中国梦的创造者和享有者。中国梦不是镜花水月，不是空洞的口号，其最深沉的根基在中国人民心中，必须紧紧依靠人民来实现，必须不断为人民造福。中国梦的深厚源泉在于人民，中国梦的根本归宿也在于人民。</li>
+<li><strong>中国梦是国家的梦、民族的梦，也是每一个中国人的梦。</strong>中国梦的广阔舞台，为个人梦想提供了蓬勃生长的空间；每个人向着梦想的不断努力，又是实现伟大中国梦的一份力量。只要每个人都把人生理想融入国家和民族的伟大梦想之中，敢于有梦、勇于追梦、勤于圆梦，就会聚集成实现中国梦的强大力量。</li>
+<li><strong>中国梦与世界各国人民的美好梦想相通。</strong>中国梦对世界具有吸引力，中国的梦想，不仅关乎中国的命运，也关系世界的命运。中国梦是和平、发展、合作、共赢的梦，与世界各国人民的美好梦想息息相通，中国人民愿意同各国人民在实现各自梦想的过程中互相支持，互相帮助。</li>
+</ol>
+<h4 id="如何实现中国梦"><a href="#如何实现中国梦" class="headerlink" title="如何实现中国梦"></a>如何实现中国梦</h4><ol>
+<li><strong>实现中国梦必须走中国道路，这就是中国特色社会主义道路。</strong>要增强对中国特色社会主义的道路自信、理论自信、制度自信、文化自信，坚定不移沿着正确的中国道路奋勇前进。</li>
+<li><strong>实现中国梦必须弘扬中国精神，这就是以爱国主义为核心的民族精神和以改革创新为核心的时代精神。</strong>以爱国主义为核心的民族精神和以改革创新为核心的时代精神，是凝心聚力的兴国之魂。要弘扬伟大的民族精神和时代精神，不断振奋全民族的精气神，不断增强团结一心的精神纽带，自强不息的精神动力，永远朝气蓬勃迈向未来。</li>
+<li><strong>实现中国梦必须凝聚中国力量，这就是全国各族人民大团结的力量。</strong>全国各族人民一定要牢记使命，心往一处想，劲往一处使，用13多亿人民的智慧和力量会激起不可战胜的磅礴力量。</li>
+<li><strong>实现中华民族伟大复兴是海内外儿女的共同梦想。</strong>只要海内外儿女紧密团结起来，有力出力，有智出智，团结一心奋斗，就一定能够共同书写中华民族发展的时代华章。</li>
+<li><strong>实干才能梦想成真。</strong>实现中华民族伟大复兴，是一项光荣而艰巨的事业，需要每一个人付出艰苦努力，用实干托起中国梦。</li>
+<li><strong>实现中国梦任重而道远，</strong>需要锲而不舍、驰而不息的艰苦努力。实现伟大梦想，必须进行伟大斗争，必须建设伟大工程，必须推动伟大事业。只要一代又一代中国人戮力同心、不懈追求、接力奋斗，我们就一定能够到达中华民族伟大复兴的光辉彼岸。</li>
+<li><strong>实现中国梦需要和平，只有和平才能实现梦想。</strong>我们将坚定不移走和平发展道路，既努力争取和平的国际环境发展自己，又以自身的发展促进世界和平。</li>
+</ol>
+<h4 id="建成社会主义现代化强国的战略安排（开启全面建设社会主义现代化强国的新征程）"><a href="#建成社会主义现代化强国的战略安排（开启全面建设社会主义现代化强国的新征程）" class="headerlink" title="建成社会主义现代化强国的战略安排（开启全面建设社会主义现代化强国的新征程）"></a>建成社会主义现代化强国的战略安排（<em>开启全面建设社会主义现代化强国的新征程</em>）</h4><ul>
+<li>第一阶段：从2020年到2035年，在全面建成小康社会的基础上，再奋斗15年，基本实现社会主义现代化。</li>
+<li>第二阶段：从2035年到本世纪中叶，在基本实现现代化的基础上，再奋斗15年，把我国建成富强民主文明和谐美丽的社会主义现代化强国。</li>
+</ul>
+<p>实现社会主义现代化强国“两步走”战略的基本安排</p>
+<table>
+<thead>
+<tr>
+<th>阶段</th>
+<th>主要目标</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>第一阶段</td>
+<td><strong>经济建设方面</strong>：我国经济实力、科技实力将大幅跃升，跻身创新型国家前列<br /><strong>政治建设方面</strong>：人民平等参与、平等发展权力得到充分保障，法治国家、法治政府、法治社会基本建成，各方面制度更加完善，国家治理体系和治理能力现代化基本实现。<br /><strong>文化建设方面</strong>：社会文明程度达到新的高度，国家文化软实力显著增强，中华文化影响更加广泛深入。<br /><strong>民生和社会建设方面</strong>：人民生活更为宽裕，中等收入群体比例明显提高，城乡区域发展差距和居民生活水平差距显著缩小，基本公共服务均等化基本实现，全体人民共同富裕迈出坚实步伐。<br /><strong>生态文明建设方面</strong>：生态环境根本好转，美丽中国目标基本实现，清洁低碳、安全高效的能源体系和绿色低碳循环发展的经济体系基本建立，生态文明制度更加健全。</td>
+</tr>
+<tr>
+<td>第二阶段</td>
+<td>1.  我国将拥有高度的物质文明，社会生产力水平大幅提高，核心竞争力名列世界前茅，经济总量和市场规模超越其他国家，建成富强的社会主义现代化强国。<br />2.  我国将拥有高度的政治文明，形成又有集中又有民主、又有纪律又有自由、又有统一意志又有个人心情舒畅生动活泼的政治局面，依法治国和以德治国有机结合，建成民主的社会主义现代化强国。<br />3.  我国将拥有高度的精神文明，践行社会主义核心价值观成为全社会自觉行动，国民素质显著提高，中国精神、中国价值、中国力量成为中国发展的重要影响力和推动力，建成文明的社会主义现代化强国。<br />4.  我国将拥有高度的社会文明，城乡居民将普遍拥有较高的收入、富裕的生活、健全的基本公共服务，享有更加幸福安康的生活，全体人民共同富裕基本实现，公平正义普遍彰显，社会充满活力而又规范有序，建成和谐的社会主义现代化强国。<br />5.  我国将拥有高度的生态文明，天蓝、地绿、水清的优美生态环境成为普遍常态，开创人与自然和谐共生新境界，建成美丽的社会主义现代化强国。</td>
+</tr>
+</tbody></table>
+<h2 id="第十章-“五位一体”总体布局"><a href="#第十章-“五位一体”总体布局" class="headerlink" title="第十章 “五位一体”总体布局"></a>第十章 “五位一体”总体布局</h2><ol>
+<li>建设现代化经济体系</li>
+<li>发展社会主义民主政治</li>
+<li>推动社会主义文化繁荣兴盛</li>
+<li>坚持在发展中保障和改善民生</li>
+<li>建设美丽中国</li>
+</ol>
+<h4 id="建设现代化经济体系"><a href="#建设现代化经济体系" class="headerlink" title="建设现代化经济体系"></a>建设现代化经济体系</h4><ol>
+<li><p><strong>贯彻新发展理念</strong></p>
+<p>实现社会主义现代化和中华民族伟大复兴的中国梦，科学的发展理念和发展战略必不可缺。新发展理念立足于当前我国的新发展环境、新发展条件，是符合我国国情、顺应时代潮流、厚植发展优势的重大抉择，具有战略性、纲领性、引领性。</p>
+<h5 id="新发展理念的内容"><a href="#新发展理念的内容" class="headerlink" title="新发展理念的内容"></a>新发展理念的内容</h5><ol>
+<li><p><strong>创新是引领发展的第一动力。</strong>发展动力决定发展速度、效能、可持续性。坚持创新发展，是应对发展环境变化、增强发展动力、把握发展主动权，更好引领新常态的根本之策。</p>
+</li>
+<li><p><strong>协调是持续健康发展的内在需求。</strong>坚持协调发展，要着力推动区域协调发展、城乡协调发展、物质文明和精神文明协调发展，推动经济建设和国防建设融合发展。</p>
+</li>
+<li><p><strong>绿色是永续发展的必要条件。</strong>人类发展活动必须尊重自然、顺应自然、保护自然。绿色发展，就是要解决好人与自然和谐共生问题，坚定走生产发展、生活富裕、生态良好的文明发展道路，加快建设资源节约型、环境友好型社会，形成人与自然和谐发展现代化建设新格局，推进美丽中国建设。</p>
+</li>
+<li><p><strong>开放是国家繁荣发展的必由之路。</strong>开放就是要顺应经济全球化潮流，充分运用人类社会创造的先进科学技术成果和有益管理经验。</p>
+</li>
+<li><p><strong>共享是中国特色社会主义的本质要求。</strong>其内涵主要有四个方面：</p>
+<ul>
+<li>全民共享，即共享发展是人人享有、各得其所，不是少数人共享、一部分人共享。</li>
+<li>全面共享，即共享发展就是共享国家经济、政治、文化、社会、生态文明各方面建设成果，全面保障人民再各方面的合法权益。</li>
+<li>共建共享，即只有共建才能共享，共建的过程也是共享的过程。</li>
+<li>渐进共享，即共享发展必须有一个从低级到高级、从不均衡到均衡的过程，计是达到很高的水平也会有差别。</li>
+</ul>
+</li>
+</ol>
+<h5 id="新发展理念的科学内涵"><a href="#新发展理念的科学内涵" class="headerlink" title="新发展理念的科学内涵"></a>新发展理念的科学内涵</h5><p> 创新、协调、绿色、开放、共享的新发展理念，相互贯通、相互促进，是具有内在联系的集合体。</p>
+<ul>
+<li>创新注重的是解决发展动力问题</li>
+<li>协调注重的是解决发展不平衡问题</li>
+<li>绿色注重的是解决人与自然和谐问题</li>
+<li>开放注重的是解决发展内外联动问题</li>
+<li>共享注重的是解决社会公平正义问题</li>
+</ul>
+<p>我们应从整体上把握新发展理念，努力提高统筹贯彻新发展理念的能力和水平，推动建设现代化经济体系。</p>
+</li>
+<li><p><strong>深化供给侧结构性改革</strong></p>
+<p>贯彻新发展理念、建设现代化经济体系必须坚持供给侧结构性改革。坚持质量第一、效益优先，以供给侧结构性改革为主线，推动经济发展质量变革、效率变革、动力变革，提高全要素生产率。只有推进供给侧结构性改革，提高供给体系质量，适应新需求变化，才能在更高水平上实现供求关系新的动态均衡，推动高质量发展。</p>
+<h5 id="深化供给侧结构性改革的方法（措施）P219-P210"><a href="#深化供给侧结构性改革的方法（措施）P219-P210" class="headerlink" title="深化供给侧结构性改革的方法（措施）P219~P210"></a>深化供给侧结构性改革的方法（措施）P219~P210</h5><ol>
+<li><strong>推进增长动能转换，以加快发展先进制造业为重点全面提升实体经济。</strong></li>
+<li><strong>深化要素市场化配置改革，将实现由以价取胜向以质取胜的转变。</strong></li>
+<li><strong>加大人力资本培育力度，更加注重调动和保护人的积极性。</strong></li>
+<li><strong>持续推进“三去一降一补”，优化市场供求结构。</strong></li>
+</ol>
+</li>
+<li><p><strong>建设现代化经济体系的主要任务</strong></p>
+<p>建设现代化经济体系是我国发展的战略目标，也是转变经济发展方式、优化经济结构、转换经济增长动力的迫切要求。只有形成现代化经济体系，才能更好顺应现代化发展潮流和赢得国际竞争主动，也才能为其他领域现代化提供有力支撑。</p>
+<h5 id="现代化经济体系内容-P212"><a href="#现代化经济体系内容-P212" class="headerlink" title="现代化经济体系内容 P212"></a>现代化经济体系内容 P212</h5><ol>
+<li>创新引领、协同发展的产业体系</li>
+<li>统一开放、竞争有序的市场体系</li>
+<li>体现效率、促进公平的收入分配体系</li>
+<li>彰显优势、协调联动的城乡区域发展体系</li>
+<li>资源节约、环境友好的绿色发展体系</li>
+<li>多元平衡、安全高效的全面开放体系</li>
+<li>充分发挥市场作用、更好发挥政府作用的经济体制</li>
+</ol>
+<h5 id="建设现代化经济体系的主要任务-P213"><a href="#建设现代化经济体系的主要任务-P213" class="headerlink" title="建设现代化经济体系的主要任务 P213"></a>建设现代化经济体系的主要任务 P213</h5><ol>
+<li>大力发展实体经济。</li>
+<li>加快实施创新驱动发展战略。</li>
+<li>激发各类市场主体活力。</li>
+<li>积极推动城乡区域协调发展。</li>
+<li>着力发展开放型经济。</li>
+<li>加快完善社会主义市场经济体制。</li>
+</ol>
+</li>
+</ol>
+<h4 id="发展社会主义民主政治"><a href="#发展社会主义民主政治" class="headerlink" title="发展社会主义民主政治"></a>发展社会主义民主政治</h4><h5 id="如何发展社会主义民主政治"><a href="#如何发展社会主义民主政治" class="headerlink" title="如何发展社会主义民主政治"></a>如何发展社会主义民主政治</h5><ol>
+<li>坚持中国特色社会主义政治发展道路。</li>
+<li>健全人民当家作主制度体系</li>
+<li>巩固和发展爱国统一战线</li>
+<li>坚持“一国两制”，推进祖国统一 </li>
+</ol>
+<h5 id="走中国特色社会主义政治发展道路的两个坚持"><a href="#走中国特色社会主义政治发展道路的两个坚持" class="headerlink" title="走中国特色社会主义政治发展道路的两个坚持"></a>走中国特色社会主义政治发展道路的两个坚持</h5><ol>
+<li>坚持党的领导、人民当家作主、依法治国有机统一。</li>
+<li>坚持正确政治方向。</li>
+</ol>
+<h5 id="我国民主制度体系"><a href="#我国民主制度体系" class="headerlink" title="我国民主制度体系"></a>我国民主制度体系</h5><ul>
+<li>根本政治制度：人民代表大会制度</li>
+<li>基本政治制度：<ul>
+<li>中国共产党领导的多党合作和政治协商制度</li>
+<li>民族区域自治制度</li>
+<li>基层群众自治制度</li>
+</ul>
+</li>
+</ul>
+<h5 id="爱国统一战线"><a href="#爱国统一战线" class="headerlink" title="爱国统一战线"></a>爱国统一战线</h5><p>在长期的革命、建设和改革过程中，已经结成了由中国共产党领导的，有各民主党派和各人民团体参加的，包括全体社会主义劳动者、社会主义事业的建设者、拥护社会主义的爱国者、拥护祖国统一的致力于中华民族伟大复兴的爱国者的广泛的爱国统一战线。</p>
+<h5 id="如何巩固和发展爱国统一战线"><a href="#如何巩固和发展爱国统一战线" class="headerlink" title="如何巩固和发展爱国统一战线"></a>如何巩固和发展爱国统一战线</h5><ol>
+<li>坚持长期共存、互相监督、肝胆相照、荣辱与共，支持民主党派按照中国特色社会主义参政党要求更好履行职能。</li>
+<li>深化民族团结进步教育，筑牢中华民族共同体意识。</li>
+<li>全面贯彻党的宗教工作基本方针，坚持我国宗教的中国化方向，积极引导宗教与社会主义社会相适应。</li>
+<li>牢牢把握大团结大联合的主题，做好统战工作。</li>
+</ol>
+<h5 id="全面准确贯彻“一国两制”方针的任务要求"><a href="#全面准确贯彻“一国两制”方针的任务要求" class="headerlink" title="全面准确贯彻“一国两制”方针的任务要求"></a>全面准确贯彻“一国两制”方针的任务要求</h5><ol>
+<li>必须始终准确把握“一国”和“两制”的关系。“一国两制”是一个完整的概念。“一国”是实行“两制”的前提和基础，“两制”从属和派生于“一国”，并统一于“一国”之内。</li>
+<li>必须始终依照宪法和基本法办事。全面贯彻“一国两制”方针，必须把维护中央对香港、澳门特别行政区全面管治权和保障特别行政区高度自治权有机结合起来，落实好中央依法行使权力和特别行政区履行主体责任。</li>
+<li>必须始终聚焦发展这个第一要务。发展是永恒的主题，是香港、澳门的立身之本，也是保持香港、澳门国际地位和解决香港、澳门各种问题的金钥匙。</li>
+<li>必须始终维护和谐稳定的社会环境。要坚持爱国者为主体的“港人治港”，发展壮大爱国爱港爱澳力量。</li>
+</ol>
+<h5 id="扎实推进祖国和平统一的任务要求"><a href="#扎实推进祖国和平统一的任务要求" class="headerlink" title="扎实推进祖国和平统一的任务要求"></a>扎实推进祖国和平统一的任务要求</h5><ol>
+<li>坚持“和平统一、一国两制”方针。“和平统一、一国两制”是我们解决台湾问题的基本方针，也是实现国家统一的最佳方式。</li>
+<li>推动两岸关系和平发展。两岸关系和平发展是一条维护两岸和平、促进共同发展、造福两岸同胞的正确道路，也是通向和平统一的光明大道。</li>
+<li>坚持一个中国原则和“九二共识”。一个中国原则是两岸关系的政治基础，体现一个中国原则的“九二共识”，明确界定了两岸关系的根本性质，是确保两岸关系和平发展的关键。</li>
+<li>坚决反对和遏制任何形式的“台独”。“台独”分裂势力及其活动损害国家主权和领土完整，是两岸关系和平发展的最大障碍，是台海和平稳定的最大威胁。</li>
+<li>秉持和践行“两岸一家亲”理念。两岸同胞是命运与共的骨肉兄弟，是血浓于水的一家人。</li>
+<li>携手同心共圆民族复兴中国梦。中国梦是两岸共同的梦，需要大家一起来圆梦。实现中华民族伟大复兴需要两岸同胞携起手来同心干。</li>
+</ol>
+<h4 id="推动社会主义文化繁荣兴盛"><a href="#推动社会主义文化繁荣兴盛" class="headerlink" title="推动社会主义文化繁荣兴盛"></a>推动社会主义文化繁荣兴盛</h4><h5 id="如何推动社会主义文化繁荣兴盛"><a href="#如何推动社会主义文化繁荣兴盛" class="headerlink" title="如何推动社会主义文化繁荣兴盛"></a>如何推动社会主义文化繁荣兴盛</h5><ol>
+<li>牢牢掌握意识形态工作领导权。</li>
+<li>培育和践行社会主义核心价值观。</li>
+<li>鉴定文化自信，建设社会主义文化强国。</li>
+</ol>
+<h5 id="如何牢牢掌握意识形态工作领导权-P224-P225"><a href="#如何牢牢掌握意识形态工作领导权-P224-P225" class="headerlink" title="如何牢牢掌握意识形态工作领导权 P224~P225"></a>如何牢牢掌握意识形态工作领导权 P224~P225</h5><ol>
+<li>要旗帜鲜明坚持马克思主义指导地位。马克思主义是我们立党立国的根本指导思想，是中国共产党人的“真经”。</li>
+<li>要加快构建中国特色哲学社会科学。构建中国特色哲学社会科学，是掌握意识形态工作领导权的内在要求。</li>
+<li>要坚持正确的舆论导向。掌握意识形态工作领导权，必须坚持正确舆论导向，以正确舆论引导人，提高新闻舆论传播力、引导力、影响力、公信力，让主旋律更加响亮、正能量更加强劲。文化自信得到充分彰显。</li>
+<li>要建设好网络空间。网络不是法外之地，网络空间是亿万民众共同的精神家园，同现实社会一样，既要提倡自由，也要保持秩序。</li>
+<li>要落实好意识形态工作责任制。落实意识形态责任制，根本在于加强组织领导，强化责任担当。</li>
+</ol>
+<h5 id="培育和践行社会主义核心价值观"><a href="#培育和践行社会主义核心价值观" class="headerlink" title="培育和践行社会主义核心价值观"></a>培育和践行社会主义核心价值观</h5><h6 id="社会主义核心价值观内容"><a href="#社会主义核心价值观内容" class="headerlink" title="社会主义核心价值观内容"></a>社会主义核心价值观内容</h6><p>富强、民主、文明、和谐，自由、平等、公正、法治，爱国、敬业、诚信、友善</p>
+<h6 id="社会主义核心价值观和社会主义核心价值体系的辩证关系"><a href="#社会主义核心价值观和社会主义核心价值体系的辩证关系" class="headerlink" title="社会主义核心价值观和社会主义核心价值体系的辩证关系"></a>社会主义核心价值观和社会主义核心价值体系的辩证关系</h6><ol>
+<li>二者方向一致，都体现了社会主义意识形态的本质要求，体现了社会主义先进文化的精髓，是中国特色社会主义道路、理论、制度和文化的价值表达，是实现中华民族伟大复兴的中国梦的价值引领。</li>
+<li>二者各有侧重，相比于社会主义核心价值体系，社会主义核心价值观更加突出核心要素、更加注重凝练表达、更加强化实践导向。</li>
+</ol>
+<h6 id="培育和实践社会主义核心价值观的要求"><a href="#培育和实践社会主义核心价值观的要求" class="headerlink" title="培育和实践社会主义核心价值观的要求"></a>培育和实践社会主义核心价值观的要求</h6><ol>
+<li>把社会主义核心价值观融入社会生活各个方面。</li>
+<li>坚持全民行动、干部带头，从家庭做起、从娃娃抓起。</li>
+<li>立足中华优秀传统文化和革命文化。</li>
+<li>发扬中国人民在长期奋斗中培育、继承、发展起来的伟大民族精神。</li>
+</ol>
+<h5 id="坚定文化自信，建设社会主义文化强国"><a href="#坚定文化自信，建设社会主义文化强国" class="headerlink" title="坚定文化自信，建设社会主义文化强国"></a>坚定文化自信，建设社会主义文化强国</h5><h6 id="文化强国是指一个国家具有强大的文化力量。这种力量既表现为具有高度文化素养的国民，也表现为发达的文化产业，还表现为强大的文化软实力"><a href="#文化强国是指一个国家具有强大的文化力量。这种力量既表现为具有高度文化素养的国民，也表现为发达的文化产业，还表现为强大的文化软实力" class="headerlink" title="文化强国是指一个国家具有强大的文化力量。这种力量既表现为具有高度文化素养的国民，也表现为发达的文化产业，还表现为强大的文化软实力"></a>文化强国是指一个国家具有强大的文化力量。这种力量既表现为具有高度文化素养的国民，也表现为发达的文化产业，还表现为强大的文化软实力</h6><h6 id="如何建设社会主义文化强国-P229"><a href="#如何建设社会主义文化强国-P229" class="headerlink" title="如何建设社会主义文化强国 P229"></a>如何建设社会主义文化强国 P229</h6><ol>
+<li>必须培养高度的文化自信。坚定文化自信，事关国运兴衰，事关文化安全，事关民族精神的独立性。</li>
+<li>必须大力发展文化事业和文化产业。</li>
+<li>必须提高国家文化软实力。文化软实力集中体现了一个国家基于文化而具有的凝聚力和生命力，以及由此产生的吸引力和影响力。</li>
+</ol>
+<h6 id="建设社会主义文化强国的意义"><a href="#建设社会主义文化强国的意义" class="headerlink" title="建设社会主义文化强国的意义"></a>建设社会主义文化强国的意义</h6><p>文化兴国运兴，文化强国运强。没有高度的文化自信，没有文化的繁荣兴盛，就没有中华民族伟大复兴。坚定文化自信，推动社会主义文化繁荣兴盛，实现中华民族伟大复兴，要以马克思主义为指导，坚守中华文化立场，立足当代中国现实，结合当今时代条件，发展面向现代化，面向世界、面向未来的，民族的科学的大众的社会主义文化，走中国特色社会主义文化发展道路，建设中国特色社会主义文化。</p>
+<h4 id="坚持在发展中保障和改善民生"><a href="#坚持在发展中保障和改善民生" class="headerlink" title="坚持在发展中保障和改善民生"></a>坚持在发展中保障和改善民生</h4><h5 id="如何在发展中保障和改善民生"><a href="#如何在发展中保障和改善民生" class="headerlink" title="如何在发展中保障和改善民生"></a>如何在发展中保障和改善民生</h5><ol>
+<li>提高保障和改善民生水平</li>
+<li>加强和创新社会治理</li>
+<li>坚持总体国家安全观</li>
+</ol>
+<h5 id="如何提高保障和改善民生水平-P231-P232"><a href="#如何提高保障和改善民生水平-P231-P232" class="headerlink" title="如何提高保障和改善民生水平 P231~P232"></a>如何提高保障和改善民生水平 P231~P232</h5><ol>
+<li>优先发展教育事业。建设教育强国是中华民族伟大复兴的基础工程，必须优先发展。</li>
+<li>提高就业质量和人民收入水平。就业是最大的民生。</li>
+<li>加强社会保障体系建设。社会保障体系发挥兜底作用，保障全社会成员基本生存与生活需要，要全面建成覆盖全民、城乡统筹、权责清晰、保障适度、可持续的多层次社会保障体系。</li>
+<li>坚决打赢脱贫攻坚战。消除贫困、改善民生、逐步实现共同富裕，是社会主义的本质要求，是我们党的重要使命。</li>
+<li>实施健康中国战略。人民健康是民族昌盛和国家富强的重要标志。</li>
+</ol>
+<h5 id="如何加强和创新社会治理"><a href="#如何加强和创新社会治理" class="headerlink" title="如何加强和创新社会治理"></a>如何加强和创新社会治理</h5><ol>
+<li>创新社会治理体制。坚持完善党委领导、政府负责、社会协同、公众参与、法治保障的社会治理体制，提高社会治理社会化、法治化、智能化、专业化水平，推进社会治理精细化，打造共建共治共享的社会治理格局。</li>
+<li>改进社会治理方式。坚持①系统治理、②依法治理、③源头治理、④综合施策。</li>
+<li>加强预防和化解社会矛盾机制建设。正确处理人民内部矛盾特别是涉及广大人民群众切身利益的矛盾，是保持社会安定团结良好局面的关键。</li>
+<li>加强社会心理服务体系建设。要加强社会心理服务体系建设，培育自尊自信、理性平和、积极向上的社会心态。</li>
+<li>加强社区治理体系建设。社区是党和政府联系、服务居民群众的“最后一公里”，社会治理的重心要向基层下移落到城乡社区。社区服务和管理能力越强，社会治理的基础就越实。</li>
+</ol>
+<h5 id="国家总体安全观的定义"><a href="#国家总体安全观的定义" class="headerlink" title="国家总体安全观的定义"></a>国家总体安全观的定义</h5><p>总体国家安全观，是指坚持国家利益至上，以人民安全为宗旨，以政治安全为根本，统筹外部安全和内部安全、国土安全和国民安全、传统安全和非传统安全、自身安全和共同安全，完善国家安全制度体系，加强国家安全能力建设，坚决维护国家主权、安全、发展利益。</p>
+<h5 id="为什么要坚持国家总体安全观"><a href="#为什么要坚持国家总体安全观" class="headerlink" title="为什么要坚持国家总体安全观"></a>为什么要坚持国家总体安全观</h5><ol>
+<li><p>坚持总体国家安全观，统筹发展和安全，增强忧患意识，做到居安思危，是我们党治国理政的一个重大原则。</p>
+</li>
+<li><p>安全和发展是一体之两翼、驱动之双轮。发展是安全的基础。安全是发展的保障。实施发展和安全并重的国家安全战略，既要善于运用发展成果夯实国家安全的实力基础，又要善于塑造有利于经济社会发展的安全环境，做到坚持发展不停步、维护安全不懈怠。</p>
+</li>
+<li><p>坚持人民安全、政治安全、国家利益至上有机统一。人民安全是国家安全的宗旨，政治安全是国家安全的根本，国家利益至上是国家安全的准则。</p>
+</li>
+</ol>
+<h5 id="构建总体国家安全观的主要任务"><a href="#构建总体国家安全观的主要任务" class="headerlink" title="构建总体国家安全观的主要任务"></a>构建总体国家安全观的主要任务</h5><ol>
+<li>完善国家安全体系。贯彻落实总体国家安全观，要求统筹外部安全和内部安全；国土安全和国民安全；传统安全和非传统安全；发展问题和安全问题；自身安全和共同安全。</li>
+<li>健全公共安全体系。公共安全是国家安全的重要体现，是最基本的民生。</li>
+<li>推进平安中国建设。平安是老百姓解决温饱后的第一需求，是极重要的民生，也是最基本的发展环境。</li>
+<li>加强国家安全能力建设。要主动适应新时代国家安全需要，增强风险意识，坚持科技引领、法治保障、文化支撑，推进安全工作精细化、信息化、法治化。</li>
+<li>加强国家安全教育。维护国家安全是全党全国人民的共同责任。</li>
+</ol>
+<h4 id="建设美丽中国"><a href="#建设美丽中国" class="headerlink" title="建设美丽中国"></a>建设美丽中国</h4><h5 id="如何建设美丽中国"><a href="#如何建设美丽中国" class="headerlink" title="如何建设美丽中国"></a>如何建设美丽中国</h5><ol>
+<li>坚持人与自然和谐共生</li>
+<li>形成人与自然和谐发展新格局</li>
+<li>加快生态文明体制改革</li>
+</ol>
+<h5 id="生态文明的含义"><a href="#生态文明的含义" class="headerlink" title="生态文明的含义"></a>生态文明的含义</h5><p>生态文明是指人类在利用和改造自然的过程中，主动保护自然，积极改善和优化人与自然的关系，建设健康有序的生态运行机制和良好的生态环境。</p>
+<p>生态文明的核心是坚持人与自然和谐共生。</p>
+<p>我国的生态文明建设必须立足于当前特殊的自然生态环境现状、经济发展水平、文化建设状况、社会政治条件以及人口素质等，走符合国情的社会主义生态文明建设道路。</p>
+<h5 id="人如何与自然和谐共生"><a href="#人如何与自然和谐共生" class="headerlink" title="人如何与自然和谐共生"></a>人如何与自然和谐共生</h5><ol>
+<li>尊重自然，是人与自然相处时应秉持的<strong>首要态度</strong>，要求人对自然怀有敬畏之心、感恩之情、报恩之意，尊重自然界的创造和存在，绝不能凌驾于自然之上，只有尊重自然才是人与自然相处的科学态度。</li>
+<li>顺应自然，是人与自然相处时应遵循的基本原则，要求人顺应自然的客观规律，按自然规律办事。</li>
+<li>保护自然，是人与自然相处时应承担的重要责任，要求人发挥主观能动性，在向自然界索取生存发展之需的同时，合乎自然，回报自然，保护自然界的生态系统，对自然界不能只讲索取不讲投入、只讲利用不讲建设。</li>
+</ol>
+<h5 id="建设社会主义生态文明的目的"><a href="#建设社会主义生态文明的目的" class="headerlink" title="建设社会主义生态文明的目的"></a>建设社会主义生态文明的目的</h5><p>建设社会主义生态文明就是要实现人与自然和谐发展，就是要建设以资源环境承载力为基础、以自然规律为准则、以可持续发展为目标的节约型、环境友好型社会，努力走向社会主义生态文明新时代。</p>
+<h5 id="为了形成人与自然和谐发展的新格局，我们应该怎么做"><a href="#为了形成人与自然和谐发展的新格局，我们应该怎么做" class="headerlink" title="为了形成人与自然和谐发展的新格局，我们应该怎么做"></a>为了形成人与自然和谐发展的新格局，我们应该怎么做</h5><ol>
+<li>把节约资源放在首位。</li>
+<li>坚持保护优先、自然恢复为主。</li>
+<li>着力推进绿色发展、循环发展、低碳发展。</li>
+<li>形成节约资源和保护环境的空间格局、产业结构、生产方式、生活方式。</li>
+</ol>
+<h5 id="如何加快生态文明体制改革"><a href="#如何加快生态文明体制改革" class="headerlink" title="如何加快生态文明体制改革"></a>如何加快生态文明体制改革</h5><ol>
+<li>推进绿色发展。</li>
+<li>着力解决突出环境问题。</li>
+<li>加大生态系统保护力度。</li>
+<li>改革生态环境监管体制。</li>
+</ol>
+<h2 id="第十一章-“四个全面”战略布局"><a href="#第十一章-“四个全面”战略布局" class="headerlink" title="第十一章 “四个全面”战略布局"></a>第十一章 “四个全面”战略布局</h2><h3 id="四个全面"><a href="#四个全面" class="headerlink" title="四个全面"></a>四个全面</h3><ol>
+<li>全面建成小康社会</li>
+<li>全面深化改革</li>
+<li>全面依法治国</li>
+<li>全面从严治党</li>
+</ol>
+<h3 id="全面建成小康社会的内涵"><a href="#全面建成小康社会的内涵" class="headerlink" title="全面建成小康社会的内涵"></a>全面建成小康社会的内涵</h3><ol>
+<li>全面建成小康社会，更重要、更难做的是做到“全面”。“小康”讲的是发展水平，“全面”讲的是发展的平衡性。</li>
+<li>全面小康，覆盖的领域要全面，是“五位一体”全面进步的小康，“五位一体”是一个整体性目标要求，他们之间相互联系、相互促进、不可分割。</li>
+<li>全面建成小康社会，要实事求是、因地制宜。</li>
+</ol>
+<h3 id="全面建成小康社会的目标要求"><a href="#全面建成小康社会的目标要求" class="headerlink" title="全面建成小康社会的目标要求"></a>全面建成小康社会的目标要求</h3><ol>
+<li>经济保持中高速增长。</li>
+<li>创新驱动成效显著。</li>
+<li>发展协调性明显增强。</li>
+<li>人民生活水平和质量普遍提高。</li>
+<li>国民素质和社会文明程度显著提高。</li>
+<li>生态环境质量总体改善。</li>
+<li>各方面制度更加成熟更加定型。</li>
+</ol>
+<h3 id="如何全面建成小康社会"><a href="#如何全面建成小康社会" class="headerlink" title="如何全面建成小康社会"></a>如何全面建成小康社会</h3><ol>
+<li>坚决打好防范化解重大风险攻坚战。<ol>
+<li>高度重视金融、地方债务、信息安全、社会稳定等领域存在的风险隐患，增强忧患意识和底线思维，积极采取有力措施，坚持标本兼治，注重以完善体制机制来防范化解风险。</li>
+<li>加强风险监测、预警、应急处置能力，防止外部风险演化为内部风险，防止经济金融风险演化为政治风险，防止个人风险演化为系统性风险。</li>
+</ol>
+</li>
+<li>坚决打好精准脱贫攻坚战。<ol>
+<li>坚持精准扶贫、精准脱贫基本方略，坚持专项扶贫、行业扶贫、社会扶贫等“三位一体”大扶贫格局。</li>
+<li>健全公共服务、建设基础设谁、发展特色优势产业。</li>
+<li>重点解决好深度贫困问题，加强东西部扶贫写作和对口支援，做好中央单位顶点帮扶。坚持中央统筹、省负总责、市县抓落实的工作机制，强化党政一把手负总责的责任制。</li>
+</ol>
+</li>
+<li>坚决打好污染防治攻坚战。<ol>
+<li>推进绿色发展，坚持节约优先、保护优先、自然恢复为主，加快形成节约资源和保护环境的空间格局、产业结构、生产和生活方式。</li>
+<li>推动绿色低碳循环发展，提高资源利用小，从源头上降低污染排放。</li>
+<li>实施好主题功能区战略，优化国土空间开发格局。</li>
+<li>深化生态文明体制改革，完善生态环境保护制度。</li>
+<li>加强环保督察。改革生态环境监管机制，推动形成人与自然和谐发展现代化建设新格局。</li>
+</ol>
+</li>
+<li>确保经济社会持续健康发展。<ol>
+<li>坚持深化供给侧结构性改革，促进“三去一降一补”重点任务取得更大成效，强化创新驱动，加快经济发展方式转变，提高发展质量和效益/</li>
+<li>保持宏观政策连续性稳定性，退队经济保持中高速增长、产业迈向中高端水平，在发展平衡性、协调性、可持续性明显增强的基础上，实现国内生产总值和城乡居民人均收入比2010年翻一番等目标要求。</li>
+</ol>
+</li>
+</ol>
+<h3 id="为什么要全面深化改革"><a href="#为什么要全面深化改革" class="headerlink" title="为什么要全面深化改革"></a>为什么要全面深化改革</h3><ol>
+<li>全面深化改革，是顺应当今世界发展大势的必然选择。</li>
+<li>全面深化改革，是解决中国现实问题的根本途径。</li>
+<li>全面深化改革，关系党和人民事业前途命运，关系党的执政基础和执政地位</li>
+</ol>
+<h3 id="如何全面深化改革"><a href="#如何全面深化改革" class="headerlink" title="如何全面深化改革"></a>如何全面深化改革</h3><ol>
+<li>全面深化改革必须坚持党对改革的集中统一领导。</li>
+<li>全面深化改革必须坚持改革沿着中国特色社会主义方向前进。</li>
+<li>全面深化改革必须坚持改革往有利于维护社会公平正义、增强人民福祉方向前进。</li>
+<li>全面深化改革必须坚持社会主义市场经济改革方向。</li>
+</ol>
+<h3 id="全面深化改革的总目标"><a href="#全面深化改革的总目标" class="headerlink" title="全面深化改革的总目标"></a>全面深化改革的总目标</h3><p>完善和发展中国特色社会主义制度，推进国家治理体系和治理能力现代化。</p>
+<h3 id="全面深化改革的主要内容"><a href="#全面深化改革的主要内容" class="headerlink" title="全面深化改革的主要内容"></a>全面深化改革的主要内容</h3><table>
+<thead>
+<tr>
+<th>方面</th>
+<th>具体内容</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>经济体制</td>
+<td>紧紧围绕市场在资源配置中起决定性作用和更好发挥政府作用深化经济体制改革</td>
+</tr>
+<tr>
+<td>政治体制</td>
+<td>紧紧围绕坚持党的领导、人民当家作主、依法治国有机统一深化政治体制改革</td>
+</tr>
+<tr>
+<td>文化体制</td>
+<td>紧紧围绕建设社会主义核心价值观体系、社会主义文化强国深化文化体制改革</td>
+</tr>
+<tr>
+<td>社会体制</td>
+<td>紧紧围绕更好保障和改善民生、促进社会公平正义深化社会体制改革</td>
+</tr>
+<tr>
+<td>生态文明体制</td>
+<td>紧紧围绕建设美丽中国深化生态文明体制改革</td>
+</tr>
+<tr>
+<td>党的建设制度</td>
+<td>紧紧围绕提高科学执政、民主执政、依法执政水平深化党的建设制度改革</td>
+</tr>
+</tbody></table>
+<h3 id="如何正确处理全面深化改革中的重大关系"><a href="#如何正确处理全面深化改革中的重大关系" class="headerlink" title="如何正确处理全面深化改革中的重大关系"></a>如何正确处理全面深化改革中的重大关系</h3><ol>
+<li>处理好解放思想和实事求是的关系。要用辩证唯物主义和历史唯物主义立场观点方法来观察世界、指导实践。</li>
+<li>处理好顶层设计和摸着石头过河的关系。摸着石头过河是坚持边实践边总结，从实践中获得真知。</li>
+<li>处理好整体推进和重点突破的关系。全面深化改革是关系党和国家事业的重大战略部署，是一个涉及经济社会发展各领域的复杂系统工程，每一项改革都会对其他改革产生重要影响，每一项改革又都需要其他改革协同配合。</li>
+<li>处理好胆子要大、步子要稳的关系。积跬步以致千里，积小赢以为大胜。</li>
+<li>处理好改革、发展、稳定的关系。改革、发展、稳定是我国社会主义现代化建设的三个重要支点，改革是经济社会发展的强大动力，发展是解决一切社会问题的关键，稳定是改革发展的前提。</li>
+</ol>
+<h3 id="全面依法治国的形成发展"><a href="#全面依法治国的形成发展" class="headerlink" title="全面依法治国的形成发展"></a>全面依法治国的形成发展</h3><table>
+<thead>
+<tr>
+<th>时间</th>
+<th>会议</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1978年</td>
+<td>十一届三中全会</td>
+<td>提出“发展社会主义民主、健全社会主义法制”的重大方针</td>
+</tr>
+<tr>
+<td>1997年</td>
+<td>十五大</td>
+<td>明确吧依法治国确立为治理国家的基本方略<br />把建设社会主义法治国家确定为社会主义现代化建设的重要目标</td>
+</tr>
+<tr>
+<td>1999年</td>
+<td>九届全国人大二次会议</td>
+<td>通过《中华人民共和国宪法修正案》正式将“依法治国”写入宪法</td>
+</tr>
+<tr>
+<td>2002年</td>
+<td>十六大</td>
+<td>提出发展社会主义民主政治，最根本的是要把坚持党的领导、人民当家作主和依法治国有机统一起来</td>
+</tr>
+<tr>
+<td>2007年</td>
+<td>十七大</td>
+<td>提出依法治国是社会主义民主政治的基本要求，强调要全面落实依法治国基本方略</td>
+</tr>
+<tr>
+<td>2012年</td>
+<td>十八大</td>
+<td>提出“加快建设社会主义法治国家”，把“全面推进依法治国”作为政治改革和政治发展的重要目标和重要任务</td>
+</tr>
+</tbody></table>
+<h3 id="中国特色社会主义法治道路的内涵"><a href="#中国特色社会主义法治道路的内涵" class="headerlink" title="中国特色社会主义法治道路的内涵"></a>中国特色社会主义法治道路的内涵</h3><ol>
+<li>坚持中国共产党的领导。党的领导和依法治国是高度统一的。党的领导是社会主义法制最根本的保证。必须坚持党领导立法、保证执法、支持司法、带头守法、把依法治国同依法行政统一起来。</li>
+<li>坚持人民在全面依法治国中的主体地位。坚持法治为了人民、依靠人民、造福人民、保护人民。</li>
+<li>坚持法律面前人人平等。在立法、执法、司法、守法各个方面体现人人平等，尊重宪法法律权威。</li>
+<li>坚持依法治国和以德治国相结合。法律是成文的道德，道德是内心的法律。</li>
+<li>坚持从中国实际出发。全面依法治国，必须从我国实际出发，同推进国家治理体系和治理能力现代化相适应。</li>
+</ol>
+<h3 id="深化依法治国实践的重点任务"><a href="#深化依法治国实践的重点任务" class="headerlink" title="深化依法治国实践的重点任务"></a>深化依法治国实践的重点任务</h3><ol>
+<li>推进中国特色社会主义法治体系建设。<ol>
+<li>完善以宪法为核心的中国特色社会主义法律体系。</li>
+<li>建立严密的法制监督体系。</li>
+</ol>
+</li>
+<li>深化依法治国实践。<ol>
+<li>加强宪法实施和监督。加强宪法实施和监督，推进合宪性审查工作，维护宪法权威。</li>
+<li>全面落实司法责任制。</li>
+<li>加大全民普法力度，建设社会主义法治文化。</li>
+</ol>
+</li>
+</ol>
+<h3 id="新时代党的建设总要求"><a href="#新时代党的建设总要求" class="headerlink" title="新时代党的建设总要求"></a>新时代党的建设总要求</h3><ol>
+<li>坚持和加强党的全面领导</li>
+<li>坚持党要管党、全面从严治党</li>
+<li>以加强党的长期执政能力建设</li>
+<li>先进性和纯洁性建设为主线，以党的政治建设为统领，以坚定理想信念宗旨为根基，以调动全党积极性、主动性、创造性为着力点，全面推进党的政治建设、思想建设、组织建设、作风建设、纪律建设，把制度建设贯穿其中，深入推进反腐败斗争，不断提高党的建设质量</li>
+<li>把党建设成为始终走在时代前列、人民衷心拥护、勇于自我革命、禁得起各种风浪考验、朝气蓬勃的马克思主义执政党。</li>
+</ol>
+<h3 id="把党的政治建设摆在首位的原因"><a href="#把党的政治建设摆在首位的原因" class="headerlink" title="把党的政治建设摆在首位的原因"></a>把党的政治建设摆在首位的原因</h3><ol>
+<li>旗帜鲜明讲政治是我们党作为马克思主义政党的根本要求。</li>
+<li>党的政治建设是党的根本性建设，决定党的建设方向和效果。</li>
+<li>注重抓党的政治建设是党的十八大以来全面从严治党的成功经验。</li>
+</ol>
+<h3 id="党的政治建设的基本内容"><a href="#党的政治建设的基本内容" class="headerlink" title="党的政治建设的基本内容"></a>党的政治建设的基本内容</h3><ol>
+<li>保证全党服从中央，坚持党中央权威和集中统一领导，是党的政治建设的首要任务</li>
+<li>全党要坚定执行党的政治路线，严格遵守政治纪律和政治规矩。</li>
+<li>要尊崇党章，严格执行新形势下党内政治生活若干准则。</li>
+<li>完善和落实民主集中制的各项制度，坚持民主基础上的集中和集中指导下的民主相结合。</li>
+<li>弘扬忠诚老实、公道正派、实事求是、公正廉洁等价值观，坚决防止和反对个人主义、分散主义、自由主义、本位主义、好人主义，坚决防止和反对宗派主义、圈子文化、码头文化，坚决反对搞两面派、做两面人。</li>
+<li>全党同志要加强党性锻炼，提高政治觉悟和政治能力。</li>
+</ol>
+<h3 id="如何坚持全面从严治党"><a href="#如何坚持全面从严治党" class="headerlink" title="如何坚持全面从严治党"></a>如何坚持全面从严治党</h3><ol>
+<li>加强党的思想建设。思想建设是党的基础性建设。</li>
+<li>加强党的组织建设。党的组织建设主要包括民主集中制建设、党的基层组织建设、干部队伍建设和党员队伍建设等内容。</li>
+<li>持之以恒正风肃纪。作风建设的核心是保持党同人民群众的血肉联系。</li>
+<li>将制度建设贯穿党的各项建设之中。制度问题带有根本性、全局性、稳定性、长期性，加强制度建设是全面从严治党的长远之根本之策。</li>
+<li>深化标本兼治，夺取反腐败斗争压倒性胜利。廉政建设和反腐败斗争，是从严治党的重中之重。</li>
+</ol>
+<h2 id="第十二章-全面推进国防和军队现代化"><a href="#第十二章-全面推进国防和军队现代化" class="headerlink" title="第十二章 全面推进国防和军队现代化"></a>第十二章 全面推进国防和军队现代化</h2><h3 id="习近平强军思想的主要内容："><a href="#习近平强军思想的主要内容：" class="headerlink" title="习近平强军思想的主要内容："></a>习近平强军思想的主要内容：</h3><ol>
+<li>强国必须强军，巩固国防和强大人民军队是新时代坚持和发展中国特色社会主义、实现中华民族伟大复兴的战略支撑。</li>
+<li>党在新时代的强军目标是建设一支听党指挥、能打胜仗、作风优良的人民军队，必须同国家现代化进程相一致。</li>
+<li>党对军队的绝对领导是人民军队建军之本、强军之魂，必须全面贯彻党领导军队的一系列根本原则和制度，确保部队绝对忠诚、绝对纯洁、绝对可靠。</li>
+<li>军队是要准备打仗的，必须聚焦能打仗、打胜仗，创新发展军事战略指导，构建中国特色现代作战体系，全面提高新时代备战打仗能力，有效塑造态势、管控危机、遏制战争、打赢战争。</li>
+<li>作风优良是我军鲜明特色和政治优势，必须加强作风建设、纪律建设，坚定不移正风肃纪、反腐惩恶，大力弘扬我党我军光荣传统和优良作风，永葆人民军队性质、宗旨、本色。</li>
+<li>推进强军事业必须坚持政治建军、改革强军、科技兴军、依法治军，更加注重聚焦实战、更加注重创新驱动、更加注重体系建设、更加注重集约高效、更加注重军民融合，全面提高革命化现代化正规化水平。</li>
+<li>改革是强军的必由之路，必须推进军队组织形态现代化，构建中国特色现代军事力量体系。完善中国特色社会主义军事制度。</li>
+<li>创新是引领发展的第一动力，必须坚持向科技创新要战斗力，统筹推进军事理论、技术、组织、管理、文化等各方面创新，建设创新型人民军队。</li>
+<li>现代化军队必须构建中国特色军事法治体系，推进治军方式根本性转变，提高国防和军队建设法治化水平。</li>
+<li>军民融合发展是兴国之举、强军之策，必须坚持发展和安全兼顾、富国和强军统一，形成全要素、多领域、高效益军民融合深度发展格局，构建一体化的国家战略体系和能力。</li>
+</ol>
+<h3 id="习近平强军思想的重要意义"><a href="#习近平强军思想的重要意义" class="headerlink" title="习近平强军思想的重要意义"></a>习近平强军思想的重要意义</h3><p>习近平强军思想，是习近平新时代中国特色社会主义思想的组成部分，开拓了马克思主义军事理论和当代中国军事实践发展新境界，标志着党的军事指导理论的与时俱进。</p>
+<h3 id="新时代应当如何强军"><a href="#新时代应当如何强军" class="headerlink" title="新时代应当如何强军"></a>新时代应当如何强军</h3><p>面向新时代，我们要坚持党对人民军队的绝对领导，全面贯彻习近平强军思想，不断推进政治建军、改革强军、科技兴军、依法治军，加快形成中国特色、世界一流的武装力量体系，构建中国特色现代作战体系，推动人民军队切实担负起党和人民赋予的新时代使命任务。</p>
+<h3 id="党对军队的绝对领导是中国特色社会主义的本质特征，是党和国家的重要政治优势。"><a href="#党对军队的绝对领导是中国特色社会主义的本质特征，是党和国家的重要政治优势。" class="headerlink" title="党对军队的绝对领导是中国特色社会主义的本质特征，是党和国家的重要政治优势。"></a>党对军队的绝对领导是中国特色社会主义的本质特征，是党和国家的重要政治优势。</h3><h3 id="党的领导是人民军队战无不胜的根本保证。"><a href="#党的领导是人民军队战无不胜的根本保证。" class="headerlink" title="党的领导是人民军队战无不胜的根本保证。"></a>党的领导是人民军队战无不胜的根本保证。</h3><h3 id="党对军队的绝对领导的基本内容"><a href="#党对军队的绝对领导的基本内容" class="headerlink" title="党对军队的绝对领导的基本内容"></a>党对军队的绝对领导的基本内容</h3><p>军队必须完全地无条件地置于中国共产党的领导之下，在思想上政治上行动上始终与党中央、中央军委保持高度一致，坚决维护党中央、中央军委权威，任何时候任何情况下都坚决听从党中央、中央军委指挥。</p>
+<h3 id="保证党对军队绝对领导的制度内容"><a href="#保证党对军队绝对领导的制度内容" class="headerlink" title="保证党对军队绝对领导的制度内容"></a>保证党对军队绝对领导的制度内容</h3><ol>
+<li>军队最高领导权和指挥权属于党中央和中央军委，中央军委实行主席负责制。</li>
+<li>实行党委制、政治委员制、政治机关制。</li>
+<li>实行支部建在连上。</li>
+</ol>
+<p>军委主席负责制是党对军队绝对领导的<strong>最高实现形式</strong>。</p>
+<p>党委、政治委员和政治机关是党从思想上政治上组织上建设和掌握部队的<strong>重要组织支撑</strong>。</p>
+<p>党委统一的集体领导下的首长分工负责制是党领导军队的<strong>根本制度</strong>。</p>
+<p>支部建在连上是党指挥枪原则落地生根的<strong>坚实基础</strong>。</p>
+<h3 id="如何坚持党对军队的绝对领导，把党指挥枪的原则落到实处"><a href="#如何坚持党对军队的绝对领导，把党指挥枪的原则落到实处" class="headerlink" title="如何坚持党对军队的绝对领导，把党指挥枪的原则落到实处"></a>如何坚持党对军队的绝对领导，把党指挥枪的原则落到实处</h3><ol>
+<li>不折不扣落实好党领导军队的一整套制度。</li>
+<li>坚持五湖四海、任人唯贤，坚持德才兼备、以德为先，坚持对党忠诚、谋善打仗、敢于担当、实绩突出、清正廉洁的军队好干部标准，完善干部选拔任用机制，增强选人用人的科学性、准确性、公信度。</li>
+<li>严守政治纪律和政治规律，加大从严治党、从严治军力度。</li>
+</ol>
+<h3 id="如何建设世界一流军队"><a href="#如何建设世界一流军队" class="headerlink" title="如何建设世界一流军队"></a>如何建设世界一流军队</h3><ol>
+<li>牢固树立战斗力这个唯一的根本的标准。</li>
+<li>坚持政治建军、改革强军、科技兴军、依法治军。</li>
+<li>构建中国特色现代军事力量体系。</li>
+<li>深入推进练兵备战。</li>
+</ol>
+<h3 id="坚持富国和强军相统一的科学内涵"><a href="#坚持富国和强军相统一的科学内涵" class="headerlink" title="坚持富国和强军相统一的科学内涵"></a>坚持富国和强军相统一的科学内涵</h3><ol>
+<li>坚持富国和强军相统一是我们党的一贯主张。</li>
+<li>坚持富国和强军相统一是经济建设和国防建设协调发展规律的内在要求。富国才能强军，强军才能卫国。</li>
+<li>走军民融合式发展路子，是实现富国和强军统一的重要途径。</li>
+</ol>
+<h3 id="如何加快形成军民融合深度发展格局"><a href="#如何加快形成军民融合深度发展格局" class="headerlink" title="如何加快形成军民融合深度发展格局"></a>如何加快形成军民融合深度发展格局</h3><ol>
+<li>坚持全国一盘棋。军民融合是国家战略，必须站在党和国家事业发展全局的高度思考问题，切实把思想和行动统一到党中央决策部署上来。</li>
+<li>健全体制机制。在国家层面成立中央军民融合发展委员会，建立推进军民融合发展机制，形成组织管理体系。各省设置军民融合发展领导机构，完善职能配置和工作机制。</li>
+<li>强化战略规划。把国民经济和社会发展规划、军队建设发展规划统筹起来、同步论证，建立专门资金渠道，落实军民融合发展资金保障，加强主导检查、建立问责机制，强化规划刚性约束和执行力。</li>
+<li>突出重点领域。向重点领域聚焦用力，以点带面推动整体水平提升。民用科技向军事领域拓展；吸纳和利用民用先进技术发展高新技术武器装备；建设符合国防要求的重大基础设施；人才资源共育共享；构建物资储备网络布局；推进多领域的军民融合。</li>
+<li>军政军民团结是实现富国和强军相统一的重要政治保障，是我党我军特有的政治优势。使关心国防、热爱国防、建设国防、保卫国防成为全社会的思想共识和自觉行动。</li>
+</ol>
+<h2 id="中国特色大国外交"><a href="#中国特色大国外交" class="headerlink" title="中国特色大国外交"></a>中国特色大国外交</h2><h3 id="当前世界局势"><a href="#当前世界局势" class="headerlink" title="当前世界局势"></a>当前世界局势</h3><ul>
+<li>世界多极化在曲折中发展</li>
+<li>经济全球化深入发展</li>
+<li>文化多样化持续推进</li>
+<li>社会信息化快速发展</li>
+<li>科学技术孕育新突破</li>
+</ul>
+<h3 id="中国独立自主的和平外交政策"><a href="#中国独立自主的和平外交政策" class="headerlink" title="中国独立自主的和平外交政策"></a>中国独立自主的和平外交政策</h3><ol>
+<li>就是把国家主权和安全放在第一位，坚定地维护我国的国家利益，反对任何国家损害我国的独立、主权、安全和尊严；</li>
+<li>就是从我国人民和世界人民的根本利益出发，对于一切国家事务，都要根据事情本身的是非曲直决定自己的立场和政策，秉持公道，伸张正义，不屈从于任何外来压力；</li>
+<li>就是坚持各国的失误应有本国政府和人民决定，世界上的事情应由各国政府和人民平等协商，反对一切形式的霸权主义和强权政治；</li>
+<li>就是主张和平解决国际争端和热点问题，反对动辄诉诸武力或以武力相威胁，反对颠覆别国合法政权，反对一切形式的恐怖主义。</li>
+</ol>
+<h3 id="为什么中国要实行独立自主的和平外交政策"><a href="#为什么中国要实行独立自主的和平外交政策" class="headerlink" title="为什么中国要实行独立自主的和平外交政策"></a>为什么中国要实行独立自主的和平外交政策</h3><ol>
+<li>中国坚定不移地奉行独立自主的和平外交政策，走和平发展道路，这是由我国的社会主义性质和在国际上的地位所决定的，是从历史、现实、未来的客观判断中得出的结论，是思想自信和实践自觉地有机统一。</li>
+<li>中国走和平发展道路的自信和自觉，来源于中华文明的深厚渊源，来源于对现实中国发展目标条件的认知，来源于对世界发展大势的把握。</li>
+<li>走和平发展道路，对中国有利，对亚洲有利，对世界也有利。</li>
+<li>中国坚持走和平发展道路，既积极争取和平的国际环境发展自己，又以自身发展促进世界和平；既让中国更好利用世界的机遇，又让世界更好分享中国的机遇，促进中国和世界各国良性互动、互利共赢。</li>
+</ol>
+<h3 id="维护世界和平、促进共同发展，是中国外交政策的宗旨。"><a href="#维护世界和平、促进共同发展，是中国外交政策的宗旨。" class="headerlink" title="维护世界和平、促进共同发展，是中国外交政策的宗旨。"></a>维护世界和平、促进共同发展，是<strong>中国外交政策的宗旨</strong>。</h3><h3 id="新型国际关系“新”在哪里（新型国际关系的特点）"><a href="#新型国际关系“新”在哪里（新型国际关系的特点）" class="headerlink" title="新型国际关系“新”在哪里（新型国际关系的特点）"></a>新型国际关系“新”在哪里（新型国际关系的特点）</h3><p>“新”在互相尊重，“新”在公平正义，特别是“新”在合作共赢。</p>
+<h3 id="如何推动新型国际关系"><a href="#如何推动新型国际关系" class="headerlink" title="如何推动新型国际关系"></a>如何推动新型国际关系</h3><ol>
+<li>坚决维护国家核心利益。</li>
+<li>在和平共处五项原则基础上发展同世界各国的友好合作。</li>
+<li>积极参与全球治理体系改革和建设。</li>
+<li>加强涉外法律工作，完善涉外法律法规体系。</li>
+<li>把互相尊重、公平正义、合作共赢理念体现到政治、经济、安全、文化等对外合作的方方面面，推动构建人类命运共同体。</li>
+</ol>
+<h3 id="构建人类命运共同体思想的时代背景"><a href="#构建人类命运共同体思想的时代背景" class="headerlink" title="构建人类命运共同体思想的时代背景"></a>构建人类命运共同体思想的时代背景</h3><ol>
+<li>世界格局正处于加快演变进程之中，国与国之间的联系程度空前加深</li>
+<li>世界发展面临各种问题和挑战，国际社会迫切呼唤新的全球治理理念</li>
+</ol>
+<h3 id="构建人类命运共同体思想的内涵"><a href="#构建人类命运共同体思想的内涵" class="headerlink" title="构建人类命运共同体思想的内涵"></a>构建人类命运共同体思想的内涵</h3><ol>
+<li>政治上，要相互尊重、平等协商，坚决摒弃冷战思维和强权政治，走对话而不对抗、结伴而不结盟的国与国交往新路。</li>
+<li>安全上，要坚持以对话解决争端、以协商化解分歧，统筹应对传统和非传统安全威胁，反对一切形式的恐怖主义。</li>
+<li>经济上，要同舟共济，促进贸易和投资自由化便利化，推动经济全球化朝着更加开放、包容、普惠、平衡、供应的方向发展。</li>
+<li>文化上，要尊重世界文明多样性，以文明交流超越文明隔阂、文明互鉴超越文明冲突、文明共存超越文明优越。</li>
+<li>生态上，要坚持环境友好，合作应对气候变化，保护好人类赖以生存的地球家园。</li>
+</ol>
+<h3 id="构建人类命运共同体思想的意义"><a href="#构建人类命运共同体思想的意义" class="headerlink" title="构建人类命运共同体思想的意义"></a>构建人类命运共同体思想的意义</h3><p>构建人类命运共同体顺应了历史潮流，回应了时代要求，凝聚了各国共识，为人类社会实现共同发展、持续繁荣、长治久安绘制了蓝图。这一思想继承和发展了新中国不同时期重大外交思想和主张，反映了中外优秀文化和全人类共同价值追求，适应了新时代中国与世界关系的历史性变化，成为中国引领时代潮流和人类文明进步方向的鲜明旗帜，已被多次写入联合国文件，对中国的和平发展、世界的繁荣进步都有重大和深远的意义。</p>
+<h3 id="为什么要推进“一带一路”"><a href="#为什么要推进“一带一路”" class="headerlink" title="为什么要推进“一带一路”"></a>为什么要推进“一带一路”</h3><p>共建“一带一路”符合国际社会的根本利益，彰显人类社会共同理想和美好追求，是国际合作以及全球治理新模式的积累探索，将为世界和平发展增添新的正能量。推进“一带一路”建设计是中国扩大和深化对外开放的需要，也是加强和欧亚非拉及世界各国互利合作的需要。</p>
+<h3 id="共建“一带一路”倡议"><a href="#共建“一带一路”倡议" class="headerlink" title="共建“一带一路”倡议"></a>共建“一带一路”倡议</h3><p>恪守联合国宪章的宗旨和原则，坚持开放合作、和谐包容、市场运作、互利共赢。<br>秉持和平合作、开放包容、互利共赢的理念，全方位推进务实合作，打造政治互信、经济融合、文化包容的利益共同体、命运共同体和责任共同体，以政策沟通、设施联通、贸易畅通、资金融通、民心相通为主要内容加强合作。</p>
+<h3 id="“一带一路”建设要求"><a href="#“一带一路”建设要求" class="headerlink" title="“一带一路”建设要求"></a>“一带一路”建设要求</h3><ol>
+<li>坚持引进来和走出去并重，深化双向投资合作。</li>
+<li>坚持共商共建共享原则。</li>
+<li>加强创新能力开放合作，主要是加强技术创新合作、理论创新交流互鉴、创新人才资源交流合作。</li>
+<li>把“一带一路”与构建人类命运共同体更加紧密结合起来，与落实2030年可持续发展议程紧密结合起来，打造国际合作新平台，增添共同发展新动力，把“一带一路”建成和平之路、繁荣之路、开放之路、创新之路、文明之路。</li>
+</ol>
+<h3 id="共商共建人类命运共同体的任务要求"><a href="#共商共建人类命运共同体的任务要求" class="headerlink" title="共商共建人类命运共同体的任务要求"></a>共商共建人类命运共同体的任务要求</h3><ol>
+<li>坚持和平发展道路，推动建设新型国际关系。</li>
+<li>不断完善外交布局，积极发展全球伙伴关系。</li>
+<li>深度参与全球治理，积极引导国际秩序变革方向。</li>
+<li>推动国际社会从伙伴关系、安全格局、经济发展、文明交流、生态建设等方面为建立人类命运共同体做出努力。</li>
+</ol>
+<h2 id="第十四章-坚持和加强党的领导"><a href="#第十四章-坚持和加强党的领导" class="headerlink" title="第十四章 坚持和加强党的领导"></a>第十四章 坚持和加强党的领导</h2><h3 id="中国共产党的领导地位是历史和人民的选择"><a href="#中国共产党的领导地位是历史和人民的选择" class="headerlink" title="中国共产党的领导地位是历史和人民的选择"></a>中国共产党的领导地位是历史和人民的选择</h3><ul>
+<li>历史表明，历史和人民选择中国共产党领导中华民族伟大复兴的事业是正确的，必须长期坚持、永不动摇</li>
+<li>中国共产党领导中国人民开辟的中国特色社会主义道路是正确的，必须 长期坚持、永不动摇</li>
+<li>中国共产党和中国人民扎根中国大地、吸纳人类文明优秀成果、独立自主实现国家发展的战略是正确的，必须长期坚持、永不动摇</li>
+</ul>
+<h3 id="为什么说党的领导是中国特色社会主义最本质的特征"><a href="#为什么说党的领导是中国特色社会主义最本质的特征" class="headerlink" title="为什么说党的领导是中国特色社会主义最本质的特征"></a>为什么说党的领导是中国特色社会主义最本质的特征</h3><ol>
+<li>这是由科学社会主义的理论逻辑所决定的。坚持无产阶级政党的领导是无产阶级革命和社会主义建设取得胜利的根本保障。</li>
+<li>这是由中国特色社会主义产生与发展的历史逻辑所决定的。中国特色社会主义是在改革开放40年的伟大实践中的得来的，是在中华人民共和国成立近70年的持续探索中得来的，是在我们党领导人民进行伟大社会革命90多年的实践中得来的，是党和人民历经千辛万苦、付出各种代价取得的宝贵成果。取得这一成果最根本的就是中国共产党的领导。</li>
+<li>这是由中国特色社会主义迈向新征程的实践逻辑所决定的。实现中华民族伟大复兴，关键在党。要坚定走中国道路，把13多亿人口聚集成中国力量，焕发出中国精神，实现中华民族的伟大复兴，必须坚持中国共产党的领导。</li>
+</ol>
+<h3 id="为什么说党的领导是中国特色社会主义制度的最大优势"><a href="#为什么说党的领导是中国特色社会主义制度的最大优势" class="headerlink" title="为什么说党的领导是中国特色社会主义制度的最大优势"></a>为什么说党的领导是中国特色社会主义制度的最大优势</h3><ol>
+<li>中国特色社会主义制度是党领导人民创建的。没有中国共产党，就没有中国特色社会主义制度，制度优势就无从谈起。</li>
+<li>党的领导是充分发挥中国特色社会主义制度优势的根本保障。</li>
+<li>党的自身优势是中国特色社会主义制度优势的主要来源。</li>
+</ol>
+<h3 id="新时代中国共产党的历史使命"><a href="#新时代中国共产党的历史使命" class="headerlink" title="新时代中国共产党的历史使命"></a>新时代中国共产党的历史使命</h3><p>统揽伟大斗争、伟大工程、伟大事业、伟大梦想，在全面建成小康社会的基础上全面建成社会主义现代化强国，实现中华民族伟大复兴的中国梦。</p>
+<h3 id="实现伟大梦想的任务要求"><a href="#实现伟大梦想的任务要求" class="headerlink" title="实现伟大梦想的任务要求"></a>实现伟大梦想的任务要求</h3><ol>
+<li>必须进行具有许多新的历史特点的伟大斗争。</li>
+<li>必须深入推进党的建设新的伟大工程。</li>
+<li>必须推进中国特色社会主义伟大事业。</li>
+</ol>
+<h3 id="伟大斗争、伟大工程、伟大事业、伟大梦想的辩证关系"><a href="#伟大斗争、伟大工程、伟大事业、伟大梦想的辩证关系" class="headerlink" title="伟大斗争、伟大工程、伟大事业、伟大梦想的辩证关系"></a>伟大斗争、伟大工程、伟大事业、伟大梦想的辩证关系</h3><p>伟大斗争、伟大工程、伟大事业、伟大梦想是一个紧密联系、相互贯通、相互作用、有机统一的整体，统一于新时代坚持和发展中国特色社会主义伟大实践。</p>
+<ul>
+<li>伟大梦想是目标，指引前进方向。</li>
+<li>伟大斗争是手段，激发前进动力。</li>
+<li>伟大工程是保障，提供前进保证。</li>
+<li>伟大事业是主题，开辟前进道路。</li>
+</ul>
+<p>其中起决定性作用的是党的建设伟大工程。伟大工程直接关系到党能否进行伟大斗争、推进伟大事业、实现伟大梦想。<br>因此必须把党建设好，把伟大工程建设好，确保党在世界形势深刻变化的历史进程中始终走在时代前列，在应对国内外各种风险和考验的历史进程中始终成为全国人民的主心骨，再坚持和发展中国特色社会主义的历史进程中始终成为坚强领导核心。</p>
+<h3 id="党是最高政治领导力量"><a href="#党是最高政治领导力量" class="headerlink" title="党是最高政治领导力量"></a>党是最高政治领导力量</h3><ol>
+<li>这是马克思主义政党的基本要求。无产阶级执政党必须坚持党对国家政权的最高领导权，这是马克思主义政党学说的基本原则。</li>
+<li>这是对党领导革命、建设和改革历史经验的深刻总结。</li>
+<li>这是推进伟大事业的根本保证。</li>
+</ol>
+<h3 id="如何确保党始终总揽全局协调各方"><a href="#如何确保党始终总揽全局协调各方" class="headerlink" title="如何确保党始终总揽全局协调各方"></a>如何确保党始终总揽全局协调各方</h3><ol>
+<li>必须增强政治意识、大局意识、核心意识、看齐意识，自觉维护党中央权威和集中统一领导，自觉在思想上政治上行动上同党中央高度保持一致。</li>
+<li>必须坚持和完善党的领导的体制机制。</li>
+<li>必须坚持党的民主集中制原则。</li>
+</ol>
+<h3 id="如何全面增强党的执政本领"><a href="#如何全面增强党的执政本领" class="headerlink" title="如何全面增强党的执政本领"></a>如何全面增强党的执政本领</h3><ol>
+<li>增强学习本领。坚持用习近平新时代中国特色社会主义思想武装头脑、指导实践、推进工作，全面、系统、富有探索精神地学习，并付诸于实践，在实践中增长解决问题的新本领。</li>
+<li>增强政治领导本领。坚持战略思维、创新思维、辩证思维、法治思维、底线思维，科学制定和坚决执行党的路线方针政策，把党总揽全局、协调各方落到实处。</li>
+<li>增强改革创新本领。解放思想、与时俱进、锐意进取，既要登高望远，又要居安思危。善于结合实际传造型推动工作，善于运用互联网技术和信息手段开展工作。</li>
+<li>增强科学发展本领。坚定不移贯彻穿心、协调、绿色、开放、共享的发展理念，统筹推进“五位一体”总体布局，协调推进“四个全面”战略布局，不断增强我国创新经济创新力和竞争力，不断开创发展新局面。</li>
+<li>增强依法执政本领。加快形成覆盖党的领导和党的建设各方面的党内法规制度体系，坚持依法治国与依规治党统筹推进，一体建设，坚持依法治国也依规治党有机统一。</li>
+<li>增强群众工作本领。组织、领导群众，发挥联系群众的桥梁和纽带作用。</li>
+<li>增强狠抓落实本领。坚持说实话、谋实事、出实招，以钉钉子精神做实做细做好各项工作。</li>
+<li>增强驾驭风险本领。健全各方面风险防控机制，善于处理各种复杂矛盾，用于战胜前进路上的各种艰难险阻，牢牢把握工作主动权。</li>
+</ol>
+<h2 id="补充内容"><a href="#补充内容" class="headerlink" title="补充内容"></a>补充内容</h2><h3 id="十三个显著优势"><a href="#十三个显著优势" class="headerlink" title="十三个显著优势"></a>十三个显著优势</h3><ol>
+<li>坚持党的集中统一领导，坚持党的科学理论，保持政治稳定，确保国家始终沿着社会主义方向前进的显著优势。</li>
+<li>坚持人民当家作主，发展人民民主，密切联系群众，紧紧依靠人民推动国家发展的显著优势。</li>
+<li>坚持全面依法治国，建设社会主义法治国家，切实保障社会公平正义和人民权利的显著优势。</li>
+<li>坚持全国一盘棋，调动各方面积极性，集中力量办大事的显著优势。</li>
+<li>坚持各民族一律平等，铸牢中华民族共同体意识，实现共同团结奋斗、共同繁荣发展的显著优势。</li>
+<li>坚持公有制为主体、多种所有制经济共同发展和按劳分配为主体、多种分配方式并存，把社会主义制度和市场经济有机结合起来，不断解放和发展社会生产力的显著优势。</li>
+<li>坚持共同的理想信念、价值理念、道德观念，弘扬中华优秀传统文化、革命文化、社会主义先进文化，促进全体人民在思想上精神上紧紧团结在一起的显著优势。</li>
+<li>坚持以人民为中心的发展思想，不断保障和改善民生、增进人民福祉，走共同富裕道路的显著优势。</li>
+<li>坚持改革创新、与时俱进，善于自我完善、自我发展，使社会充满生机活力的显著优势。</li>
+<li>坚持德才兼备、选贤任能，聚天下英才而用之，培养造就更多更优秀人才的显著优势。</li>
+<li>坚持党指挥枪，确保人民军队绝对忠诚于党和人民，有力保障国家主权、安全、发展利益的显著优势。</li>
+<li>坚持“一国两制”，保持香港、澳门长期繁荣稳定，促进祖国和平统一的显著优势。</li>
+<li>坚持独立自主和对外开放相统一，积极参与全球治理，为构建人类命运共同体不断作出贡献的显著优势。</li>
+</ol>
+<h3 id="一个总体目标"><a href="#一个总体目标" class="headerlink" title="一个总体目标"></a>一个总体目标</h3><p>到我们党成立一百年时，在各方面制度更加成熟更加定型上取得明显成效；到2035年，各方面制度更加完善，基本实现国家治理体系和治理能力现代化；到新中国成立一百年时，全面实现国家治理体系和治理能力现代化，使中国特色社会主义制度更加巩固、优越性充分展现。</p>
+<h3 id="十三个坚持和完善"><a href="#十三个坚持和完善" class="headerlink" title="十三个坚持和完善"></a>十三个坚持和完善</h3><ol>
+<li>坚持和完善党的领导制度体系，提高党科学执政、民主执政、依法执政水平。</li>
+<li>坚持和完善人民当家作主制度体系，发展社会主义民主政治。</li>
+<li>坚持和完善中国特色社会主义法治体系，提高党依法治国、依法执政能力。</li>
+<li>坚持和完善中国特色社会主义行政体制，构建职责明确、依法行政的政府治理体系。</li>
+<li>坚持和完善社会主义基本经济制度，推动经济高质量发展。</li>
+<li>坚持和完善繁荣发展社会主义先进文化的制度，巩固全体人民团结奋斗的共同思想基础。</li>
+<li>坚持和完善统筹城乡的民生保障制度，足人民日益增长的美好生活需要。</li>
+<li>坚持和完善共建共治共享的社会治理制度，保持社会稳定、维护国家安全。</li>
+<li>坚持和完善生态文明制度体系，促进人与自然和谐共生。生态文明建设是关系中华民族永续发展的千年大计。</li>
+<li>坚持和完善党对人民军队的绝对领导制度，确保人民军队忠实履行新时代使命任务。</li>
+<li>坚持和完善“一国两制”制度体系，推进祖国和平统一。</li>
+<li>坚持和完善独立自主的和平外交政策，推动构建人类命运共同体。</li>
+<li>坚持和完善党和国家监督体系，强化对权力运行的制约和监督。</li>
+</ol>
+<h3 id="党的十九届四中全会的重大意义"><a href="#党的十九届四中全会的重大意义" class="headerlink" title="党的十九届四中全会的重大意义"></a><strong>党的十九届四中全会的重大意义</strong></h3><ol>
+<li><strong>为党和国家事业兴旺发达、长治久安提供坚强制度保证。</strong></li>
+<li><strong>为更好应对百年未有之大变局作出重要安排。</strong></li>
+<li><strong>为“中国之治”成功经验上升为系统性制度成果提供根本遵循。</strong></li>
+<li><strong>为人类社会创造更好制度提供中国智慧和中国方案。</strong></li>
+</ol>
+<h3 id="中国特色社会主义的制度优势"><a href="#中国特色社会主义的制度优势" class="headerlink" title="中国特色社会主义的制度优势"></a><strong>中国特色社会主义的制度优势</strong></h3><ol>
+<li><strong>中国特色社会主义制度具有强大生命力和巨大优越性。</strong></li>
+<li><strong>中国特色社会主义制度是党和人民在长期实践探索中形成的科学制度体系。</strong></li>
+<li><strong>中国特色社会主义制度的优越性体现在国家治理各个方面。</strong></li>
+<li><strong>发挥中国特色社会主义制度优越性需要推动制度创新。</strong></li>
+</ol>
+<h3 id="更好地把我国制度优势转化为国家治理效能"><a href="#更好地把我国制度优势转化为国家治理效能" class="headerlink" title="更好地把我国制度优势转化为国家治理效能"></a><strong>更好地把我国制度优势转化为国家治理效能</strong></h3><ol>
+<li><strong>坚持党中央集中统一领导。</strong></li>
+<li><strong>切实提升制度执行能力。</strong></li>
+<li><strong>坚持系统治理、依法治理、综合治理、源头治理。</strong></li>
+</ol>
+]]></content>
+      <categories>
+        <category>笔记</category>
+      </categories>
+      <tags>
+        <tag>期末</tag>
+        <tag>毛概</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Django+Nginx+Uwsgi+Https环境开发文档——环境搭建</title>
+    <url>/2020-03-23/Django-Nginx-Uwsgi-Https%E7%8E%AF%E5%A2%83%E5%BC%80%E5%8F%91%E6%96%87%E6%A1%A3%E2%80%94%E2%80%94%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</url>
+    <content><![CDATA[<blockquote>
+<p>以Python为Web主要开发环境的开发者大多数会采用Django+Uwsgi的框架来进行开发，因此必不可少的要接触服务器环境的搭建以及维护工作。</p>
+<p>本文档以介绍和总结服务器环境搭建为主。</p>
+</blockquote>
+<h1 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h1><h2 id="硬件环境"><a href="#硬件环境" class="headerlink" title="硬件环境"></a>硬件环境</h2><ul>
+<li>RASPBERRY PI 3B+</li>
+<li>100Mbps 2.4GHz Wi-Fi Network</li>
+<li>320GB Western Digital HHD</li>
+</ul>
+<h2 id="系统环境"><a href="#系统环境" class="headerlink" title="系统环境"></a>系统环境</h2><ul>
+<li>Raspbian GNU/Linux 10 (buster) armv7l</li>
+</ul>
+<h2 id="软件环境"><a href="#软件环境" class="headerlink" title="软件环境"></a>软件环境</h2><ul>
+<li>Bash 5.0.3</li>
+<li>vim 8.1</li>
+</ul>
+<a id="more"></a>
+
+<h1 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h1><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>Python现在最稳定的版本是Python3.7，当然现在官网已经推出了3.8，其实哪个版本都不重要，服务器能运行就行。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">更新软件包</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> sudo apt update</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> sudo apt upgrade</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash">安装python3和pip3</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> sudo apt install python3 python3-pip</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="更换pip源"><a href="#更换pip源" class="headerlink" title="更换pip源"></a>更换pip源</h2><p>由于网络原因国内一部分地区访问官方的源会有网络问题，因此我们可以将源换成国内的镜像源</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> sudo vim /root/.pip/pip.conf</span></span><br></pre></td></tr></table></figure>
+
+<p>如果没有这个文件的话就新建一个</p>
+<p>将<code>pip.conf</code>中的内容改为</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">[global]</span><br><span class="line"><span class="meta">#</span><span class="bash"> 阿里源</span></span><br><span class="line">index-url = https://mirrors.aliyun.com/pypi/simple/</span><br><span class="line"><span class="meta">#</span><span class="bash"> 中科大源</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> index-url = https://pypi.mirrors.ustc.edu.cn/simple/</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 豆瓣源</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> index-url = http://pypi.douban.com/simple/</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 清华源</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> index-url = https://pypi.tuna.tsinghua.edu.cn/simple/</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="Django"><a href="#Django" class="headerlink" title="Django"></a>Django</h1><h2 id="安装-1"><a href="#安装-1" class="headerlink" title="安装"></a>安装</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> sudo pip3 install django</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="新建Django项目"><a href="#新建Django项目" class="headerlink" title="新建Django项目"></a>新建Django项目</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> django-admin startproject &lt;project&gt;</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><code>&lt;project&gt;</code>是你的项目名称</li>
+</ul>
+<h2 id="配置项目AllowHost"><a href="#配置项目AllowHost" class="headerlink" title="配置项目AllowHost"></a>配置项目AllowHost</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">cd</span> &lt;project&gt;</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> sudo vim &lt;project&gt;/settings.py</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 找到ALLOWED_HOSTS，将它的值从[]改成[<span class="string">'*'</span>]</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 保存退出</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><code>&lt;project&gt;</code>是你的项目名称</li>
+</ul>
+<h2 id="测试启动"><a href="#测试启动" class="headerlink" title="测试启动"></a>测试启动</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> python3 manager.py runserver 0.0.0.0:9000</span></span><br></pre></td></tr></table></figure>
+
+<p>打开浏览器，在地址栏输入<code>&lt;host&gt;:9000</code></p>
+<p><img src="/img/Django/django.png" alt="django"></p>
+<p>启动成功</p>
+<h1 id="Uwsgi"><a href="#Uwsgi" class="headerlink" title="Uwsgi"></a>Uwsgi</h1><h2 id="安装-2"><a href="#安装-2" class="headerlink" title="安装"></a>安装</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> sudo pip3 install uwsgi</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="测试uwsgi-Django"><a href="#测试uwsgi-Django" class="headerlink" title="测试uwsgi+Django"></a>测试uwsgi+Django</h2><h3 id="进入刚刚创建的项目"><a href="#进入刚刚创建的项目" class="headerlink" title="进入刚刚创建的项目"></a>进入刚刚创建的项目</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">cd</span> &lt;project&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="uwsgi测试"><a href="#uwsgi测试" class="headerlink" title="uwsgi测试"></a>uwsgi测试</h3><h4 id="启动uwsgi"><a href="#启动uwsgi" class="headerlink" title="启动uwsgi"></a>启动uwsgi</h4><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> uwsgi --http :8080 --module &lt;project&gt;.wsgi</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><code>&lt;project&gt;</code>是你的项目名称</li>
+</ul>
+<h4 id="浏览器测试"><a href="#浏览器测试" class="headerlink" title="浏览器测试"></a>浏览器测试</h4><p>浏览器输入<code>&lt;host&gt;:8080</code></p>
+<p><img src="/img/Django/django.png" alt="django"></p>
+<p>启动成功</p>
+<h1 id="Nginx"><a href="#Nginx" class="headerlink" title="Nginx"></a>Nginx</h1><h2 id="安装-3"><a href="#安装-3" class="headerlink" title="安装"></a>安装</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> sudo apt install nginx</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="测试Nginx"><a href="#测试Nginx" class="headerlink" title="测试Nginx"></a>测试Nginx</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo cat /etc/nginx/uwsgi_params</span><br><span class="line"></span><br><span class="line">uwsgi_param  QUERY_STRING       $query_string;</span><br><span class="line">uwsgi_param  REQUEST_METHOD     $request_method;</span><br><span class="line">uwsgi_param  CONTENT_TYPE       $content_type;</span><br><span class="line">uwsgi_param  CONTENT_LENGTH     $content_length;</span><br><span class="line"></span><br><span class="line">uwsgi_param  REQUEST_URI        $request_uri;</span><br><span class="line">uwsgi_param  PATH_INFO          $document_uri;</span><br><span class="line">uwsgi_param  DOCUMENT_ROOT      $document_root;</span><br><span class="line">uwsgi_param  SERVER_PROTOCOL    $server_protocol;</span><br><span class="line">uwsgi_param  REQUEST_SCHEME     $scheme;</span><br><span class="line">uwsgi_param  HTTPS              $https if_not_empty;</span><br><span class="line"></span><br><span class="line">uwsgi_param  REMOTE_ADDR        $remote_addr;</span><br><span class="line">uwsgi_param  REMOTE_PORT        $remote_port;</span><br><span class="line">uwsgi_param  SERVER_PORT        $server_port;</span><br><span class="line">uwsgi_param  SERVER_NAME        $server_name;</span><br></pre></td></tr></table></figure>
+
+<h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><h3 id="新建配置文件"><a href="#新建配置文件" class="headerlink" title="新建配置文件"></a>新建配置文件</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 删除默认的配置</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> sudo rm /etc/nginx/site-enabled/*</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> sudo rm /etc/nginx/site-available/*</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 新建用户配置</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> sudo touch /etc/nginx/site-enabled/nginx.conf</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 软链</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> sudo ln -s /etc/nginx/site-enabled/nginx.conf /etc/nginx/site-available/nginx.conf</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 编写配置文件</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> sudo vim /etc/nginx/site-enbaled/nginx.conf</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="nginx-conf"><a href="#nginx-conf" class="headerlink" title="nginx.conf"></a>nginx.conf</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> django组件连接</span></span><br><span class="line">upstream django&#123;</span><br><span class="line"><span class="meta">	#</span><span class="bash"> tmp/uwsgi_1.sock只是sock文件的路径，可以自行定义</span></span><br><span class="line">	server unix:///tmp/uwsgi_1.sock;</span><br><span class="line">&#125;</span><br><span class="line">server &#123;</span><br><span class="line">    # 监视的网站端口</span><br><span class="line">    listen    80;</span><br><span class="line">    # UTF-8编码</span><br><span class="line">    charset    utf-8;</span><br><span class="line">    # 最大上传大小128M，可自由定义</span><br><span class="line">    client_max_body_size 128M;  </span><br><span class="line">    # 媒体文件   </span><br><span class="line">    location /media  &#123;</span><br><span class="line">        alias /&lt;自定义路径&gt;/media; </span><br><span class="line">    &#125;</span><br><span class="line">    # 静态文件</span><br><span class="line">    location /static &#123;</span><br><span class="line">        alias /&lt;自定义路径&gt;/static; # 静态网页存放，位置可自定义，地址写详细</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    # 其他交由django处理</span><br><span class="line">    location / &#123;</span><br><span class="line">        uwsgi_pass  django;</span><br><span class="line">        include    uwsgi_params; # uwsgi</span><br><span class="line">    &#125; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>保存退出</p>
+<h3 id="测试配置文件"><a href="#测试配置文件" class="headerlink" title="测试配置文件"></a>测试配置文件</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> sudo nginx -t</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="/img/Django/nginx.png" alt="django"></p>
+<h3 id="重启Nginx服务"><a href="#重启Nginx服务" class="headerlink" title="重启Nginx服务"></a>重启Nginx服务</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> sudo /etc/init.d/nginx restart</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="测试Django-Uwsgi-Nginx"><a href="#测试Django-Uwsgi-Nginx" class="headerlink" title="测试Django+Uwsgi+Nginx"></a>测试Django+Uwsgi+Nginx</h2><h3 id="使用ini文件配置服务器启动"><a href="#使用ini文件配置服务器启动" class="headerlink" title="使用ini文件配置服务器启动"></a>使用ini文件配置服务器启动</h3><h4 id="自行新建一个文件夹，用来储存ini文件"><a href="#自行新建一个文件夹，用来储存ini文件" class="headerlink" title="自行新建一个文件夹，用来储存ini文件"></a>自行新建一个文件夹，用来储存ini文件</h4><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> sudo vim uwsgi.ini</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="uwsgi-ini"><a href="#uwsgi-ini" class="headerlink" title="uwsgi.ini"></a>uwsgi.ini</h4><figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="section">[uwsgi]</span></span><br><span class="line"><span class="attr">chdir</span> = &lt;你的项目地址&gt;</span><br><span class="line"><span class="attr">socket</span> = /tmp/uwsgi_1.sock</span><br><span class="line"><span class="attr">module</span> = &lt;你的项目名称&gt;.wsgi</span><br><span class="line"><span class="attr">chmod-socket</span> = <span class="number">666</span></span><br><span class="line"><span class="attr">processes</span> = <span class="number">4</span></span><br><span class="line"><span class="attr">master</span> = <span class="literal">true</span></span><br><span class="line"><span class="attr">vacuum</span> = <span class="literal">true</span></span><br><span class="line"><span class="attr">uid</span> = pi</span><br><span class="line"><span class="attr">gid</span> = pi</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><code>chdir</code>  你的项目绝对路径</li>
+<li><code>socket</code>  之前配置nginx.conf时设置的路径</li>
+<li><code>module</code>  项目名称.wsgi</li>
+</ul>
+<h4 id="新建系统服务用来后台启动"><a href="#新建系统服务用来后台启动" class="headerlink" title="新建系统服务用来后台启动"></a>新建系统服务用来后台启动</h4><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> sudo vim /etc/systemd/system/emperor.uwsgi.service</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">[Unit]</span><br><span class="line">Description=uWSGI Emperor</span><br><span class="line">After=syslog.target</span><br><span class="line">[Service]</span><br><span class="line">ExecStart=/usr/local/bin/uwsgi --emperor &lt;ini文件路径&gt; --daemonize /var/log/uwsgi_emperor.log</span><br><span class="line">RuntimeDirectory=uwsgi</span><br><span class="line">KillSignal=SIGQUIT</span><br><span class="line">Restart=on-failure</span><br><span class="line">Type=forking</span><br><span class="line">[Install]</span><br><span class="line">WantedBy=multi-user.target</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> sudo systemctl <span class="built_in">enable</span> emperor.uwsgi.service</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> sudo systemctl start emperor.uwsgi.service</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h3><p>浏览器输入<code>http://&lt;host&gt;</code></p>
+<p><img src="/img/Django/django.png" alt="django"></p>
+<h1 id="Https"><a href="#Https" class="headerlink" title="Https"></a>Https</h1><p>https作为当今主流的协议自然是应该兼容一下的</p>
+<h2 id="生成ssl证书"><a href="#生成ssl证书" class="headerlink" title="生成ssl证书"></a>生成ssl证书</h2><h3 id="安装openssl"><a href="#安装openssl" class="headerlink" title="安装openssl"></a>安装openssl</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ sudo apt install openssl</span><br></pre></td></tr></table></figure>
+
+<h3 id="新建文件夹用来存放证书"><a href="#新建文件夹用来存放证书" class="headerlink" title="新建文件夹用来存放证书"></a>新建文件夹用来存放证书</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> sudo mkdir /usr/<span class="built_in">local</span>/nginx</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="生成证书"><a href="#生成证书" class="headerlink" title="生成证书"></a>生成证书</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">cd</span> /usr/<span class="built_in">local</span>/nginx</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> sudo openssl genrsa -des3 -out server.key 4096</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> sudo openssl req -new -key server.key -out server.csr</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> sudo cp server.key server.key.org</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> sudo openssl rsa -<span class="keyword">in</span> server.key.org -out server.key</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> sudo openssl x509 -req -days 365 -<span class="keyword">in</span> server.csr -signkey server.key -out server.crt</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="修改Nginx配置文件"><a href="#修改Nginx配置文件" class="headerlink" title="修改Nginx配置文件"></a>修改Nginx配置文件</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> sudo vim /etc/nginx/site-enabled/nginx.conf</span></span><br></pre></td></tr></table></figure>
+
+<p>在原有的文件末尾添加以下内容</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">server &#123;</span><br><span class="line">	listen 					443;</span><br><span class="line">	charset					utf-8;</span><br><span class="line">	client_max_body_size 	512M;</span><br><span class="line">	ssl                     on;</span><br><span class="line">    ssl_certificate         /usr/local/nginx/server.crt;</span><br><span class="line">    ssl_certificate_key     /usr/local/nginx/server.key;</span><br><span class="line">    ssl_session_timeout     5m;</span><br><span class="line">    </span><br><span class="line">    location / &#123;</span><br><span class="line">    	uwsgi_pass      django;</span><br><span class="line">        include         uwsgi_params;</span><br><span class="line">    &#125;</span><br><span class="line">   	location /media &#123;</span><br><span class="line">        alias /website/media;</span><br><span class="line">    &#125;</span><br><span class="line">    location /static &#123;</span><br><span class="line">        alias /website/static;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>测试配置文件</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> sudo nginx -t</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="/img/Django/nginx.png" alt="django"></p>
+<h2 id="重启Nginx"><a href="#重启Nginx" class="headerlink" title="重启Nginx"></a>重启Nginx</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ sudo &#x2F;etc&#x2F;init.d&#x2F;nginx restart</span><br></pre></td></tr></table></figure>
+
+<p><img src="/img/Django/django.png" alt="django"></p>
+<p>成功</p>
+<h2 id="强制Https"><a href="#强制Https" class="headerlink" title="强制Https"></a>强制Https</h2><p>毕竟都有Https了要啥Http啊</p>
+<h3 id="修改Nginx配置文件-1"><a href="#修改Nginx配置文件-1" class="headerlink" title="修改Nginx配置文件"></a>修改Nginx配置文件</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> sudo vim /etc/nginx/site-enabled/nginx.conf</span></span><br></pre></td></tr></table></figure>
+
+<p>把之前http的文件配置全部注释，换成</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">server &#123;</span><br><span class="line">	listen 					80;</span><br><span class="line">	charset					utf-8;</span><br><span class="line">	client_max_body_size 	512M;</span><br><span class="line">	rewrite ^(.*)$  		https:&#x2F;&#x2F;$host$1 permanent;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>保存，重启</p>
+<p><strong>大功告成</strong></p>
+]]></content>
+      <categories>
+        <category>doc</category>
+        <category>code</category>
+      </categories>
+      <tags>
+        <tag>Django</tag>
+        <tag>Nginx</tag>
+        <tag>Uwsgi</tag>
+        <tag>Https</tag>
+        <tag>环境搭建</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>清明追思 家国永念</title>
+    <url>/2020-04-04/%E6%B8%85%E6%98%8E%E8%BF%BD%E6%80%9D-%E5%AE%B6%E5%9B%BD%E6%B0%B8%E5%BF%B5/</url>
+    <content><![CDATA[<h1 id="清明追思-家国永念"><a href="#清明追思-家国永念" class="headerlink" title="清明追思 家国永念"></a>清明追思 家国永念</h1><p>己亥末，庚子初，荆楚大疫。染疾数万，死有三千。</p>
+<p>疫初，众惶恐，举国防，皆闭户。丑月末，封江城，路无车舟，万巷空寂。然国士南山，临危受命，唤三十万白衣，被甲赴鄂，挽狂澜于既倒，扶大厦之将倾。</p>
+<p>江城疲弊，九州戮力。十余日，拔火雷二神，镇守江城。九州一心，昼夜不怠，红衣竭虑，医者殚精。军授印，赴江城，安民心，抗疫情。</p>
+<p>卯月尽，疫病除。然生者有幸，逝者长眠。为缅怀先烈，告慰同胞，留丹心以后记，照汗青以世铭，遂举国祭奠。巳时，国旗半，车船鸣，行人立，颔首默，祭逝者在天之灵。</p>
+<p>冬将尽，春可期，江城开，市井集，华灯初上，国泰民安。待明年再看，樱花盛开。</p>
+<ul>
+<li>江城：指武汉</li>
+<li>红衣：志愿者。因为志愿者的衣服是红色的，故称红衣</li>
+</ul>
+]]></content>
+      <categories>
+        <category>清明祭祀</category>
+      </categories>
+      <tags>
+        <tag>清明</tag>
+        <tag>战疫</tag>
+        <tag>祭祀先烈</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>操作系统:进程调度模拟算法</title>
+    <url>/2020-04-29/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E8%BF%9B%E7%A8%8B%E8%B0%83%E5%BA%A6%E6%A8%A1%E6%8B%9F%E7%AE%97%E6%B3%95/</url>
+    <content><![CDATA[<h1 id="进程模拟调度算法"><a href="#进程模拟调度算法" class="headerlink" title="进程模拟调度算法"></a>进程模拟调度算法</h1><blockquote>
+<p>进程调度是处理机管理的核心内容。</p>
+</blockquote>
+<h2 id="内容"><a href="#内容" class="headerlink" title="内容"></a>内容</h2><p><strong>设计进程控制块PCB的结构，通常包括如下信息</strong></p>
+<ul>
+<li>进程名</li>
+<li>进程优先数（或轮转时间片数）</li>
+<li>进程已占用的CPU实践</li>
+<li>进程到完成还需要的实践</li>
+<li>进程状态</li>
+<li>当前队列指针</li>
+</ul>
+<a id="more"></a>
+
+<h2 id="参数说明"><a href="#参数说明" class="headerlink" title="参数说明"></a>参数说明</h2><ol>
+<li><strong>进程控制块结构</strong><ul>
+<li><code>NAME</code> 进程标识符</li>
+<li><code>PRIO/ROUND</code>  进程优先数/进程每次轮转的时间片数</li>
+<li><code>CPUTIME</code> 进程累计占用CPU的实践片数</li>
+<li><code>NEEDTIME</code> 进程到完成还需要的时间片数</li>
+<li><code>STATE</code> 进程状态</li>
+<li><code>NEXT</code> 下一个链节点</li>
+</ul>
+</li>
+<li><strong>进程链表</strong><ul>
+<li><code>RUN</code> 运行队列</li>
+<li><code>READY</code> 就绪队列</li>
+<li><code>FINISH</code> 结束队列</li>
+</ul>
+</li>
+</ol>
+<h2 id="算法"><a href="#算法" class="headerlink" title="算法"></a>算法</h2><h3 id="节点类"><a href="#节点类" class="headerlink" title="节点类"></a>节点类</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Node</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, NEEDTIME, STATE, NAME, PRIO = <span class="number">0</span>, ROUND = <span class="number">0</span>, CPUTIME = <span class="number">0</span>, count = <span class="number">0</span>, _pNEXT = None)</span>:</span></span><br><span class="line">        self.NAME       = NAME</span><br><span class="line">        self.PRIO       = PRIO</span><br><span class="line">        self.ROUND      = ROUND</span><br><span class="line">        self.CPUTIME    = CPUTIME</span><br><span class="line">        self.NEEDTIME   = NEEDTIME</span><br><span class="line">        self.STATE      = STATE</span><br><span class="line">        self.count      = count</span><br><span class="line">        self._NEXT      = _pNEXT</span><br></pre></td></tr></table></figure>
+
+<h3 id="链表类"><a href="#链表类" class="headerlink" title="链表类"></a>链表类</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Link</span>:</span></span><br><span class="line">    Head = <span class="literal">None</span></span><br><span class="line">    length = <span class="number">0</span></span><br><span class="line">    </span><br><span class="line">    <span class="comment"># 将节点添加到尾部</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">append</span><span class="params">(self, node)</span>:</span></span><br><span class="line">        item = node</span><br><span class="line">        <span class="keyword">if</span> <span class="keyword">not</span> self.Head:</span><br><span class="line">            self.Head = item</span><br><span class="line">            self.length += <span class="number">1</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            temp = self.Head</span><br><span class="line">            <span class="keyword">while</span> temp._NEXT:</span><br><span class="line">                temp = temp._NEXT</span><br><span class="line">            temp._NEXT = item</span><br><span class="line">            self.length += <span class="number">1</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># push节点</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">push</span><span class="params">(self)</span>:</span></span><br><span class="line">        <span class="keyword">if</span> <span class="keyword">not</span> self.Head:</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">None</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            temp = self.Head</span><br><span class="line">            self.Head = self.Head._NEXT</span><br><span class="line">            <span class="keyword">return</span> temp</span><br><span class="line">        self.length -= <span class="number">1</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="优先数算法"><a href="#优先数算法" class="headerlink" title="优先数算法"></a>优先数算法</h3><h4 id="构造链表"><a href="#构造链表" class="headerlink" title="构造链表"></a>构造链表</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">PrioCreate</span><span class="params">(num)</span>:</span></span><br><span class="line">    print(<span class="string">"请输入进程名称和所需时间"</span>)</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">0</span>, num):</span><br><span class="line">        name,needtime = map(str, input().split())</span><br><span class="line">        needtime = int(needtime)</span><br><span class="line">        node = Node(</span><br><span class="line">            NEEDTIME = needtime, </span><br><span class="line">            NAME = name,</span><br><span class="line">            STATE = <span class="string">'W'</span>,</span><br><span class="line">            PRIO = <span class="number">50</span> - needtime</span><br><span class="line">        )</span><br><span class="line"></span><br><span class="line">        temp = READY.Head</span><br><span class="line">        <span class="keyword">if</span> <span class="keyword">not</span> temp:</span><br><span class="line">            READY.append(node)</span><br><span class="line">            <span class="keyword">continue</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="keyword">if</span> node.PRIO &gt;= temp.PRIO:</span><br><span class="line">                node._NEXT = temp</span><br><span class="line">                READY.Head = node</span><br><span class="line">                READY.length += <span class="number">1</span></span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                <span class="keyword">while</span> temp:</span><br><span class="line">                    <span class="keyword">if</span> temp._NEXT:</span><br><span class="line">                        <span class="keyword">if</span> node.PRIO &gt;= temp._NEXT.PRIO:</span><br><span class="line">                            node._NEXT = temp._NEXT</span><br><span class="line">                            temp._NEXT = node</span><br><span class="line">                            READY.length += <span class="number">1</span></span><br><span class="line">                            <span class="keyword">break</span></span><br><span class="line">                    <span class="keyword">else</span>:</span><br><span class="line">                        READY.append(node)</span><br><span class="line">                        <span class="keyword">break</span></span><br><span class="line">                    temp = temp._NEXT</span><br></pre></td></tr></table></figure>
+
+<p><strong>参数说明：</strong></p>
+<ul>
+<li><code>num</code> 进程数量</li>
+</ul>
+<h4 id="优先数算法调度"><a href="#优先数算法调度" class="headerlink" title="优先数算法调度"></a>优先数算法调度</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">Priority</span><span class="params">()</span>:</span></span><br><span class="line">    RUN.append(READY.push())</span><br><span class="line">    <span class="keyword">if</span> RUN.Head:</span><br><span class="line">        RUN.Head.STATE = <span class="string">'R'</span></span><br><span class="line">        RUN.Head._NEXT = <span class="literal">None</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">return</span></span><br><span class="line"></span><br><span class="line">    RUN.Head.PRIO -= <span class="number">1</span></span><br><span class="line">    RUN.Head.CPUTIME += <span class="number">1</span></span><br><span class="line">    RUN.Head.NEEDTIME -= <span class="number">1</span></span><br><span class="line">    <span class="keyword">if</span> RUN.Head.NEEDTIME == <span class="number">0</span>:</span><br><span class="line">        RUN.Head.STATE = <span class="string">'F'</span></span><br><span class="line">        RUN.Head.count += <span class="number">1</span></span><br><span class="line">        FINISH.append(RUN.push())</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        RUN.Head.STATE = <span class="string">'W'</span></span><br><span class="line">        RUN.Head.count += <span class="number">1</span></span><br><span class="line">        node = RUN.push()</span><br><span class="line">        temp = READY.Head</span><br><span class="line">        <span class="keyword">if</span> <span class="keyword">not</span> temp:</span><br><span class="line">            READY.append(node)</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="keyword">if</span> node.PRIO &gt;= temp.PRIO:</span><br><span class="line">                node._NEXT = temp</span><br><span class="line">                READY.Head = node</span><br><span class="line">                READY.length += <span class="number">1</span></span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                <span class="keyword">while</span> temp:</span><br><span class="line">                    <span class="keyword">if</span> temp._NEXT:</span><br><span class="line">                        <span class="keyword">if</span> node.PRIO &gt;= temp._NEXT.PRIO:</span><br><span class="line">                            node._NEXT = temp._NEXT</span><br><span class="line">                            temp._NEXT = node</span><br><span class="line">                            READY.length += <span class="number">1</span></span><br><span class="line">                            <span class="keyword">break</span></span><br><span class="line">                    <span class="keyword">else</span>:</span><br><span class="line">                        READY.append(node)</span><br><span class="line">                        <span class="keyword">break</span></span><br><span class="line">                    temp = temp._NEXT</span><br><span class="line">    Output()</span><br><span class="line">    Priority()</span><br></pre></td></tr></table></figure>
+
+<h3 id="轮转法"><a href="#轮转法" class="headerlink" title="轮转法"></a>轮转法</h3><h4 id="构造链表-1"><a href="#构造链表-1" class="headerlink" title="构造链表"></a>构造链表</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">RoundCreate</span><span class="params">(num)</span>:</span></span><br><span class="line">    print(<span class="string">"请输入进程名称和所需时间"</span>)</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">0</span>, num):</span><br><span class="line">        name,needtime = map(str, input().split())</span><br><span class="line">        needtime = int(needtime)</span><br><span class="line">        node = Node(</span><br><span class="line">            NEEDTIME = needtime,</span><br><span class="line">            NAME = name,</span><br><span class="line">            STATE = <span class="string">'W'</span>,</span><br><span class="line">            ROUND = <span class="number">2</span></span><br><span class="line">        )</span><br><span class="line">        READY.append(node)</span><br></pre></td></tr></table></figure>
+
+<p><strong>参数说明：</strong></p>
+<ul>
+<li><code>num</code> 进程数量</li>
+</ul>
+<h4 id="轮转法调度"><a href="#轮转法调度" class="headerlink" title="轮转法调度"></a>轮转法调度</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">Round</span><span class="params">()</span>:</span></span><br><span class="line">    RUN.append(READY.push())</span><br><span class="line">    <span class="keyword">if</span> RUN.Head:</span><br><span class="line">        RUN.Head.STATE = <span class="string">'R'</span></span><br><span class="line">        RUN.Head._NEXT = <span class="literal">None</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">return</span></span><br><span class="line">    </span><br><span class="line">    RUN.Head.count += <span class="number">1</span></span><br><span class="line">    RUN.Head.CPUTIME += <span class="number">1</span></span><br><span class="line">    RUN.Head.NEEDTIME -= <span class="number">1</span></span><br><span class="line">    <span class="keyword">if</span> RUN.Head.NEEDTIME == <span class="number">0</span>:</span><br><span class="line">        RUN.Head.STATE = <span class="string">'F'</span></span><br><span class="line">        FINISH.append(RUN.push())</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        RUN.Head.STATE = <span class="string">'W'</span></span><br><span class="line">        READY.append(RUN.push())</span><br><span class="line">    Output()</span><br><span class="line">    Round()</span><br></pre></td></tr></table></figure>
+
+<h2 id="完整程序"><a href="#完整程序" class="headerlink" title="完整程序"></a>完整程序</h2><button style="width: auto; background-color: Black; border-color: transparent; margin-top: 10px; color: white;" onclick="window.open('https://1145141919810.wang/Blog-Content/操作系统：进程调度模拟算法.7z');">
+    <span class="fa fa-fw fa-download"></span>
+    Download
+</button>]]></content>
+      <categories>
+        <category>操作系统</category>
+      </categories>
+      <tags>
+        <tag>操作系统</tag>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>操作系统:存储管理动态分区分配及回收算法</title>
+    <url>/2020-04-29/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E5%AD%98%E5%82%A8%E7%AE%A1%E7%90%86%E5%8A%A8%E6%80%81%E5%88%86%E5%8C%BA%E5%88%86%E9%85%8D%E5%8F%8A%E5%9B%9E%E6%94%B6%E7%AE%97%E6%B3%95/</url>
+    <content><![CDATA[<h1 id="存储管理动态分区分配及回收算法"><a href="#存储管理动态分区分配及回收算法" class="headerlink" title="存储管理动态分区分配及回收算法"></a>存储管理动态分区分配及回收算法</h1><h2 id="内容"><a href="#内容" class="headerlink" title="内容"></a>内容</h2><p>分别用最先适应算法和最佳适应算法进行分区和回收</p>
+<h2 id="算法说明"><a href="#算法说明" class="headerlink" title="算法说明"></a>算法说明</h2><h3 id="最先适应算法"><a href="#最先适应算法" class="headerlink" title="最先适应算法"></a>最先适应算法</h3><h4 id="描述"><a href="#描述" class="headerlink" title="描述"></a>描述</h4><p>最先适应算法是计算机中的一种算法，其将空闲区按其在存储空间中的起始地址递增的顺序排列。为作业分配存储空间时，从空闲区链的始端开始查找，选择第一个满足要求的空闲区，而不管它究竟有多大。</p>
+<h4 id="排序方式"><a href="#排序方式" class="headerlink" title="排序方式"></a>排序方式</h4><p>按起始地址递增的方式排序</p>
+<a id="more"></a>
+
+<h3 id="最佳适应算法"><a href="#最佳适应算法" class="headerlink" title="最佳适应算法"></a>最佳适应算法</h3><h4 id="描述-1"><a href="#描述-1" class="headerlink" title="描述"></a>描述</h4><p>它从全部空闲区中找出能满足作业要求的、且大小最小的空闲分区，这种方法能使碎片尽量小。为适应此算法，空闲分区表（空闲区链）中的空闲分区要按从小到大进行排序，自表头开始查找到第一个满足要求的自由分区分配。该算法保留大的空闲区，但造成许多小的空闲区。</p>
+<h4 id="排序方式-1"><a href="#排序方式-1" class="headerlink" title="排序方式"></a>排序方式</h4><p>按分区大小递增的方式排序</p>
+<h2 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h2><h3 id="分区描述器"><a href="#分区描述器" class="headerlink" title="分区描述器"></a>分区描述器</h3><ul>
+<li><code>Adr</code> 分区首地址</li>
+<li><code>Size</code> 分区大小</li>
+<li><code>Next</code> 下一个分区节点</li>
+</ul>
+<h3 id="队列"><a href="#队列" class="headerlink" title="队列"></a>队列</h3><h4 id="最先适应算法-1"><a href="#最先适应算法-1" class="headerlink" title="最先适应算法"></a>最先适应算法</h4><ul>
+<li><code>head1</code>  空闲分区`</li>
+<li><code>assign1</code> 已分配分区</li>
+</ul>
+<h4 id="最佳适应算法-1"><a href="#最佳适应算法-1" class="headerlink" title="最佳适应算法"></a>最佳适应算法</h4><ul>
+<li><code>head2</code> 空闲分区</li>
+<li><code>assign2</code> 已分配分区</li>
+</ul>
+<h2 id="算法"><a href="#算法" class="headerlink" title="算法"></a>算法</h2><h3 id="节点类"><a href="#节点类" class="headerlink" title="节点类"></a>节点类</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Node</span>:</span></span><br><span class="line">    Next = <span class="literal">None</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, Adr, Size, Next = None)</span>:</span></span><br><span class="line">        self.Adr = Adr</span><br><span class="line">        self.Size = Size</span><br><span class="line">        self.Next = Next</span><br></pre></td></tr></table></figure>
+
+<h3 id="链表类"><a href="#链表类" class="headerlink" title="链表类"></a>链表类</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Link</span>:</span></span><br><span class="line">    Head = <span class="literal">None</span></span><br><span class="line">    length = <span class="number">0</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">append</span><span class="params">(self, node)</span>:</span></span><br><span class="line">        item = node</span><br><span class="line">        <span class="keyword">if</span> <span class="keyword">not</span> self.Head:</span><br><span class="line">            self.Head = item</span><br><span class="line">            self.length += <span class="number">1</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            temp = self.Head</span><br><span class="line">            <span class="keyword">while</span> temp.Next:</span><br><span class="line">                temp = temp.Next</span><br><span class="line">            temp.Next = item</span><br><span class="line">            self.length += <span class="number">1</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">push</span><span class="params">(self, Adr = None)</span>:</span></span><br><span class="line">        temp = <span class="literal">None</span></span><br><span class="line">        <span class="keyword">if</span> <span class="keyword">not</span> Adr:</span><br><span class="line">            <span class="keyword">if</span> <span class="keyword">not</span> self.Head:</span><br><span class="line">                <span class="keyword">return</span> <span class="literal">None</span></span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                temp = self.Head</span><br><span class="line">                self.Head = self.Head.Next</span><br><span class="line">                <span class="keyword">return</span> temp</span><br><span class="line">            self.length -= <span class="number">1</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            t = self.Head</span><br><span class="line">            <span class="keyword">if</span> Adr == t.Adr:</span><br><span class="line">                temp = t</span><br><span class="line">                self.Head = t.Next</span><br><span class="line">                <span class="keyword">return</span> temp</span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                <span class="keyword">while</span> t.Next:</span><br><span class="line">                    <span class="keyword">if</span> t.Next.Adr == Adr:</span><br><span class="line">                        temp = t.Next</span><br><span class="line">                        t.Next = t.Next.Next</span><br><span class="line">                        <span class="keyword">return</span> temp</span><br><span class="line">                    t = t.Next</span><br><span class="line">        <span class="keyword">return</span> temp</span><br></pre></td></tr></table></figure>
+
+<h3 id="回收检查"><a href="#回收检查" class="headerlink" title="回收检查"></a>回收检查</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">check</span><span class="params">(assign, Adr, Size)</span> -&gt; "检查":</span></span><br><span class="line">    a = assign.Head</span><br><span class="line">    t = assign.Head</span><br><span class="line">    <span class="keyword">if</span> Adr &lt; <span class="number">0</span> <span class="keyword">or</span> Size &lt;= <span class="number">0</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">    <span class="keyword">while</span> a:</span><br><span class="line">        <span class="keyword">if</span> Adr &gt;= a.Adr <span class="keyword">and</span> Adr &lt; (a.Adr + a.Size):</span><br><span class="line">            <span class="keyword">if</span> (Adr + Size) &lt;= (a.Adr + a.Size):</span><br><span class="line">                <span class="keyword">return</span> <span class="literal">True</span></span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                <span class="keyword">while</span> t:</span><br><span class="line">                    <span class="keyword">if</span> t.Adr == a.Adr + a.Size:</span><br><span class="line">                        <span class="keyword">if</span> check(assign, t.Adr, Size + Adr - a.Size):</span><br><span class="line">                            <span class="keyword">return</span> <span class="literal">True</span></span><br><span class="line">                        <span class="keyword">else</span>:</span><br><span class="line">                            <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">                    t = t.Next</span><br><span class="line">        a = a.Next</span><br><span class="line">    print(<span class="string">"[Error]指定的内存空间过大"</span>)</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">False</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="最先适应算法-2"><a href="#最先适应算法-2" class="headerlink" title="最先适应算法"></a>最先适应算法</h3><h4 id="分区分配"><a href="#分区分配" class="headerlink" title="分区分配"></a>分区分配</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">assignment1</span><span class="params">(Size)</span> -&gt; '首次试应算法':</span></span><br><span class="line">    p = head1.Head</span><br><span class="line">    res = <span class="literal">None</span></span><br><span class="line">    <span class="keyword">if</span> Size == p.Size:</span><br><span class="line">        res = head1.push()</span><br><span class="line">        res.Next = <span class="literal">None</span></span><br><span class="line">    <span class="keyword">elif</span> Size &lt; p.Size:</span><br><span class="line">        res = Node(p.Adr, Size)</span><br><span class="line">        p.Adr += Size</span><br><span class="line">        p.Size -= Size</span><br><span class="line">    <span class="keyword">elif</span> head1.length &gt; <span class="number">1</span>:</span><br><span class="line">        <span class="keyword">while</span> p.Next:</span><br><span class="line">            <span class="keyword">if</span> Size == p.Next.Size:</span><br><span class="line">                res = p.Next</span><br><span class="line">                p.Next = p.Next.Next</span><br><span class="line">                res.Next = <span class="literal">None</span></span><br><span class="line">                head1.length -= <span class="number">1</span></span><br><span class="line">                <span class="keyword">break</span></span><br><span class="line">            <span class="keyword">elif</span> Size &lt; p.Next.Size:</span><br><span class="line">                res = Node(p.Next.Adr, Size)</span><br><span class="line">                p.Next.Adr += Size</span><br><span class="line">                p.Next.Size -= Size</span><br><span class="line">                <span class="keyword">break</span></span><br><span class="line">            p = p.Next</span><br><span class="line">    assign1.append(res)</span><br><span class="line">    <span class="keyword">return</span> res</span><br></pre></td></tr></table></figure>
+
+<h4 id="分区回收"><a href="#分区回收" class="headerlink" title="分区回收"></a>分区回收</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">occupation1</span><span class="params">(Adr, Size)</span>:</span></span><br><span class="line">    a = assign1.Head</span><br><span class="line">    <span class="keyword">while</span> a:</span><br><span class="line">        <span class="keyword">if</span> Adr == a.Adr:</span><br><span class="line">            <span class="keyword">if</span> Size &lt; a.Size:</span><br><span class="line">                a.Adr = Adr + Size</span><br><span class="line">                a.Size -= Size</span><br><span class="line">                <span class="keyword">break</span></span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                <span class="keyword">if</span> Size &gt; a.Size:</span><br><span class="line">                    occupation1(a.Adr + a.Size, Size - a.Size)</span><br><span class="line">                assign1.push(a.Adr)</span><br><span class="line">                <span class="keyword">break</span></span><br><span class="line">        <span class="keyword">elif</span> Adr &gt; a.Adr <span class="keyword">and</span> Adr &lt; a.Adr + a.Size:</span><br><span class="line">            <span class="keyword">if</span> Adr + Size &lt; a.Size + a.Adr:</span><br><span class="line">                temp = Node(Adr + Size, a.Adr + a.Size - Adr - Size, a.Next)</span><br><span class="line">                a.Next = temp</span><br><span class="line">                a.Size = Adr - a.Adr</span><br><span class="line">                assign1.length += <span class="number">1</span></span><br><span class="line">                <span class="keyword">break</span></span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                <span class="keyword">if</span> Size + Adr &gt;  a.Size + a.Adr:</span><br><span class="line">                    occupation1(a.Adr + a.Size, Size - a.Size + Adr)</span><br><span class="line">                a.Size = Adr</span><br><span class="line">                <span class="keyword">break</span></span><br><span class="line">        a = a.Next</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">Recovery1</span><span class="params">(Adr, Size)</span>:</span></span><br><span class="line">    h = head1.Head</span><br><span class="line">    <span class="keyword">if</span> Adr &lt; head1.Head.Adr:</span><br><span class="line">        <span class="keyword">if</span> Adr + Size == head1.Head.Adr:</span><br><span class="line">            head1.Head.Adr = Adr</span><br><span class="line">            head1.Head.Size += Size</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            head1.Head = Node(Adr, Size, head1.Head)</span><br><span class="line">            head1.length += <span class="number">1</span></span><br><span class="line">    <span class="keyword">elif</span> Adr == head1.Head.Adr + head1.Head.Size:</span><br><span class="line">        head1.Head.Size += Size</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">while</span> h.Next:</span><br><span class="line">            <span class="keyword">if</span> Adr &lt; h.Next.Adr:</span><br><span class="line">                <span class="keyword">if</span> Adr + Size == h.Next.Adr:</span><br><span class="line">                    h.Next.Adr = Adr</span><br><span class="line">                    h.Next.Size += Size</span><br><span class="line">                    <span class="keyword">return</span></span><br><span class="line">                <span class="keyword">else</span>:</span><br><span class="line">                    h.Next = Node(Adr, Size, h.Next)</span><br><span class="line">                    head1.length += <span class="number">1</span></span><br><span class="line">                    <span class="keyword">return</span></span><br><span class="line">            h = h.Next</span><br><span class="line">        head1.append(Node(Adr, Size))</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">acceptment1</span><span class="params">(Adr, Size)</span>:</span></span><br><span class="line">    occupation1(Adr, Size)</span><br><span class="line">    Recovery1(Adr,Size)</span><br></pre></td></tr></table></figure>
+
+<h3 id="最佳适应算法-2"><a href="#最佳适应算法-2" class="headerlink" title="最佳适应算法"></a>最佳适应算法</h3><h4 id="分区分配-1"><a href="#分区分配-1" class="headerlink" title="分区分配"></a>分区分配</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">assignment2</span><span class="params">(Size)</span>:</span></span><br><span class="line">    adr_temp = head2.Head.Adr</span><br><span class="line">    size_temp = head2.Head.Size</span><br><span class="line"></span><br><span class="line">    p = head2.Head.Next</span><br><span class="line">    <span class="keyword">while</span> p:</span><br><span class="line">        <span class="keyword">if</span> Size &lt; p.Size <span class="keyword">and</span> p.Size &lt; size_temp:</span><br><span class="line">            size_temp = p.Size</span><br><span class="line">        p = p.Next</span><br><span class="line">    </span><br><span class="line">    p = head2.Head</span><br><span class="line">    <span class="keyword">while</span> p:</span><br><span class="line">        <span class="keyword">if</span> p.Adr == adr_temp:</span><br><span class="line">            assign2.append(Node(p.Adr, Size))</span><br><span class="line">            p.Adr += Size</span><br><span class="line">            p.Size -= Size</span><br><span class="line">        p = p.Next</span><br></pre></td></tr></table></figure>
+
+<h4 id="分区回收-1"><a href="#分区回收-1" class="headerlink" title="分区回收"></a>分区回收</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">Recovery2</span><span class="params">(Adr, Size)</span>:</span></span><br><span class="line">    h = head2.Head</span><br><span class="line">    <span class="keyword">while</span> h:</span><br><span class="line">        <span class="keyword">if</span> Adr &lt; h.Adr <span class="keyword">and</span> Adr + Size == h.Adr:</span><br><span class="line">            h.Adr = Adr</span><br><span class="line">            h.Size += Size</span><br><span class="line">            <span class="keyword">return</span></span><br><span class="line">        <span class="keyword">elif</span> Adr == h.Adr + h.Size:</span><br><span class="line">            h.Size += Size</span><br><span class="line">            <span class="keyword">return</span></span><br><span class="line">        h = h.Next</span><br><span class="line"></span><br><span class="line">    h = head2.Head</span><br><span class="line">    <span class="keyword">if</span> Size &lt;= h.Adr:</span><br><span class="line">        head2.Head = Node(Adr, Size, h)</span><br><span class="line">        <span class="keyword">return</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">if</span> h.Next:</span><br><span class="line">            <span class="keyword">while</span> h.Next:</span><br><span class="line">                <span class="keyword">if</span> Size &lt; h.Next.Adr:</span><br><span class="line">                    h.Next = Node(Adr, Size, h.Next)</span><br><span class="line">                    <span class="keyword">return</span></span><br><span class="line">                h = h.Next</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            head2.append(Node(Adr, Size))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">occupation2</span><span class="params">(Adr, Size)</span>:</span></span><br><span class="line">    a = assign2.Head</span><br><span class="line">    <span class="keyword">while</span> a:</span><br><span class="line">        <span class="keyword">if</span> a.Adr == Adr:</span><br><span class="line">            <span class="keyword">if</span> Size &lt; a.Size:</span><br><span class="line">                a.Adr = Adr + Size</span><br><span class="line">                a.Size -= Size</span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                <span class="keyword">if</span> Size &gt; a.Size:</span><br><span class="line">                    occupation2(a.Adr + a.Size, Size - a.Size)</span><br><span class="line">                assign2.push(a.Adr)</span><br><span class="line">        <span class="keyword">elif</span> Adr &gt; a.Adr <span class="keyword">and</span> Adr &lt; a.Adr + a.Size:</span><br><span class="line">            <span class="keyword">if</span> Adr + Size &lt; a.Size + a.Adr:</span><br><span class="line">                temp = Node(Adr + Size, a.Adr + a.Size - Adr - Size, a.Next)</span><br><span class="line">                a.Next = temp</span><br><span class="line">                a.Size = Adr - a.Adr</span><br><span class="line">                assign2.length += <span class="number">1</span></span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                s = a.Size</span><br><span class="line">                a.Size = Adr - a.Adr</span><br><span class="line">                <span class="keyword">if</span> Size + Adr &gt; s + a.Adr:</span><br><span class="line">                    occupation2(s + a.Adr, Adr + Size - s - a.Adr)</span><br><span class="line">        a = a.Next</span><br><span class="line">        </span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">acceptment2</span><span class="params">(Adr, Size)</span>:</span></span><br><span class="line">    occupation2(Adr, Size)</span><br><span class="line">    Recovery2(Adr, Size)</span><br></pre></td></tr></table></figure>
+
+<h2 id="完整程序"><a href="#完整程序" class="headerlink" title="完整程序"></a>完整程序</h2><button style="width: auto; background-color: Black; border-color: transparent; margin-top: 10px; color: white;" onclick="window.open('https://1145141919810.wang/Blog-Content/操作系统：存储管理动态分区分配及回收算法.7z');">
+    <span class="fa fa-fw fa-download"></span>
+    Download
+</button>]]></content>
+      <categories>
+        <category>操作系统</category>
+      </categories>
+      <tags>
+        <tag>操作系统</tag>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>UZI，永远滴神</title>
+    <url>/2020-06-03/UZI%EF%BC%8C%E6%B0%B8%E8%BF%9C%E6%BB%B4%E7%A5%9E/</url>
+    <content><![CDATA[<blockquote>
+<p>我本以为这一天会迟来一点，哪怕是打完这一年也好。可没想到一切都是那么突然。</p>
+</blockquote>
+<p>​        我是S5的时候开始玩英雄联盟（League of legends）这款游戏的，也是第一次接触了电子竞技这个行业。刚开始时候打得很菜（人菜瘾大），但是特别喜欢看直播和比赛，也了解了一批职业选手，UZI就是其中之一。</p>
+]]></content>
+      <tags>
+        <tag>LOL</tag>
+        <tag>UZI</tag>
+      </tags>
+  </entry>
+</search>
