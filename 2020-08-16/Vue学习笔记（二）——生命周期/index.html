@@ -72,7 +72,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Vue,学习笔记," />
 
 
 
@@ -85,14 +85,20 @@
 
 
 
-<meta name="description" content="这里会放一些烂七八糟的东西  包括但不仅限于  代码，动漫，DD日常">
-<meta property="og:type" content="website">
-<meta property="og:title" content="守夜の破烂摊">
-<meta property="og:url" content="http:&#x2F;&#x2F;1145141919810.wang&#x2F;tags&#x2F;About&#x2F;">
+<meta name="description" content="生命周期每个 Vue 实例在被创建时都要经过一系列的初始化过程——例如，需要设置数据监听、编译模板、将实例挂载到 DOM 并在数据变化时更新 DOM 等。同时在这个过程中也会运行一些叫做生命周期钩子的函数，这给了用户在不同阶段添加自己的代码的机会。 生命周期钩子需要在创建Vue对象时以属性的形式进行声明 例如： 123456789new Vue(&amp;#123;    data: &amp;#123;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Vue学习笔记（二）——生命周期">
+<meta property="og:url" content="http:&#x2F;&#x2F;1145141919810.wang&#x2F;2020-08-16&#x2F;Vue%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%BA%8C%EF%BC%89%E2%80%94%E2%80%94%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F&#x2F;">
 <meta property="og:site_name" content="守夜の破烂摊">
-<meta property="og:description" content="这里会放一些烂七八糟的东西  包括但不仅限于  代码，动漫，DD日常">
+<meta property="og:description" content="生命周期每个 Vue 实例在被创建时都要经过一系列的初始化过程——例如，需要设置数据监听、编译模板、将实例挂载到 DOM 并在数据变化时更新 DOM 等。同时在这个过程中也会运行一些叫做生命周期钩子的函数，这给了用户在不同阶段添加自己的代码的机会。 生命周期钩子需要在创建Vue对象时以属性的形式进行声明 例如： 123456789new Vue(&amp;#123;    data: &amp;#123;">
+<meta property="og:image" content="http:&#x2F;&#x2F;1145141919810.wang&#x2F;img&#x2F;Vue&#x2F;vue_lifecycle.png">
+<meta property="article:published_time" content="2020-08-16T06:23:14.000Z">
+<meta property="article:modified_time" content="2020-08-16T06:24:21.122Z">
 <meta property="article:author" content="守夜">
+<meta property="article:tag" content="Vue">
+<meta property="article:tag" content="学习笔记">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http:&#x2F;&#x2F;1145141919810.wang&#x2F;img&#x2F;Vue&#x2F;vue_lifecycle.png">
 
 
 
@@ -122,13 +128,13 @@
 
 
 
-  <link rel="canonical" href="http://1145141919810.wang/tags/About/"/>
+  <link rel="canonical" href="http://1145141919810.wang/2020-08-16/Vue学习笔记（二）——生命周期/"/>
 
 
 
 
 
-  <title>标签: About | 守夜の破烂摊</title>
+  <title>Vue学习笔记（二）——生命周期 | 守夜の破烂摊</title>
   
 
 
@@ -148,7 +154,7 @@
     
   
 
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -289,82 +295,206 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block tag">
+  <div id="posts" class="posts-expand">
+    
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>About<small>标签</small>
-        </h1>
-      </div>
+  
 
-      
-        
+  
+  
+  
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://1145141919810.wang/2020-08-16/Vue%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%BA%8C%EF%BC%89%E2%80%94%E2%80%94%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="守夜">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/avatar_white.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="守夜の破烂摊">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2019-12-13/Chinese/" itemprop="url">
-              
-                <span itemprop="name">Chinese</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">Vue学习笔记（二）——生命周期</h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2019-12-13T22:20:29+08:00"
-              content="2019-12-13" >
-          12-13
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-08-16T14:23:14+08:00">
+                2020-08-16
+              </time>
+            
 
-    </header>
-  </article>
+            
 
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/doc/" itemprop="url" rel="index">
+                    <span itemprop="name">doc</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/doc/note/" itemprop="url" rel="index">
+                    <span itemprop="name">note</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
-        
+      
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+      
+        <h1 id="生命周期"><a href="#生命周期" class="headerlink" title="生命周期"></a>生命周期</h1><p>每个 Vue 实例在被创建时都要经过一系列的初始化过程——例如，需要设置数据监听、编译模板、将实例挂载到 DOM 并在数据变化时更新 DOM 等。同时在这个过程中也会运行一些叫做<strong>生命周期钩子</strong>的函数，这给了用户在不同阶段添加自己的代码的机会。</p>
+<p>生命周期钩子需要在创建Vue对象时以属性的形式进行声明</p>
+<p>例如：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">new</span> Vue(&#123;</span><br><span class="line">    data: &#123;</span><br><span class="line">        a: <span class="number">1</span></span><br><span class="line">    &#125;,</span><br><span class="line">    created: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="comment">// this 指向Vue实例</span></span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">'a'</span> + <span class="keyword">this</span>.a)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
 
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019-12-13/Japanese/" itemprop="url">
-              
-                <span itemprop="name">Japanese</span>
-              
-            </a>
-        
-      </h2>
+<div role="alert" style="background-color: red; opacity:0.4; padding: .5rem; color: white; border-radius: 10px;">
+不要在选项 property 或回调上使用箭头函数，因为箭头函数没有this
+</div>
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2019-12-13T22:19:04+08:00"
-              content="2019-12-13" >
-          12-13
-        </time>
-      </div>
-
-    </header>
-  </article>
-
+<h2 id="生命周期模型"><a href="#生命周期模型" class="headerlink" title="生命周期模型"></a>生命周期模型</h2><p><img src="/img/Vue/vue_lifecycle.png" alt="Vue生命周期模型"></p>
+<h2 id="beforeCreate"><a href="#beforeCreate" class="headerlink" title="beforeCreate"></a><code>beforeCreate</code></h2><p><code>beforeCreate</code>在实例初始化之后，数据观测（data observe）和event/watcher事件配置之前被调用</p>
+<h2 id="created"><a href="#created" class="headerlink" title="created"></a><code>created</code></h2><p><code>created</code>在实例创建完成后被立即调用。在这一步，实例已完成以下的配置：数据观测（data observe），属性和方法的运算，event/watcher事件回调，然而这是挂载（mount）阶段还未开始，<code>$el</code>属性目前不可见</p>
+<h2 id="beforeMount"><a href="#beforeMount" class="headerlink" title="beforeMount"></a><code>beforeMount</code></h2><p><code>beforeMount</code>在挂载开始之前被调用，相关的渲染函数首次被调用</p>
+<h2 id="mounted"><a href="#mounted" class="headerlink" title="mounted"></a><code>mounted</code></h2><p><code>mounted</code>在<code>el</code>被新创建的<code>vm.$el</code>替换，挂载成功后被调用</p>
+<h2 id="beforeUpdate"><a href="#beforeUpdate" class="headerlink" title="beforeUpdate"></a><code>beforeUpdate</code></h2><p><code>beforeUpdate</code>在数据更新时调用</p>
+<h2 id="updated"><a href="#updated" class="headerlink" title="updated"></a><code>updated</code></h2><p><code>updated</code>在组件DOM更新后调用</p>
+<h2 id="beforeDestory"><a href="#beforeDestory" class="headerlink" title="beforeDestory"></a><code>beforeDestory</code></h2><p><code>beforeDestory</code>在Vue实例被销毁之前调用。在这一步时，实例仍然可用</p>
+<h2 id="destoryed"><a href="#destoryed" class="headerlink" title="destoryed"></a><code>destoryed</code></h2><p><code>desotryed</code>在Vue实例被销毁后调用。调用后，Vue实例指示的所有东西都会解除绑定，所有事件监听器都会被移除，子实例也会被销毁</p>
+<h2 id="errorCaptured"><a href="#errorCaptured" class="headerlink" title="errorCaptured"></a><code>errorCaptured</code></h2><p><code>errorCaptured</code>在捕获到子组件的错误时被调用</p>
 
       
     </div>
+    
+    
+    
 
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Vue/" rel="tag"># Vue</a>
+          
+            <a href="/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" rel="tag"># 学习笔记</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2020-08-16/Vue%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89%E2%80%94%E2%80%94%E5%85%A5%E9%97%A8/" rel="next" title="Vue学习笔记（一）——入门">
+                <i class="fa fa-chevron-left"></i> Vue学习笔记（一）——入门
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
+
+
+    <div class="post-spread">
+      
+        
+<script>
+  with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='//bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+
+      
+    </div>
+  </div>
 
 
           </div>
@@ -372,6 +502,12 @@
 
 
           
+
+  
+    <div id="gitalk-container"></div>
+  
+
+
 
         </div>
         
@@ -392,8 +528,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -491,6 +636,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#生命周期"><span class="nav-number">1.</span> <span class="nav-text">生命周期</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#生命周期模型"><span class="nav-number">1.1.</span> <span class="nav-text">生命周期模型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#beforeCreate"><span class="nav-number">1.2.</span> <span class="nav-text">beforeCreate</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#created"><span class="nav-number">1.3.</span> <span class="nav-text">created</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#beforeMount"><span class="nav-number">1.4.</span> <span class="nav-text">beforeMount</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#mounted"><span class="nav-number">1.5.</span> <span class="nav-text">mounted</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#beforeUpdate"><span class="nav-number">1.6.</span> <span class="nav-text">beforeUpdate</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#updated"><span class="nav-number">1.7.</span> <span class="nav-text">updated</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#beforeDestory"><span class="nav-number">1.8.</span> <span class="nav-text">beforeDestory</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#destoryed"><span class="nav-number">1.9.</span> <span class="nav-text">destoryed</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#errorCaptured"><span class="nav-number">1.10.</span> <span class="nav-text">errorCaptured</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -638,6 +799,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
@@ -678,6 +843,22 @@
 
 
 
+
+   <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+   <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+   <script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.min.js"></script>
+   <script type="text/javascript">
+        var gitalk = new Gitalk({
+          clientID: '1ebb15722599a4c40cd6',
+          clientSecret: '2d2b7954ce054097bb041f3cae39b6e17d064711',
+          repo: 'Blog-Comments',
+          owner: 'Dreammer12138',
+          admin: ['Dreammer12138'],
+          id: md5(window.location.pathname),
+          distractionFreeMode: 'true'
+        })
+        gitalk.render('gitalk-container')
+       </script>
 
   
 
