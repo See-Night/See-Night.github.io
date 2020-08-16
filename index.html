@@ -1063,7 +1063,7 @@
 不要在选项 property 或回调上使用箭头函数，因为箭头函数没有this
 </div>
 
-<h3 id="生命周期模型"><a href="#生命周期模型" class="headerlink" title="生命周期模型"></a>生命周期模型</h3><p><img src="/img/Vue/vue_liftcycle.png" alt="Vue生命周期模型"></p>
+<h3 id="生命周期模型"><a href="#生命周期模型" class="headerlink" title="生命周期模型"></a>生命周期模型</h3><p><img src="/img/Vue/vue_lifecycle.png" alt="Vue生命周期模型"></p>
 <h4 id="beforeCreate"><a href="#beforeCreate" class="headerlink" title="beforeCreate"></a><code>beforeCreate</code></h4><p><code>beforeCreate</code>在实例初始化之后，数据观测（data observe）和event/watcher事件配置之前被调用</p>
 <h4 id="created"><a href="#created" class="headerlink" title="created"></a><code>created</code></h4><p><code>created</code>在实例创建完成后被立即调用。在这一步，实例已完成以下的配置：数据观测（data observe），属性和方法的运算，event/watcher事件回调，然而这是挂载（mount）阶段还未开始，<code>$el</code>属性目前不可见</p>
 <h4 id="beforeMount"><a href="#beforeMount" class="headerlink" title="beforeMount"></a><code>beforeMount</code></h4><p><code>beforeMount</code>在挂载开始之前被调用，相关的渲染函数首次被调用</p>
