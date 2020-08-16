@@ -85,15 +85,15 @@
 
 
 
-<meta name="description" content="生命周期每个 Vue 实例在被创建时都要经过一系列的初始化过程——例如，需要设置数据监听、编译模板、将实例挂载到 DOM 并在数据变化时更新 DOM 等。同时在这个过程中也会运行一些叫做生命周期钩子的函数，这给了用户在不同阶段添加自己的代码的机会。 生命周期钩子需要在创建Vue对象时以属性的形式进行声明 例如： 123456789new Vue(&amp;#123;    data: &amp;#123;">
+<meta name="description" content="生命周期每个 Vue 实例在被创建时都要经过一系列的初始化过程——例如，需要设置数据监听、编译模板、将实例挂载到 DOM 并在数据变化时更新 DOM 等。同时在这个过程中也会运行一些叫做生命周期钩子的函数，这给了用户在不同阶段添加自己的代码的机会。 生命周期钩子需要在创建Vue对象时以属性的形式进行声明">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Vue学习笔记（二）——生命周期">
 <meta property="og:url" content="http:&#x2F;&#x2F;1145141919810.wang&#x2F;2020-08-16&#x2F;Vue%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%BA%8C%EF%BC%89%E2%80%94%E2%80%94%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F&#x2F;">
 <meta property="og:site_name" content="守夜の破烂摊">
-<meta property="og:description" content="生命周期每个 Vue 实例在被创建时都要经过一系列的初始化过程——例如，需要设置数据监听、编译模板、将实例挂载到 DOM 并在数据变化时更新 DOM 等。同时在这个过程中也会运行一些叫做生命周期钩子的函数，这给了用户在不同阶段添加自己的代码的机会。 生命周期钩子需要在创建Vue对象时以属性的形式进行声明 例如： 123456789new Vue(&amp;#123;    data: &amp;#123;">
+<meta property="og:description" content="生命周期每个 Vue 实例在被创建时都要经过一系列的初始化过程——例如，需要设置数据监听、编译模板、将实例挂载到 DOM 并在数据变化时更新 DOM 等。同时在这个过程中也会运行一些叫做生命周期钩子的函数，这给了用户在不同阶段添加自己的代码的机会。 生命周期钩子需要在创建Vue对象时以属性的形式进行声明">
 <meta property="og:image" content="http:&#x2F;&#x2F;1145141919810.wang&#x2F;img&#x2F;Vue&#x2F;vue_lifecycle.png">
 <meta property="article:published_time" content="2020-08-16T06:23:14.000Z">
-<meta property="article:modified_time" content="2020-08-16T06:24:21.122Z">
+<meta property="article:modified_time" content="2020-08-16T06:27:09.427Z">
 <meta property="article:author" content="守夜">
 <meta property="article:tag" content="Vue">
 <meta property="article:tag" content="学习笔记">
@@ -411,6 +411,8 @@
       
         <h1 id="生命周期"><a href="#生命周期" class="headerlink" title="生命周期"></a>生命周期</h1><p>每个 Vue 实例在被创建时都要经过一系列的初始化过程——例如，需要设置数据监听、编译模板、将实例挂载到 DOM 并在数据变化时更新 DOM 等。同时在这个过程中也会运行一些叫做<strong>生命周期钩子</strong>的函数，这给了用户在不同阶段添加自己的代码的机会。</p>
 <p>生命周期钩子需要在创建Vue对象时以属性的形式进行声明</p>
+<a id="more"></a>
+
 <p>例如：</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">new</span> Vue(&#123;</span><br><span class="line">    data: &#123;</span><br><span class="line">        a: <span class="number">1</span></span><br><span class="line">    &#125;,</span><br><span class="line">    created: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="comment">// this 指向Vue实例</span></span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">'a'</span> + <span class="keyword">this</span>.a)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
 
