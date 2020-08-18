@@ -1639,4 +1639,81 @@
         <tag>学习笔记</tag>
       </tags>
   </entry>
+  <entry>
+    <title>Vue学习笔记（四）——class与style绑定</title>
+    <url>/2020-08-18/Vue%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E5%9B%9B%EF%BC%89%E2%80%94%E2%80%94class%E4%B8%8Estyle%E7%BB%91%E5%AE%9A/</url>
+    <content><![CDATA[<h1 id="绑定-HTML-Class"><a href="#绑定-HTML-Class" class="headerlink" title="绑定 HTML Class"></a>绑定 HTML Class</h1><h2 id="对象语法"><a href="#对象语法" class="headerlink" title="对象语法"></a>对象语法</h2><p>我们可以传给 <code>v-bind:class</code> 一个对象，以动态地切换 class ：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">v-bind:class</span>=<span class="string">"&#123; active: isActive &#125;"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>上面的语法表示 <code>active</code> 这个 class 存在与否将取决于数据 property <code>isActive</code> 的真值</p>
+<p>我们可以在对象中传入更多的字段来动态切换多个 class ，此外，<code>v-bind:class</code> 可以和普通HTML的 <code>class</code> 属性共存：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span></span></span><br><span class="line"><span class="tag">     <span class="attr">class</span>=<span class="string">"static"</span></span></span><br><span class="line"><span class="tag">     <span class="attr">v-bind:class</span>=<span class="string">"&#123; active: isActive, test: isTest &#125;"</span></span></span><br><span class="line"><span class="tag">&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">data: &#123;</span><br><span class="line">    isActive: <span class="literal">true</span>,</span><br><span class="line">    isTest: <span class="literal">false</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>绑定的数据不必内联定义在模板里：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">:class</span>=<span class="string">"classObject"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">data: &#123;</span><br><span class="line">    classObject: &#123;</span><br><span class="line">        active: <span class="literal">true</span>,</span><br><span class="line">        test: <span class="literal">false</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>我们也可以绑定一个计算属性：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">:class</span>=<span class="string">"classObject"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">data: &#123;</span><br><span class="line">  isActive: <span class="literal">true</span>,</span><br><span class="line">  error: <span class="literal">null</span></span><br><span class="line">&#125;,</span><br><span class="line">computed: &#123;</span><br><span class="line">  classObject: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> &#123;</span><br><span class="line">      active: <span class="keyword">this</span>.isActive &amp;&amp; !<span class="keyword">this</span>.error,</span><br><span class="line">      test: <span class="keyword">this</span>.error &amp;&amp; <span class="keyword">this</span>.error.type === <span class="string">'fatal'</span></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="数组语法"><a href="#数组语法" class="headerlink" title="数组语法"></a>数组语法</h2><p>我们可以把一个数组传给 <code>v-bind:class</code>，以应用一个 class 列表：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">v-bind:class</span>=<span class="string">"[activeClass, errorClass]"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">data: &#123;</span><br><span class="line">  activeClass: <span class="string">'active'</span>,</span><br><span class="line">  errorClass: <span class="string">'text-danger'</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>渲染结果为：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"active text-danger"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>也可以使用三元表达式：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">v-bind:class</span>=<span class="string">"[&#123; active: isActive &#125;, errorClass]"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="应用于组件时"><a href="#应用于组件时" class="headerlink" title="应用于组件时"></a>应用于组件时</h2><p>当在一个自定义组件上使用 <code>class</code> property 时，这些 class 将被添加到该组件的根元素上面。这个元素上已经存在的 class 不会被覆盖。</p>
+<p>例如：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Vue.component(&#39;my-component&#39;, &#123;</span><br><span class="line">  template: &#39;&lt;p class&#x3D;&quot;foo bar&quot;&gt;Hi&lt;&#x2F;p&gt;&#39;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<p>然后在使用组件时添加一些 class：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;my-component class&#x3D;&quot;baz boo&quot;&gt;&lt;&#x2F;my-component&gt;</span><br></pre></td></tr></table></figure>
+
+<p>HTML 将被渲染为：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;p class&#x3D;&quot;foo bar baz boo&quot;&gt;Hi&lt;&#x2F;p&gt;</span><br></pre></td></tr></table></figure>
+
+<p>对于带数据绑定 class 也同样适用：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;my-component v-bind:class&#x3D;&quot;&#123; active: isActive &#125;&quot;&gt;&lt;&#x2F;my-component&gt;</span><br></pre></td></tr></table></figure>
+
+<p>当 <code>isActive</code> 为 truthy<a href="https://cn.vuejs.org/v2/guide/class-and-style.html#footnote-1" target="_blank" rel="noopener">[1]</a> 时，HTML 将被渲染成为：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;p class&#x3D;&quot;foo bar active&quot;&gt;Hi&lt;&#x2F;p&gt;</span><br></pre></td></tr></table></figure>
+
+<h1 id="绑定内联样式"><a href="#绑定内联样式" class="headerlink" title="绑定内联样式"></a>绑定内联样式</h1><h2 id="对象语法-1"><a href="#对象语法-1" class="headerlink" title="对象语法"></a>对象语法</h2><p><code>v-bind:style</code> 的对象语法十分直观——看着非常像 CSS，但其实是一个 JavaScript 对象。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;div v-bind:style&#x3D;&quot;&#123; color: activeColor, fontSize: fontSize + &#39;px&#39; &#125;&quot;&gt;&lt;&#x2F;div&gt;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">data: &#123;</span><br><span class="line">  activeColor: &#39;red&#39;,</span><br><span class="line">  fontSize: 30</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>直接绑定到一个样式对象通常更好，这会让模板更清晰：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;div v-bind:style&#x3D;&quot;styleObject&quot;&gt;&lt;&#x2F;div&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">data: &#123;</span><br><span class="line">  styleObject: &#123;</span><br><span class="line">    color: &#39;red&#39;,</span><br><span class="line">    fontSize: &#39;13px&#39;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>同样的，对象语法常常结合返回对象的计算属性使用。</p>
+<h2 id="数组语法-1"><a href="#数组语法-1" class="headerlink" title="数组语法"></a>数组语法</h2><p><code>v-bind:style</code> 的数组语法可以将多个样式对象应用到同一个元素上：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;div v-bind:style&#x3D;&quot;[baseStyles, overridingStyles]&quot;&gt;&lt;&#x2F;div&gt;</span><br></pre></td></tr></table></figure>
+
+<h2 id="自动添加前缀"><a href="#自动添加前缀" class="headerlink" title="自动添加前缀"></a>自动添加前缀</h2><p>当 <code>v-bind:style</code> 使用需要添加浏览器引擎前缀的 CSS property 时，如 <code>transform</code>，Vue.js 会自动侦测并添加相应的前缀。</p>
+<h2 id="多重值"><a href="#多重值" class="headerlink" title="多重值"></a>多重值</h2><p>从 2.3.0 起你可以为 <code>style</code> 绑定中的 property 提供一个包含多个值的数组，常用于提供多个带前缀的值，例如：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;div :style&#x3D;&quot;&#123; display: [&#39;-webkit-box&#39;, &#39;-ms-flexbox&#39;, &#39;flex&#39;] &#125;&quot;&gt;&lt;&#x2F;div&gt;</span><br></pre></td></tr></table></figure>
+
+<p>这样写只会渲染数组中<strong>最后一个</strong>被浏览器支持的值。在本例中，如果浏览器支持不带浏览器前缀的 flexbox，那么就只会渲染 <code>display: flex</code>。</p>
+]]></content>
+      <categories>
+        <category>doc</category>
+        <category>note</category>
+      </categories>
+      <tags>
+        <tag>Vue</tag>
+        <tag>学习笔记</tag>
+      </tags>
+  </entry>
 </search>
