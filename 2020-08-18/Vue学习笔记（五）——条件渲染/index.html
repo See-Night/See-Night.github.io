@@ -87,12 +87,12 @@
 
 <meta name="description" content="v-ifv-if 指令用于条件性地渲染一块内容。这块内容只会在指令的表达式返回 truthy 值的时候被渲染。 1&lt;h1 v-if&#x3D;&quot;awesome&quot;&gt;Vue is awesome!&lt;&#x2F;h1&gt;  也可以用 v-else 添加一个“else 块”： 12&lt;h1 v-if&#x3D;&quot;awesome&quot;&gt;Vue is awesome!&lt;&#x2F;h1&gt;&lt;h1 v-el">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Vue学习笔记（五）——条件渲染和列表渲染">
+<meta property="og:title" content="Vue学习笔记（五）——条件渲染">
 <meta property="og:url" content="http:&#x2F;&#x2F;1145141919810.wang&#x2F;2020-08-18&#x2F;Vue%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%BA%94%EF%BC%89%E2%80%94%E2%80%94%E6%9D%A1%E4%BB%B6%E6%B8%B2%E6%9F%93&#x2F;">
 <meta property="og:site_name" content="守夜の破烂摊">
 <meta property="og:description" content="v-ifv-if 指令用于条件性地渲染一块内容。这块内容只会在指令的表达式返回 truthy 值的时候被渲染。 1&lt;h1 v-if&#x3D;&quot;awesome&quot;&gt;Vue is awesome!&lt;&#x2F;h1&gt;  也可以用 v-else 添加一个“else 块”： 12&lt;h1 v-if&#x3D;&quot;awesome&quot;&gt;Vue is awesome!&lt;&#x2F;h1&gt;&lt;h1 v-el">
 <meta property="article:published_time" content="2020-08-18T03:13:13.000Z">
-<meta property="article:modified_time" content="2020-08-18T03:32:26.239Z">
+<meta property="article:modified_time" content="2020-08-19T02:59:21.162Z">
 <meta property="article:author" content="守夜">
 <meta property="article:tag" content="Vue">
 <meta property="article:tag" content="学习笔记">
@@ -132,7 +132,7 @@
 
 
 
-  <title>Vue学习笔记（五）——条件渲染和列表渲染 | 守夜の破烂摊</title>
+  <title>Vue学习笔记（五）——条件渲染 | 守夜の破烂摊</title>
   
 
 
@@ -324,7 +324,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Vue学习笔记（五）——条件渲染和列表渲染</h1>
+          <h1 class="post-title" itemprop="name headline">Vue学习笔记（五）——条件渲染</h1>
         
 
         <div class="post-meta">
@@ -412,6 +412,8 @@
 
 <p>也可以用 <code>v-else</code> 添加一个“else 块”：</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">v-if</span>=<span class="string">"awesome"</span>&gt;</span>Vue is awesome!<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">v-else</span>&gt;</span>Oh no 😢<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<a id="more"></a>
 
 <h2 id="在-lt-template-gt-元素上使用-v-if-条件渲染分组"><a href="#在-lt-template-gt-元素上使用-v-if-条件渲染分组" class="headerlink" title="在 &lt;template&gt; 元素上使用 v-if 条件渲染分组"></a>在 <code>&lt;template&gt;</code> 元素上使用 <code>v-if</code> 条件渲染分组</h2><p>因为 <code>v-if</code> 是一个指令，所以必须将它添加到一个元素上。但是如果想切换多个元素呢？此时可以把一个 <code>&lt;template&gt;</code> 元素当做不可见的包裹元素，并在上面使用 <code>v-if</code>。最终的渲染结果将不包含 <code>&lt;template&gt;</code> 元素。</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">template</span> <span class="attr">v-if</span>=<span class="string">"ok"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">h1</span>&gt;</span>Title<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line">  	<span class="tag">&lt;<span class="name">p</span>&gt;</span>Paragraph 1<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">  	<span class="tag">&lt;<span class="name">p</span>&gt;</span>Paragraph 2<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></span><br></pre></td></tr></table></figure>

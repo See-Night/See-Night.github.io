@@ -1720,13 +1720,15 @@
       </tags>
   </entry>
   <entry>
-    <title>Vue学习笔记（五）——条件渲染和列表渲染</title>
+    <title>Vue学习笔记（五）——条件渲染</title>
     <url>/2020-08-18/Vue%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%BA%94%EF%BC%89%E2%80%94%E2%80%94%E6%9D%A1%E4%BB%B6%E6%B8%B2%E6%9F%93/</url>
     <content><![CDATA[<h1 id="v-if"><a href="#v-if" class="headerlink" title="v-if"></a><code>v-if</code></h1><p><code>v-if</code> 指令用于条件性地渲染一块内容。这块内容只会在指令的表达式返回 truthy 值的时候被渲染。</p>
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">v-if</span>=<span class="string">"awesome"</span>&gt;</span>Vue is awesome!<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 <p>也可以用 <code>v-else</code> 添加一个“else 块”：</p>
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">v-if</span>=<span class="string">"awesome"</span>&gt;</span>Vue is awesome!<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">v-else</span>&gt;</span>Oh no 😢<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<a id="more"></a>
 
 <h2 id="在-lt-template-gt-元素上使用-v-if-条件渲染分组"><a href="#在-lt-template-gt-元素上使用-v-if-条件渲染分组" class="headerlink" title="在 &lt;template&gt; 元素上使用 v-if 条件渲染分组"></a>在 <code>&lt;template&gt;</code> 元素上使用 <code>v-if</code> 条件渲染分组</h2><p>因为 <code>v-if</code> 是一个指令，所以必须将它添加到一个元素上。但是如果想切换多个元素呢？此时可以把一个 <code>&lt;template&gt;</code> 元素当做不可见的包裹元素，并在上面使用 <code>v-if</code>。最终的渲染结果将不包含 <code>&lt;template&gt;</code> 元素。</p>
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">template</span> <span class="attr">v-if</span>=<span class="string">"ok"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">h1</span>&gt;</span>Title<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line">  	<span class="tag">&lt;<span class="name">p</span>&gt;</span>Paragraph 1<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">  	<span class="tag">&lt;<span class="name">p</span>&gt;</span>Paragraph 2<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></span><br></pre></td></tr></table></figure>
@@ -1774,6 +1776,8 @@
     <url>/2020-08-19/Vue%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E5%85%AD%EF%BC%89%E2%80%94%E2%80%94%E5%88%97%E8%A1%A8%E6%B8%B2%E6%9F%93/</url>
     <content><![CDATA[<h1 id="数组列表渲染"><a href="#数组列表渲染" class="headerlink" title="数组列表渲染"></a>数组列表渲染</h1><p>我们可以用 <code>v-for</code> 指令基于一个数组来渲染一个列表。<code>v-for</code> 指令需要使用 <code>item in items</code> 形式的特殊语法，其中 <code>items</code> 是源数据数组，而 <code>item</code> 则是被迭代的数组元素的<strong>别名</strong>。</p>
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ul</span> <span class="attr">id</span>=<span class="string">"list"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span> <span class="attr">v-for</span>=<span class="string">"item in items"</span>&gt;</span></span><br><span class="line">        &#123;&#123; item.message &#125;&#125;</span><br><span class="line">    <span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<a id="more"></a>
 
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> list = <span class="keyword">new</span> Vue(&#123;</span><br><span class="line">    el: <span class="string">'#list'</span>,</span><br><span class="line">    data: &#123;</span><br><span class="line">        items: [</span><br><span class="line">            &#123; <span class="attr">message</span>: <span class="string">'Foo'</span> &#125;,</span><br><span class="line">            &#123; <span class="attr">message</span>: <span class="string">'Bar'</span> &#125;</span><br><span class="line">        ]</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
 
