@@ -2352,4 +2352,457 @@
         <tag>学习笔记</tag>
       </tags>
   </entry>
+  <entry>
+    <title>数据结构与算法——KMP算法</title>
+    <url>/2020-08-28/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E2%80%94%E2%80%94KMP%E7%AE%97%E6%B3%95/</url>
+    <content><![CDATA[<p>KMP算法是一种改进的<strong>字符串匹配</strong>算法，其核心是利用匹配失败后的信息，尽量减少模式串与主串的匹配次数以达到快速匹配的目的。具体实现就是通过一个next()函数实现，函数本身包含了模式串的局部匹配信息。</p>
+<p><strong>KMP算法的时间复杂度是 O(m+n)</strong></p>
+<a id="more"></a>
+
+
+
+<p><strong>例</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>序号</th>
+<th>0</th>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+<th>4</th>
+<th>5</th>
+<th>6</th>
+<th>7</th>
+<th>8</th>
+<th>9</th>
+<th>10</th>
+<th>11</th>
+<th>12</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>主串</td>
+<td>a</td>
+<td>b</td>
+<td>a</td>
+<td>b</td>
+<td>c</td>
+<td>a</td>
+<td>b</td>
+<td>c</td>
+<td>a</td>
+<td>c</td>
+<td>b</td>
+<td>a</td>
+<td>b</td>
+</tr>
+<tr>
+<td>模式串</td>
+<td>a</td>
+<td>b</td>
+<td>c</td>
+<td>a</td>
+<td>c</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<h1 id="next-数组"><a href="#next-数组" class="headerlink" title="next 数组"></a><code>next</code> 数组</h1><p><code>next</code> 数组是KMP算法中很重要的一个概念。这是一个一维整型数组。</p>
+<p>简单来说，<code>next</code> 数组可以通过模式串直接生成，它的下标 <strong>n</strong> 对应模式串的字符的位置（从1开始），而它的值则表示模式串中从1开始到 <strong>n</strong> 长度的字符串中首尾重复子串的最大长度。</p>
+<p>当然这么讲有些拗口，不如来看一个实例：</p>
+<p>我们的模式串为 <code>a b c a c</code></p>
+<table>
+<thead>
+<tr>
+<th>n</th>
+<th>字符串</th>
+<th>重复子串</th>
+<th>next值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>0</td>
+<td>NULL</td>
+<td>NULL</td>
+<td>0</td>
+</tr>
+<tr>
+<td>1</td>
+<td>a</td>
+<td>NULL</td>
+<td>0</td>
+</tr>
+<tr>
+<td>2</td>
+<td>a b</td>
+<td>NULL</td>
+<td>0</td>
+</tr>
+<tr>
+<td>3</td>
+<td>a b c</td>
+<td>NULL</td>
+<td>0</td>
+</tr>
+<tr>
+<td>4</td>
+<td>a b c a</td>
+<td>a</td>
+<td>1</td>
+</tr>
+<tr>
+<td>5</td>
+<td>a b c a c</td>
+<td>NULL</td>
+<td>0</td>
+</tr>
+</tbody></table>
+<ul>
+<li>n = 0时，字符串为空，子串也为空，next值为0</li>
+<li>n = 1时，字符串为<code>a</code>，但字符串只有一个字符，子串即它自己，因此没有重复子串，next为0</li>
+<li>n = 2时，字符串为<code>a b</code>，没有重复的子串，next为0</li>
+<li>n = 3时，字符串为<code>a b c</code>，没有重复的子串，next为0</li>
+<li>n = 4时，字符串为<code>a b c a</code>，有重复的子串<code>a</code>，重复子串的长度为1，next为1</li>
+<li>n = 5时，字符串为<code>a b c a c</code>，没有重复的子串，next为0</li>
+</ul>
+<p>得到next数组为：</p>
+<table>
+<thead>
+<tr>
+<th>n</th>
+<th>0</th>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+<th>4</th>
+<th>5</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>next(n)</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<td>模式串</td>
+<td></td>
+<td>a</td>
+<td>b</td>
+<td>c</td>
+<td>a</td>
+<td>c</td>
+</tr>
+</tbody></table>
+<h1 id="算法步骤"><a href="#算法步骤" class="headerlink" title="算法步骤"></a>算法步骤</h1><p>和BF算法类似，KMP算法第一步同样是将模式串与主串首端对齐，然后从左到右进行比较。</p>
+<ul>
+<li>第一次</li>
+</ul>
+<table>
+    <thead>
+        <tr>
+            <th>序号</th>
+            <th>0</th>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+            <th>4</th>
+            <th>5</th>
+            <th>6</th>
+            <th>7</th>
+            <th>8</th>
+            <th>9</th>
+            <th>10</th>
+            <th>11</th>
+            <th>12</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>主串</th>
+            <td style="background-color: #87CEFA;">a</td>
+            <td style="background-color: #87CEFA;">b</td>
+            <td style="background-color: #FFC1C1;">a</td>
+            <td>b</td>
+            <td>c</td>
+            <td>a</td>
+            <td>b</td>
+            <td>c</td>
+            <td>a</td>
+            <td>c</td>
+            <td>b</td>
+            <td>a</td>
+            <td>b</td>
+        </tr>
+        <tr>
+            <th>模式串</th>
+            <td style="background-color: #87CEFA;">a</td>
+            <td style="background-color: #87CEFA;">b</td>
+            <td style="background-color: #FFC1C1;">c</td>
+            <td>a</td>
+            <td>c</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
+第一次匹配时只匹配到了前两个字符 `ab`，第3个字符 `a` 不匹配，是一个“**坏字符**”
+
+<p><strong>匹配个数</strong>为2，<strong>匹配到的最后一个字符</strong>为<code>b</code></p>
+<p>那么我们需要将模式串向后移动  <strong>匹配个数</strong> - <strong>字符b的next值</strong> 个位置，即 2 - 0 个位置，得到下面的结果：</p>
+<table>
+    <thead>
+        <tr>
+            <th>序号</th>
+            <th>0</th>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+            <th>4</th>
+            <th>5</th>
+            <th>6</th>
+            <th>7</th>
+            <th>8</th>
+            <th>9</th>
+            <th>10</th>
+            <th>11</th>
+            <th>12</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>主串</th>
+            <td>a</td>
+            <td>b</td>
+            <td>a</td>
+            <td>b</td>
+            <td>c</td>
+            <td>a</td>
+            <td>b</td>
+            <td>c</td>
+            <td>a</td>
+            <td>c</td>
+            <td>b</td>
+            <td>a</td>
+            <td>b</td>
+        </tr>
+        <tr>
+            <th>模式串</th>
+            <td></td>
+            <td></td>
+            <td>a</td>
+            <td>b</td>
+            <td>c</td>
+            <td>a</td>
+            <td>c</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
+
+<ul>
+<li>第二次</li>
+</ul>
+<table>
+    <thead>
+        <tr>
+            <th>序号</th>
+            <th>0</th>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+            <th>4</th>
+            <th>5</th>
+            <th>6</th>
+            <th>7</th>
+            <th>8</th>
+            <th>9</th>
+            <th>10</th>
+            <th>11</th>
+            <th>12</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>主串</th>
+            <td>a</td>
+            <td>b</td>
+            <td style="background-color: #87CEFA;">a</td>
+            <td style="background-color: #87CEFA;">b</td>
+            <td style="background-color: #87CEFA;">c</td>
+            <td style="background-color: #87CEFA;">a</td>
+            <td style="background-color: #FFC1C1;">b</td>
+            <td>c</td>
+            <td>a</td>
+            <td>c</td>
+            <td>b</td>
+            <td>a</td>
+            <td>b</td>
+        </tr>
+        <tr>
+            <th>模式串</th>
+            <td></td>
+            <td></td>
+            <td style="background-color: #87CEFA;">a</td>
+            <td style="background-color: #87CEFA;">b</td>
+            <td style="background-color: #87CEFA;">c</td>
+            <td style="background-color: #87CEFA;">a</td>
+            <td style="background-color: #FFC1C1;">c</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
+
+<p><strong>匹配个数</strong>为4，<strong>匹配到的最后一个字符</strong>为<code>a</code></p>
+<p>那么我们需要将模式串向后移动 4 - 1 个位置，得到以下结果：</p>
+<table>
+    <thead>
+        <tr>
+            <th>序号</th>
+            <th>0</th>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+            <th>4</th>
+            <th>5</th>
+            <th>6</th>
+            <th>7</th>
+            <th>8</th>
+            <th>9</th>
+            <th>10</th>
+            <th>11</th>
+            <th>12</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>主串</th>
+            <td>a</td>
+            <td>b</td>
+            <td>a</td>
+            <td>b</td>
+            <td>c</td>
+            <td>a</td>
+            <td>b</td>
+            <td>c</td>
+            <td>a</td>
+            <td>c</td>
+            <td>b</td>
+            <td>a</td>
+            <td>b</td>
+        </tr>
+        <tr>
+            <th>模式串</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>a</td>
+            <td>b</td>
+            <td>c</td>
+            <td>a</td>
+            <td>c</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
+
+<ul>
+<li>第三次</li>
+</ul>
+<table>
+    <thead>
+        <tr>
+            <th>序号</th>
+            <th>0</th>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+            <th>4</th>
+            <th>5</th>
+            <th>6</th>
+            <th>7</th>
+            <th>8</th>
+            <th>9</th>
+            <th>10</th>
+            <th>11</th>
+            <th>12</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>主串</th>
+            <td>a</td>
+            <td>b</td>
+            <td>a</td>
+            <td>b</td>
+            <td>c</td>
+            <td style="background-color: #87CEFA;">a</td>
+            <td style="background-color: #87CEFA;">b</td>
+            <td style="background-color: #87CEFA;">c</td>
+            <td style="background-color: #87CEFA;">a</td>
+            <td style="background-color: #87CEFA;">c</td>
+            <td>b</td>
+            <td>a</td>
+            <td>b</td>
+        </tr>
+        <tr>
+            <th>模式串</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td style="background-color: #87CEFA;">a</td>
+            <td style="background-color: #87CEFA;">b</td>
+            <td style="background-color: #87CEFA;">c</td>
+            <td style="background-color: #87CEFA;">a</td>
+            <td style="background-color: #87CEFA;">c</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
+
+<p>匹配成功</p>
+<p>一共匹配了3次</p>
+]]></content>
+      <categories>
+        <category>doc</category>
+      </categories>
+      <tags>
+        <tag>数据结构</tag>
+        <tag>算法</tag>
+      </tags>
+  </entry>
 </search>
