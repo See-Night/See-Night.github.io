@@ -436,7 +436,7 @@
 <p>现在，每次切换时，输入框都将被重新渲染。</p>
 <p>注意，<code>&lt;label&gt;</code> 元素仍然会被高效地复用，因为它们没有添加 <code>key</code> attribute。</p>
 <h1 id="v-show"><a href="#v-show" class="headerlink" title="v-show"></a><code>v-show</code></h1><p>另一个用于根据条件展示元素的选项是 <code>v-show</code> 指令。用法大致一样：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;h1 v-show&#x3D;&quot;ok&quot;&gt;Hello!&lt;&#x2F;h1&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">v-show</span>=<span class="string">"ok"</span>&gt;</span>Hello!<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 <p>不同的是带有 <code>v-show</code> 的元素始终会被渲染并保留在 DOM 中。<code>v-show</code> 只是简单地切换元素的 CSS property <code>display</code>。</p>
 <div role="alert" style="background-color: red; opacity:0.4; padding: .5rem; color: white; border-radius: 10px;">注意，v-show 不支持 template 元素，也不支持 v-else。</div>
