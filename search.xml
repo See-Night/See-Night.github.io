@@ -285,20 +285,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Japanese</title>
-    <url>/2019-12-13/Japanese/</url>
-    <content><![CDATA[<h3 id="中国人ですが、日本語もOKです"><a href="#中国人ですが、日本語もOKです" class="headerlink" title="中国人ですが、日本語もOKです"></a>中国人ですが、日本語もOKです</h3><p>プログラマー</p>
-<p>大学生</p>
-<p>Vtuber推し</p>
-<h3 id="このブログは日常のプログラムや攻略などいろいろなものをアップしています。"><a href="#このブログは日常のプログラムや攻略などいろいろなものをアップしています。" class="headerlink" title="このブログは日常のプログラムや攻略などいろいろなものをアップしています。"></a>このブログは日常のプログラムや攻略などいろいろなものをアップしています。</h3><h4 id="ご覧にきてくれて、本当にありがとうございます。"><a href="#ご覧にきてくれて、本当にありがとうございます。" class="headerlink" title="ご覧にきてくれて、本当にありがとうございます。"></a>ご覧にきてくれて、本当にありがとうございます。</h4><h4 id="仲良くしましょう。"><a href="#仲良くしましょう。" class="headerlink" title="仲良くしましょう。"></a>仲良くしましょう。</h4>]]></content>
-      <categories>
-        <category>doc</category>
-      </categories>
-      <tags>
-        <tag>About</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>NexT主题美化——Muse主题侧边栏与目录位置优化</title>
     <url>/2019-12-13/NexT%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96%E2%80%94%E2%80%94Muse%E4%B8%BB%E9%A2%98%E4%BE%A7%E8%BE%B9%E6%A0%8F%E4%B8%8E%E7%9B%AE%E5%BD%95%E4%BD%8D%E7%BD%AE%E4%BC%98%E5%8C%96/</url>
     <content><![CDATA[<h3 id="NexT-主题优化——Muse"><a href="#NexT-主题优化——Muse" class="headerlink" title="NexT 主题优化——Muse"></a>NexT 主题优化——Muse</h3><p><strong>Hexo version: v4.1.0</strong></p>
@@ -354,6 +340,20 @@
         <tag>Hexo</tag>
         <tag>NexT</tag>
         <tag>主题优化</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Japanese</title>
+    <url>/2019-12-13/Japanese/</url>
+    <content><![CDATA[<h3 id="中国人ですが、日本語もOKです"><a href="#中国人ですが、日本語もOKです" class="headerlink" title="中国人ですが、日本語もOKです"></a>中国人ですが、日本語もOKです</h3><p>プログラマー</p>
+<p>大学生</p>
+<p>Vtuber推し</p>
+<h3 id="このブログは日常のプログラムや攻略などいろいろなものをアップしています。"><a href="#このブログは日常のプログラムや攻略などいろいろなものをアップしています。" class="headerlink" title="このブログは日常のプログラムや攻略などいろいろなものをアップしています。"></a>このブログは日常のプログラムや攻略などいろいろなものをアップしています。</h3><h4 id="ご覧にきてくれて、本当にありがとうございます。"><a href="#ご覧にきてくれて、本当にありがとうございます。" class="headerlink" title="ご覧にきてくれて、本当にありがとうございます。"></a>ご覧にきてくれて、本当にありがとうございます。</h4><h4 id="仲良くしましょう。"><a href="#仲良くしましょう。" class="headerlink" title="仲良くしましょう。"></a>仲良くしましょう。</h4>]]></content>
+      <categories>
+        <category>doc</category>
+      </categories>
+      <tags>
+        <tag>About</tag>
       </tags>
   </entry>
   <entry>
@@ -518,53 +518,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Vue学习笔记（七）——事件处理</title>
-    <url>/2020-08-20/Vue%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%83%EF%BC%89%E2%80%94%E2%80%94%E4%BA%8B%E4%BB%B6%E5%A4%84%E7%90%86/</url>
-    <content><![CDATA[<h1 id="监听事件"><a href="#监听事件" class="headerlink" title="监听事件"></a>监听事件</h1><p>可以用 <code>v-on</code> 指令监听 DOM 事件，并在触发时运行一些 JavaScript 代码。</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"app"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">button</span> <span class="attr">v-on:click</span>=<span class="string">"counter += 1"</span>&gt;</span>Add 1<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span></span><br><span class="line">        The button above has been clicked &#123;&#123; counter &#125;&#125; times</span><br><span class="line">    <span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> app = <span class="keyword">new</span> Vue(&#123;</span><br><span class="line">    el: <span class="string">'#app'</span>,</span><br><span class="line">    data: &#123;</span><br><span class="line">        counter: <span class="number">0</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-
-<a id="more"></a>
-
-<h1 id="事件处理方法"><a href="#事件处理方法" class="headerlink" title="事件处理方法"></a>事件处理方法</h1><p>然而许多事件处理逻辑会更为复杂，所以直接把 JavaScript 代码写在 <code>v-on</code> 指令中是不可行的。因此 <code>v-on</code> 还可以接收一个需要调用的方法名称。</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"app"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">button</span> <span class="attr">v-on:click</span>=<span class="string">"greet"</span>&gt;</span></span><br><span class="line">        Greet</span><br><span class="line">    <span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> app = <span class="keyword">new</span> Vue(&#123;</span><br><span class="line">    el: <span class="string">'#app'</span>,</span><br><span class="line">    data: &#123;</span><br><span class="line">        name: <span class="string">'Vue.js'</span></span><br><span class="line">    &#125;,</span><br><span class="line">    methods: &#123;</span><br><span class="line">        greet: <span class="function"><span class="keyword">function</span>(<span class="params">event</span>) </span>&#123;</span><br><span class="line">            alert(<span class="string">'Hello'</span> + <span class="keyword">this</span>.name + <span class="string">'!'</span>)</span><br><span class="line">            <span class="keyword">if</span> (event) &#123;</span><br><span class="line">                alert(event.target.tagName)</span><br><span class="line">            &#125;</span><br><span class="line">        &#125; </span><br><span class="line">    &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-
-<h1 id="内联处理器中的方法"><a href="#内联处理器中的方法" class="headerlink" title="内联处理器中的方法"></a>内联处理器中的方法</h1><p>除了直接绑定到一个方法，也可以在内联 JavaScript 语句中调用方法：</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"app"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">button</span> <span class="attr">v-on:click</span>=<span class="string">"say('hi')"</span>&gt;</span>Say hi<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">button</span> <span class="attr">v-on:click</span>=<span class="string">"say('what')"</span>&gt;</span>Say what<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">new</span> Vue(&#123;</span><br><span class="line">    el: <span class="string">'#app'</span>,</span><br><span class="line">    methods: &#123;</span><br><span class="line">        say: <span class="function"><span class="keyword">function</span> (<span class="params">msg</span>) </span>&#123;</span><br><span class="line">            alert(msg)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-
-<p>有时也需要在内联语句处理器中访问原始的 DOM 事件。可以用特殊变量 <code>$event</code> 把它传入方法：</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">button</span> <span class="attr">v-on:click</span>=<span class="string">"warn('Form cannot be submitted yet.', $event)"</span>&gt;</span></span><br><span class="line">  	Submit</span><br><span class="line"><span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">methods: &#123;</span><br><span class="line">    warn: <span class="function"><span class="keyword">function</span> (<span class="params">msg, event</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (event) &#123;</span><br><span class="line">            event.preventDefault()</span><br><span class="line">        &#125;</span><br><span class="line">        alert(msg)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h1 id="事件修饰符"><a href="#事件修饰符" class="headerlink" title="事件修饰符"></a>事件修饰符</h1><p>在事件处理程序中调用 <code>event.preventDefault()</code> 或 <code>event.stopPropagation()</code> 是非常常见的需求。尽管我们可以在方法中轻松实现这点，但更好的方式是：方法只有纯粹的数据逻辑，而不是去处理 DOM 事件细节。</p>
-<p>为了解决这个问题，Vue.js 为 <code>v-on</code> 提供了<strong>事件修饰符</strong>。之前提过，修饰符是由点开头的指令后缀来表示的。</p>
-<ul>
-<li><code>.stop</code></li>
-<li><code>.prevent</code></li>
-<li><code>.capture</code></li>
-<li><code>.self</code></li>
-<li><code>.once</code></li>
-<li><code>.passive</code></li>
-</ul>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 阻止单击事件继续传播 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">v-on:click.stop</span>=<span class="string">"doThis"</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- 提交事件不再重载页面 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">form</span> <span class="attr">v-on:submit.prevent</span>=<span class="string">"onSubmit"</span>&gt;</span><span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- 修饰符可以串联 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">v-on:click.stop.prevent</span>=<span class="string">"doThat"</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- 只有修饰符 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">form</span> <span class="attr">v-on:submit.prevent</span>&gt;</span><span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- 添加事件监听器时使用事件捕获模式 --&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- 即内部元素触发的事件先在此处理，然后才交由内部元素进行处理 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">v-on:click.capture</span>=<span class="string">"doThis"</span>&gt;</span>...<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- 只当在 event.target 是当前元素自身时触发处理函数 --&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- 即事件不是从内部元素触发的 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">v-on:click.self</span>=<span class="string">"doThat"</span>&gt;</span>...<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>doc</category>
-        <category>note</category>
-      </categories>
-      <tags>
-        <tag>Vue</tag>
-        <tag>学习笔记</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Vue学习笔记（三）——模板语法</title>
     <url>/2020-08-17/Vue%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%89%EF%BC%89%E2%80%94%E2%80%94%E6%A8%A1%E6%9D%BF%E8%AF%AD%E6%B3%95/</url>
     <content><![CDATA[<p>Vue.js 使用了基于 HTML 的模板语法，允许开发者声明式地将 DOM 绑定至底层 Vue 实例的数据。所有 Vue.js 的模板都是合法的 HTML，所以能被遵循规范的浏览器和 HTML 解析器解析。</p>
@@ -669,6 +622,53 @@
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;!-- 因为 AJAX 库和通用工具的生态已经相当丰富，Vue 核心代码没有重复 --&gt;</span><br><span class="line">&lt;!-- 提供这些功能以保持精简。这也可以让你自由选择自己更熟悉的工具。 --&gt;</span><br><span class="line">&lt;script src=<span class="string">"https://cdn.jsdelivr.net/npm/axios@0.12.0/dist/axios.min.js"</span>&gt;<span class="xml"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br><span class="line">&lt;script src=<span class="string">"https://cdn.jsdelivr.net/npm/lodash@4.13.1/lodash.min.js"</span>&gt;<span class="xml"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br><span class="line">&lt;script&gt;</span><br><span class="line"><span class="keyword">var</span> watchDemo = <span class="keyword">new</span> Vue(&#123;</span><br><span class="line">  el: <span class="string">'#watch-demo'</span>,</span><br><span class="line">  data: &#123;</span><br><span class="line">    question: <span class="string">''</span>,</span><br><span class="line">    answer: <span class="string">'I cannot give you an answer until you ask a question!'</span></span><br><span class="line">  &#125;,</span><br><span class="line">  watch: &#123;</span><br><span class="line">    <span class="comment">// 如果 `question` 发生改变，这个函数就会运行</span></span><br><span class="line">    question: <span class="function"><span class="keyword">function</span> (<span class="params">newQuestion, oldQuestion</span>) </span>&#123;</span><br><span class="line">      <span class="keyword">this</span>.answer = <span class="string">'Waiting for you to stop typing...'</span></span><br><span class="line">      <span class="keyword">this</span>.debouncedGetAnswer()</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;,</span><br><span class="line">  created: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="comment">// `_.debounce` 是一个通过 Lodash 限制操作频率的函数。</span></span><br><span class="line">    <span class="comment">// 在这个例子中，我们希望限制访问 yesno.wtf/api 的频率</span></span><br><span class="line">    <span class="comment">// AJAX 请求直到用户输入完毕才会发出。</span></span><br><span class="line">    <span class="keyword">this</span>.debouncedGetAnswer = _.debounce(<span class="keyword">this</span>.getAnswer, <span class="number">500</span>)</span><br><span class="line">  &#125;,</span><br><span class="line">  methods: &#123;</span><br><span class="line">    getAnswer: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">      <span class="keyword">if</span> (<span class="keyword">this</span>.question.indexOf(<span class="string">'?'</span>) === <span class="number">-1</span>) &#123;</span><br><span class="line">        <span class="keyword">this</span>.answer = <span class="string">'Questions usually contain a question mark. ;-)'</span></span><br><span class="line">        <span class="keyword">return</span></span><br><span class="line">      &#125;</span><br><span class="line">      <span class="keyword">this</span>.answer = <span class="string">'Thinking...'</span></span><br><span class="line">      <span class="keyword">var</span> vm = <span class="keyword">this</span></span><br><span class="line">      axios.get(<span class="string">'https://yesno.wtf/api'</span>)</span><br><span class="line">        .then(<span class="function"><span class="keyword">function</span> (<span class="params">response</span>) </span>&#123;</span><br><span class="line">          vm.answer = _.capitalize(response.data.answer)</span><br><span class="line">        &#125;)</span><br><span class="line">        .catch(<span class="function"><span class="keyword">function</span> (<span class="params">error</span>) </span>&#123;</span><br><span class="line">          vm.answer = <span class="string">'Error! Could not reach the API. '</span> + error</span><br><span class="line">        &#125;)</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br><span class="line">&lt;<span class="regexp">/script&gt;</span></span><br></pre></td></tr></table></figure>
 
 <p>在这个示例中，使用 <code>watch</code> 选项允许我们执行异步操作 (访问一个 API)，限制我们执行该操作的频率，并在我们得到最终结果前，设置中间状态。这些都是计算属性无法做到的。</p>
+]]></content>
+      <categories>
+        <category>doc</category>
+        <category>note</category>
+      </categories>
+      <tags>
+        <tag>Vue</tag>
+        <tag>学习笔记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Vue学习笔记（七）——事件处理</title>
+    <url>/2020-08-20/Vue%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%83%EF%BC%89%E2%80%94%E2%80%94%E4%BA%8B%E4%BB%B6%E5%A4%84%E7%90%86/</url>
+    <content><![CDATA[<h1 id="监听事件"><a href="#监听事件" class="headerlink" title="监听事件"></a>监听事件</h1><p>可以用 <code>v-on</code> 指令监听 DOM 事件，并在触发时运行一些 JavaScript 代码。</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"app"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">button</span> <span class="attr">v-on:click</span>=<span class="string">"counter += 1"</span>&gt;</span>Add 1<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span></span><br><span class="line">        The button above has been clicked &#123;&#123; counter &#125;&#125; times</span><br><span class="line">    <span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> app = <span class="keyword">new</span> Vue(&#123;</span><br><span class="line">    el: <span class="string">'#app'</span>,</span><br><span class="line">    data: &#123;</span><br><span class="line">        counter: <span class="number">0</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<a id="more"></a>
+
+<h1 id="事件处理方法"><a href="#事件处理方法" class="headerlink" title="事件处理方法"></a>事件处理方法</h1><p>然而许多事件处理逻辑会更为复杂，所以直接把 JavaScript 代码写在 <code>v-on</code> 指令中是不可行的。因此 <code>v-on</code> 还可以接收一个需要调用的方法名称。</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"app"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">button</span> <span class="attr">v-on:click</span>=<span class="string">"greet"</span>&gt;</span></span><br><span class="line">        Greet</span><br><span class="line">    <span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> app = <span class="keyword">new</span> Vue(&#123;</span><br><span class="line">    el: <span class="string">'#app'</span>,</span><br><span class="line">    data: &#123;</span><br><span class="line">        name: <span class="string">'Vue.js'</span></span><br><span class="line">    &#125;,</span><br><span class="line">    methods: &#123;</span><br><span class="line">        greet: <span class="function"><span class="keyword">function</span>(<span class="params">event</span>) </span>&#123;</span><br><span class="line">            alert(<span class="string">'Hello'</span> + <span class="keyword">this</span>.name + <span class="string">'!'</span>)</span><br><span class="line">            <span class="keyword">if</span> (event) &#123;</span><br><span class="line">                alert(event.target.tagName)</span><br><span class="line">            &#125;</span><br><span class="line">        &#125; </span><br><span class="line">    &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<h1 id="内联处理器中的方法"><a href="#内联处理器中的方法" class="headerlink" title="内联处理器中的方法"></a>内联处理器中的方法</h1><p>除了直接绑定到一个方法，也可以在内联 JavaScript 语句中调用方法：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"app"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">button</span> <span class="attr">v-on:click</span>=<span class="string">"say('hi')"</span>&gt;</span>Say hi<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">button</span> <span class="attr">v-on:click</span>=<span class="string">"say('what')"</span>&gt;</span>Say what<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">new</span> Vue(&#123;</span><br><span class="line">    el: <span class="string">'#app'</span>,</span><br><span class="line">    methods: &#123;</span><br><span class="line">        say: <span class="function"><span class="keyword">function</span> (<span class="params">msg</span>) </span>&#123;</span><br><span class="line">            alert(msg)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<p>有时也需要在内联语句处理器中访问原始的 DOM 事件。可以用特殊变量 <code>$event</code> 把它传入方法：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">button</span> <span class="attr">v-on:click</span>=<span class="string">"warn('Form cannot be submitted yet.', $event)"</span>&gt;</span></span><br><span class="line">  	Submit</span><br><span class="line"><span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">methods: &#123;</span><br><span class="line">    warn: <span class="function"><span class="keyword">function</span> (<span class="params">msg, event</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (event) &#123;</span><br><span class="line">            event.preventDefault()</span><br><span class="line">        &#125;</span><br><span class="line">        alert(msg)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h1 id="事件修饰符"><a href="#事件修饰符" class="headerlink" title="事件修饰符"></a>事件修饰符</h1><p>在事件处理程序中调用 <code>event.preventDefault()</code> 或 <code>event.stopPropagation()</code> 是非常常见的需求。尽管我们可以在方法中轻松实现这点，但更好的方式是：方法只有纯粹的数据逻辑，而不是去处理 DOM 事件细节。</p>
+<p>为了解决这个问题，Vue.js 为 <code>v-on</code> 提供了<strong>事件修饰符</strong>。之前提过，修饰符是由点开头的指令后缀来表示的。</p>
+<ul>
+<li><code>.stop</code></li>
+<li><code>.prevent</code></li>
+<li><code>.capture</code></li>
+<li><code>.self</code></li>
+<li><code>.once</code></li>
+<li><code>.passive</code></li>
+</ul>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 阻止单击事件继续传播 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">v-on:click.stop</span>=<span class="string">"doThis"</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- 提交事件不再重载页面 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">form</span> <span class="attr">v-on:submit.prevent</span>=<span class="string">"onSubmit"</span>&gt;</span><span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- 修饰符可以串联 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">v-on:click.stop.prevent</span>=<span class="string">"doThat"</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- 只有修饰符 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">form</span> <span class="attr">v-on:submit.prevent</span>&gt;</span><span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- 添加事件监听器时使用事件捕获模式 --&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- 即内部元素触发的事件先在此处理，然后才交由内部元素进行处理 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">v-on:click.capture</span>=<span class="string">"doThis"</span>&gt;</span>...<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- 只当在 event.target 是当前元素自身时触发处理函数 --&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- 即事件不是从内部元素触发的 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">v-on:click.self</span>=<span class="string">"doThat"</span>&gt;</span>...<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
 ]]></content>
       <categories>
         <category>doc</category>
@@ -974,86 +974,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Vue学习笔记（四）——class与style绑定</title>
-    <url>/2020-08-18/Vue%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E5%9B%9B%EF%BC%89%E2%80%94%E2%80%94class%E4%B8%8Estyle%E7%BB%91%E5%AE%9A/</url>
-    <content><![CDATA[<h1 id="绑定-HTML-Class"><a href="#绑定-HTML-Class" class="headerlink" title="绑定 HTML Class"></a>绑定 HTML Class</h1><h2 id="对象语法"><a href="#对象语法" class="headerlink" title="对象语法"></a>对象语法</h2><p>我们可以传给 <code>v-bind:class</code> 一个对象，以动态地切换 class ：</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">v-bind:class</span>=<span class="string">"&#123; active: isActive &#125;"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>上面的语法表示 <code>active</code> 这个 class 存在与否将取决于数据 property <code>isActive</code> 的真值</p>
-<p>我们可以在对象中传入更多的字段来动态切换多个 class ，此外，<code>v-bind:class</code> 可以和普通HTML的 <code>class</code> 属性共存：</p>
-<a id="more"></a>
-
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span></span></span><br><span class="line"><span class="tag">     <span class="attr">class</span>=<span class="string">"static"</span></span></span><br><span class="line"><span class="tag">     <span class="attr">v-bind:class</span>=<span class="string">"&#123; active: isActive, test: isTest &#125;"</span></span></span><br><span class="line"><span class="tag">&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">data: &#123;</span><br><span class="line">    isActive: <span class="literal">true</span>,</span><br><span class="line">    isTest: <span class="literal">false</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>绑定的数据不必内联定义在模板里：</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">:class</span>=<span class="string">"classObject"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">data: &#123;</span><br><span class="line">    classObject: &#123;</span><br><span class="line">        active: <span class="literal">true</span>,</span><br><span class="line">        test: <span class="literal">false</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>我们也可以绑定一个计算属性：</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">:class</span>=<span class="string">"classObject"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">data: &#123;</span><br><span class="line">  isActive: <span class="literal">true</span>,</span><br><span class="line">  error: <span class="literal">null</span></span><br><span class="line">&#125;,</span><br><span class="line">computed: &#123;</span><br><span class="line">  classObject: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> &#123;</span><br><span class="line">      active: <span class="keyword">this</span>.isActive &amp;&amp; !<span class="keyword">this</span>.error,</span><br><span class="line">      test: <span class="keyword">this</span>.error &amp;&amp; <span class="keyword">this</span>.error.type === <span class="string">'fatal'</span></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="数组语法"><a href="#数组语法" class="headerlink" title="数组语法"></a>数组语法</h2><p>我们可以把一个数组传给 <code>v-bind:class</code>，以应用一个 class 列表：</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">v-bind:class</span>=<span class="string">"[activeClass, errorClass]"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">data: &#123;</span><br><span class="line">  activeClass: <span class="string">'active'</span>,</span><br><span class="line">  errorClass: <span class="string">'text-danger'</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>渲染结果为：</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"active text-danger"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>也可以使用三元表达式：</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">v-bind:class</span>=<span class="string">"[&#123; active: isActive &#125;, errorClass]"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="应用于组件时"><a href="#应用于组件时" class="headerlink" title="应用于组件时"></a>应用于组件时</h2><p>当在一个自定义组件上使用 <code>class</code> property 时，这些 class 将被添加到该组件的根元素上面。这个元素上已经存在的 class 不会被覆盖。</p>
-<p>例如：</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">Vue.component(<span class="string">'my-component'</span>, &#123;</span><br><span class="line">  template: <span class="string">'&lt;p class="foo bar"&gt;Hi&lt;/p&gt;'</span></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-
-<p>然后在使用组件时添加一些 class：</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">my-component</span> <span class="attr">class</span>=<span class="string">"baz boo"</span>&gt;</span><span class="tag">&lt;/<span class="name">my-component</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>HTML 将被渲染为：</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">"foo bar baz boo"</span>&gt;</span>Hi<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>对于带数据绑定 class 也同样适用：</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">my-component</span> <span class="attr">v-bind:class</span>=<span class="string">"&#123; active: isActive &#125;"</span>&gt;</span><span class="tag">&lt;/<span class="name">my-component</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>当 <code>isActive</code> 为 truthy  时，HTML 将被渲染成为：</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">"foo bar active"</span>&gt;</span>Hi<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h1 id="绑定内联样式"><a href="#绑定内联样式" class="headerlink" title="绑定内联样式"></a>绑定内联样式</h1><h2 id="对象语法-1"><a href="#对象语法-1" class="headerlink" title="对象语法"></a>对象语法</h2><p><code>v-bind:style</code> 的对象语法十分直观——看着非常像 CSS，但其实是一个 JavaScript 对象。</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">v-bind:style</span>=<span class="string">"&#123; color: activeColor, fontSize: fontSize + 'px' &#125;"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">data: &#123;</span><br><span class="line">  activeColor: <span class="string">'red'</span>,</span><br><span class="line">  fontSize: <span class="number">30</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>直接绑定到一个样式对象通常更好，这会让模板更清晰：</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">v-bind:style</span>=<span class="string">"styleObject"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">data: &#123;</span><br><span class="line">  styleObject: &#123;</span><br><span class="line">    color: <span class="string">'red'</span>,</span><br><span class="line">    fontSize: <span class="string">'13px'</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>同样的，对象语法常常结合返回对象的计算属性使用。</p>
-<h2 id="数组语法-1"><a href="#数组语法-1" class="headerlink" title="数组语法"></a>数组语法</h2><p><code>v-bind:style</code> 的数组语法可以将多个样式对象应用到同一个元素上：</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">v-bind:style</span>=<span class="string">"[baseStyles, overridingStyles]"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="自动添加前缀"><a href="#自动添加前缀" class="headerlink" title="自动添加前缀"></a>自动添加前缀</h2><p>当 <code>v-bind:style</code> 使用需要添加浏览器引擎前缀的 CSS property 时，如 <code>transform</code>，Vue.js 会自动侦测并添加相应的前缀。</p>
-<h2 id="多重值"><a href="#多重值" class="headerlink" title="多重值"></a>多重值</h2><p>从 2.3.0 起你可以为 <code>style</code> 绑定中的 property 提供一个包含多个值的数组，常用于提供多个带前缀的值，例如：</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">:style</span>=<span class="string">"&#123; display: ['-webkit-box', '-ms-flexbox', 'flex'] &#125;"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>这样写只会渲染数组中<strong>最后一个</strong>被浏览器支持的值。在本例中，如果浏览器支持不带浏览器前缀的 flexbox，那么就只会渲染 <code>display: flex</code>。</p>
-]]></content>
-      <categories>
-        <category>doc</category>
-        <category>note</category>
-      </categories>
-      <tags>
-        <tag>Vue</tag>
-        <tag>学习笔记</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Vue学习笔记（六）——列表渲染</title>
     <url>/2020-08-19/Vue%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E5%85%AD%EF%BC%89%E2%80%94%E2%80%94%E5%88%97%E8%A1%A8%E6%B8%B2%E6%9F%93/</url>
     <content><![CDATA[<h1 id="数组列表渲染"><a href="#数组列表渲染" class="headerlink" title="数组列表渲染"></a>数组列表渲染</h1><p>我们可以用 <code>v-for</code> 指令基于一个数组来渲染一个列表。<code>v-for</code> 指令需要使用 <code>item in items</code> 形式的特殊语法，其中 <code>items</code> 是源数据数组，而 <code>item</code> 则是被迭代的数组元素的<strong>别名</strong>。</p>
@@ -1134,6 +1054,86 @@
 
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line">Vue.component(<span class="string">'todo-item'</span>, &#123;</span><br><span class="line">  	template: <span class="string">'\</span></span><br><span class="line"><span class="string">    	&lt;li&gt;\</span></span><br><span class="line"><span class="string">		    &#123;&#123; title &#125;&#125;\</span></span><br><span class="line"><span class="string">	    	&lt;button v-on:click="$emit(\'remove\')"&gt;Remove&lt;/button&gt;\</span></span><br><span class="line"><span class="string">	    &lt;/li&gt;\</span></span><br><span class="line"><span class="string">  	'</span>,</span><br><span class="line">  	props: [<span class="string">'title'</span>]</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"><span class="keyword">new</span> Vue(&#123;</span><br><span class="line">  	el: <span class="string">'#todo-list-example'</span>,</span><br><span class="line">  	data: &#123;</span><br><span class="line">    	newTodoText: <span class="string">''</span>,</span><br><span class="line">    	todos: [</span><br><span class="line">      		&#123;</span><br><span class="line">        		id: <span class="number">1</span>,</span><br><span class="line">		        title: <span class="string">'Do the dishes'</span>,</span><br><span class="line">		    &#125;,</span><br><span class="line">	        &#123;</span><br><span class="line">        		id: <span class="number">2</span>,</span><br><span class="line">        		title: <span class="string">'Take out the trash'</span>,</span><br><span class="line">      		&#125;,</span><br><span class="line">      		&#123;</span><br><span class="line">        		id: <span class="number">3</span>,</span><br><span class="line">        		title: <span class="string">'Mow the lawn'</span></span><br><span class="line">      		&#125;</span><br><span class="line">    	],</span><br><span class="line">    	nextTodoId: <span class="number">4</span></span><br><span class="line">  	&#125;,</span><br><span class="line">  	methods: &#123;</span><br><span class="line">    	addNewTodo: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">      		<span class="keyword">this</span>.todos.push(&#123;</span><br><span class="line">        		id: <span class="keyword">this</span>.nextTodoId++,</span><br><span class="line">       	 		title: <span class="keyword">this</span>.newTodoText</span><br><span class="line">      		&#125;)</span><br><span class="line">      		<span class="keyword">this</span>.newTodoText = <span class="string">''</span></span><br><span class="line">    	&#125;</span><br><span class="line">  	&#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
 
+]]></content>
+      <categories>
+        <category>doc</category>
+        <category>note</category>
+      </categories>
+      <tags>
+        <tag>Vue</tag>
+        <tag>学习笔记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Vue学习笔记（四）——class与style绑定</title>
+    <url>/2020-08-18/Vue%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E5%9B%9B%EF%BC%89%E2%80%94%E2%80%94class%E4%B8%8Estyle%E7%BB%91%E5%AE%9A/</url>
+    <content><![CDATA[<h1 id="绑定-HTML-Class"><a href="#绑定-HTML-Class" class="headerlink" title="绑定 HTML Class"></a>绑定 HTML Class</h1><h2 id="对象语法"><a href="#对象语法" class="headerlink" title="对象语法"></a>对象语法</h2><p>我们可以传给 <code>v-bind:class</code> 一个对象，以动态地切换 class ：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">v-bind:class</span>=<span class="string">"&#123; active: isActive &#125;"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>上面的语法表示 <code>active</code> 这个 class 存在与否将取决于数据 property <code>isActive</code> 的真值</p>
+<p>我们可以在对象中传入更多的字段来动态切换多个 class ，此外，<code>v-bind:class</code> 可以和普通HTML的 <code>class</code> 属性共存：</p>
+<a id="more"></a>
+
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span></span></span><br><span class="line"><span class="tag">     <span class="attr">class</span>=<span class="string">"static"</span></span></span><br><span class="line"><span class="tag">     <span class="attr">v-bind:class</span>=<span class="string">"&#123; active: isActive, test: isTest &#125;"</span></span></span><br><span class="line"><span class="tag">&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">data: &#123;</span><br><span class="line">    isActive: <span class="literal">true</span>,</span><br><span class="line">    isTest: <span class="literal">false</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>绑定的数据不必内联定义在模板里：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">:class</span>=<span class="string">"classObject"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">data: &#123;</span><br><span class="line">    classObject: &#123;</span><br><span class="line">        active: <span class="literal">true</span>,</span><br><span class="line">        test: <span class="literal">false</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>我们也可以绑定一个计算属性：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">:class</span>=<span class="string">"classObject"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">data: &#123;</span><br><span class="line">  isActive: <span class="literal">true</span>,</span><br><span class="line">  error: <span class="literal">null</span></span><br><span class="line">&#125;,</span><br><span class="line">computed: &#123;</span><br><span class="line">  classObject: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> &#123;</span><br><span class="line">      active: <span class="keyword">this</span>.isActive &amp;&amp; !<span class="keyword">this</span>.error,</span><br><span class="line">      test: <span class="keyword">this</span>.error &amp;&amp; <span class="keyword">this</span>.error.type === <span class="string">'fatal'</span></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="数组语法"><a href="#数组语法" class="headerlink" title="数组语法"></a>数组语法</h2><p>我们可以把一个数组传给 <code>v-bind:class</code>，以应用一个 class 列表：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">v-bind:class</span>=<span class="string">"[activeClass, errorClass]"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">data: &#123;</span><br><span class="line">  activeClass: <span class="string">'active'</span>,</span><br><span class="line">  errorClass: <span class="string">'text-danger'</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>渲染结果为：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"active text-danger"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>也可以使用三元表达式：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">v-bind:class</span>=<span class="string">"[&#123; active: isActive &#125;, errorClass]"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="应用于组件时"><a href="#应用于组件时" class="headerlink" title="应用于组件时"></a>应用于组件时</h2><p>当在一个自定义组件上使用 <code>class</code> property 时，这些 class 将被添加到该组件的根元素上面。这个元素上已经存在的 class 不会被覆盖。</p>
+<p>例如：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">Vue.component(<span class="string">'my-component'</span>, &#123;</span><br><span class="line">  template: <span class="string">'&lt;p class="foo bar"&gt;Hi&lt;/p&gt;'</span></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<p>然后在使用组件时添加一些 class：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">my-component</span> <span class="attr">class</span>=<span class="string">"baz boo"</span>&gt;</span><span class="tag">&lt;/<span class="name">my-component</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>HTML 将被渲染为：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">"foo bar baz boo"</span>&gt;</span>Hi<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>对于带数据绑定 class 也同样适用：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">my-component</span> <span class="attr">v-bind:class</span>=<span class="string">"&#123; active: isActive &#125;"</span>&gt;</span><span class="tag">&lt;/<span class="name">my-component</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>当 <code>isActive</code> 为 truthy  时，HTML 将被渲染成为：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">"foo bar active"</span>&gt;</span>Hi<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="绑定内联样式"><a href="#绑定内联样式" class="headerlink" title="绑定内联样式"></a>绑定内联样式</h1><h2 id="对象语法-1"><a href="#对象语法-1" class="headerlink" title="对象语法"></a>对象语法</h2><p><code>v-bind:style</code> 的对象语法十分直观——看着非常像 CSS，但其实是一个 JavaScript 对象。</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">v-bind:style</span>=<span class="string">"&#123; color: activeColor, fontSize: fontSize + 'px' &#125;"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">data: &#123;</span><br><span class="line">  activeColor: <span class="string">'red'</span>,</span><br><span class="line">  fontSize: <span class="number">30</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>直接绑定到一个样式对象通常更好，这会让模板更清晰：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">v-bind:style</span>=<span class="string">"styleObject"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">data: &#123;</span><br><span class="line">  styleObject: &#123;</span><br><span class="line">    color: <span class="string">'red'</span>,</span><br><span class="line">    fontSize: <span class="string">'13px'</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>同样的，对象语法常常结合返回对象的计算属性使用。</p>
+<h2 id="数组语法-1"><a href="#数组语法-1" class="headerlink" title="数组语法"></a>数组语法</h2><p><code>v-bind:style</code> 的数组语法可以将多个样式对象应用到同一个元素上：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">v-bind:style</span>=<span class="string">"[baseStyles, overridingStyles]"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="自动添加前缀"><a href="#自动添加前缀" class="headerlink" title="自动添加前缀"></a>自动添加前缀</h2><p>当 <code>v-bind:style</code> 使用需要添加浏览器引擎前缀的 CSS property 时，如 <code>transform</code>，Vue.js 会自动侦测并添加相应的前缀。</p>
+<h2 id="多重值"><a href="#多重值" class="headerlink" title="多重值"></a>多重值</h2><p>从 2.3.0 起你可以为 <code>style</code> 绑定中的 property 提供一个包含多个值的数组，常用于提供多个带前缀的值，例如：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">:style</span>=<span class="string">"&#123; display: ['-webkit-box', '-ms-flexbox', 'flex'] &#125;"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>这样写只会渲染数组中<strong>最后一个</strong>被浏览器支持的值。在本例中，如果浏览器支持不带浏览器前缀的 flexbox，那么就只会渲染 <code>display: flex</code>。</p>
 ]]></content>
       <categories>
         <category>doc</category>
@@ -1564,45 +1564,6 @@
       <tags>
         <tag>操作系统</tag>
         <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>数据结构与算法——直接选择排序算法</title>
-    <url>/2020-08-28/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E2%80%94%E2%80%94%E7%9B%B4%E6%8E%A5%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/</url>
-    <content><![CDATA[<h1 id="算法思路"><a href="#算法思路" class="headerlink" title="算法思路"></a>算法思路</h1><p>对无序数组a[0…n-1]，进行直接选择排序：</p>
-<ol>
-<li><p>从 a[0 ~ n-1] 中选择最小值，与 a[0] 交换</p>
-</li>
-<li><p>从 a[1 ~ n-1] 中选择最小值，与 a[1] 交换</p>
-</li>
-<li><p>从 a[2 ~ n-1] 中选择最小值，与 a[2] 交换</p>
-</li>
-</ol>
-<a id="more"></a>
-<p>   ······</p>
-<ol start="4">
-<li><p>从 a[i ~ n-1] 中选择最小值，与 a[i] 交换</p>
-<p>······</p>
-</li>
-<li><p>从 a[n-2, n-1] 中选择最小值，与 a[n-2] 交换</p>
-</li>
-</ol>
-<p><strong>一共交换 n - 1 次</strong>，得到一个按关键字从小到大排列的有序序列</p>
-<h1 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h1><h2 id="无序数组"><a href="#无序数组" class="headerlink" title="无序数组"></a>无序数组</h2><figure class="highlight angelscript"><table><tr><td class="code"><pre><span class="line"><span class="number">5</span> <span class="number">20</span> <span class="number">63</span> <span class="number">59</span> <span class="number">4</span> <span class="number">16</span> <span class="number">77</span> <span class="number">26</span> <span class="number">12</span> <span class="number">33</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="排序"><a href="#排序" class="headerlink" title="排序"></a>排序</h2><figure class="highlight angelscript"><table><tr><td class="code"><pre><span class="line">初始数组：</span><br><span class="line"> <span class="number">5</span> <span class="number">20</span> <span class="number">63</span> <span class="number">59</span>  <span class="number">4</span> <span class="number">16</span> <span class="number">77</span> <span class="number">26</span> <span class="number">12</span> <span class="number">33</span></span><br><span class="line"></span><br><span class="line">排序：</span><br><span class="line"> <span class="number">4</span> <span class="number">20</span> <span class="number">63</span> <span class="number">59</span>  <span class="number">5</span> <span class="number">16</span> <span class="number">77</span> <span class="number">26</span> <span class="number">12</span> <span class="number">33</span></span><br><span class="line"> <span class="number">4</span>  <span class="number">5</span> <span class="number">63</span> <span class="number">59</span> <span class="number">20</span> <span class="number">16</span> <span class="number">77</span> <span class="number">26</span> <span class="number">12</span> <span class="number">33</span></span><br><span class="line"> <span class="number">4</span>  <span class="number">5</span> <span class="number">12</span> <span class="number">59</span> <span class="number">20</span> <span class="number">16</span> <span class="number">77</span> <span class="number">26</span> <span class="number">63</span> <span class="number">33</span></span><br><span class="line"> <span class="number">4</span>  <span class="number">5</span> <span class="number">12</span> <span class="number">16</span> <span class="number">20</span> <span class="number">59</span> <span class="number">77</span> <span class="number">26</span> <span class="number">63</span> <span class="number">33</span></span><br><span class="line"> <span class="number">4</span>  <span class="number">5</span> <span class="number">12</span> <span class="number">16</span> <span class="number">20</span> <span class="number">26</span> <span class="number">77</span> <span class="number">59</span> <span class="number">63</span> <span class="number">33</span></span><br><span class="line"> <span class="number">4</span>  <span class="number">5</span> <span class="number">12</span> <span class="number">16</span> <span class="number">20</span> <span class="number">26</span> <span class="number">33</span> <span class="number">59</span> <span class="number">63</span> <span class="number">77</span></span><br><span class="line"> <span class="number">4</span>  <span class="number">5</span> <span class="number">12</span> <span class="number">16</span> <span class="number">20</span> <span class="number">26</span> <span class="number">33</span> <span class="number">59</span> <span class="number">63</span> <span class="number">77</span></span><br><span class="line"> <span class="number">4</span>  <span class="number">5</span> <span class="number">12</span> <span class="number">16</span> <span class="number">20</span> <span class="number">26</span> <span class="number">33</span> <span class="number">59</span> <span class="number">63</span> <span class="number">77</span></span><br><span class="line"> <span class="number">4</span>  <span class="number">5</span> <span class="number">12</span> <span class="number">16</span> <span class="number">20</span> <span class="number">26</span> <span class="number">33</span> <span class="number">59</span> <span class="number">63</span> <span class="number">77</span></span><br></pre></td></tr></table></figure>
-
-<h1 id="算法实现"><a href="#算法实现" class="headerlink" title="算法实现"></a>算法实现</h1><h2 id="C-C"><a href="#C-C" class="headerlink" title="C/C++"></a>C/C++</h2><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;vector&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> n;</span><br><span class="line">    <span class="built_in">cin</span> &gt;&gt; n;</span><br><span class="line"></span><br><span class="line">    <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; a;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; i++) &#123;</span><br><span class="line">        <span class="keyword">int</span> t;</span><br><span class="line">        <span class="built_in">cin</span> &gt;&gt; t;</span><br><span class="line">        a.push_back(t);</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">// 直接选择排序</span></span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; i++) &#123;</span><br><span class="line">        <span class="keyword">int</span> <span class="built_in">min</span> = a[i];</span><br><span class="line">        <span class="keyword">int</span> min_index = i;</span><br><span class="line">        </span><br><span class="line">        <span class="comment">// 查找 i 到 n-1 中最小的值</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j = i; i &lt; n - <span class="number">1</span> &amp;&amp; j &lt; n; j++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (a[j] &lt; <span class="built_in">min</span>) &#123;</span><br><span class="line">                <span class="built_in">min</span> = a[j];</span><br><span class="line">                min_index = j;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        <span class="comment">// 交换值</span></span><br><span class="line">        <span class="keyword">int</span> t = a[i];</span><br><span class="line">        a[i] = a[min_index];</span><br><span class="line">        a[min_index] = t;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">// 输出结果</span></span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; i++) &#123;</span><br><span class="line">	    <span class="built_in">cout</span> &lt;&lt; a[i] &lt;&lt; <span class="string">" "</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># -*- coding:utf8 -*-</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">main</span><span class="params">()</span>:</span></span><br><span class="line">    temp = input()</span><br><span class="line">    a = temp.split(<span class="string">' '</span>)</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">0</span>, len(a)):</span><br><span class="line">        a[i] = int(a[i])</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">0</span>, len(a)):</span><br><span class="line">        min_val = a[i]</span><br><span class="line">        min_index = i</span><br><span class="line"></span><br><span class="line">        j = i</span><br><span class="line">        <span class="keyword">while</span> i &lt; len(a) - <span class="number">1</span> <span class="keyword">and</span> j &lt; len(a):</span><br><span class="line">            <span class="keyword">if</span> a[j] &lt; min_val:</span><br><span class="line">                min_val = a[j]</span><br><span class="line">                min_index = j</span><br><span class="line">            j += <span class="number">1</span></span><br><span class="line"></span><br><span class="line">        t = a[i]</span><br><span class="line">        a[i] = a[min_index]</span><br><span class="line">        a[min_index] = t</span><br><span class="line">    </span><br><span class="line">    out = <span class="string">""</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">0</span>, len(a)):</span><br><span class="line">        out += str(a[i]) + <span class="string">" "</span></span><br><span class="line">    print(out)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    main()</span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>doc</category>
-      </categories>
-      <tags>
-        <tag>数据结构</tag>
-        <tag>算法</tag>
       </tags>
   </entry>
   <entry>
@@ -2057,6 +2018,45 @@
 <p>3年没写Java了写的丑点将就将就吧😂</p>
 </blockquote>
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"><span class="keyword">import</span> java.util.Vector;</span><br><span class="line"><span class="keyword">import</span> java.lang.Character;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">KMP</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Vector&lt;Integer&gt; <span class="title">getNext</span><span class="params">(<span class="keyword">char</span>[] ps)</span> </span>&#123;</span><br><span class="line">        Vector&lt;Integer&gt; res = <span class="keyword">new</span> Vector&lt;Integer&gt;();</span><br><span class="line">        res.add(<span class="number">0</span>);</span><br><span class="line">        res.add(<span class="number">0</span>);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> (ps.length &lt;= <span class="number">2</span>) <span class="keyword">return</span> res;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; ps.length; i++) &#123;</span><br><span class="line">            Vector&lt;Character&gt; t = <span class="keyword">new</span> Vector&lt;Character&gt;();</span><br><span class="line">            <span class="keyword">int</span> m = <span class="number">0</span>;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt;= i; j++) &#123;</span><br><span class="line">                t.add(ps[j]);</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; t.size() - <span class="number">1</span>; j++) &#123;</span><br><span class="line">                Vector&lt;Character&gt; head = <span class="keyword">new</span> Vector&lt;Character&gt;();</span><br><span class="line">                Vector&lt;Character&gt; end = <span class="keyword">new</span> Vector&lt;Character&gt;();</span><br><span class="line"></span><br><span class="line">                <span class="keyword">for</span> (<span class="keyword">int</span> k = <span class="number">0</span>; k &lt;= j; k++) &#123;</span><br><span class="line">                    head.add(t.get(k));</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">for</span> (<span class="keyword">int</span> k = t.size() - j - <span class="number">1</span>; k &lt; t.size(); k++) &#123;</span><br><span class="line">                    end.add(t.get(k));</span><br><span class="line">                &#125;</span><br><span class="line"></span><br><span class="line">                <span class="keyword">if</span> (head.equals(end)) &#123;</span><br><span class="line">                    <span class="keyword">if</span> (j + <span class="number">1</span> &gt; m) &#123;</span><br><span class="line">                        m = j + <span class="number">1</span>;</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            res.add(m);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">final</span> Scanner input = <span class="keyword">new</span> Scanner(System.in);</span><br><span class="line">        <span class="keyword">char</span> [] mainString, patternString;</span><br><span class="line">        mainString = input.nextLine().toCharArray();</span><br><span class="line">        patternString = input.nextLine().toCharArray();</span><br><span class="line">        input.close();</span><br><span class="line"></span><br><span class="line">        Vector&lt;Integer&gt; next = KMP.getNext(patternString);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">int</span> begin = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> end = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> num = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">while</span> (begin + patternString.length &lt;= mainString.length) &#123;</span><br><span class="line">            <span class="keyword">while</span> (patternString.length &gt; begin - end &amp;&amp; patternString[begin - end] == mainString[begin]) &#123;</span><br><span class="line">                begin++;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span> (begin - end == patternString.length) &#123;</span><br><span class="line">                num++;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            <span class="keyword">int</span> temp = begin - end;</span><br><span class="line">            end += temp - next.get(temp);</span><br><span class="line">            begin = end;</span><br><span class="line">            num++;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        System.out.println(num);</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>doc</category>
+      </categories>
+      <tags>
+        <tag>数据结构</tag>
+        <tag>算法</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>数据结构与算法——直接选择排序算法</title>
+    <url>/2020-08-28/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E2%80%94%E2%80%94%E7%9B%B4%E6%8E%A5%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/</url>
+    <content><![CDATA[<h1 id="算法思路"><a href="#算法思路" class="headerlink" title="算法思路"></a>算法思路</h1><p>对无序数组a[0…n-1]，进行直接选择排序：</p>
+<ol>
+<li><p>从 a[0 ~ n-1] 中选择最小值，与 a[0] 交换</p>
+</li>
+<li><p>从 a[1 ~ n-1] 中选择最小值，与 a[1] 交换</p>
+</li>
+<li><p>从 a[2 ~ n-1] 中选择最小值，与 a[2] 交换</p>
+</li>
+</ol>
+<a id="more"></a>
+<p>   ······</p>
+<ol start="4">
+<li><p>从 a[i ~ n-1] 中选择最小值，与 a[i] 交换</p>
+<p>······</p>
+</li>
+<li><p>从 a[n-2, n-1] 中选择最小值，与 a[n-2] 交换</p>
+</li>
+</ol>
+<p><strong>一共交换 n - 1 次</strong>，得到一个按关键字从小到大排列的有序序列</p>
+<h1 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h1><h2 id="无序数组"><a href="#无序数组" class="headerlink" title="无序数组"></a>无序数组</h2><figure class="highlight angelscript"><table><tr><td class="code"><pre><span class="line"><span class="number">5</span> <span class="number">20</span> <span class="number">63</span> <span class="number">59</span> <span class="number">4</span> <span class="number">16</span> <span class="number">77</span> <span class="number">26</span> <span class="number">12</span> <span class="number">33</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="排序"><a href="#排序" class="headerlink" title="排序"></a>排序</h2><figure class="highlight angelscript"><table><tr><td class="code"><pre><span class="line">初始数组：</span><br><span class="line"> <span class="number">5</span> <span class="number">20</span> <span class="number">63</span> <span class="number">59</span>  <span class="number">4</span> <span class="number">16</span> <span class="number">77</span> <span class="number">26</span> <span class="number">12</span> <span class="number">33</span></span><br><span class="line"></span><br><span class="line">排序：</span><br><span class="line"> <span class="number">4</span> <span class="number">20</span> <span class="number">63</span> <span class="number">59</span>  <span class="number">5</span> <span class="number">16</span> <span class="number">77</span> <span class="number">26</span> <span class="number">12</span> <span class="number">33</span></span><br><span class="line"> <span class="number">4</span>  <span class="number">5</span> <span class="number">63</span> <span class="number">59</span> <span class="number">20</span> <span class="number">16</span> <span class="number">77</span> <span class="number">26</span> <span class="number">12</span> <span class="number">33</span></span><br><span class="line"> <span class="number">4</span>  <span class="number">5</span> <span class="number">12</span> <span class="number">59</span> <span class="number">20</span> <span class="number">16</span> <span class="number">77</span> <span class="number">26</span> <span class="number">63</span> <span class="number">33</span></span><br><span class="line"> <span class="number">4</span>  <span class="number">5</span> <span class="number">12</span> <span class="number">16</span> <span class="number">20</span> <span class="number">59</span> <span class="number">77</span> <span class="number">26</span> <span class="number">63</span> <span class="number">33</span></span><br><span class="line"> <span class="number">4</span>  <span class="number">5</span> <span class="number">12</span> <span class="number">16</span> <span class="number">20</span> <span class="number">26</span> <span class="number">77</span> <span class="number">59</span> <span class="number">63</span> <span class="number">33</span></span><br><span class="line"> <span class="number">4</span>  <span class="number">5</span> <span class="number">12</span> <span class="number">16</span> <span class="number">20</span> <span class="number">26</span> <span class="number">33</span> <span class="number">59</span> <span class="number">63</span> <span class="number">77</span></span><br><span class="line"> <span class="number">4</span>  <span class="number">5</span> <span class="number">12</span> <span class="number">16</span> <span class="number">20</span> <span class="number">26</span> <span class="number">33</span> <span class="number">59</span> <span class="number">63</span> <span class="number">77</span></span><br><span class="line"> <span class="number">4</span>  <span class="number">5</span> <span class="number">12</span> <span class="number">16</span> <span class="number">20</span> <span class="number">26</span> <span class="number">33</span> <span class="number">59</span> <span class="number">63</span> <span class="number">77</span></span><br><span class="line"> <span class="number">4</span>  <span class="number">5</span> <span class="number">12</span> <span class="number">16</span> <span class="number">20</span> <span class="number">26</span> <span class="number">33</span> <span class="number">59</span> <span class="number">63</span> <span class="number">77</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="算法实现"><a href="#算法实现" class="headerlink" title="算法实现"></a>算法实现</h1><h2 id="C-C"><a href="#C-C" class="headerlink" title="C/C++"></a>C/C++</h2><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;vector&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> n;</span><br><span class="line">    <span class="built_in">cin</span> &gt;&gt; n;</span><br><span class="line"></span><br><span class="line">    <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; a;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; i++) &#123;</span><br><span class="line">        <span class="keyword">int</span> t;</span><br><span class="line">        <span class="built_in">cin</span> &gt;&gt; t;</span><br><span class="line">        a.push_back(t);</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">// 直接选择排序</span></span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; i++) &#123;</span><br><span class="line">        <span class="keyword">int</span> <span class="built_in">min</span> = a[i];</span><br><span class="line">        <span class="keyword">int</span> min_index = i;</span><br><span class="line">        </span><br><span class="line">        <span class="comment">// 查找 i 到 n-1 中最小的值</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j = i; i &lt; n - <span class="number">1</span> &amp;&amp; j &lt; n; j++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (a[j] &lt; <span class="built_in">min</span>) &#123;</span><br><span class="line">                <span class="built_in">min</span> = a[j];</span><br><span class="line">                min_index = j;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        <span class="comment">// 交换值</span></span><br><span class="line">        <span class="keyword">int</span> t = a[i];</span><br><span class="line">        a[i] = a[min_index];</span><br><span class="line">        a[min_index] = t;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">// 输出结果</span></span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; i++) &#123;</span><br><span class="line">	    <span class="built_in">cout</span> &lt;&lt; a[i] &lt;&lt; <span class="string">" "</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># -*- coding:utf8 -*-</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">main</span><span class="params">()</span>:</span></span><br><span class="line">    temp = input()</span><br><span class="line">    a = temp.split(<span class="string">' '</span>)</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">0</span>, len(a)):</span><br><span class="line">        a[i] = int(a[i])</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">0</span>, len(a)):</span><br><span class="line">        min_val = a[i]</span><br><span class="line">        min_index = i</span><br><span class="line"></span><br><span class="line">        j = i</span><br><span class="line">        <span class="keyword">while</span> i &lt; len(a) - <span class="number">1</span> <span class="keyword">and</span> j &lt; len(a):</span><br><span class="line">            <span class="keyword">if</span> a[j] &lt; min_val:</span><br><span class="line">                min_val = a[j]</span><br><span class="line">                min_index = j</span><br><span class="line">            j += <span class="number">1</span></span><br><span class="line"></span><br><span class="line">        t = a[i]</span><br><span class="line">        a[i] = a[min_index]</span><br><span class="line">        a[min_index] = t</span><br><span class="line">    </span><br><span class="line">    out = <span class="string">""</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">0</span>, len(a)):</span><br><span class="line">        out += str(a[i]) + <span class="string">" "</span></span><br><span class="line">    print(out)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    main()</span><br></pre></td></tr></table></figure>
 
 ]]></content>
       <categories>
