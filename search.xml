@@ -2876,6 +2876,15 @@
 
 <h3 id="删除"><a href="#删除" class="headerlink" title="删除"></a>删除</h3><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function">Status <span class="title">listDelete</span><span class="params">(Sqlite &amp;L, <span class="keyword">int</span> i)</span> </span>&#123;</span><br><span class="line">    <span class="comment">// 在顺序表L中删除第i个元素，i值的合法范围是1 &lt;= i &lt;= L.length</span></span><br><span class="line">    <span class="keyword">if</span> (i &lt; <span class="number">1</span> || i &gt; L.length + <span class="number">1</span>) <span class="keyword">return</span> ERROR;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> j = i; j &lt; L.length; j++) &#123;</span><br><span class="line">        L.element[j - <span class="number">1</span>] = L.element[j];</span><br><span class="line">    &#125;</span><br><span class="line">    L.length--;</span><br><span class="line">    <span class="keyword">return</span> OK;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
+<h1 id="线性表的链式表示和实现"><a href="#线性表的链式表示和实现" class="headerlink" title="线性表的链式表示和实现"></a>线性表的链式表示和实现</h1><p>除了存储其本身的信息之外，还存储一个指示其直接后继的信息（即直接后继的存储位置），这两部分信息组成的数据元素的存储映像，成为<strong>结点</strong>（node）。</p>
+<p>结点包含两个域：</p>
+<ul>
+<li>存储数据元素信息的<strong>数据域</strong></li>
+<li>存储直接后继存储位置的<strong>指针域</strong></li>
+</ul>
+<p>若干结点链结成一个<strong>链表</strong>，即为线性表的链式存储结构</p>
+<h2 id="单链表"><a href="#单链表" class="headerlink" title="单链表"></a>单链表</h2><p>链表中每个结点都只含有一个指针域变量的链表被称为<strong>单链表</strong></p>
+<p><img src="/img/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E5%8D%95%E9%93%BE%E8%A1%A8%E9%80%BB%E8%BE%91%E7%BB%93%E6%9E%84.png" alt="单链表-逻辑结构"></p>
 ]]></content>
       <categories>
         <category>doc</category>
