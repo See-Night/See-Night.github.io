@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next muse use-motion" lang="zh-CN">
+<html class="theme-next pisces use-motion" lang="zh-Hans">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -16,10 +16,6 @@
 
 
 
-
-  
-  
-  <link rel="stylesheet" media="all" href="/lib/Han/dist/han.min.css?v=3.3">
 
 
 
@@ -114,15 +110,15 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Muse',
+    scheme: 'Pisces',
     version: '5.1.4',
-    sidebar: {"position":"left","display":"always","offset":12,"b2t":false,"scrollpercent":true,"onmobile":false},
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: true,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     duoshuo: {
       userId: '0',
-      author: '博主'
+      author: 'SeeNight'
     },
     algolia: {
       applicationID: '',
@@ -155,7 +151,6 @@
 <meta name="generator" content="Hexo 4.1.0"></head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
-
 
   
   
@@ -192,7 +187,6 @@
 </div>
 
 <nav class="site-nav">
-  <div style="display: flex; flex-direction: row;">
   
 
   
@@ -248,6 +242,16 @@
           </a>
         </li>
       
+        
+        <li class="menu-item menu-item-sitemap">
+          <a href="/sitemap.xml" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br />
+            
+            站点地图
+          </a>
+        </li>
+      
 
       
         <li class="menu-item menu-item-search">
@@ -262,8 +266,6 @@
         </li>
       
     </ul>
-    <div id="navbarside"></div>
-    </div>
   
 
   
@@ -322,7 +324,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="SeeNight">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/uploads/avatar_white.png">
+      <meta itemprop="image" content="/images/avatar_white.png">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -411,7 +413,7 @@
     
     
     
-    <div class="post-body han-init-context" itemprop="articleBody">
+    <div class="post-body" itemprop="articleBody">
 
       
       
@@ -602,12 +604,6 @@
 
     <div class="post-spread">
       
-        
-<script>
-  with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='//bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
-</script>
-
-      
     </div>
   </div>
 
@@ -619,8 +615,8 @@
           
 
   
-    <div id="gitalk-container"></div>
-  
+  <div id="gitalk-container"></div>
+
 
 
 
@@ -658,7 +654,7 @@
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
               <img class="site-author-image" itemprop="image"
-                src="/uploads/avatar_white.png"
+                src="/images/avatar_white.png"
                 alt="SeeNight" />
             
               <p class="site-author-name" itemprop="name">SeeNight</p>
@@ -670,7 +666,7 @@
             
               <div class="site-state-item site-state-posts">
               
-                <a href="/archives/">
+                <a href="/archives/%7C%7C%20archive">
               
                   <span class="site-state-item-count">28</span>
                   <span class="site-state-item-name">日志</span>
@@ -717,25 +713,19 @@
                   <span class="links-of-author-item">
                     <a href="https://github.com/Dreammer12138" target="_blank" title="GitHub">
                       
-                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                        <i class="fa fa-fw fa-github"></i></a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:wangshibo142@163.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i></a>
                   </span>
                 
                   <span class="links-of-author-item">
                     <a href="https://twitter.com/SaberWang123" target="_blank" title="Twitter">
                       
-                        <i class="fa fa-fw fa-twitter"></i>Twitter</a>
-                  </span>
-                
-                  <span class="links-of-author-item">
-                    <a href="https://space.bilibili.com/13390752" target="_blank" title="Bilibili">
-                      
-                        <i class="fa fa-fw fa-play"></i>Bilibili</a>
-                  </span>
-                
-                  <span class="links-of-author-item">
-                    <a href="http://music.163.com/m/user/home?id=607287352" target="_blank" title="网易云">
-                      
-                        <i class="fa fa-fw fa-music"></i>网易云</a>
+                        <i class="fa fa-fw fa-twitter"></i></a>
                   </span>
                 
             </div>
@@ -748,6 +738,7 @@
           
 
           
+
         </div>
       </section>
 
@@ -761,7 +752,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#准备"><span class="nav-text">准备</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#硬件环境"><span class="nav-text">硬件环境</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#系统环境"><span class="nav-text">系统环境</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#软件环境"><span class="nav-text">软件环境</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Python"><span class="nav-text">Python</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装"><span class="nav-text">安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#更换pip源"><span class="nav-text">更换pip源</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Django"><span class="nav-text">Django</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装-1"><span class="nav-text">安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#新建Django项目"><span class="nav-text">新建Django项目</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置项目AllowHost"><span class="nav-text">配置项目AllowHost</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#测试启动"><span class="nav-text">测试启动</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Uwsgi"><span class="nav-text">Uwsgi</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装-2"><span class="nav-text">安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#测试uwsgi-Django"><span class="nav-text">测试uwsgi+Django</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#进入刚刚创建的项目"><span class="nav-text">进入刚刚创建的项目</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#uwsgi测试"><span class="nav-text">uwsgi测试</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#启动uwsgi"><span class="nav-text">启动uwsgi</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#浏览器测试"><span class="nav-text">浏览器测试</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Nginx"><span class="nav-text">Nginx</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装-3"><span class="nav-text">安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#测试Nginx"><span class="nav-text">测试Nginx</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置"><span class="nav-text">配置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#新建配置文件"><span class="nav-text">新建配置文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#nginx-conf"><span class="nav-text">nginx.conf</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#测试配置文件"><span class="nav-text">测试配置文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#重启Nginx服务"><span class="nav-text">重启Nginx服务</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#测试Django-Uwsgi-Nginx"><span class="nav-text">测试Django+Uwsgi+Nginx</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#使用ini文件配置服务器启动"><span class="nav-text">使用ini文件配置服务器启动</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#自行新建一个文件夹，用来储存ini文件"><span class="nav-text">自行新建一个文件夹，用来储存ini文件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#uwsgi-ini"><span class="nav-text">uwsgi.ini</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#新建系统服务用来后台启动"><span class="nav-text">新建系统服务用来后台启动</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#测试"><span class="nav-text">测试</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Https"><span class="nav-text">Https</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#生成ssl证书"><span class="nav-text">生成ssl证书</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装openssl"><span class="nav-text">安装openssl</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#新建文件夹用来存放证书"><span class="nav-text">新建文件夹用来存放证书</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#生成证书"><span class="nav-text">生成证书</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#修改Nginx配置文件"><span class="nav-text">修改Nginx配置文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#重启Nginx"><span class="nav-text">重启Nginx</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#强制Https"><span class="nav-text">强制Https</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#修改Nginx配置文件-1"><span class="nav-text">修改Nginx配置文件</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#准备"><span class="nav-number">1.</span> <span class="nav-text">准备</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#硬件环境"><span class="nav-number">1.1.</span> <span class="nav-text">硬件环境</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#系统环境"><span class="nav-number">1.2.</span> <span class="nav-text">系统环境</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#软件环境"><span class="nav-number">1.3.</span> <span class="nav-text">软件环境</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Python"><span class="nav-number">2.</span> <span class="nav-text">Python</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装"><span class="nav-number">2.1.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#更换pip源"><span class="nav-number">2.2.</span> <span class="nav-text">更换pip源</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Django"><span class="nav-number">3.</span> <span class="nav-text">Django</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装-1"><span class="nav-number">3.1.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#新建Django项目"><span class="nav-number">3.2.</span> <span class="nav-text">新建Django项目</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置项目AllowHost"><span class="nav-number">3.3.</span> <span class="nav-text">配置项目AllowHost</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#测试启动"><span class="nav-number">3.4.</span> <span class="nav-text">测试启动</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Uwsgi"><span class="nav-number">4.</span> <span class="nav-text">Uwsgi</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装-2"><span class="nav-number">4.1.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#测试uwsgi-Django"><span class="nav-number">4.2.</span> <span class="nav-text">测试uwsgi+Django</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#进入刚刚创建的项目"><span class="nav-number">4.2.1.</span> <span class="nav-text">进入刚刚创建的项目</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#uwsgi测试"><span class="nav-number">4.2.2.</span> <span class="nav-text">uwsgi测试</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#启动uwsgi"><span class="nav-number">4.2.2.1.</span> <span class="nav-text">启动uwsgi</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#浏览器测试"><span class="nav-number">4.2.2.2.</span> <span class="nav-text">浏览器测试</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Nginx"><span class="nav-number">5.</span> <span class="nav-text">Nginx</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装-3"><span class="nav-number">5.1.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#测试Nginx"><span class="nav-number">5.2.</span> <span class="nav-text">测试Nginx</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置"><span class="nav-number">5.3.</span> <span class="nav-text">配置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#新建配置文件"><span class="nav-number">5.3.1.</span> <span class="nav-text">新建配置文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#nginx-conf"><span class="nav-number">5.3.2.</span> <span class="nav-text">nginx.conf</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#测试配置文件"><span class="nav-number">5.3.3.</span> <span class="nav-text">测试配置文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#重启Nginx服务"><span class="nav-number">5.3.4.</span> <span class="nav-text">重启Nginx服务</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#测试Django-Uwsgi-Nginx"><span class="nav-number">5.4.</span> <span class="nav-text">测试Django+Uwsgi+Nginx</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#使用ini文件配置服务器启动"><span class="nav-number">5.4.1.</span> <span class="nav-text">使用ini文件配置服务器启动</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#自行新建一个文件夹，用来储存ini文件"><span class="nav-number">5.4.1.1.</span> <span class="nav-text">自行新建一个文件夹，用来储存ini文件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#uwsgi-ini"><span class="nav-number">5.4.1.2.</span> <span class="nav-text">uwsgi.ini</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#新建系统服务用来后台启动"><span class="nav-number">5.4.1.3.</span> <span class="nav-text">新建系统服务用来后台启动</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#测试"><span class="nav-number">5.4.2.</span> <span class="nav-text">测试</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Https"><span class="nav-number">6.</span> <span class="nav-text">Https</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#生成ssl证书"><span class="nav-number">6.1.</span> <span class="nav-text">生成ssl证书</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装openssl"><span class="nav-number">6.1.1.</span> <span class="nav-text">安装openssl</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#新建文件夹用来存放证书"><span class="nav-number">6.1.2.</span> <span class="nav-text">新建文件夹用来存放证书</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#生成证书"><span class="nav-number">6.1.3.</span> <span class="nav-text">生成证书</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#修改Nginx配置文件"><span class="nav-number">6.2.</span> <span class="nav-text">修改Nginx配置文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#重启Nginx"><span class="nav-number">6.3.</span> <span class="nav-text">重启Nginx</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#强制Https"><span class="nav-number">6.4.</span> <span class="nav-text">强制Https</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#修改Nginx配置文件-1"><span class="nav-number">6.4.1.</span> <span class="nav-text">修改Nginx配置文件</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
@@ -781,7 +772,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
+        <div class="copyright">&copy; 2018 &mdash; <span itemprop="copyrightYear">2020</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
@@ -791,11 +782,15 @@
 </div>
 
 
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
 
 
 
+  <span class="post-meta-divider">|</span>
 
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
 
 
 
@@ -804,15 +799,6 @@
 
 
 
-
-  <script type="text/javascript">
-    (function() {
-      var hm = document.createElement("script");
-      hm.src = "//tajs.qq.com/stats?sId=66499891";
-      var s = document.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(hm, s);
-    })();
-  </script>
 
 
 
@@ -824,8 +810,6 @@
     
       <div class="back-to-top">
         <i class="fa fa-arrow-up"></i>
-        
-          <span id="scrollpercent"><span>0</span>%</span>
         
       </div>
     
@@ -913,6 +897,13 @@
   
   
 
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
   
   <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
 <script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
@@ -959,21 +950,23 @@
 
 
 
-   <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-   <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-   <script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.min.js"></script>
-   <script type="text/javascript">
-        var gitalk = new Gitalk({
-          clientID: '1ebb15722599a4c40cd6',
-          clientSecret: '2d2b7954ce054097bb041f3cae39b6e17d064711',
-          repo: 'Blog-Comments',
-          owner: 'Dreammer12138',
-          admin: ['Dreammer12138'],
-          id: md5(window.location.pathname),
-          distractionFreeMode: 'true'
-        })
-        gitalk.render('gitalk-container')
-       </script>
+  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+  <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+  <div id="gitalk-container"></div>
+  <script type="text/javascript">
+    var gitalk = new Gitalk({
+      clientID: '1ebb15722599a4c40cd6',
+      clientSecret: '2d2b7954ce054097bb041f3cae39b6e17d064711',
+      repo: 'Blog-Comments',
+      owner: 'Dreammer12138',
+      admin: ['Dreammer12138'],
+      id: location.pathname,
+      distractionFreeMode: 'false'
+    })
+    gitalk.render('gitalk-container')
+  </script>
+
+
 
   
 
@@ -1303,21 +1296,6 @@
   
 
   
-<script>
-(function(){
-    var bp = document.createElement('script');
-    var curProtocol = window.location.protocol.split(':')[0];
-    if (curProtocol === 'https') {
-        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
-    }
-    else {
-        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-    }
-    var s = document.getElementsByTagName("script")[0];
-    s.parentNode.insertBefore(bp, s);
-})();
-</script>
-
 
   
   
