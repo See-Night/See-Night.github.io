@@ -2913,6 +2913,8 @@
 
 <h5 id="后插法"><a href="#后插法" class="headerlink" title="后插法"></a>后插法</h5><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">createList_R</span><span class="params">(LinkList &amp;L, <span class="keyword">int</span> n)</span> </span>&#123;</span><br><span class="line">    <span class="comment">// 正位序输入n个元素的值。建立带表头结点的单链表</span></span><br><span class="line">    L = <span class="keyword">new</span> LNode;</span><br><span class="line">    L-&gt;next = <span class="literal">NULL</span>;</span><br><span class="line">    LNode r = L;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; i++) &#123;</span><br><span class="line">        p = <span class="keyword">new</span> LNode;</span><br><span class="line">        <span class="built_in">cin</span> &gt;&gt; p-&gt;data;</span><br><span class="line">        p-&gt;next = <span class="literal">NULL</span>;</span><br><span class="line">        r-&gt;next = p;</span><br><span class="line">        r = p;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
+<h2 id="循环链表"><a href="#循环链表" class="headerlink" title="循环链表"></a>循环链表</h2><p>以单链表为基础，将尾节点和头结点连起来，形成一个闭环</p>
+<p><img src="/img/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E5%BE%AA%E7%8E%AF%E9%93%BE%E8%A1%A8%E9%80%BB%E8%BE%91%E7%BB%93%E6%9E%84.png" alt="单链表-逻辑结构"></p>
 ]]></content>
       <categories>
         <category>doc</category>
