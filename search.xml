@@ -1,6 +1,81 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Chinese</title>
+    <url>/2019-12-13/Chinese/</url>
+    <content><![CDATA[<h5 id="中国人，坚定的无产阶级者，不接受一切政治相关话题"><a href="#中国人，坚定的无产阶级者，不接受一切政治相关话题" class="headerlink" title="中国人，坚定的无产阶级者，不接受一切政治相关话题"></a>中国人，坚定的无产阶级者，不接受一切政治相关话题</h5><h6 id="已完成的项目"><a href="#已完成的项目" class="headerlink" title="已完成的项目"></a>已完成的项目</h6><table>
+<thead>
+<tr>
+<th>项目名称</th>
+<th>项目简介</th>
+<th>所用语言</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Web</td>
+<td>课程作业</td>
+<td>HTML5 / CSS3 / Javas</td>
+<td>已废弃</td>
+</tr>
+<tr>
+<td>v2ray-guide</td>
+<td>v2ray教程</td>
+<td>Markdown</td>
+<td>从官方fork过来用于学习的</td>
+</tr>
+<tr>
+<td>Bilichat</td>
+<td>bilibili直播弹幕姬</td>
+<td>Typescript / Anguler框架</td>
+<td>从3Shain佬那里fork过来改了一下让其支持日文筛选</td>
+</tr>
+<tr>
+<td>CommentsLogByMySQL</td>
+<td>bilibili直播弹幕姬</td>
+<td>Python3</td>
+<td>Python爬虫的研究课题，已废弃</td>
+</tr>
+<tr>
+<td>typeorm</td>
+<td>数据库连接模块</td>
+<td>Typescript</td>
+<td>本来想用于课题作业但最后也没有用</td>
+</tr>
+<tr>
+<td>HMI-Teachingdesign-ResearchStudy</td>
+<td>人机交互+教学设计课题作业</td>
+<td>Javascript / HTML5 / CSS3</td>
+<td>人机交互课题作业，未完成</td>
+</tr>
+<tr>
+<td>Documents</td>
+<td>脚本聚集地</td>
+<td>Shell</td>
+<td>存放烂七八糟的脚本</td>
+</tr>
+<tr>
+<td>DDMonitor</td>
+<td>Bilibili直播间自动录播脚本</td>
+<td>Python3</td>
+<td>自动录播姬</td>
+</tr>
+</tbody></table>
+<p>联系方式：</p>
+<ul>
+<li><a href="https://twitter.com/SaberWang123" target="_blank" rel="noopener">Twitter</a></li>
+<li><a href="https://github.com/dreammer12138" target="_blank" rel="noopener">GitHub</a></li>
+<li><a href="https://space.bilibili.com/13390752" target="_blank" rel="noopener">Bilibili</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>doc</category>
+      </categories>
+      <tags>
+        <tag>About</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Django+Nginx+Uwsgi+Https环境开发文档——环境搭建</title>
     <url>/2020-03-23/Django-Nginx-Uwsgi-Https%E7%8E%AF%E5%A2%83%E5%BC%80%E5%8F%91%E6%96%87%E6%A1%A3%E2%80%94%E2%80%94%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</url>
     <content><![CDATA[<blockquote>
@@ -145,81 +220,6 @@
       </categories>
       <tags>
         <tag>Hadoop</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Chinese</title>
-    <url>/2019-12-13/Chinese/</url>
-    <content><![CDATA[<h5 id="中国人，坚定的无产阶级者，不接受一切政治相关话题"><a href="#中国人，坚定的无产阶级者，不接受一切政治相关话题" class="headerlink" title="中国人，坚定的无产阶级者，不接受一切政治相关话题"></a>中国人，坚定的无产阶级者，不接受一切政治相关话题</h5><h6 id="已完成的项目"><a href="#已完成的项目" class="headerlink" title="已完成的项目"></a>已完成的项目</h6><table>
-<thead>
-<tr>
-<th>项目名称</th>
-<th>项目简介</th>
-<th>所用语言</th>
-<th>备注</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>Web</td>
-<td>课程作业</td>
-<td>HTML5 / CSS3 / Javas</td>
-<td>已废弃</td>
-</tr>
-<tr>
-<td>v2ray-guide</td>
-<td>v2ray教程</td>
-<td>Markdown</td>
-<td>从官方fork过来用于学习的</td>
-</tr>
-<tr>
-<td>Bilichat</td>
-<td>bilibili直播弹幕姬</td>
-<td>Typescript / Anguler框架</td>
-<td>从3Shain佬那里fork过来改了一下让其支持日文筛选</td>
-</tr>
-<tr>
-<td>CommentsLogByMySQL</td>
-<td>bilibili直播弹幕姬</td>
-<td>Python3</td>
-<td>Python爬虫的研究课题，已废弃</td>
-</tr>
-<tr>
-<td>typeorm</td>
-<td>数据库连接模块</td>
-<td>Typescript</td>
-<td>本来想用于课题作业但最后也没有用</td>
-</tr>
-<tr>
-<td>HMI-Teachingdesign-ResearchStudy</td>
-<td>人机交互+教学设计课题作业</td>
-<td>Javascript / HTML5 / CSS3</td>
-<td>人机交互课题作业，未完成</td>
-</tr>
-<tr>
-<td>Documents</td>
-<td>脚本聚集地</td>
-<td>Shell</td>
-<td>存放烂七八糟的脚本</td>
-</tr>
-<tr>
-<td>DDMonitor</td>
-<td>Bilibili直播间自动录播脚本</td>
-<td>Python3</td>
-<td>自动录播姬</td>
-</tr>
-</tbody></table>
-<p>联系方式：</p>
-<ul>
-<li><a href="https://twitter.com/SaberWang123" target="_blank" rel="noopener">Twitter</a></li>
-<li><a href="https://github.com/dreammer12138" target="_blank" rel="noopener">GitHub</a></li>
-<li><a href="https://space.bilibili.com/13390752" target="_blank" rel="noopener">Bilibili</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>doc</category>
-      </categories>
-      <tags>
-        <tag>About</tag>
       </tags>
   </entry>
   <entry>
@@ -680,6 +680,40 @@
       </tags>
   </entry>
   <entry>
+    <title>Vue学习笔记（二）——生命周期</title>
+    <url>/2020-08-16/Vue%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%BA%8C%EF%BC%89%E2%80%94%E2%80%94%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/</url>
+    <content><![CDATA[<p>每个 Vue 实例在被创建时都要经过一系列的初始化过程——例如，需要设置数据监听、编译模板、将实例挂载到 DOM 并在数据变化时更新 DOM 等。同时在这个过程中也会运行一些叫做<strong>生命周期钩子</strong>的函数，这给了用户在不同阶段添加自己的代码的机会。</p>
+<p>生命周期钩子需要在创建Vue对象时以属性的形式进行声明</p>
+<a id="more"></a>
+
+<p>例如：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">new</span> Vue(&#123;</span><br><span class="line">    data: &#123;</span><br><span class="line">        a: <span class="number">1</span></span><br><span class="line">    &#125;,</span><br><span class="line">    created: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="comment">// this 指向Vue实例</span></span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">'a'</span> + <span class="keyword">this</span>.a)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<div role="alert" style="background-color: red; opacity:0.4; padding: .5rem; color: white; border-radius: 10px;">
+不要在选项 property 或回调上使用箭头函数，因为箭头函数没有this
+</div>
+
+<h2 id="生命周期模型"><a href="#生命周期模型" class="headerlink" title="生命周期模型"></a>生命周期模型</h2><p><img src="/img/Vue/vue_lifecycle.png" alt="Vue生命周期模型"></p>
+<h2 id="beforeCreate"><a href="#beforeCreate" class="headerlink" title="beforeCreate"></a>beforeCreate</h2><p><code>beforeCreate</code>在实例初始化之后，数据观测（data observe）和event/watcher事件配置之前被调用</p>
+<h2 id="created"><a href="#created" class="headerlink" title="created"></a>created</h2><p><code>created</code>在实例创建完成后被立即调用。在这一步，实例已完成以下的配置：数据观测（data observe），属性和方法的运算，event/watcher事件回调，然而这是挂载（mount）阶段还未开始，<code>$el</code>属性目前不可见</p>
+<h2 id="beforeMount"><a href="#beforeMount" class="headerlink" title="beforeMount"></a>beforeMount</h2><p><code>beforeMount</code>在挂载开始之前被调用，相关的渲染函数首次被调用</p>
+<h2 id="mounted"><a href="#mounted" class="headerlink" title="mounted"></a>mounted</h2><p><code>mounted</code>在<code>el</code>被新创建的<code>vm.$el</code>替换，挂载成功后被调用</p>
+<h2 id="beforeUpdate"><a href="#beforeUpdate" class="headerlink" title="beforeUpdate"></a>beforeUpdate</h2><p><code>beforeUpdate</code>在数据更新时调用</p>
+<h2 id="updated"><a href="#updated" class="headerlink" title="updated"></a>updated</h2><p><code>updated</code>在组件DOM更新后调用</p>
+<h2 id="beforeDestory"><a href="#beforeDestory" class="headerlink" title="beforeDestory"></a>beforeDestory</h2><p><code>beforeDestory</code>在Vue实例被销毁之前调用。在这一步时，实例仍然可用</p>
+<h2 id="destoryed"><a href="#destoryed" class="headerlink" title="destoryed"></a>destoryed</h2><p><code>desotryed</code>在Vue实例被销毁后调用。调用后，Vue实例指示的所有东西都会解除绑定，所有事件监听器都会被移除，子实例也会被销毁</p>
+<h2 id="errorCaptured"><a href="#errorCaptured" class="headerlink" title="errorCaptured"></a>errorCaptured</h2><p><code>errorCaptured</code>在捕获到子组件的错误时被调用</p>
+]]></content>
+      <categories>
+        <category>doc</category>
+        <category>note</category>
+      </categories>
+      <tags>
+        <tag>Vue</tag>
+        <tag>学习笔记</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Vue学习笔记（九）——组件基础</title>
     <url>/2020-08-23/Vue%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B9%9D%EF%BC%89%E2%80%94%E2%80%94%E7%BB%84%E4%BB%B6%E5%9F%BA%E7%A1%80/</url>
     <content><![CDATA[<h1 id="基本示例"><a href="#基本示例" class="headerlink" title="基本示例"></a>基本示例</h1><p>组件是可复用的 Vue 实例，在开发过程中，一般将重复的功能封装成组件，达到快捷、便捷开发的目的。</p>
@@ -799,40 +833,6 @@
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line">Vue.component(<span class="string">'alert-box'</span>, &#123;</span><br><span class="line">  	template: <span class="string">`</span></span><br><span class="line"><span class="string">    	&lt;div class="demo-alert-box"&gt;</span></span><br><span class="line"><span class="string">      		&lt;strong&gt;Error!&lt;/strong&gt;</span></span><br><span class="line"><span class="string">      		&lt;slot&gt;&lt;/slot&gt;</span></span><br><span class="line"><span class="string">    	&lt;/div&gt;</span></span><br><span class="line"><span class="string">  	`</span></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
 
 <p>如你所见，我们只要在需要的地方加入插槽就行了——就这么简单！</p>
-]]></content>
-      <categories>
-        <category>doc</category>
-        <category>note</category>
-      </categories>
-      <tags>
-        <tag>Vue</tag>
-        <tag>学习笔记</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Vue学习笔记（二）——生命周期</title>
-    <url>/2020-08-16/Vue%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%BA%8C%EF%BC%89%E2%80%94%E2%80%94%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/</url>
-    <content><![CDATA[<p>每个 Vue 实例在被创建时都要经过一系列的初始化过程——例如，需要设置数据监听、编译模板、将实例挂载到 DOM 并在数据变化时更新 DOM 等。同时在这个过程中也会运行一些叫做<strong>生命周期钩子</strong>的函数，这给了用户在不同阶段添加自己的代码的机会。</p>
-<p>生命周期钩子需要在创建Vue对象时以属性的形式进行声明</p>
-<a id="more"></a>
-
-<p>例如：</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">new</span> Vue(&#123;</span><br><span class="line">    data: &#123;</span><br><span class="line">        a: <span class="number">1</span></span><br><span class="line">    &#125;,</span><br><span class="line">    created: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="comment">// this 指向Vue实例</span></span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">'a'</span> + <span class="keyword">this</span>.a)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-
-<div role="alert" style="background-color: red; opacity:0.4; padding: .5rem; color: white; border-radius: 10px;">
-不要在选项 property 或回调上使用箭头函数，因为箭头函数没有this
-</div>
-
-<h2 id="生命周期模型"><a href="#生命周期模型" class="headerlink" title="生命周期模型"></a>生命周期模型</h2><p><img src="/img/Vue/vue_lifecycle.png" alt="Vue生命周期模型"></p>
-<h2 id="beforeCreate"><a href="#beforeCreate" class="headerlink" title="beforeCreate"></a>beforeCreate</h2><p><code>beforeCreate</code>在实例初始化之后，数据观测（data observe）和event/watcher事件配置之前被调用</p>
-<h2 id="created"><a href="#created" class="headerlink" title="created"></a>created</h2><p><code>created</code>在实例创建完成后被立即调用。在这一步，实例已完成以下的配置：数据观测（data observe），属性和方法的运算，event/watcher事件回调，然而这是挂载（mount）阶段还未开始，<code>$el</code>属性目前不可见</p>
-<h2 id="beforeMount"><a href="#beforeMount" class="headerlink" title="beforeMount"></a>beforeMount</h2><p><code>beforeMount</code>在挂载开始之前被调用，相关的渲染函数首次被调用</p>
-<h2 id="mounted"><a href="#mounted" class="headerlink" title="mounted"></a>mounted</h2><p><code>mounted</code>在<code>el</code>被新创建的<code>vm.$el</code>替换，挂载成功后被调用</p>
-<h2 id="beforeUpdate"><a href="#beforeUpdate" class="headerlink" title="beforeUpdate"></a>beforeUpdate</h2><p><code>beforeUpdate</code>在数据更新时调用</p>
-<h2 id="updated"><a href="#updated" class="headerlink" title="updated"></a>updated</h2><p><code>updated</code>在组件DOM更新后调用</p>
-<h2 id="beforeDestory"><a href="#beforeDestory" class="headerlink" title="beforeDestory"></a>beforeDestory</h2><p><code>beforeDestory</code>在Vue实例被销毁之前调用。在这一步时，实例仍然可用</p>
-<h2 id="destoryed"><a href="#destoryed" class="headerlink" title="destoryed"></a>destoryed</h2><p><code>desotryed</code>在Vue实例被销毁后调用。调用后，Vue实例指示的所有东西都会解除绑定，所有事件监听器都会被移除，子实例也会被销毁</p>
-<h2 id="errorCaptured"><a href="#errorCaptured" class="headerlink" title="errorCaptured"></a>errorCaptured</h2><p><code>errorCaptured</code>在捕获到子组件的错误时被调用</p>
 ]]></content>
       <categories>
         <category>doc</category>
@@ -974,6 +974,86 @@
       </tags>
   </entry>
   <entry>
+    <title>Vue学习笔记（四）——class与style绑定</title>
+    <url>/2020-08-18/Vue%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E5%9B%9B%EF%BC%89%E2%80%94%E2%80%94class%E4%B8%8Estyle%E7%BB%91%E5%AE%9A/</url>
+    <content><![CDATA[<h1 id="绑定-HTML-Class"><a href="#绑定-HTML-Class" class="headerlink" title="绑定 HTML Class"></a>绑定 HTML Class</h1><h2 id="对象语法"><a href="#对象语法" class="headerlink" title="对象语法"></a>对象语法</h2><p>我们可以传给 <code>v-bind:class</code> 一个对象，以动态地切换 class ：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">v-bind:class</span>=<span class="string">"&#123; active: isActive &#125;"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>上面的语法表示 <code>active</code> 这个 class 存在与否将取决于数据 property <code>isActive</code> 的真值</p>
+<p>我们可以在对象中传入更多的字段来动态切换多个 class ，此外，<code>v-bind:class</code> 可以和普通HTML的 <code>class</code> 属性共存：</p>
+<a id="more"></a>
+
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span></span></span><br><span class="line"><span class="tag">     <span class="attr">class</span>=<span class="string">"static"</span></span></span><br><span class="line"><span class="tag">     <span class="attr">v-bind:class</span>=<span class="string">"&#123; active: isActive, test: isTest &#125;"</span></span></span><br><span class="line"><span class="tag">&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">data: &#123;</span><br><span class="line">    isActive: <span class="literal">true</span>,</span><br><span class="line">    isTest: <span class="literal">false</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>绑定的数据不必内联定义在模板里：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">:class</span>=<span class="string">"classObject"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">data: &#123;</span><br><span class="line">    classObject: &#123;</span><br><span class="line">        active: <span class="literal">true</span>,</span><br><span class="line">        test: <span class="literal">false</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>我们也可以绑定一个计算属性：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">:class</span>=<span class="string">"classObject"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">data: &#123;</span><br><span class="line">  isActive: <span class="literal">true</span>,</span><br><span class="line">  error: <span class="literal">null</span></span><br><span class="line">&#125;,</span><br><span class="line">computed: &#123;</span><br><span class="line">  classObject: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> &#123;</span><br><span class="line">      active: <span class="keyword">this</span>.isActive &amp;&amp; !<span class="keyword">this</span>.error,</span><br><span class="line">      test: <span class="keyword">this</span>.error &amp;&amp; <span class="keyword">this</span>.error.type === <span class="string">'fatal'</span></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="数组语法"><a href="#数组语法" class="headerlink" title="数组语法"></a>数组语法</h2><p>我们可以把一个数组传给 <code>v-bind:class</code>，以应用一个 class 列表：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">v-bind:class</span>=<span class="string">"[activeClass, errorClass]"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">data: &#123;</span><br><span class="line">  activeClass: <span class="string">'active'</span>,</span><br><span class="line">  errorClass: <span class="string">'text-danger'</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>渲染结果为：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"active text-danger"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>也可以使用三元表达式：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">v-bind:class</span>=<span class="string">"[&#123; active: isActive &#125;, errorClass]"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="应用于组件时"><a href="#应用于组件时" class="headerlink" title="应用于组件时"></a>应用于组件时</h2><p>当在一个自定义组件上使用 <code>class</code> property 时，这些 class 将被添加到该组件的根元素上面。这个元素上已经存在的 class 不会被覆盖。</p>
+<p>例如：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">Vue.component(<span class="string">'my-component'</span>, &#123;</span><br><span class="line">  template: <span class="string">'&lt;p class="foo bar"&gt;Hi&lt;/p&gt;'</span></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<p>然后在使用组件时添加一些 class：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">my-component</span> <span class="attr">class</span>=<span class="string">"baz boo"</span>&gt;</span><span class="tag">&lt;/<span class="name">my-component</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>HTML 将被渲染为：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">"foo bar baz boo"</span>&gt;</span>Hi<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>对于带数据绑定 class 也同样适用：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">my-component</span> <span class="attr">v-bind:class</span>=<span class="string">"&#123; active: isActive &#125;"</span>&gt;</span><span class="tag">&lt;/<span class="name">my-component</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>当 <code>isActive</code> 为 truthy  时，HTML 将被渲染成为：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">"foo bar active"</span>&gt;</span>Hi<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="绑定内联样式"><a href="#绑定内联样式" class="headerlink" title="绑定内联样式"></a>绑定内联样式</h1><h2 id="对象语法-1"><a href="#对象语法-1" class="headerlink" title="对象语法"></a>对象语法</h2><p><code>v-bind:style</code> 的对象语法十分直观——看着非常像 CSS，但其实是一个 JavaScript 对象。</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">v-bind:style</span>=<span class="string">"&#123; color: activeColor, fontSize: fontSize + 'px' &#125;"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">data: &#123;</span><br><span class="line">  activeColor: <span class="string">'red'</span>,</span><br><span class="line">  fontSize: <span class="number">30</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>直接绑定到一个样式对象通常更好，这会让模板更清晰：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">v-bind:style</span>=<span class="string">"styleObject"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">data: &#123;</span><br><span class="line">  styleObject: &#123;</span><br><span class="line">    color: <span class="string">'red'</span>,</span><br><span class="line">    fontSize: <span class="string">'13px'</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>同样的，对象语法常常结合返回对象的计算属性使用。</p>
+<h2 id="数组语法-1"><a href="#数组语法-1" class="headerlink" title="数组语法"></a>数组语法</h2><p><code>v-bind:style</code> 的数组语法可以将多个样式对象应用到同一个元素上：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">v-bind:style</span>=<span class="string">"[baseStyles, overridingStyles]"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="自动添加前缀"><a href="#自动添加前缀" class="headerlink" title="自动添加前缀"></a>自动添加前缀</h2><p>当 <code>v-bind:style</code> 使用需要添加浏览器引擎前缀的 CSS property 时，如 <code>transform</code>，Vue.js 会自动侦测并添加相应的前缀。</p>
+<h2 id="多重值"><a href="#多重值" class="headerlink" title="多重值"></a>多重值</h2><p>从 2.3.0 起你可以为 <code>style</code> 绑定中的 property 提供一个包含多个值的数组，常用于提供多个带前缀的值，例如：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">:style</span>=<span class="string">"&#123; display: ['-webkit-box', '-ms-flexbox', 'flex'] &#125;"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>这样写只会渲染数组中<strong>最后一个</strong>被浏览器支持的值。在本例中，如果浏览器支持不带浏览器前缀的 flexbox，那么就只会渲染 <code>display: flex</code>。</p>
+]]></content>
+      <categories>
+        <category>doc</category>
+        <category>note</category>
+      </categories>
+      <tags>
+        <tag>Vue</tag>
+        <tag>学习笔记</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Vue学习笔记（六）——列表渲染</title>
     <url>/2020-08-19/Vue%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E5%85%AD%EF%BC%89%E2%80%94%E2%80%94%E5%88%97%E8%A1%A8%E6%B8%B2%E6%9F%93/</url>
     <content><![CDATA[<h1 id="数组列表渲染"><a href="#数组列表渲染" class="headerlink" title="数组列表渲染"></a>数组列表渲染</h1><p>我们可以用 <code>v-for</code> 指令基于一个数组来渲染一个列表。<code>v-for</code> 指令需要使用 <code>item in items</code> 形式的特殊语法，其中 <code>items</code> 是源数据数组，而 <code>item</code> 则是被迭代的数组元素的<strong>别名</strong>。</p>
@@ -1054,86 +1134,6 @@
 
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line">Vue.component(<span class="string">'todo-item'</span>, &#123;</span><br><span class="line">  	template: <span class="string">'\</span></span><br><span class="line"><span class="string">    	&lt;li&gt;\</span></span><br><span class="line"><span class="string">		    &#123;&#123; title &#125;&#125;\</span></span><br><span class="line"><span class="string">	    	&lt;button v-on:click="$emit(\'remove\')"&gt;Remove&lt;/button&gt;\</span></span><br><span class="line"><span class="string">	    &lt;/li&gt;\</span></span><br><span class="line"><span class="string">  	'</span>,</span><br><span class="line">  	props: [<span class="string">'title'</span>]</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"><span class="keyword">new</span> Vue(&#123;</span><br><span class="line">  	el: <span class="string">'#todo-list-example'</span>,</span><br><span class="line">  	data: &#123;</span><br><span class="line">    	newTodoText: <span class="string">''</span>,</span><br><span class="line">    	todos: [</span><br><span class="line">      		&#123;</span><br><span class="line">        		id: <span class="number">1</span>,</span><br><span class="line">		        title: <span class="string">'Do the dishes'</span>,</span><br><span class="line">		    &#125;,</span><br><span class="line">	        &#123;</span><br><span class="line">        		id: <span class="number">2</span>,</span><br><span class="line">        		title: <span class="string">'Take out the trash'</span>,</span><br><span class="line">      		&#125;,</span><br><span class="line">      		&#123;</span><br><span class="line">        		id: <span class="number">3</span>,</span><br><span class="line">        		title: <span class="string">'Mow the lawn'</span></span><br><span class="line">      		&#125;</span><br><span class="line">    	],</span><br><span class="line">    	nextTodoId: <span class="number">4</span></span><br><span class="line">  	&#125;,</span><br><span class="line">  	methods: &#123;</span><br><span class="line">    	addNewTodo: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">      		<span class="keyword">this</span>.todos.push(&#123;</span><br><span class="line">        		id: <span class="keyword">this</span>.nextTodoId++,</span><br><span class="line">       	 		title: <span class="keyword">this</span>.newTodoText</span><br><span class="line">      		&#125;)</span><br><span class="line">      		<span class="keyword">this</span>.newTodoText = <span class="string">''</span></span><br><span class="line">    	&#125;</span><br><span class="line">  	&#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
 
-]]></content>
-      <categories>
-        <category>doc</category>
-        <category>note</category>
-      </categories>
-      <tags>
-        <tag>Vue</tag>
-        <tag>学习笔记</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Vue学习笔记（四）——class与style绑定</title>
-    <url>/2020-08-18/Vue%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E5%9B%9B%EF%BC%89%E2%80%94%E2%80%94class%E4%B8%8Estyle%E7%BB%91%E5%AE%9A/</url>
-    <content><![CDATA[<h1 id="绑定-HTML-Class"><a href="#绑定-HTML-Class" class="headerlink" title="绑定 HTML Class"></a>绑定 HTML Class</h1><h2 id="对象语法"><a href="#对象语法" class="headerlink" title="对象语法"></a>对象语法</h2><p>我们可以传给 <code>v-bind:class</code> 一个对象，以动态地切换 class ：</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">v-bind:class</span>=<span class="string">"&#123; active: isActive &#125;"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>上面的语法表示 <code>active</code> 这个 class 存在与否将取决于数据 property <code>isActive</code> 的真值</p>
-<p>我们可以在对象中传入更多的字段来动态切换多个 class ，此外，<code>v-bind:class</code> 可以和普通HTML的 <code>class</code> 属性共存：</p>
-<a id="more"></a>
-
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span></span></span><br><span class="line"><span class="tag">     <span class="attr">class</span>=<span class="string">"static"</span></span></span><br><span class="line"><span class="tag">     <span class="attr">v-bind:class</span>=<span class="string">"&#123; active: isActive, test: isTest &#125;"</span></span></span><br><span class="line"><span class="tag">&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">data: &#123;</span><br><span class="line">    isActive: <span class="literal">true</span>,</span><br><span class="line">    isTest: <span class="literal">false</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>绑定的数据不必内联定义在模板里：</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">:class</span>=<span class="string">"classObject"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">data: &#123;</span><br><span class="line">    classObject: &#123;</span><br><span class="line">        active: <span class="literal">true</span>,</span><br><span class="line">        test: <span class="literal">false</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>我们也可以绑定一个计算属性：</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">:class</span>=<span class="string">"classObject"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">data: &#123;</span><br><span class="line">  isActive: <span class="literal">true</span>,</span><br><span class="line">  error: <span class="literal">null</span></span><br><span class="line">&#125;,</span><br><span class="line">computed: &#123;</span><br><span class="line">  classObject: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> &#123;</span><br><span class="line">      active: <span class="keyword">this</span>.isActive &amp;&amp; !<span class="keyword">this</span>.error,</span><br><span class="line">      test: <span class="keyword">this</span>.error &amp;&amp; <span class="keyword">this</span>.error.type === <span class="string">'fatal'</span></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="数组语法"><a href="#数组语法" class="headerlink" title="数组语法"></a>数组语法</h2><p>我们可以把一个数组传给 <code>v-bind:class</code>，以应用一个 class 列表：</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">v-bind:class</span>=<span class="string">"[activeClass, errorClass]"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">data: &#123;</span><br><span class="line">  activeClass: <span class="string">'active'</span>,</span><br><span class="line">  errorClass: <span class="string">'text-danger'</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>渲染结果为：</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"active text-danger"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>也可以使用三元表达式：</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">v-bind:class</span>=<span class="string">"[&#123; active: isActive &#125;, errorClass]"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="应用于组件时"><a href="#应用于组件时" class="headerlink" title="应用于组件时"></a>应用于组件时</h2><p>当在一个自定义组件上使用 <code>class</code> property 时，这些 class 将被添加到该组件的根元素上面。这个元素上已经存在的 class 不会被覆盖。</p>
-<p>例如：</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">Vue.component(<span class="string">'my-component'</span>, &#123;</span><br><span class="line">  template: <span class="string">'&lt;p class="foo bar"&gt;Hi&lt;/p&gt;'</span></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-
-<p>然后在使用组件时添加一些 class：</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">my-component</span> <span class="attr">class</span>=<span class="string">"baz boo"</span>&gt;</span><span class="tag">&lt;/<span class="name">my-component</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>HTML 将被渲染为：</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">"foo bar baz boo"</span>&gt;</span>Hi<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>对于带数据绑定 class 也同样适用：</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">my-component</span> <span class="attr">v-bind:class</span>=<span class="string">"&#123; active: isActive &#125;"</span>&gt;</span><span class="tag">&lt;/<span class="name">my-component</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>当 <code>isActive</code> 为 truthy  时，HTML 将被渲染成为：</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">"foo bar active"</span>&gt;</span>Hi<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h1 id="绑定内联样式"><a href="#绑定内联样式" class="headerlink" title="绑定内联样式"></a>绑定内联样式</h1><h2 id="对象语法-1"><a href="#对象语法-1" class="headerlink" title="对象语法"></a>对象语法</h2><p><code>v-bind:style</code> 的对象语法十分直观——看着非常像 CSS，但其实是一个 JavaScript 对象。</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">v-bind:style</span>=<span class="string">"&#123; color: activeColor, fontSize: fontSize + 'px' &#125;"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">data: &#123;</span><br><span class="line">  activeColor: <span class="string">'red'</span>,</span><br><span class="line">  fontSize: <span class="number">30</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>直接绑定到一个样式对象通常更好，这会让模板更清晰：</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">v-bind:style</span>=<span class="string">"styleObject"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">data: &#123;</span><br><span class="line">  styleObject: &#123;</span><br><span class="line">    color: <span class="string">'red'</span>,</span><br><span class="line">    fontSize: <span class="string">'13px'</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>同样的，对象语法常常结合返回对象的计算属性使用。</p>
-<h2 id="数组语法-1"><a href="#数组语法-1" class="headerlink" title="数组语法"></a>数组语法</h2><p><code>v-bind:style</code> 的数组语法可以将多个样式对象应用到同一个元素上：</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">v-bind:style</span>=<span class="string">"[baseStyles, overridingStyles]"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="自动添加前缀"><a href="#自动添加前缀" class="headerlink" title="自动添加前缀"></a>自动添加前缀</h2><p>当 <code>v-bind:style</code> 使用需要添加浏览器引擎前缀的 CSS property 时，如 <code>transform</code>，Vue.js 会自动侦测并添加相应的前缀。</p>
-<h2 id="多重值"><a href="#多重值" class="headerlink" title="多重值"></a>多重值</h2><p>从 2.3.0 起你可以为 <code>style</code> 绑定中的 property 提供一个包含多个值的数组，常用于提供多个带前缀的值，例如：</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">:style</span>=<span class="string">"&#123; display: ['-webkit-box', '-ms-flexbox', 'flex'] &#125;"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>这样写只会渲染数组中<strong>最后一个</strong>被浏览器支持的值。在本例中，如果浏览器支持不带浏览器前缀的 flexbox，那么就只会渲染 <code>display: flex</code>。</p>
 ]]></content>
       <categories>
         <category>doc</category>
@@ -1498,6 +1498,111 @@
       <tags>
         <tag>操作系统</tag>
         <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>操作系统:进程调度模拟算法</title>
+    <url>/2020-04-29/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E8%BF%9B%E7%A8%8B%E8%B0%83%E5%BA%A6%E6%A8%A1%E6%8B%9F%E7%AE%97%E6%B3%95/</url>
+    <content><![CDATA[<h1 id="进程模拟调度算法"><a href="#进程模拟调度算法" class="headerlink" title="进程模拟调度算法"></a>进程模拟调度算法</h1><blockquote>
+<p>进程调度是处理机管理的核心内容。</p>
+</blockquote>
+<h2 id="内容"><a href="#内容" class="headerlink" title="内容"></a>内容</h2><p><strong>设计进程控制块PCB的结构，通常包括如下信息</strong></p>
+<ul>
+<li>进程名</li>
+<li>进程优先数（或轮转时间片数）</li>
+<li>进程已占用的CPU实践</li>
+<li>进程到完成还需要的实践</li>
+<li>进程状态</li>
+<li>当前队列指针</li>
+</ul>
+<a id="more"></a>
+
+<h2 id="参数说明"><a href="#参数说明" class="headerlink" title="参数说明"></a>参数说明</h2><ol>
+<li><strong>进程控制块结构</strong><ul>
+<li><code>NAME</code> 进程标识符</li>
+<li><code>PRIO/ROUND</code>  进程优先数/进程每次轮转的时间片数</li>
+<li><code>CPUTIME</code> 进程累计占用CPU的实践片数</li>
+<li><code>NEEDTIME</code> 进程到完成还需要的时间片数</li>
+<li><code>STATE</code> 进程状态</li>
+<li><code>NEXT</code> 下一个链节点</li>
+</ul>
+</li>
+<li><strong>进程链表</strong><ul>
+<li><code>RUN</code> 运行队列</li>
+<li><code>READY</code> 就绪队列</li>
+<li><code>FINISH</code> 结束队列</li>
+</ul>
+</li>
+</ol>
+<h2 id="算法"><a href="#算法" class="headerlink" title="算法"></a>算法</h2><h3 id="节点类"><a href="#节点类" class="headerlink" title="节点类"></a>节点类</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Node</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, NEEDTIME, STATE, NAME, PRIO = <span class="number">0</span>, ROUND = <span class="number">0</span>, CPUTIME = <span class="number">0</span>, count = <span class="number">0</span>, _pNEXT = None)</span>:</span></span><br><span class="line">        self.NAME       = NAME</span><br><span class="line">        self.PRIO       = PRIO</span><br><span class="line">        self.ROUND      = ROUND</span><br><span class="line">        self.CPUTIME    = CPUTIME</span><br><span class="line">        self.NEEDTIME   = NEEDTIME</span><br><span class="line">        self.STATE      = STATE</span><br><span class="line">        self.count      = count</span><br><span class="line">        self._NEXT      = _pNEXT</span><br></pre></td></tr></table></figure>
+
+<h3 id="链表类"><a href="#链表类" class="headerlink" title="链表类"></a>链表类</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Link</span>:</span></span><br><span class="line">    Head = <span class="literal">None</span></span><br><span class="line">    length = <span class="number">0</span></span><br><span class="line">    </span><br><span class="line">    <span class="comment"># 将节点添加到尾部</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">append</span><span class="params">(self, node)</span>:</span></span><br><span class="line">        item = node</span><br><span class="line">        <span class="keyword">if</span> <span class="keyword">not</span> self.Head:</span><br><span class="line">            self.Head = item</span><br><span class="line">            self.length += <span class="number">1</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            temp = self.Head</span><br><span class="line">            <span class="keyword">while</span> temp._NEXT:</span><br><span class="line">                temp = temp._NEXT</span><br><span class="line">            temp._NEXT = item</span><br><span class="line">            self.length += <span class="number">1</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># push节点</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">push</span><span class="params">(self)</span>:</span></span><br><span class="line">        <span class="keyword">if</span> <span class="keyword">not</span> self.Head:</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">None</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            temp = self.Head</span><br><span class="line">            self.Head = self.Head._NEXT</span><br><span class="line">            <span class="keyword">return</span> temp</span><br><span class="line">        self.length -= <span class="number">1</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="优先数算法"><a href="#优先数算法" class="headerlink" title="优先数算法"></a>优先数算法</h3><h4 id="构造链表"><a href="#构造链表" class="headerlink" title="构造链表"></a>构造链表</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">PrioCreate</span><span class="params">(num)</span>:</span></span><br><span class="line">    print(<span class="string">"请输入进程名称和所需时间"</span>)</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">0</span>, num):</span><br><span class="line">        name,needtime = map(str, input().split())</span><br><span class="line">        needtime = int(needtime)</span><br><span class="line">        node = Node(</span><br><span class="line">            NEEDTIME = needtime, </span><br><span class="line">            NAME = name,</span><br><span class="line">            STATE = <span class="string">'W'</span>,</span><br><span class="line">            PRIO = <span class="number">50</span> - needtime</span><br><span class="line">        )</span><br><span class="line"></span><br><span class="line">        temp = READY.Head</span><br><span class="line">        <span class="keyword">if</span> <span class="keyword">not</span> temp:</span><br><span class="line">            READY.append(node)</span><br><span class="line">            <span class="keyword">continue</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="keyword">if</span> node.PRIO &gt;= temp.PRIO:</span><br><span class="line">                node._NEXT = temp</span><br><span class="line">                READY.Head = node</span><br><span class="line">                READY.length += <span class="number">1</span></span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                <span class="keyword">while</span> temp:</span><br><span class="line">                    <span class="keyword">if</span> temp._NEXT:</span><br><span class="line">                        <span class="keyword">if</span> node.PRIO &gt;= temp._NEXT.PRIO:</span><br><span class="line">                            node._NEXT = temp._NEXT</span><br><span class="line">                            temp._NEXT = node</span><br><span class="line">                            READY.length += <span class="number">1</span></span><br><span class="line">                            <span class="keyword">break</span></span><br><span class="line">                    <span class="keyword">else</span>:</span><br><span class="line">                        READY.append(node)</span><br><span class="line">                        <span class="keyword">break</span></span><br><span class="line">                    temp = temp._NEXT</span><br></pre></td></tr></table></figure>
+
+<p><strong>参数说明：</strong></p>
+<ul>
+<li><code>num</code> 进程数量</li>
+</ul>
+<h4 id="优先数算法调度"><a href="#优先数算法调度" class="headerlink" title="优先数算法调度"></a>优先数算法调度</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">Priority</span><span class="params">()</span>:</span></span><br><span class="line">    RUN.append(READY.push())</span><br><span class="line">    <span class="keyword">if</span> RUN.Head:</span><br><span class="line">        RUN.Head.STATE = <span class="string">'R'</span></span><br><span class="line">        RUN.Head._NEXT = <span class="literal">None</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">return</span></span><br><span class="line"></span><br><span class="line">    RUN.Head.PRIO -= <span class="number">1</span></span><br><span class="line">    RUN.Head.CPUTIME += <span class="number">1</span></span><br><span class="line">    RUN.Head.NEEDTIME -= <span class="number">1</span></span><br><span class="line">    <span class="keyword">if</span> RUN.Head.NEEDTIME == <span class="number">0</span>:</span><br><span class="line">        RUN.Head.STATE = <span class="string">'F'</span></span><br><span class="line">        RUN.Head.count += <span class="number">1</span></span><br><span class="line">        FINISH.append(RUN.push())</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        RUN.Head.STATE = <span class="string">'W'</span></span><br><span class="line">        RUN.Head.count += <span class="number">1</span></span><br><span class="line">        node = RUN.push()</span><br><span class="line">        temp = READY.Head</span><br><span class="line">        <span class="keyword">if</span> <span class="keyword">not</span> temp:</span><br><span class="line">            READY.append(node)</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="keyword">if</span> node.PRIO &gt;= temp.PRIO:</span><br><span class="line">                node._NEXT = temp</span><br><span class="line">                READY.Head = node</span><br><span class="line">                READY.length += <span class="number">1</span></span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                <span class="keyword">while</span> temp:</span><br><span class="line">                    <span class="keyword">if</span> temp._NEXT:</span><br><span class="line">                        <span class="keyword">if</span> node.PRIO &gt;= temp._NEXT.PRIO:</span><br><span class="line">                            node._NEXT = temp._NEXT</span><br><span class="line">                            temp._NEXT = node</span><br><span class="line">                            READY.length += <span class="number">1</span></span><br><span class="line">                            <span class="keyword">break</span></span><br><span class="line">                    <span class="keyword">else</span>:</span><br><span class="line">                        READY.append(node)</span><br><span class="line">                        <span class="keyword">break</span></span><br><span class="line">                    temp = temp._NEXT</span><br><span class="line">    Output()</span><br><span class="line">    Priority()</span><br></pre></td></tr></table></figure>
+
+<h3 id="轮转法"><a href="#轮转法" class="headerlink" title="轮转法"></a>轮转法</h3><h4 id="构造链表-1"><a href="#构造链表-1" class="headerlink" title="构造链表"></a>构造链表</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">RoundCreate</span><span class="params">(num)</span>:</span></span><br><span class="line">    print(<span class="string">"请输入进程名称和所需时间"</span>)</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">0</span>, num):</span><br><span class="line">        name,needtime = map(str, input().split())</span><br><span class="line">        needtime = int(needtime)</span><br><span class="line">        node = Node(</span><br><span class="line">            NEEDTIME = needtime,</span><br><span class="line">            NAME = name,</span><br><span class="line">            STATE = <span class="string">'W'</span>,</span><br><span class="line">            ROUND = <span class="number">2</span></span><br><span class="line">        )</span><br><span class="line">        READY.append(node)</span><br></pre></td></tr></table></figure>
+
+<p><strong>参数说明：</strong></p>
+<ul>
+<li><code>num</code> 进程数量</li>
+</ul>
+<h4 id="轮转法调度"><a href="#轮转法调度" class="headerlink" title="轮转法调度"></a>轮转法调度</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">Round</span><span class="params">()</span>:</span></span><br><span class="line">    RUN.append(READY.push())</span><br><span class="line">    <span class="keyword">if</span> RUN.Head:</span><br><span class="line">        RUN.Head.STATE = <span class="string">'R'</span></span><br><span class="line">        RUN.Head._NEXT = <span class="literal">None</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">return</span></span><br><span class="line">    </span><br><span class="line">    RUN.Head.count += <span class="number">1</span></span><br><span class="line">    RUN.Head.CPUTIME += <span class="number">1</span></span><br><span class="line">    RUN.Head.NEEDTIME -= <span class="number">1</span></span><br><span class="line">    <span class="keyword">if</span> RUN.Head.NEEDTIME == <span class="number">0</span>:</span><br><span class="line">        RUN.Head.STATE = <span class="string">'F'</span></span><br><span class="line">        FINISH.append(RUN.push())</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        RUN.Head.STATE = <span class="string">'W'</span></span><br><span class="line">        READY.append(RUN.push())</span><br><span class="line">    Output()</span><br><span class="line">    Round()</span><br></pre></td></tr></table></figure>
+
+<h2 id="完整程序"><a href="#完整程序" class="headerlink" title="完整程序"></a>完整程序</h2><button style="width: auto; background-color: Black; border-color: transparent; margin-top: 10px; color: white;" onclick="window.open('https://1145141919810.wang/Blog-Content/操作系统：进程调度模拟算法.7z');">
+    <span class="fa fa-fw fa-download"></span>
+    Download
+</button>]]></content>
+      <categories>
+        <category>操作系统</category>
+      </categories>
+      <tags>
+        <tag>操作系统</tag>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>数据结构与算法——直接选择排序算法</title>
+    <url>/2020-08-28/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E2%80%94%E2%80%94%E7%9B%B4%E6%8E%A5%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/</url>
+    <content><![CDATA[<h1 id="算法思路"><a href="#算法思路" class="headerlink" title="算法思路"></a>算法思路</h1><p>对无序数组a[0…n-1]，进行直接选择排序：</p>
+<ol>
+<li><p>从 a[0 ~ n-1] 中选择最小值，与 a[0] 交换</p>
+</li>
+<li><p>从 a[1 ~ n-1] 中选择最小值，与 a[1] 交换</p>
+</li>
+<li><p>从 a[2 ~ n-1] 中选择最小值，与 a[2] 交换</p>
+</li>
+</ol>
+<a id="more"></a>
+<p>   ······</p>
+<ol start="4">
+<li><p>从 a[i ~ n-1] 中选择最小值，与 a[i] 交换</p>
+<p>······</p>
+</li>
+<li><p>从 a[n-2, n-1] 中选择最小值，与 a[n-2] 交换</p>
+</li>
+</ol>
+<p><strong>一共交换 n - 1 次</strong>，得到一个按关键字从小到大排列的有序序列</p>
+<h1 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h1><h2 id="无序数组"><a href="#无序数组" class="headerlink" title="无序数组"></a>无序数组</h2><figure class="highlight angelscript"><table><tr><td class="code"><pre><span class="line"><span class="number">5</span> <span class="number">20</span> <span class="number">63</span> <span class="number">59</span> <span class="number">4</span> <span class="number">16</span> <span class="number">77</span> <span class="number">26</span> <span class="number">12</span> <span class="number">33</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="排序"><a href="#排序" class="headerlink" title="排序"></a>排序</h2><figure class="highlight angelscript"><table><tr><td class="code"><pre><span class="line">初始数组：</span><br><span class="line"> <span class="number">5</span> <span class="number">20</span> <span class="number">63</span> <span class="number">59</span>  <span class="number">4</span> <span class="number">16</span> <span class="number">77</span> <span class="number">26</span> <span class="number">12</span> <span class="number">33</span></span><br><span class="line"></span><br><span class="line">排序：</span><br><span class="line"> <span class="number">4</span> <span class="number">20</span> <span class="number">63</span> <span class="number">59</span>  <span class="number">5</span> <span class="number">16</span> <span class="number">77</span> <span class="number">26</span> <span class="number">12</span> <span class="number">33</span></span><br><span class="line"> <span class="number">4</span>  <span class="number">5</span> <span class="number">63</span> <span class="number">59</span> <span class="number">20</span> <span class="number">16</span> <span class="number">77</span> <span class="number">26</span> <span class="number">12</span> <span class="number">33</span></span><br><span class="line"> <span class="number">4</span>  <span class="number">5</span> <span class="number">12</span> <span class="number">59</span> <span class="number">20</span> <span class="number">16</span> <span class="number">77</span> <span class="number">26</span> <span class="number">63</span> <span class="number">33</span></span><br><span class="line"> <span class="number">4</span>  <span class="number">5</span> <span class="number">12</span> <span class="number">16</span> <span class="number">20</span> <span class="number">59</span> <span class="number">77</span> <span class="number">26</span> <span class="number">63</span> <span class="number">33</span></span><br><span class="line"> <span class="number">4</span>  <span class="number">5</span> <span class="number">12</span> <span class="number">16</span> <span class="number">20</span> <span class="number">26</span> <span class="number">77</span> <span class="number">59</span> <span class="number">63</span> <span class="number">33</span></span><br><span class="line"> <span class="number">4</span>  <span class="number">5</span> <span class="number">12</span> <span class="number">16</span> <span class="number">20</span> <span class="number">26</span> <span class="number">33</span> <span class="number">59</span> <span class="number">63</span> <span class="number">77</span></span><br><span class="line"> <span class="number">4</span>  <span class="number">5</span> <span class="number">12</span> <span class="number">16</span> <span class="number">20</span> <span class="number">26</span> <span class="number">33</span> <span class="number">59</span> <span class="number">63</span> <span class="number">77</span></span><br><span class="line"> <span class="number">4</span>  <span class="number">5</span> <span class="number">12</span> <span class="number">16</span> <span class="number">20</span> <span class="number">26</span> <span class="number">33</span> <span class="number">59</span> <span class="number">63</span> <span class="number">77</span></span><br><span class="line"> <span class="number">4</span>  <span class="number">5</span> <span class="number">12</span> <span class="number">16</span> <span class="number">20</span> <span class="number">26</span> <span class="number">33</span> <span class="number">59</span> <span class="number">63</span> <span class="number">77</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="算法实现"><a href="#算法实现" class="headerlink" title="算法实现"></a>算法实现</h1><h2 id="C-C"><a href="#C-C" class="headerlink" title="C/C++"></a>C/C++</h2><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;vector&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> n;</span><br><span class="line">    <span class="built_in">cin</span> &gt;&gt; n;</span><br><span class="line"></span><br><span class="line">    <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; a;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; i++) &#123;</span><br><span class="line">        <span class="keyword">int</span> t;</span><br><span class="line">        <span class="built_in">cin</span> &gt;&gt; t;</span><br><span class="line">        a.push_back(t);</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">// 直接选择排序</span></span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; i++) &#123;</span><br><span class="line">        <span class="keyword">int</span> <span class="built_in">min</span> = a[i];</span><br><span class="line">        <span class="keyword">int</span> min_index = i;</span><br><span class="line">        </span><br><span class="line">        <span class="comment">// 查找 i 到 n-1 中最小的值</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j = i; i &lt; n - <span class="number">1</span> &amp;&amp; j &lt; n; j++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (a[j] &lt; <span class="built_in">min</span>) &#123;</span><br><span class="line">                <span class="built_in">min</span> = a[j];</span><br><span class="line">                min_index = j;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        <span class="comment">// 交换值</span></span><br><span class="line">        <span class="keyword">int</span> t = a[i];</span><br><span class="line">        a[i] = a[min_index];</span><br><span class="line">        a[min_index] = t;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">// 输出结果</span></span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; i++) &#123;</span><br><span class="line">	    <span class="built_in">cout</span> &lt;&lt; a[i] &lt;&lt; <span class="string">" "</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># -*- coding:utf8 -*-</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">main</span><span class="params">()</span>:</span></span><br><span class="line">    temp = input()</span><br><span class="line">    a = temp.split(<span class="string">' '</span>)</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">0</span>, len(a)):</span><br><span class="line">        a[i] = int(a[i])</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">0</span>, len(a)):</span><br><span class="line">        min_val = a[i]</span><br><span class="line">        min_index = i</span><br><span class="line"></span><br><span class="line">        j = i</span><br><span class="line">        <span class="keyword">while</span> i &lt; len(a) - <span class="number">1</span> <span class="keyword">and</span> j &lt; len(a):</span><br><span class="line">            <span class="keyword">if</span> a[j] &lt; min_val:</span><br><span class="line">                min_val = a[j]</span><br><span class="line">                min_index = j</span><br><span class="line">            j += <span class="number">1</span></span><br><span class="line"></span><br><span class="line">        t = a[i]</span><br><span class="line">        a[i] = a[min_index]</span><br><span class="line">        a[min_index] = t</span><br><span class="line">    </span><br><span class="line">    out = <span class="string">""</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">0</span>, len(a)):</span><br><span class="line">        out += str(a[i]) + <span class="string">" "</span></span><br><span class="line">    print(out)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    main()</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>doc</category>
+      </categories>
+      <tags>
+        <tag>数据结构</tag>
+        <tag>算法</tag>
       </tags>
   </entry>
   <entry>
@@ -1952,111 +2057,6 @@
 <p>3年没写Java了写的丑点将就将就吧😂</p>
 </blockquote>
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"><span class="keyword">import</span> java.util.Vector;</span><br><span class="line"><span class="keyword">import</span> java.lang.Character;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">KMP</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Vector&lt;Integer&gt; <span class="title">getNext</span><span class="params">(<span class="keyword">char</span>[] ps)</span> </span>&#123;</span><br><span class="line">        Vector&lt;Integer&gt; res = <span class="keyword">new</span> Vector&lt;Integer&gt;();</span><br><span class="line">        res.add(<span class="number">0</span>);</span><br><span class="line">        res.add(<span class="number">0</span>);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> (ps.length &lt;= <span class="number">2</span>) <span class="keyword">return</span> res;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; ps.length; i++) &#123;</span><br><span class="line">            Vector&lt;Character&gt; t = <span class="keyword">new</span> Vector&lt;Character&gt;();</span><br><span class="line">            <span class="keyword">int</span> m = <span class="number">0</span>;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt;= i; j++) &#123;</span><br><span class="line">                t.add(ps[j]);</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; t.size() - <span class="number">1</span>; j++) &#123;</span><br><span class="line">                Vector&lt;Character&gt; head = <span class="keyword">new</span> Vector&lt;Character&gt;();</span><br><span class="line">                Vector&lt;Character&gt; end = <span class="keyword">new</span> Vector&lt;Character&gt;();</span><br><span class="line"></span><br><span class="line">                <span class="keyword">for</span> (<span class="keyword">int</span> k = <span class="number">0</span>; k &lt;= j; k++) &#123;</span><br><span class="line">                    head.add(t.get(k));</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">for</span> (<span class="keyword">int</span> k = t.size() - j - <span class="number">1</span>; k &lt; t.size(); k++) &#123;</span><br><span class="line">                    end.add(t.get(k));</span><br><span class="line">                &#125;</span><br><span class="line"></span><br><span class="line">                <span class="keyword">if</span> (head.equals(end)) &#123;</span><br><span class="line">                    <span class="keyword">if</span> (j + <span class="number">1</span> &gt; m) &#123;</span><br><span class="line">                        m = j + <span class="number">1</span>;</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            res.add(m);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">final</span> Scanner input = <span class="keyword">new</span> Scanner(System.in);</span><br><span class="line">        <span class="keyword">char</span> [] mainString, patternString;</span><br><span class="line">        mainString = input.nextLine().toCharArray();</span><br><span class="line">        patternString = input.nextLine().toCharArray();</span><br><span class="line">        input.close();</span><br><span class="line"></span><br><span class="line">        Vector&lt;Integer&gt; next = KMP.getNext(patternString);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">int</span> begin = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> end = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> num = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">while</span> (begin + patternString.length &lt;= mainString.length) &#123;</span><br><span class="line">            <span class="keyword">while</span> (patternString.length &gt; begin - end &amp;&amp; patternString[begin - end] == mainString[begin]) &#123;</span><br><span class="line">                begin++;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span> (begin - end == patternString.length) &#123;</span><br><span class="line">                num++;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            <span class="keyword">int</span> temp = begin - end;</span><br><span class="line">            end += temp - next.get(temp);</span><br><span class="line">            begin = end;</span><br><span class="line">            num++;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        System.out.println(num);</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>doc</category>
-      </categories>
-      <tags>
-        <tag>数据结构</tag>
-        <tag>算法</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>操作系统:进程调度模拟算法</title>
-    <url>/2020-04-29/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E8%BF%9B%E7%A8%8B%E8%B0%83%E5%BA%A6%E6%A8%A1%E6%8B%9F%E7%AE%97%E6%B3%95/</url>
-    <content><![CDATA[<h1 id="进程模拟调度算法"><a href="#进程模拟调度算法" class="headerlink" title="进程模拟调度算法"></a>进程模拟调度算法</h1><blockquote>
-<p>进程调度是处理机管理的核心内容。</p>
-</blockquote>
-<h2 id="内容"><a href="#内容" class="headerlink" title="内容"></a>内容</h2><p><strong>设计进程控制块PCB的结构，通常包括如下信息</strong></p>
-<ul>
-<li>进程名</li>
-<li>进程优先数（或轮转时间片数）</li>
-<li>进程已占用的CPU实践</li>
-<li>进程到完成还需要的实践</li>
-<li>进程状态</li>
-<li>当前队列指针</li>
-</ul>
-<a id="more"></a>
-
-<h2 id="参数说明"><a href="#参数说明" class="headerlink" title="参数说明"></a>参数说明</h2><ol>
-<li><strong>进程控制块结构</strong><ul>
-<li><code>NAME</code> 进程标识符</li>
-<li><code>PRIO/ROUND</code>  进程优先数/进程每次轮转的时间片数</li>
-<li><code>CPUTIME</code> 进程累计占用CPU的实践片数</li>
-<li><code>NEEDTIME</code> 进程到完成还需要的时间片数</li>
-<li><code>STATE</code> 进程状态</li>
-<li><code>NEXT</code> 下一个链节点</li>
-</ul>
-</li>
-<li><strong>进程链表</strong><ul>
-<li><code>RUN</code> 运行队列</li>
-<li><code>READY</code> 就绪队列</li>
-<li><code>FINISH</code> 结束队列</li>
-</ul>
-</li>
-</ol>
-<h2 id="算法"><a href="#算法" class="headerlink" title="算法"></a>算法</h2><h3 id="节点类"><a href="#节点类" class="headerlink" title="节点类"></a>节点类</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Node</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, NEEDTIME, STATE, NAME, PRIO = <span class="number">0</span>, ROUND = <span class="number">0</span>, CPUTIME = <span class="number">0</span>, count = <span class="number">0</span>, _pNEXT = None)</span>:</span></span><br><span class="line">        self.NAME       = NAME</span><br><span class="line">        self.PRIO       = PRIO</span><br><span class="line">        self.ROUND      = ROUND</span><br><span class="line">        self.CPUTIME    = CPUTIME</span><br><span class="line">        self.NEEDTIME   = NEEDTIME</span><br><span class="line">        self.STATE      = STATE</span><br><span class="line">        self.count      = count</span><br><span class="line">        self._NEXT      = _pNEXT</span><br></pre></td></tr></table></figure>
-
-<h3 id="链表类"><a href="#链表类" class="headerlink" title="链表类"></a>链表类</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Link</span>:</span></span><br><span class="line">    Head = <span class="literal">None</span></span><br><span class="line">    length = <span class="number">0</span></span><br><span class="line">    </span><br><span class="line">    <span class="comment"># 将节点添加到尾部</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">append</span><span class="params">(self, node)</span>:</span></span><br><span class="line">        item = node</span><br><span class="line">        <span class="keyword">if</span> <span class="keyword">not</span> self.Head:</span><br><span class="line">            self.Head = item</span><br><span class="line">            self.length += <span class="number">1</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            temp = self.Head</span><br><span class="line">            <span class="keyword">while</span> temp._NEXT:</span><br><span class="line">                temp = temp._NEXT</span><br><span class="line">            temp._NEXT = item</span><br><span class="line">            self.length += <span class="number">1</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># push节点</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">push</span><span class="params">(self)</span>:</span></span><br><span class="line">        <span class="keyword">if</span> <span class="keyword">not</span> self.Head:</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">None</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            temp = self.Head</span><br><span class="line">            self.Head = self.Head._NEXT</span><br><span class="line">            <span class="keyword">return</span> temp</span><br><span class="line">        self.length -= <span class="number">1</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="优先数算法"><a href="#优先数算法" class="headerlink" title="优先数算法"></a>优先数算法</h3><h4 id="构造链表"><a href="#构造链表" class="headerlink" title="构造链表"></a>构造链表</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">PrioCreate</span><span class="params">(num)</span>:</span></span><br><span class="line">    print(<span class="string">"请输入进程名称和所需时间"</span>)</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">0</span>, num):</span><br><span class="line">        name,needtime = map(str, input().split())</span><br><span class="line">        needtime = int(needtime)</span><br><span class="line">        node = Node(</span><br><span class="line">            NEEDTIME = needtime, </span><br><span class="line">            NAME = name,</span><br><span class="line">            STATE = <span class="string">'W'</span>,</span><br><span class="line">            PRIO = <span class="number">50</span> - needtime</span><br><span class="line">        )</span><br><span class="line"></span><br><span class="line">        temp = READY.Head</span><br><span class="line">        <span class="keyword">if</span> <span class="keyword">not</span> temp:</span><br><span class="line">            READY.append(node)</span><br><span class="line">            <span class="keyword">continue</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="keyword">if</span> node.PRIO &gt;= temp.PRIO:</span><br><span class="line">                node._NEXT = temp</span><br><span class="line">                READY.Head = node</span><br><span class="line">                READY.length += <span class="number">1</span></span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                <span class="keyword">while</span> temp:</span><br><span class="line">                    <span class="keyword">if</span> temp._NEXT:</span><br><span class="line">                        <span class="keyword">if</span> node.PRIO &gt;= temp._NEXT.PRIO:</span><br><span class="line">                            node._NEXT = temp._NEXT</span><br><span class="line">                            temp._NEXT = node</span><br><span class="line">                            READY.length += <span class="number">1</span></span><br><span class="line">                            <span class="keyword">break</span></span><br><span class="line">                    <span class="keyword">else</span>:</span><br><span class="line">                        READY.append(node)</span><br><span class="line">                        <span class="keyword">break</span></span><br><span class="line">                    temp = temp._NEXT</span><br></pre></td></tr></table></figure>
-
-<p><strong>参数说明：</strong></p>
-<ul>
-<li><code>num</code> 进程数量</li>
-</ul>
-<h4 id="优先数算法调度"><a href="#优先数算法调度" class="headerlink" title="优先数算法调度"></a>优先数算法调度</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">Priority</span><span class="params">()</span>:</span></span><br><span class="line">    RUN.append(READY.push())</span><br><span class="line">    <span class="keyword">if</span> RUN.Head:</span><br><span class="line">        RUN.Head.STATE = <span class="string">'R'</span></span><br><span class="line">        RUN.Head._NEXT = <span class="literal">None</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">return</span></span><br><span class="line"></span><br><span class="line">    RUN.Head.PRIO -= <span class="number">1</span></span><br><span class="line">    RUN.Head.CPUTIME += <span class="number">1</span></span><br><span class="line">    RUN.Head.NEEDTIME -= <span class="number">1</span></span><br><span class="line">    <span class="keyword">if</span> RUN.Head.NEEDTIME == <span class="number">0</span>:</span><br><span class="line">        RUN.Head.STATE = <span class="string">'F'</span></span><br><span class="line">        RUN.Head.count += <span class="number">1</span></span><br><span class="line">        FINISH.append(RUN.push())</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        RUN.Head.STATE = <span class="string">'W'</span></span><br><span class="line">        RUN.Head.count += <span class="number">1</span></span><br><span class="line">        node = RUN.push()</span><br><span class="line">        temp = READY.Head</span><br><span class="line">        <span class="keyword">if</span> <span class="keyword">not</span> temp:</span><br><span class="line">            READY.append(node)</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="keyword">if</span> node.PRIO &gt;= temp.PRIO:</span><br><span class="line">                node._NEXT = temp</span><br><span class="line">                READY.Head = node</span><br><span class="line">                READY.length += <span class="number">1</span></span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                <span class="keyword">while</span> temp:</span><br><span class="line">                    <span class="keyword">if</span> temp._NEXT:</span><br><span class="line">                        <span class="keyword">if</span> node.PRIO &gt;= temp._NEXT.PRIO:</span><br><span class="line">                            node._NEXT = temp._NEXT</span><br><span class="line">                            temp._NEXT = node</span><br><span class="line">                            READY.length += <span class="number">1</span></span><br><span class="line">                            <span class="keyword">break</span></span><br><span class="line">                    <span class="keyword">else</span>:</span><br><span class="line">                        READY.append(node)</span><br><span class="line">                        <span class="keyword">break</span></span><br><span class="line">                    temp = temp._NEXT</span><br><span class="line">    Output()</span><br><span class="line">    Priority()</span><br></pre></td></tr></table></figure>
-
-<h3 id="轮转法"><a href="#轮转法" class="headerlink" title="轮转法"></a>轮转法</h3><h4 id="构造链表-1"><a href="#构造链表-1" class="headerlink" title="构造链表"></a>构造链表</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">RoundCreate</span><span class="params">(num)</span>:</span></span><br><span class="line">    print(<span class="string">"请输入进程名称和所需时间"</span>)</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">0</span>, num):</span><br><span class="line">        name,needtime = map(str, input().split())</span><br><span class="line">        needtime = int(needtime)</span><br><span class="line">        node = Node(</span><br><span class="line">            NEEDTIME = needtime,</span><br><span class="line">            NAME = name,</span><br><span class="line">            STATE = <span class="string">'W'</span>,</span><br><span class="line">            ROUND = <span class="number">2</span></span><br><span class="line">        )</span><br><span class="line">        READY.append(node)</span><br></pre></td></tr></table></figure>
-
-<p><strong>参数说明：</strong></p>
-<ul>
-<li><code>num</code> 进程数量</li>
-</ul>
-<h4 id="轮转法调度"><a href="#轮转法调度" class="headerlink" title="轮转法调度"></a>轮转法调度</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">Round</span><span class="params">()</span>:</span></span><br><span class="line">    RUN.append(READY.push())</span><br><span class="line">    <span class="keyword">if</span> RUN.Head:</span><br><span class="line">        RUN.Head.STATE = <span class="string">'R'</span></span><br><span class="line">        RUN.Head._NEXT = <span class="literal">None</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">return</span></span><br><span class="line">    </span><br><span class="line">    RUN.Head.count += <span class="number">1</span></span><br><span class="line">    RUN.Head.CPUTIME += <span class="number">1</span></span><br><span class="line">    RUN.Head.NEEDTIME -= <span class="number">1</span></span><br><span class="line">    <span class="keyword">if</span> RUN.Head.NEEDTIME == <span class="number">0</span>:</span><br><span class="line">        RUN.Head.STATE = <span class="string">'F'</span></span><br><span class="line">        FINISH.append(RUN.push())</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        RUN.Head.STATE = <span class="string">'W'</span></span><br><span class="line">        READY.append(RUN.push())</span><br><span class="line">    Output()</span><br><span class="line">    Round()</span><br></pre></td></tr></table></figure>
-
-<h2 id="完整程序"><a href="#完整程序" class="headerlink" title="完整程序"></a>完整程序</h2><button style="width: auto; background-color: Black; border-color: transparent; margin-top: 10px; color: white;" onclick="window.open('https://1145141919810.wang/Blog-Content/操作系统：进程调度模拟算法.7z');">
-    <span class="fa fa-fw fa-download"></span>
-    Download
-</button>]]></content>
-      <categories>
-        <category>操作系统</category>
-      </categories>
-      <tags>
-        <tag>操作系统</tag>
-        <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>数据结构与算法——直接选择排序算法</title>
-    <url>/2020-08-28/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E2%80%94%E2%80%94%E7%9B%B4%E6%8E%A5%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/</url>
-    <content><![CDATA[<h1 id="算法思路"><a href="#算法思路" class="headerlink" title="算法思路"></a>算法思路</h1><p>对无序数组a[0…n-1]，进行直接选择排序：</p>
-<ol>
-<li><p>从 a[0 ~ n-1] 中选择最小值，与 a[0] 交换</p>
-</li>
-<li><p>从 a[1 ~ n-1] 中选择最小值，与 a[1] 交换</p>
-</li>
-<li><p>从 a[2 ~ n-1] 中选择最小值，与 a[2] 交换</p>
-</li>
-</ol>
-<a id="more"></a>
-<p>   ······</p>
-<ol start="4">
-<li><p>从 a[i ~ n-1] 中选择最小值，与 a[i] 交换</p>
-<p>······</p>
-</li>
-<li><p>从 a[n-2, n-1] 中选择最小值，与 a[n-2] 交换</p>
-</li>
-</ol>
-<p><strong>一共交换 n - 1 次</strong>，得到一个按关键字从小到大排列的有序序列</p>
-<h1 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h1><h2 id="无序数组"><a href="#无序数组" class="headerlink" title="无序数组"></a>无序数组</h2><figure class="highlight angelscript"><table><tr><td class="code"><pre><span class="line"><span class="number">5</span> <span class="number">20</span> <span class="number">63</span> <span class="number">59</span> <span class="number">4</span> <span class="number">16</span> <span class="number">77</span> <span class="number">26</span> <span class="number">12</span> <span class="number">33</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="排序"><a href="#排序" class="headerlink" title="排序"></a>排序</h2><figure class="highlight angelscript"><table><tr><td class="code"><pre><span class="line">初始数组：</span><br><span class="line"> <span class="number">5</span> <span class="number">20</span> <span class="number">63</span> <span class="number">59</span>  <span class="number">4</span> <span class="number">16</span> <span class="number">77</span> <span class="number">26</span> <span class="number">12</span> <span class="number">33</span></span><br><span class="line"></span><br><span class="line">排序：</span><br><span class="line"> <span class="number">4</span> <span class="number">20</span> <span class="number">63</span> <span class="number">59</span>  <span class="number">5</span> <span class="number">16</span> <span class="number">77</span> <span class="number">26</span> <span class="number">12</span> <span class="number">33</span></span><br><span class="line"> <span class="number">4</span>  <span class="number">5</span> <span class="number">63</span> <span class="number">59</span> <span class="number">20</span> <span class="number">16</span> <span class="number">77</span> <span class="number">26</span> <span class="number">12</span> <span class="number">33</span></span><br><span class="line"> <span class="number">4</span>  <span class="number">5</span> <span class="number">12</span> <span class="number">59</span> <span class="number">20</span> <span class="number">16</span> <span class="number">77</span> <span class="number">26</span> <span class="number">63</span> <span class="number">33</span></span><br><span class="line"> <span class="number">4</span>  <span class="number">5</span> <span class="number">12</span> <span class="number">16</span> <span class="number">20</span> <span class="number">59</span> <span class="number">77</span> <span class="number">26</span> <span class="number">63</span> <span class="number">33</span></span><br><span class="line"> <span class="number">4</span>  <span class="number">5</span> <span class="number">12</span> <span class="number">16</span> <span class="number">20</span> <span class="number">26</span> <span class="number">77</span> <span class="number">59</span> <span class="number">63</span> <span class="number">33</span></span><br><span class="line"> <span class="number">4</span>  <span class="number">5</span> <span class="number">12</span> <span class="number">16</span> <span class="number">20</span> <span class="number">26</span> <span class="number">33</span> <span class="number">59</span> <span class="number">63</span> <span class="number">77</span></span><br><span class="line"> <span class="number">4</span>  <span class="number">5</span> <span class="number">12</span> <span class="number">16</span> <span class="number">20</span> <span class="number">26</span> <span class="number">33</span> <span class="number">59</span> <span class="number">63</span> <span class="number">77</span></span><br><span class="line"> <span class="number">4</span>  <span class="number">5</span> <span class="number">12</span> <span class="number">16</span> <span class="number">20</span> <span class="number">26</span> <span class="number">33</span> <span class="number">59</span> <span class="number">63</span> <span class="number">77</span></span><br><span class="line"> <span class="number">4</span>  <span class="number">5</span> <span class="number">12</span> <span class="number">16</span> <span class="number">20</span> <span class="number">26</span> <span class="number">33</span> <span class="number">59</span> <span class="number">63</span> <span class="number">77</span></span><br></pre></td></tr></table></figure>
-
-<h1 id="算法实现"><a href="#算法实现" class="headerlink" title="算法实现"></a>算法实现</h1><h2 id="C-C"><a href="#C-C" class="headerlink" title="C/C++"></a>C/C++</h2><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;vector&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> n;</span><br><span class="line">    <span class="built_in">cin</span> &gt;&gt; n;</span><br><span class="line"></span><br><span class="line">    <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; a;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; i++) &#123;</span><br><span class="line">        <span class="keyword">int</span> t;</span><br><span class="line">        <span class="built_in">cin</span> &gt;&gt; t;</span><br><span class="line">        a.push_back(t);</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">// 直接选择排序</span></span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; i++) &#123;</span><br><span class="line">        <span class="keyword">int</span> <span class="built_in">min</span> = a[i];</span><br><span class="line">        <span class="keyword">int</span> min_index = i;</span><br><span class="line">        </span><br><span class="line">        <span class="comment">// 查找 i 到 n-1 中最小的值</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j = i; i &lt; n - <span class="number">1</span> &amp;&amp; j &lt; n; j++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (a[j] &lt; <span class="built_in">min</span>) &#123;</span><br><span class="line">                <span class="built_in">min</span> = a[j];</span><br><span class="line">                min_index = j;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        <span class="comment">// 交换值</span></span><br><span class="line">        <span class="keyword">int</span> t = a[i];</span><br><span class="line">        a[i] = a[min_index];</span><br><span class="line">        a[min_index] = t;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">// 输出结果</span></span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; i++) &#123;</span><br><span class="line">	    <span class="built_in">cout</span> &lt;&lt; a[i] &lt;&lt; <span class="string">" "</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># -*- coding:utf8 -*-</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">main</span><span class="params">()</span>:</span></span><br><span class="line">    temp = input()</span><br><span class="line">    a = temp.split(<span class="string">' '</span>)</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">0</span>, len(a)):</span><br><span class="line">        a[i] = int(a[i])</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">0</span>, len(a)):</span><br><span class="line">        min_val = a[i]</span><br><span class="line">        min_index = i</span><br><span class="line"></span><br><span class="line">        j = i</span><br><span class="line">        <span class="keyword">while</span> i &lt; len(a) - <span class="number">1</span> <span class="keyword">and</span> j &lt; len(a):</span><br><span class="line">            <span class="keyword">if</span> a[j] &lt; min_val:</span><br><span class="line">                min_val = a[j]</span><br><span class="line">                min_index = j</span><br><span class="line">            j += <span class="number">1</span></span><br><span class="line"></span><br><span class="line">        t = a[i]</span><br><span class="line">        a[i] = a[min_index]</span><br><span class="line">        a[min_index] = t</span><br><span class="line">    </span><br><span class="line">    out = <span class="string">""</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">0</span>, len(a)):</span><br><span class="line">        out += str(a[i]) + <span class="string">" "</span></span><br><span class="line">    print(out)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    main()</span><br></pre></td></tr></table></figure>
 
 ]]></content>
       <categories>
