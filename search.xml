@@ -3055,6 +3055,8 @@
 <p>保存，退出。</p>
 <p>在 拓展 中将 Fildem 打开。</p>
 <p><img src="/img/ubuntu20.04%E7%BE%8E%E5%8C%96/open-fildem.png" alt=""></p>
+<h2 id="安装-oh-my-zsh"><a href="#安装-oh-my-zsh" class="headerlink" title="安装 oh-my-zsh"></a>安装 oh-my-zsh</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo apt install -y zsh</span><br><span class="line"></span><br><span class="line">sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"</span><br></pre></td></tr></table></figure>
+
 <p>重启。</p>
 <p>完成。</p>
 ]]></content>
