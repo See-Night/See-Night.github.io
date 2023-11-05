@@ -6,7 +6,7 @@ tags:
 - Debian
 - 美化
 categories:
-- Diary
+- 记录
 ---
 
 > 写在前面：
