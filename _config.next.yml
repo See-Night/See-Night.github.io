@@ -718,13 +718,13 @@ livere_uid: # <your_uid>
 gitalk:
   enable: true
   github_id: See-Night
-  repo: Blog-Commnets
+  repo: Blog-Comments
   client_id: 1ebb15722599a4c40cd6
   client_secret: 07e3e6f1d045f256ee22bdc50e9a1550c36b648a
   admin_user: See-Night
   distraction_free_mode: true # Facebook-like distraction free mode
   # When the official proxy is not available, you can change it to your own proxy address
-  proxy: https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token # This is official proxy address
+  # proxy: https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token # This is official proxy address
   # Gitalk's display language depends on user's browser or system environment
   # If you want everyone visiting your site to see a uniform language, you can set a force language value
   # Available values: en | es-ES | fr | ru | zh-CN | zh-TW
