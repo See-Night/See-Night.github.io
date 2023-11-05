@@ -372,7 +372,7 @@ codeblock:
   copy_button:
     enable: true
     # Available values: default | flat | mac
-    style: default
+    style: mac
   # Fold code block
   fold:
     enable: false
