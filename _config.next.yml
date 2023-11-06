@@ -43,7 +43,7 @@ custom_file_path:
 scheme: Gemini
 
 # Dark Mode
-darkmode: false
+darkmode: true
 
 
 # ---------------------------------------------------------------
@@ -71,7 +71,7 @@ creative_commons:
   post: true
   # You can set a language value if you prefer a translated version of CC license, e.g. deed.zh
   # CC licenses are available in 39 languages, you can find the specific and correct abbreviation you need on https://creativecommons.org
-  language: zh-CN
+  language: deed.zh-Hans
 
 # Open graph settings
 # See: https://hexo.io/docs/helpers#open-graph
@@ -363,7 +363,7 @@ codeblock:
   # Code Highlight theme
   # All available themes: https://theme-next.js.org/highlight/
   theme:
-    light: github-dark
+    light: github
     dark: github-dark
   prism:
     light: prism
