@@ -30,6 +30,12 @@ GRUB_TIMEOUT=0
 GRUB_CMDLINE_LINUX_DEFAULT="quiet splash loglevel=0"
 ```
 
+```css
+.a {
+    width: 10px;
+}
+```
+
 修改 `/etc/default/grub` 后运行以下命令更新 Grub：
 
 ```shell
