@@ -79,6 +79,64 @@ sudo update-initramfs -u
 
 > 截图为虚拟机截图，实机上会有主板的 Logo。
 
+## Nvidia 驱动
+
+> FUCK YOU NVIDIA !!
+
+Debian nonfree 提供的 `Nvidia-driver` 是 `525.125.06` 版本的，在使用过程中，笔者发现这个版本在 wayland 环境下的表现简直就是一坨，Steam 的用户界面打开都在一直闪，推荐尽可能安装最新版的驱动。
+
+在 [Nvidia](https://www.nvidia.com/Download/index.aspx?lang=en-us) 官网下载最新版本的 Linux 图形驱动：
+
+![nvidia](/images/Debian-12-Gnome-桌面美化/nvidia.png)
+
+下载安装脚本，赋予权限：
+
+```bash
+chmod +x NVIDIA-Linux-x86_64-535.129.03.run
+```
+
+由于 Nvidia 驱动安装时需要彻底关闭所有的图形界面，所以推荐使用 SSH 或者切换到其他 tty 进行安装。
+
+```bash
+sudo ./NVIDIA-Linux-x86_64-535.129.03.run
+```
+
+第一次安装时，会提示现在系统中正在使用 Nouveau 驱动，需要先禁用这个驱动才能安装。然后请求是否要创建配置去禁用 Nouveau，选择 `Yes` 即可。脚本禁用 Nouveau 后，会提示你需要重启系统后重新运行安装脚本。但是在这之前，需要先更新一下 `initramfs` 才能使上面的配置生效：
+
+```bash
+sudo update-initramfs -u
+reboot
+```
+
+重启系统后再次运行安装脚本，一路 `Yes` 即可。安装好后，可以进入系统中运行 `nvidia-smi` 去查看驱动版本：
+
+```bash
+$ nvidia-smi
+Mon Nov  6 20:36:49 2023       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 535.129.03             Driver Version: 535.129.03   CUDA Version: 12.2     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA GeForce GTX 1050        Off | 00000000:01:00.0 Off |                  N/A |
+| N/A   30C    P8              N/A / ERR! |    141MiB /  2048MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|    0   N/A  N/A      1716      G   /usr/bin/gnome-shell                          1MiB |
+|    0   N/A  N/A      4889      G   ...local/share/Steam/ubuntu12_32/steam        2MiB |
+|    0   N/A  N/A      5455      G   ...re/Steam/ubuntu12_64/steamwebhelper       22MiB |
+|    0   N/A  N/A      5492      G   ...eam/logs/cef_log.txt --shared-files      113MiB |
++---------------------------------------------------------------------------------------+
+```
+
 ## Wayland
 
 在安装好 Nvidia 显卡驱动后，会发现原本应该是 Wayland 的桌面环境被替换为了 X11，而且无法通过修改 `/etc/gdm3/daemon.conf` 中的 `WaylandEnable=true` 来开启 Wayland 登陆选项。
