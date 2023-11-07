@@ -1,0 +1,35 @@
+<style>
+    .rss_btn {
+        display: inline;
+        color: #ff894c;
+        border-top: 1px solid #ff894c;
+        border-bottom: 1px solid #ff894c;
+        cursor: pointer;
+    }
+
+    .rss_btn i {
+        cursor: pointer;
+    }
+    
+    .rss_btn span {
+        margin-left: 1rem;
+        cursor: pointer;
+    }
+</style>
+<script>
+    window.onload = () => {
+        let links_of_author = document.getElementsByClassName("links-of-author")[0];
+        let rss_bar = document.createElement("div");
+        let rss_icon = document.createElement("i");
+        let rss_content = document.createElement("span");
+        rss_content.innerText = "RSS";
+        rss_icon.className = "fa fa-rss";
+        rss_bar.appendChild(rss_icon);
+        rss_bar.appendChild(rss_content);
+        rss_bar.className = "rss_btn";
+        links_of_author.parentElement.insertBefore(rss_bar, links_of_author);
+        rss_bar.addEventListener('click', () => {
+            window.open("/atom.xml", "_blank");
+        })
+    }
+</script>
