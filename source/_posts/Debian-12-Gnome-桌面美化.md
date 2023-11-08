@@ -158,3 +158,15 @@ GOTO="gdm_end"
 > 该方法来源于 [Ask Ubuntu](https://askubuntu.com/questions/1403854/cant-use-wayland-with-nvidia-510-drivers-on-ubuntu-22-04-lts)
 
 > FUCK YOU NVIDIA !!!
+
+---
+
+> 2023-11-08 更新：
+>
+> 我放弃了。
+>
+> 从 Ubuntu 转 Debian 的初衷就是因为不喜欢 Canonical 强推 Snap 的策略，但在折腾两天后我发现 Debian 的实际使用确实没有 Ubuntu 更方便。压垮我全面转向 Debian 的最后一根稻草是 Intel 的声卡驱动：在 Ubuntu 上没有问题的声卡到了 Debian 12 就会出现硬解卡顿的现象，我最初还以为是 Nvidia 显卡驱动导致系统无法正确识别解码器，但在多方排查+控制变量后最终只能将问题的原因指向驱动，这让我百思不得其解。在找遍全网都找不到切实可行的解决方案的情况下，我不得已装回了 Ubuntu 23.10。
+>
+> 我不用 Arch 的原因是我不太喜欢 Arch 滚动更新的那种刺激感：在最初体验 Arch 的那段时间，AUR 的更新直接给我把 Gnome 干崩掉了（没错我是 Gnome 党），以至于我需要花大量的时间去处理问题，这其中依赖问题甚至是最好处理的。所以我更加偏向于稳定发行版的 Linux 系统，在这之前我是尤其偏爱 Ubuntu LTS 的，但是因为最新版的 Ubuntu 22.04 LTS 的 wayland 无法在显示器休眠后唤醒（必须把笔记本盒盖再打开才能唤醒），让我选择暂时用 Ubuntu 23.04 进行过渡，可没想到 Ubuntu 23.10 的更新又让原本配制好的桌面环境出现了各种各样的问题：比如菜单的图标缩小、文字显示异常balabala。本以为 Debian 12 会是一个不错的选择，但从这几天的实际使用来看，Debian 的发展仍然任重而道远。希望真的有能让我用 Debian 换 Ubuntu 的那一天。
+>
+> 最后，FUCK YOU NVIDIA !!!
