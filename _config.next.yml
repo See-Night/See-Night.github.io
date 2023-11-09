@@ -157,6 +157,8 @@ site_state: true
 social:
   GitHub: https://github.com/See-Night || fab fa-github
   E-Mail: mailto:see2night@outlook.com || fa fa-envelope
+  Matrix: https://matrix.to/#/@seenight:matrix.org || fa fa-circle-nodes
+  IRC: ircs://irc.libera.chat:6697/#seenight || fa fa-message
   #Weibo: https://weibo.com/yourname || fab fa-weibo
   #Twitter: https://twitter.com/yourname || fab fa-twitter
   #FB Page: https://www.facebook.com/yourname || fab fa-facebook
